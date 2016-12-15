@@ -60,7 +60,6 @@
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -232,6 +231,10 @@
             this.label19 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.panelNiezyt.SuspendLayout();
@@ -346,6 +349,10 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel15.Controls.Add(this.label34);
+            this.panel15.Controls.Add(this.label33);
+            this.panel15.Controls.Add(this.textBox7);
+            this.panel15.Controls.Add(this.textBox1);
             this.panel15.Controls.Add(this.label32);
             this.panel15.Controls.Add(this.comboBox7);
             this.panel15.Controls.Add(this.panelNiezyt);
@@ -361,7 +368,6 @@
             this.panel15.Controls.Add(this.label43);
             this.panel15.Controls.Add(this.label42);
             this.panel15.Controls.Add(this.dateTimePicker1);
-            this.panel15.Controls.Add(this.textBox11);
             this.panel15.Controls.Add(this.label36);
             this.panel15.Controls.Add(this.groupBox1);
             this.panel15.Controls.Add(this.textBox4);
@@ -651,20 +657,12 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
             this.dateTimePicker1.TabIndex = 55;
             // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(16, 423);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(422, 114);
-            this.textBox11.TabIndex = 50;
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label36.Location = new System.Drawing.Point(14, 407);
+            this.label36.Location = new System.Drawing.Point(14, 477);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(105, 13);
             this.label36.TabIndex = 49;
@@ -2437,19 +2435,55 @@
             // comboBox7
             // 
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(73, 325);
+            this.comboBox7.Items.AddRange(new object[] {
+            "Komunikacyjne",
+            "Praca/dom",
+            "Inne"});
+            this.comboBox7.Location = new System.Drawing.Point(16, 328);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(93, 21);
+            this.comboBox7.Size = new System.Drawing.Size(118, 21);
             this.comboBox7.TabIndex = 86;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(13, 328);
+            this.label32.Location = new System.Drawing.Point(13, 310);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 13);
+            this.label32.Size = new System.Drawing.Size(49, 13);
             this.label32.TabIndex = 87;
-            this.label32.Text = "label32";
+            this.label32.Text = "Wypadki";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(165, 328);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(144, 20);
+            this.textBox1.TabIndex = 88;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(339, 328);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(142, 20);
+            this.textBox7.TabIndex = 89;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(165, 310);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(40, 13);
+            this.label33.TabIndex = 90;
+            this.label33.Text = "Chirurg";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(338, 310);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(31, 13);
+            this.label34.TabIndex = 91;
+            this.label34.Text = "Ataki";
             // 
             // Form1
             // 
@@ -2588,7 +2622,6 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -2781,6 +2814,10 @@
         private System.Windows.Forms.Panel panelNiezyt;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
