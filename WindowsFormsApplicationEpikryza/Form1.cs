@@ -136,5 +136,35 @@ namespace WindowsFormsApplicationEpikryza
             Pen p = new Pen(Color.White, 2);
             e.Graphics.DrawRectangle(p, r);
         }
+
+        private void radioBtnPrzewlekly_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = Color.Yellow;
+            if (radioBtnNiezyt.Checked || radioBtnOstry.Checked)
+            {
+                ctrl.BackColor = SystemColors.GradientInactiveCaption;
+            }
+        }
+
+        private void radioBtnNiezyt_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = Color.Orange;
+            if (radioBtnPrzewlekly.Checked || radioBtnOstry.Checked)
+            {
+                ctrl.BackColor = SystemColors.GradientInactiveCaption;
+            }
+        }
+
+        private void radioBtnOstry_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = Color.Red;
+            if (radioBtnNiezyt.Checked || radioBtnPrzewlekly.Checked)
+            {
+                ctrl.BackColor = SystemColors.GradientInactiveCaption;
+            }
+        }
     }
 }

@@ -35,10 +35,13 @@
             this.IIIfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.IVfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.panelNiezyt = new System.Windows.Forms.Panel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioBtnOstry = new System.Windows.Forms.RadioButton();
+            this.radioBtnNiezyt = new System.Windows.Forms.RadioButton();
+            this.radioBtnPrzewlekly = new System.Windows.Forms.RadioButton();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
@@ -49,8 +52,6 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -229,9 +230,9 @@
             this.dataGridViewComboBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.panelNiezyt = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
+            this.panelNiezyt.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -293,7 +294,6 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
-            this.panelNiezyt.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -368,11 +368,23 @@
             this.panel15.Size = new System.Drawing.Size(494, 536);
             this.panel15.TabIndex = 68;
             // 
+            // panelNiezyt
+            // 
+            this.panelNiezyt.Controls.Add(this.groupBox11);
+            this.panelNiezyt.Controls.Add(this.comboBox2);
+            this.panelNiezyt.Controls.Add(this.label41);
+            this.panelNiezyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelNiezyt.Location = new System.Drawing.Point(13, 234);
+            this.panelNiezyt.Name = "panelNiezyt";
+            this.panelNiezyt.Size = new System.Drawing.Size(465, 76);
+            this.panelNiezyt.TabIndex = 85;
+            this.panelNiezyt.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNiezyt_Paint);
+            // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.radioButton15);
-            this.groupBox11.Controls.Add(this.radioButton12);
-            this.groupBox11.Controls.Add(this.radioButton11);
+            this.groupBox11.Controls.Add(this.radioBtnOstry);
+            this.groupBox11.Controls.Add(this.radioBtnNiezyt);
+            this.groupBox11.Controls.Add(this.radioBtnPrzewlekly);
             this.groupBox11.Location = new System.Drawing.Point(177, 7);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(277, 55);
@@ -380,41 +392,70 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Rodzaje";
             // 
-            // radioButton15
+            // radioBtnOstry
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(208, 21);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Padding = new System.Windows.Forms.Padding(3);
-            this.radioButton15.Size = new System.Drawing.Size(55, 23);
-            this.radioButton15.TabIndex = 72;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "Ostry";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.radioBtnOstry.AutoSize = true;
+            this.radioBtnOstry.Location = new System.Drawing.Point(208, 21);
+            this.radioBtnOstry.Name = "radioBtnOstry";
+            this.radioBtnOstry.Padding = new System.Windows.Forms.Padding(3);
+            this.radioBtnOstry.Size = new System.Drawing.Size(55, 23);
+            this.radioBtnOstry.TabIndex = 72;
+            this.radioBtnOstry.TabStop = true;
+            this.radioBtnOstry.Text = "Ostry";
+            this.radioBtnOstry.UseVisualStyleBackColor = true;
+            this.radioBtnOstry.CheckedChanged += new System.EventHandler(this.radioBtnOstry_CheckedChanged);
             // 
-            // radioButton12
+            // radioBtnNiezyt
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(128, 21);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Padding = new System.Windows.Forms.Padding(3);
-            this.radioButton12.Size = new System.Drawing.Size(55, 23);
-            this.radioButton12.TabIndex = 71;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Jakiś";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioBtnNiezyt.AutoSize = true;
+            this.radioBtnNiezyt.Location = new System.Drawing.Point(128, 21);
+            this.radioBtnNiezyt.Name = "radioBtnNiezyt";
+            this.radioBtnNiezyt.Padding = new System.Windows.Forms.Padding(3);
+            this.radioBtnNiezyt.Size = new System.Drawing.Size(55, 23);
+            this.radioBtnNiezyt.TabIndex = 71;
+            this.radioBtnNiezyt.TabStop = true;
+            this.radioBtnNiezyt.Text = "Jakiś";
+            this.radioBtnNiezyt.UseVisualStyleBackColor = true;
+            this.radioBtnNiezyt.CheckedChanged += new System.EventHandler(this.radioBtnNiezyt_CheckedChanged);
             // 
-            // radioButton11
+            // radioBtnPrzewlekly
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(20, 21);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Padding = new System.Windows.Forms.Padding(3);
-            this.radioButton11.Size = new System.Drawing.Size(83, 23);
-            this.radioButton11.TabIndex = 70;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Przewlekły";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioBtnPrzewlekly.AutoSize = true;
+            this.radioBtnPrzewlekly.Location = new System.Drawing.Point(20, 21);
+            this.radioBtnPrzewlekly.Name = "radioBtnPrzewlekly";
+            this.radioBtnPrzewlekly.Padding = new System.Windows.Forms.Padding(3);
+            this.radioBtnPrzewlekly.Size = new System.Drawing.Size(83, 23);
+            this.radioBtnPrzewlekly.TabIndex = 70;
+            this.radioBtnPrzewlekly.TabStop = true;
+            this.radioBtnPrzewlekly.Text = "Przewlekły";
+            this.radioBtnPrzewlekly.UseVisualStyleBackColor = true;
+            this.radioBtnPrzewlekly.CheckedChanged += new System.EventHandler(this.radioBtnPrzewlekly_CheckedChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Oddechowy",
+            "Pokarmowy",
+            "Moczowy",
+            "Rozrodczy",
+            "Skórny"});
+            this.comboBox2.Location = new System.Drawing.Point(11, 28);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(139, 21);
+            this.comboBox2.TabIndex = 79;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label41.Location = new System.Drawing.Point(9, 7);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(48, 13);
+            this.label41.TabIndex = 78;
+            this.label41.Text = "Nieżyty";
             // 
             // groupBox10
             // 
@@ -497,6 +538,7 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             "Nigdy",
@@ -520,6 +562,7 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Nigdy",
@@ -529,32 +572,6 @@
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(89, 21);
             this.comboBox5.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Oddechowy",
-            "Pokarmowy",
-            "Moczowy",
-            "Rozrodczy",
-            "Skórny"});
-            this.comboBox2.Location = new System.Drawing.Point(11, 28);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(139, 21);
-            this.comboBox2.TabIndex = 79;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label41.Location = new System.Drawing.Point(9, 7);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(48, 13);
-            this.label41.TabIndex = 78;
-            this.label41.Text = "Nieżyty";
             // 
             // textBox6
             // 
@@ -2413,18 +2430,6 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "VIOFORETARAPIA";
             // 
-            // panelNiezyt
-            // 
-            this.panelNiezyt.Controls.Add(this.groupBox11);
-            this.panelNiezyt.Controls.Add(this.comboBox2);
-            this.panelNiezyt.Controls.Add(this.label41);
-            this.panelNiezyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelNiezyt.Location = new System.Drawing.Point(13, 234);
-            this.panelNiezyt.Name = "panelNiezyt";
-            this.panelNiezyt.Size = new System.Drawing.Size(465, 76);
-            this.panelNiezyt.TabIndex = 85;
-            this.panelNiezyt.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNiezyt_Paint);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2454,6 +2459,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            this.panelNiezyt.ResumeLayout(false);
+            this.panelNiezyt.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox10.ResumeLayout(false);
@@ -2544,8 +2551,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panelNiezyt.ResumeLayout(false);
-            this.panelNiezyt.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2733,9 +2738,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn poPoludniu;
         private System.Windows.Forms.DataGridViewTextBoxColumn wieczor;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioBtnOstry;
+        private System.Windows.Forms.RadioButton radioBtnNiezyt;
+        private System.Windows.Forms.RadioButton radioBtnPrzewlekly;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton10;
