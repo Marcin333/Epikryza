@@ -229,7 +229,7 @@
             this.dataGridViewComboBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
+            this.panelNiezyt = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -293,7 +293,7 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
-            this.panel26.SuspendLayout();
+            this.panelNiezyt.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -344,7 +344,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel15.Controls.Add(this.panel26);
+            this.panel15.Controls.Add(this.panelNiezyt);
             this.panel15.Controls.Add(this.groupBox10);
             this.panel15.Controls.Add(this.groupBox9);
             this.panel15.Controls.Add(this.groupBox8);
@@ -532,6 +532,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Oddechowy",
@@ -539,7 +540,7 @@
             "Moczowy",
             "Rozrodczy",
             "Skórny"});
-            this.comboBox2.Location = new System.Drawing.Point(13, 41);
+            this.comboBox2.Location = new System.Drawing.Point(11, 28);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(139, 21);
             this.comboBox2.TabIndex = 79;
@@ -549,7 +550,7 @@
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label41.Location = new System.Drawing.Point(12, 17);
+            this.label41.Location = new System.Drawing.Point(9, 7);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(48, 13);
             this.label41.TabIndex = 78;
@@ -2412,16 +2413,17 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "VIOFORETARAPIA";
             // 
-            // panel26
+            // panelNiezyt
             // 
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.groupBox11);
-            this.panel26.Controls.Add(this.comboBox2);
-            this.panel26.Controls.Add(this.label41);
-            this.panel26.Location = new System.Drawing.Point(13, 234);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(465, 76);
-            this.panel26.TabIndex = 85;
+            this.panelNiezyt.Controls.Add(this.groupBox11);
+            this.panelNiezyt.Controls.Add(this.comboBox2);
+            this.panelNiezyt.Controls.Add(this.label41);
+            this.panelNiezyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelNiezyt.Location = new System.Drawing.Point(13, 234);
+            this.panelNiezyt.Name = "panelNiezyt";
+            this.panelNiezyt.Size = new System.Drawing.Size(465, 76);
+            this.panelNiezyt.TabIndex = 85;
+            this.panelNiezyt.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNiezyt_Paint);
             // 
             // Form1
             // 
@@ -2542,8 +2544,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
+            this.panelNiezyt.ResumeLayout(false);
+            this.panelNiezyt.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2750,7 +2752,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Panel panelNiezyt;
     }
 }
 

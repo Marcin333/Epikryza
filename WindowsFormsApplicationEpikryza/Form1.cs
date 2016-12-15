@@ -129,5 +129,12 @@ namespace WindowsFormsApplicationEpikryza
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }  
         }
+
+        private void panelNiezyt_Paint(object sender, PaintEventArgs e)
+        {
+            Rectangle r = new Rectangle(0, 0, 465, 76); //this.ClientRectangle.Height - 1
+            Pen p = new Pen(Color.White, 2);
+            e.Graphics.DrawRectangle(p, r);
+        }
     }
 }
