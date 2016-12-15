@@ -230,6 +230,8 @@
             this.dataGridViewComboBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.panelNiezyt.SuspendLayout();
@@ -344,6 +346,8 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel15.Controls.Add(this.label32);
+            this.panel15.Controls.Add(this.comboBox7);
             this.panel15.Controls.Add(this.panelNiezyt);
             this.panel15.Controls.Add(this.groupBox10);
             this.panel15.Controls.Add(this.groupBox9);
@@ -365,7 +369,7 @@
             this.panel15.Controls.Add(this.panel16);
             this.panel15.Location = new System.Drawing.Point(18, 1964);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(494, 536);
+            this.panel15.Size = new System.Drawing.Size(494, 626);
             this.panel15.TabIndex = 68;
             // 
             // panelNiezyt
@@ -374,7 +378,7 @@
             this.panelNiezyt.Controls.Add(this.comboBox2);
             this.panelNiezyt.Controls.Add(this.label41);
             this.panelNiezyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelNiezyt.Location = new System.Drawing.Point(13, 234);
+            this.panelNiezyt.Location = new System.Drawing.Point(16, 220);
             this.panelNiezyt.Name = "panelNiezyt";
             this.panelNiezyt.Size = new System.Drawing.Size(465, 76);
             this.panelNiezyt.TabIndex = 85;
@@ -462,7 +466,7 @@
             this.groupBox10.Controls.Add(this.radioButton9);
             this.groupBox10.Controls.Add(this.radioButton10);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(380, 144);
+            this.groupBox10.Location = new System.Drawing.Point(380, 137);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(101, 69);
             this.groupBox10.TabIndex = 81;
@@ -496,7 +500,7 @@
             this.groupBox9.Controls.Add(this.radioButton7);
             this.groupBox9.Controls.Add(this.radioButton8);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(270, 144);
+            this.groupBox9.Location = new System.Drawing.Point(270, 137);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(101, 69);
             this.groupBox9.TabIndex = 82;
@@ -529,7 +533,7 @@
             // 
             this.groupBox8.Controls.Add(this.comboBox6);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(143, 144);
+            this.groupBox8.Location = new System.Drawing.Point(143, 137);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(118, 69);
             this.groupBox8.TabIndex = 83;
@@ -553,7 +557,7 @@
             // 
             this.groupBox2.Controls.Add(this.comboBox5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(14, 144);
+            this.groupBox2.Location = new System.Drawing.Point(14, 137);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(120, 69);
             this.groupBox2.TabIndex = 80;
@@ -611,7 +615,7 @@
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(160, 476);
+            this.textBox15.Location = new System.Drawing.Point(165, 574);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(273, 39);
@@ -622,7 +626,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label43.Location = new System.Drawing.Point(111, 479);
+            this.label43.Location = new System.Drawing.Point(116, 577);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(42, 13);
             this.label43.TabIndex = 57;
@@ -633,7 +637,7 @@
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label42.Location = new System.Drawing.Point(9, 449);
+            this.label42.Location = new System.Drawing.Point(14, 547);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(143, 13);
             this.label42.TabIndex = 56;
@@ -642,14 +646,14 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(162, 445);
+            this.dateTimePicker1.Location = new System.Drawing.Point(167, 543);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
             this.dateTimePicker1.TabIndex = 55;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(13, 319);
+            this.textBox11.Location = new System.Drawing.Point(16, 423);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(422, 114);
@@ -660,7 +664,7 @@
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label36.Location = new System.Drawing.Point(15, 297);
+            this.label36.Location = new System.Drawing.Point(14, 407);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(105, 13);
             this.label36.TabIndex = 49;
@@ -2430,6 +2434,23 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "VIOFORETARAPIA";
             // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(73, 325);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(93, 21);
+            this.comboBox7.TabIndex = 86;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(13, 328);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(41, 13);
+            this.label32.TabIndex = 87;
+            this.label32.Text = "label32";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2758,6 +2779,8 @@
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Panel panelNiezyt;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.ComboBox comboBox7;
     }
 }
 
