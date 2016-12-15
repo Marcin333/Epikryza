@@ -35,6 +35,26 @@
             this.IIIfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.IVfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.radioButton15 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -209,28 +229,14 @@
             this.dataGridViewComboBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.panel26 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -287,11 +293,7 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.panel26.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -342,13 +344,11 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel15.Controls.Add(this.groupBox11);
+            this.panel15.Controls.Add(this.panel26);
             this.panel15.Controls.Add(this.groupBox10);
             this.panel15.Controls.Add(this.groupBox9);
             this.panel15.Controls.Add(this.groupBox8);
             this.panel15.Controls.Add(this.groupBox2);
-            this.panel15.Controls.Add(this.comboBox2);
-            this.panel15.Controls.Add(this.label41);
             this.panel15.Controls.Add(this.textBox6);
             this.panel15.Controls.Add(this.label31);
             this.panel15.Controls.Add(this.textBox5);
@@ -363,10 +363,233 @@
             this.panel15.Controls.Add(this.textBox4);
             this.panel15.Controls.Add(this.label29);
             this.panel15.Controls.Add(this.panel16);
-            this.panel15.Location = new System.Drawing.Point(18, 1967);
+            this.panel15.Location = new System.Drawing.Point(18, 1964);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(494, 536);
             this.panel15.TabIndex = 68;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.radioButton15);
+            this.groupBox11.Controls.Add(this.radioButton12);
+            this.groupBox11.Controls.Add(this.radioButton11);
+            this.groupBox11.Location = new System.Drawing.Point(177, 7);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(277, 55);
+            this.groupBox11.TabIndex = 84;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Rodzaje";
+            // 
+            // radioButton15
+            // 
+            this.radioButton15.AutoSize = true;
+            this.radioButton15.Location = new System.Drawing.Point(208, 21);
+            this.radioButton15.Name = "radioButton15";
+            this.radioButton15.Padding = new System.Windows.Forms.Padding(3);
+            this.radioButton15.Size = new System.Drawing.Size(55, 23);
+            this.radioButton15.TabIndex = 72;
+            this.radioButton15.TabStop = true;
+            this.radioButton15.Text = "Ostry";
+            this.radioButton15.UseVisualStyleBackColor = true;
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Location = new System.Drawing.Point(128, 21);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Padding = new System.Windows.Forms.Padding(3);
+            this.radioButton12.Size = new System.Drawing.Size(55, 23);
+            this.radioButton12.TabIndex = 71;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "Jakiś";
+            this.radioButton12.UseVisualStyleBackColor = true;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(20, 21);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Padding = new System.Windows.Forms.Padding(3);
+            this.radioButton11.Size = new System.Drawing.Size(83, 23);
+            this.radioButton11.TabIndex = 70;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "Przewlekły";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.radioButton9);
+            this.groupBox10.Controls.Add(this.radioButton10);
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.Location = new System.Drawing.Point(380, 144);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(101, 69);
+            this.groupBox10.TabIndex = 81;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Nieprzytomny";
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(16, 42);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(44, 17);
+            this.radioButton9.TabIndex = 67;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Nie";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(16, 19);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(47, 17);
+            this.radioButton10.TabIndex = 66;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Tak";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.radioButton7);
+            this.groupBox9.Controls.Add(this.radioButton8);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.Location = new System.Drawing.Point(270, 144);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(101, 69);
+            this.groupBox9.TabIndex = 82;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Omdlenia";
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(16, 42);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(44, 17);
+            this.radioButton7.TabIndex = 67;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Nie";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(16, 19);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(47, 17);
+            this.radioButton8.TabIndex = 66;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Tak";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.comboBox6);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Location = new System.Drawing.Point(143, 144);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(118, 69);
+            this.groupBox8.TabIndex = 83;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Anginy";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "Nigdy",
+            "Sporadycznie",
+            "Często"});
+            this.comboBox6.Location = new System.Drawing.Point(16, 28);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(89, 21);
+            this.comboBox6.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(14, 144);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(120, 69);
+            this.groupBox2.TabIndex = 80;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Grypy";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "Nigdy",
+            "Sporadycznie",
+            "Często"});
+            this.comboBox5.Location = new System.Drawing.Point(15, 28);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(89, 21);
+            this.comboBox5.TabIndex = 0;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Oddechowy",
+            "Pokarmowy",
+            "Moczowy",
+            "Rozrodczy",
+            "Skórny"});
+            this.comboBox2.Location = new System.Drawing.Point(13, 41);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(139, 21);
+            this.comboBox2.TabIndex = 79;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label41.Location = new System.Drawing.Point(12, 17);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(48, 13);
+            this.label41.TabIndex = 78;
+            this.label41.Text = "Nieżyty";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(196, 99);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(61, 20);
+            this.textBox6.TabIndex = 77;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label31.Location = new System.Drawing.Point(144, 101);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(46, 13);
+            this.label31.TabIndex = 76;
+            this.label31.Text = "Wzrost";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(61, 98);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(61, 20);
+            this.textBox5.TabIndex = 75;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label30.Location = new System.Drawing.Point(15, 102);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(40, 13);
+            this.label30.TabIndex = 74;
+            this.label30.Text = "Waga";
             // 
             // textBox15
             // 
@@ -2189,225 +2412,16 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "VIOFORETARAPIA";
             // 
-            // groupBox11
+            // panel26
             // 
-            this.groupBox11.Controls.Add(this.radioButton15);
-            this.groupBox11.Controls.Add(this.radioButton12);
-            this.groupBox11.Controls.Add(this.radioButton11);
-            this.groupBox11.Location = new System.Drawing.Point(203, 237);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(280, 51);
-            this.groupBox11.TabIndex = 84;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "groupBox11";
-            // 
-            // radioButton15
-            // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(182, 20);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(91, 17);
-            this.radioButton15.TabIndex = 72;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "radioButton15";
-            this.radioButton15.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(87, 20);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(91, 17);
-            this.radioButton12.TabIndex = 71;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "radioButton12";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(6, 20);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(77, 17);
-            this.radioButton11.TabIndex = 70;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Przewlekły";
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.radioButton9);
-            this.groupBox10.Controls.Add(this.radioButton10);
-            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(380, 144);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(101, 69);
-            this.groupBox10.TabIndex = 81;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Nieprzytomny";
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(16, 42);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(44, 17);
-            this.radioButton9.TabIndex = 67;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Nie";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(16, 19);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(47, 17);
-            this.radioButton10.TabIndex = 66;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Tak";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.radioButton7);
-            this.groupBox9.Controls.Add(this.radioButton8);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(270, 144);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(101, 69);
-            this.groupBox9.TabIndex = 82;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Omdlenia";
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(16, 42);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(44, 17);
-            this.radioButton7.TabIndex = 67;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Nie";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(16, 19);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(47, 17);
-            this.radioButton8.TabIndex = 66;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Tak";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.comboBox6);
-            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(143, 144);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(118, 69);
-            this.groupBox8.TabIndex = 83;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Anginy";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(14, 144);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(120, 69);
-            this.groupBox2.TabIndex = 80;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Grypy";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Oddechowy",
-            "Pokarmowy",
-            "Moczowy",
-            "Rozrodczy",
-            "Skórny"});
-            this.comboBox2.Location = new System.Drawing.Point(77, 246);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 79;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label41.Location = new System.Drawing.Point(12, 250);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(48, 13);
-            this.label41.TabIndex = 78;
-            this.label41.Text = "Nieżyty";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(196, 99);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(61, 20);
-            this.textBox6.TabIndex = 77;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label31.Location = new System.Drawing.Point(144, 101);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(46, 13);
-            this.label31.TabIndex = 76;
-            this.label31.Text = "Wzrost";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(61, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(61, 20);
-            this.textBox5.TabIndex = 75;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label30.Location = new System.Drawing.Point(15, 102);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(40, 13);
-            this.label30.TabIndex = 74;
-            this.label30.Text = "Waga";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Nigdy",
-            "Sporadycznie",
-            "Często"});
-            this.comboBox5.Location = new System.Drawing.Point(15, 28);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(89, 21);
-            this.comboBox5.TabIndex = 0;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "Nigdy",
-            "Sporadycznie",
-            "Często"});
-            this.comboBox6.Location = new System.Drawing.Point(16, 28);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(89, 21);
-            this.comboBox6.TabIndex = 1;
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel26.Controls.Add(this.groupBox11);
+            this.panel26.Controls.Add(this.comboBox2);
+            this.panel26.Controls.Add(this.label41);
+            this.panel26.Location = new System.Drawing.Point(13, 234);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(465, 76);
+            this.panel26.TabIndex = 85;
             // 
             // Form1
             // 
@@ -2438,6 +2452,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel16.ResumeLayout(false);
@@ -2520,14 +2542,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2734,6 +2750,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Panel panel26;
     }
 }
 
