@@ -52,10 +52,6 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -63,8 +59,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -131,7 +125,7 @@
             this.comboBoxMata = new System.Windows.Forms.ComboBox();
             this.groupBoxPoraDnia = new System.Windows.Forms.GroupBox();
             this.radioBtnWieczor = new System.Windows.Forms.RadioButton();
-            this.radioBtnPopoludnie = new System.Windows.Forms.RadioButton();
+            this.radioBtnPopoludniu = new System.Windows.Forms.RadioButton();
             this.radioBtnRano = new System.Windows.Forms.RadioButton();
             this.panel22 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -245,6 +239,10 @@
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lekiWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.panelNiezyt.SuspendLayout();
@@ -378,21 +376,15 @@
             this.panel15.Controls.Add(this.groupBox9);
             this.panel15.Controls.Add(this.groupBox8);
             this.panel15.Controls.Add(this.groupBox2);
-            this.panel15.Controls.Add(this.textBox6);
-            this.panel15.Controls.Add(this.label31);
-            this.panel15.Controls.Add(this.textBox5);
-            this.panel15.Controls.Add(this.label30);
             this.panel15.Controls.Add(this.textBox15);
             this.panel15.Controls.Add(this.label43);
             this.panel15.Controls.Add(this.label42);
             this.panel15.Controls.Add(this.dateTimePicker1);
             this.panel15.Controls.Add(this.groupBox1);
-            this.panel15.Controls.Add(this.textBox4);
-            this.panel15.Controls.Add(this.label29);
             this.panel15.Controls.Add(this.panel16);
             this.panel15.Location = new System.Drawing.Point(18, 1907);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(494, 829);
+            this.panel15.Size = new System.Drawing.Size(494, 840);
             this.panel15.TabIndex = 68;
             // 
             // panelNiezyt
@@ -600,48 +592,12 @@
             this.comboBox5.Size = new System.Drawing.Size(89, 21);
             this.comboBox5.TabIndex = 0;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(196, 99);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(61, 20);
-            this.textBox6.TabIndex = 77;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label31.Location = new System.Drawing.Point(144, 101);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(46, 13);
-            this.label31.TabIndex = 76;
-            this.label31.Text = "Wzrost";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(61, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(61, 20);
-            this.textBox5.TabIndex = 75;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label30.Location = new System.Drawing.Point(15, 102);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(40, 13);
-            this.label30.TabIndex = 74;
-            this.label30.Text = "Waga";
-            // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(165, 777);
+            this.textBox15.Location = new System.Drawing.Point(165, 784);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(273, 39);
+            this.textBox15.Size = new System.Drawing.Size(314, 39);
             this.textBox15.TabIndex = 58;
             // 
             // label43
@@ -649,7 +605,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label43.Location = new System.Drawing.Point(116, 780);
+            this.label43.Location = new System.Drawing.Point(116, 787);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(42, 13);
             this.label43.TabIndex = 57;
@@ -660,7 +616,7 @@
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label42.Location = new System.Drawing.Point(14, 750);
+            this.label42.Location = new System.Drawing.Point(14, 757);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(143, 13);
             this.label42.TabIndex = 56;
@@ -669,16 +625,16 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(167, 746);
+            this.dateTimePicker1.Location = new System.Drawing.Point(167, 753);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(129, 20);
             this.dateTimePicker1.TabIndex = 55;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(236, 37);
+            this.groupBox1.Location = new System.Drawing.Point(14, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(206, 43);
             this.groupBox1.TabIndex = 40;
@@ -708,24 +664,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Podstawowa";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(84, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(122, 20);
-            this.textBox4.TabIndex = 31;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label29.Location = new System.Drawing.Point(9, 50);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(72, 13);
-            this.label29.TabIndex = 30;
-            this.label29.Text = "Data wizyty";
             // 
             // panel16
             // 
@@ -769,7 +707,7 @@
             this.panel8.Controls.Add(this.dataGridView2);
             this.panel8.Controls.Add(this.button4);
             this.panel8.Controls.Add(this.comboBoxHomeop);
-            this.panel8.Location = new System.Drawing.Point(470, 282);
+            this.panel8.Location = new System.Drawing.Point(470, 305);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(440, 288);
             this.panel8.TabIndex = 65;
@@ -1045,7 +983,7 @@
             this.panel17.Controls.Add(this.panel18);
             this.panel17.Location = new System.Drawing.Point(518, 1908);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(391, 497);
+            this.panel17.Size = new System.Drawing.Size(391, 839);
             this.panel17.TabIndex = 70;
             // 
             // pictureBox1
@@ -1160,14 +1098,14 @@
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel21.Controls.Add(this.panel25);
             this.panel21.Controls.Add(this.comboBox1);
             this.panel21.Controls.Add(this.label44);
             this.panel21.Controls.Add(this.label22);
             this.panel21.Controls.Add(this.dataGridViewViofor);
-            this.panel21.Controls.Add(this.panel25);
             this.panel21.Controls.Add(this.groupBoxPoraDnia);
             this.panel21.Controls.Add(this.panel22);
-            this.panel21.Location = new System.Drawing.Point(20, 1475);
+            this.panel21.Location = new System.Drawing.Point(20, 1493);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(890, 319);
             this.panel21.TabIndex = 72;
@@ -1206,7 +1144,7 @@
             this.rano,
             this.poPoludniu,
             this.wieczor});
-            this.dataGridViewViofor.Location = new System.Drawing.Point(21, 202);
+            this.dataGridViewViofor.Location = new System.Drawing.Point(19, 190);
             this.dataGridViewViofor.Name = "dataGridViewViofor";
             this.dataGridViewViofor.ReadOnly = true;
             this.dataGridViewViofor.Size = new System.Drawing.Size(655, 46);
@@ -1242,7 +1180,7 @@
             this.panel25.Controls.Add(this.groupBox5);
             this.panel25.Controls.Add(this.groupBox4);
             this.panel25.Controls.Add(this.groupBox3);
-            this.panel25.Location = new System.Drawing.Point(11, 100);
+            this.panel25.Location = new System.Drawing.Point(10, 90);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(856, 96);
             this.panel25.TabIndex = 40;
@@ -1397,10 +1335,10 @@
             // groupBoxPoraDnia
             // 
             this.groupBoxPoraDnia.Controls.Add(this.radioBtnWieczor);
-            this.groupBoxPoraDnia.Controls.Add(this.radioBtnPopoludnie);
+            this.groupBoxPoraDnia.Controls.Add(this.radioBtnPopoludniu);
             this.groupBoxPoraDnia.Controls.Add(this.radioBtnRano);
             this.groupBoxPoraDnia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxPoraDnia.Location = new System.Drawing.Point(20, 44);
+            this.groupBoxPoraDnia.Location = new System.Drawing.Point(20, 35);
             this.groupBoxPoraDnia.Name = "groupBoxPoraDnia";
             this.groupBoxPoraDnia.Size = new System.Drawing.Size(361, 50);
             this.groupBoxPoraDnia.TabIndex = 34;
@@ -1411,37 +1349,43 @@
             // 
             this.radioBtnWieczor.AutoSize = true;
             this.radioBtnWieczor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnWieczor.Location = new System.Drawing.Point(237, 21);
+            this.radioBtnWieczor.Location = new System.Drawing.Point(237, 18);
             this.radioBtnWieczor.Name = "radioBtnWieczor";
-            this.radioBtnWieczor.Size = new System.Drawing.Size(71, 17);
+            this.radioBtnWieczor.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.radioBtnWieczor.Size = new System.Drawing.Size(78, 23);
             this.radioBtnWieczor.TabIndex = 33;
             this.radioBtnWieczor.TabStop = true;
             this.radioBtnWieczor.Text = "Wieczór";
             this.radioBtnWieczor.UseVisualStyleBackColor = true;
+            this.radioBtnWieczor.CheckedChanged += new System.EventHandler(this.radioBtnWieczor_CheckedChanged);
             // 
-            // radioBtnPopoludnie
+            // radioBtnPopoludniu
             // 
-            this.radioBtnPopoludnie.AutoSize = true;
-            this.radioBtnPopoludnie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnPopoludnie.Location = new System.Drawing.Point(105, 21);
-            this.radioBtnPopoludnie.Name = "radioBtnPopoludnie";
-            this.radioBtnPopoludnie.Size = new System.Drawing.Size(94, 17);
-            this.radioBtnPopoludnie.TabIndex = 32;
-            this.radioBtnPopoludnie.TabStop = true;
-            this.radioBtnPopoludnie.Text = "Po południu";
-            this.radioBtnPopoludnie.UseVisualStyleBackColor = true;
+            this.radioBtnPopoludniu.AutoSize = true;
+            this.radioBtnPopoludniu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnPopoludniu.Location = new System.Drawing.Point(105, 18);
+            this.radioBtnPopoludniu.Name = "radioBtnPopoludniu";
+            this.radioBtnPopoludniu.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.radioBtnPopoludniu.Size = new System.Drawing.Size(101, 23);
+            this.radioBtnPopoludniu.TabIndex = 32;
+            this.radioBtnPopoludniu.TabStop = true;
+            this.radioBtnPopoludniu.Text = "Po południu";
+            this.radioBtnPopoludniu.UseVisualStyleBackColor = true;
+            this.radioBtnPopoludniu.CheckedChanged += new System.EventHandler(this.radioBtnPopoludniu_CheckedChanged);
             // 
             // radioBtnRano
             // 
             this.radioBtnRano.AutoSize = true;
             this.radioBtnRano.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnRano.Location = new System.Drawing.Point(17, 21);
+            this.radioBtnRano.Location = new System.Drawing.Point(17, 18);
             this.radioBtnRano.Name = "radioBtnRano";
-            this.radioBtnRano.Size = new System.Drawing.Size(55, 17);
+            this.radioBtnRano.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.radioBtnRano.Size = new System.Drawing.Size(62, 23);
             this.radioBtnRano.TabIndex = 31;
             this.radioBtnRano.TabStop = true;
             this.radioBtnRano.Text = "Rano";
             this.radioBtnRano.UseVisualStyleBackColor = true;
+            this.radioBtnRano.CheckedChanged += new System.EventHandler(this.radioBtnRano_CheckedChanged);
             // 
             // panel22
             // 
@@ -1473,7 +1417,7 @@
             this.panel19.Controls.Add(this.comboBox4);
             this.panel19.Controls.Add(this.dataGridView5);
             this.panel19.Controls.Add(this.button8);
-            this.panel19.Location = new System.Drawing.Point(20, 1224);
+            this.panel19.Location = new System.Drawing.Point(20, 1243);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(890, 245);
             this.panel19.TabIndex = 71;
@@ -1952,7 +1896,7 @@
             this.panelSuplementy.Controls.Add(this.panel5);
             this.panelSuplementy.Controls.Add(this.dataGridViewSupl);
             this.panelSuplementy.Controls.Add(this.panel2);
-            this.panelSuplementy.Location = new System.Drawing.Point(20, 881);
+            this.panelSuplementy.Location = new System.Drawing.Point(20, 902);
             this.panelSuplementy.Name = "panelSuplementy";
             this.panelSuplementy.Size = new System.Drawing.Size(889, 336);
             this.panelSuplementy.TabIndex = 61;
@@ -1980,6 +1924,10 @@
             // panelDaneOsobowe
             // 
             this.panelDaneOsobowe.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelDaneOsobowe.Controls.Add(this.textBox6);
+            this.panelDaneOsobowe.Controls.Add(this.label31);
+            this.panelDaneOsobowe.Controls.Add(this.textBox5);
+            this.panelDaneOsobowe.Controls.Add(this.label30);
             this.panelDaneOsobowe.Controls.Add(this.textBoxPesel);
             this.panelDaneOsobowe.Controls.Add(this.textAge);
             this.panelDaneOsobowe.Controls.Add(this.label11);
@@ -2008,7 +1956,7 @@
             this.panelDaneOsobowe.Controls.Add(this.textImie);
             this.panelDaneOsobowe.Location = new System.Drawing.Point(23, 99);
             this.panelDaneOsobowe.Name = "panelDaneOsobowe";
-            this.panelDaneOsobowe.Size = new System.Drawing.Size(887, 175);
+            this.panelDaneOsobowe.Size = new System.Drawing.Size(887, 200);
             this.panelDaneOsobowe.TabIndex = 60;
             // 
             // textBoxPesel
@@ -2074,7 +2022,7 @@
             this.panelAlergeny.Controls.Add(this.comboBoxAlergeny);
             this.panelAlergeny.Controls.Add(this.dataGridViewOpisAlergii);
             this.panelAlergeny.Controls.Add(this.btnDodajAlergen);
-            this.panelAlergeny.Location = new System.Drawing.Point(470, 578);
+            this.panelAlergeny.Location = new System.Drawing.Point(470, 598);
             this.panelAlergeny.Name = "panelAlergeny";
             this.panelAlergeny.Size = new System.Drawing.Size(440, 297);
             this.panelAlergeny.TabIndex = 62;
@@ -2232,7 +2180,7 @@
             this.panelPato.Controls.Add(this.dataGridViewPato);
             this.panelPato.Controls.Add(this.btnDodajPato);
             this.panelPato.Controls.Add(this.comboBoxPatomorfologia);
-            this.panelPato.Location = new System.Drawing.Point(23, 281);
+            this.panelPato.Location = new System.Drawing.Point(23, 304);
             this.panelPato.Name = "panelPato";
             this.panelPato.Size = new System.Drawing.Size(440, 289);
             this.panelPato.TabIndex = 64;
@@ -2261,7 +2209,7 @@
             this.panel23.Controls.Add(this.comboBAlergen);
             this.panel23.Controls.Add(this.dataGridViewAlergen);
             this.panel23.Controls.Add(this.bDodajAlergen);
-            this.panel23.Location = new System.Drawing.Point(23, 578);
+            this.panel23.Location = new System.Drawing.Point(23, 598);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(439, 297);
             this.panel23.TabIndex = 74;
@@ -2537,7 +2485,7 @@
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.inneDolegliwosci});
-            this.dataGridView7.Location = new System.Drawing.Point(15, 509);
+            this.dataGridView7.Location = new System.Drawing.Point(15, 505);
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.Size = new System.Drawing.Size(464, 112);
             this.dataGridView7.TabIndex = 93;
@@ -2553,7 +2501,7 @@
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.lekiWywiad});
-            this.dataGridView8.Location = new System.Drawing.Point(14, 628);
+            this.dataGridView8.Location = new System.Drawing.Point(14, 624);
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.Size = new System.Drawing.Size(230, 112);
             this.dataGridView8.TabIndex = 94;
@@ -2563,7 +2511,7 @@
             this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            this.dataGridView9.Location = new System.Drawing.Point(249, 628);
+            this.dataGridView9.Location = new System.Drawing.Point(249, 624);
             this.dataGridView9.Name = "dataGridView9";
             this.dataGridView9.Size = new System.Drawing.Size(230, 112);
             this.dataGridView9.TabIndex = 95;
@@ -2579,6 +2527,42 @@
             this.lekiWywiad.HeaderText = "Leki";
             this.lekiWywiad.Name = "lekiWywiad";
             this.lekiWywiad.Width = 185;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(810, 173);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(61, 20);
+            this.textBox6.TabIndex = 83;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label31.Location = new System.Drawing.Point(758, 176);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(46, 13);
+            this.label31.TabIndex = 82;
+            this.label31.Text = "Wzrost";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(506, 171);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(61, 20);
+            this.textBox5.TabIndex = 81;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label30.Location = new System.Drawing.Point(460, 174);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(40, 13);
+            this.label30.TabIndex = 80;
+            this.label30.Text = "Waga";
             // 
             // Form1
             // 
@@ -2724,8 +2708,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
@@ -2857,7 +2839,7 @@
         private System.Windows.Forms.Button bDodajAlergen;
         private System.Windows.Forms.DataGridViewTextBoxColumn alergen;
         private System.Windows.Forms.RadioButton radioBtnWieczor;
-        private System.Windows.Forms.RadioButton radioBtnPopoludnie;
+        private System.Windows.Forms.RadioButton radioBtnPopoludniu;
         private System.Windows.Forms.RadioButton radioBtnRano;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -2903,10 +2885,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Panel panelNiezyt;
@@ -2927,6 +2905,10 @@
         private System.Windows.Forms.DataGridView dataGridView9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn lekiWywiad;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label30;
     }
 }
 

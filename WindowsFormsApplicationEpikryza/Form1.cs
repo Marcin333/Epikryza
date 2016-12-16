@@ -111,12 +111,13 @@ namespace WindowsFormsApplicationEpikryza
                 string natezenie = numericUDNatezenie.Value.ToString();
                 string data = String.Format("{0}x {1}{2}{3}({4}) ", krotnosc, mata, selectedItemPx, 
                             selectedItemMx, natezenie);
+                //myComboBox.Text.Clear();
                 //this.dataGridViewViofor.Rows.Add();
                 if (radioBtnRano.Checked)
                 {
                     this.dataGridViewViofor.Rows[0].Cells["rano"].Value = data;
                 }
-                if (radioBtnPopoludnie.Checked)
+                if (radioBtnPopoludniu.Checked)
                 {
                     dataGridViewViofor.Rows[0].Cells["poPoludniu"].Value = data;
                 }
@@ -165,6 +166,24 @@ namespace WindowsFormsApplicationEpikryza
             {
                 ctrl.BackColor = SystemColors.GradientInactiveCaption;
             }
+        }
+
+        private void radioBtnRano_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = SystemColors.MenuHighlight;
+        }
+
+        private void radioBtnPopoludniu_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = SystemColors.MenuHighlight;
+        }
+
+        private void radioBtnWieczor_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = SystemColors.MenuHighlight;
         }
     }
 }
