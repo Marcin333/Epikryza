@@ -107,8 +107,8 @@ namespace WindowsFormsApplicationEpikryza
                 string mata = selectedItemMata.Length > 0 ? selectedItemMata.ToString().Substring(10) : selectedItemMata;
                 Object selectedItemPx = comboBoxPx.SelectedItem;
                 Object selectedItemMx = comboBoxMx.SelectedItem;
+                string natezenie = comboBoxNatezenie.Text;
                 string krotnosc = numericUDKrotnosc.Value.ToString();
-                string natezenie = numericUDNatezenie.Value.ToString();
                 string data = String.Format("{0}x {1}{2}{3}({4}) ", krotnosc, mata, selectedItemPx, 
                             selectedItemMx, natezenie);
                 //myComboBox.Text.Clear();
@@ -125,6 +125,7 @@ namespace WindowsFormsApplicationEpikryza
                 {
                     dataGridViewViofor.Rows[0].Cells["wieczor"].Value = data;
                 }
+                
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -184,6 +185,22 @@ namespace WindowsFormsApplicationEpikryza
         {
             Control ctrl = ((Control)sender);
             ctrl.BackColor = SystemColors.MenuHighlight;
+        }
+
+        private void btnZapiszWszystko_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                object rano = this.dataGridViewViofor.Rows[0].Cells["rano"].Value;
+                object popoludniu = this.dataGridViewViofor.Rows[0].Cells["poPoludniu"].Value;
+                object wieczor = this.dataGridViewViofor.Rows[0].Cells["wieczor"].Value;
+                //Console.WriteLine("Rano {0} popoludnie {1} wieczor {2}", rano, popoludniu, wieczor);
+
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

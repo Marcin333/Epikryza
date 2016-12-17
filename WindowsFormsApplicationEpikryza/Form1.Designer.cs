@@ -108,7 +108,6 @@
             this.btnDodajViofo = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.numericUDNatezenie = new System.Windows.Forms.NumericUpDown();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.numericUDKrotnosc = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
@@ -246,6 +245,8 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.inneDolegliwosci = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBoxNatezenie = new System.Windows.Forms.ComboBox();
+            this.btnZapiszWszystko = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.panelNiezyt.SuspendLayout();
@@ -273,7 +274,6 @@
             this.panel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViofor)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUDNatezenie)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -383,7 +383,7 @@
             this.panel15.Controls.Add(this.groupBox2);
             this.panel15.Controls.Add(this.groupBox1);
             this.panel15.Controls.Add(this.panel16);
-            this.panel15.Location = new System.Drawing.Point(18, 1908);
+            this.panel15.Location = new System.Drawing.Point(18, 1894);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(494, 931);
             this.panel15.TabIndex = 68;
@@ -946,7 +946,7 @@
             this.panel17.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel17.Controls.Add(this.pictureBox1);
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(518, 1908);
+            this.panel17.Location = new System.Drawing.Point(518, 1894);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(391, 839);
             this.panel17.TabIndex = 70;
@@ -1077,13 +1077,13 @@
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Location = new System.Drawing.Point(20, 1493);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(890, 286);
+            this.panel21.Size = new System.Drawing.Size(890, 279);
             this.panel21.TabIndex = 72;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(82, 245);
+            this.comboBox1.Location = new System.Drawing.Point(82, 240);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(205, 21);
             this.comboBox1.TabIndex = 44;
@@ -1092,7 +1092,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(15, 248);
+            this.label44.Location = new System.Drawing.Point(15, 243);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(42, 13);
             this.label44.TabIndex = 43;
@@ -1114,7 +1114,7 @@
             this.rano,
             this.poPoludniu,
             this.wieczor});
-            this.dataGridViewViofor.Location = new System.Drawing.Point(15, 181);
+            this.dataGridViewViofor.Location = new System.Drawing.Point(15, 178);
             this.dataGridViewViofor.Name = "dataGridViewViofor";
             this.dataGridViewViofor.ReadOnly = true;
             this.dataGridViewViofor.Size = new System.Drawing.Size(655, 46);
@@ -1154,11 +1154,11 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.comboBoxNatezenie);
             this.groupBox7.Controls.Add(this.label21);
-            this.groupBox7.Controls.Add(this.numericUDNatezenie);
             this.groupBox7.Location = new System.Drawing.Point(526, 93);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(143, 72);
+            this.groupBox7.Size = new System.Drawing.Size(143, 69);
             this.groupBox7.TabIndex = 39;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "V";
@@ -1167,24 +1167,11 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(9, 31);
+            this.label21.Location = new System.Drawing.Point(9, 29);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(64, 13);
             this.label21.TabIndex = 43;
             this.label21.Text = "Natężenie";
-            // 
-            // numericUDNatezenie
-            // 
-            this.numericUDNatezenie.DecimalPlaces = 2;
-            this.numericUDNatezenie.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.numericUDNatezenie.Location = new System.Drawing.Point(77, 28);
-            this.numericUDNatezenie.Name = "numericUDNatezenie";
-            this.numericUDNatezenie.Size = new System.Drawing.Size(56, 20);
-            this.numericUDNatezenie.TabIndex = 41;
             // 
             // groupBox6
             // 
@@ -1192,14 +1179,14 @@
             this.groupBox6.Controls.Add(this.label20);
             this.groupBox6.Location = new System.Drawing.Point(373, 93);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(143, 72);
+            this.groupBox6.Size = new System.Drawing.Size(143, 69);
             this.groupBox6.TabIndex = 39;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "IV";
             // 
             // numericUDKrotnosc
             // 
-            this.numericUDKrotnosc.Location = new System.Drawing.Point(78, 28);
+            this.numericUDKrotnosc.Location = new System.Drawing.Point(78, 26);
             this.numericUDKrotnosc.Maximum = new decimal(new int[] {
             4,
             0,
@@ -1213,7 +1200,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(16, 31);
+            this.label20.Location = new System.Drawing.Point(16, 29);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(57, 13);
             this.label20.TabIndex = 42;
@@ -1224,7 +1211,7 @@
             this.groupBox5.Controls.Add(this.comboBoxMx);
             this.groupBox5.Location = new System.Drawing.Point(271, 93);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(92, 72);
+            this.groupBox5.Size = new System.Drawing.Size(92, 69);
             this.groupBox5.TabIndex = 39;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "III";
@@ -1237,7 +1224,7 @@
             "M1",
             "M2",
             "M3"});
-            this.comboBoxMx.Location = new System.Drawing.Point(18, 28);
+            this.comboBoxMx.Location = new System.Drawing.Point(18, 26);
             this.comboBoxMx.Name = "comboBoxMx";
             this.comboBoxMx.Size = new System.Drawing.Size(64, 21);
             this.comboBoxMx.TabIndex = 2;
@@ -1247,7 +1234,7 @@
             this.groupBox4.Controls.Add(this.comboBoxPx);
             this.groupBox4.Location = new System.Drawing.Point(169, 93);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(92, 72);
+            this.groupBox4.Size = new System.Drawing.Size(92, 69);
             this.groupBox4.TabIndex = 39;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "II";
@@ -1260,7 +1247,7 @@
             "P1",
             "P2",
             "P3"});
-            this.comboBoxPx.Location = new System.Drawing.Point(11, 28);
+            this.comboBoxPx.Location = new System.Drawing.Point(11, 26);
             this.comboBoxPx.Name = "comboBoxPx";
             this.comboBoxPx.Size = new System.Drawing.Size(64, 21);
             this.comboBoxPx.TabIndex = 1;
@@ -1270,7 +1257,7 @@
             this.groupBox3.Controls.Add(this.comboBoxMata);
             this.groupBox3.Location = new System.Drawing.Point(15, 93);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(143, 72);
+            this.groupBox3.Size = new System.Drawing.Size(143, 69);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "I";
@@ -1283,7 +1270,7 @@
             "MATA DUŻA A1",
             "MATA DUŻA A2",
             "MATA DUŻA A3"});
-            this.comboBoxMata.Location = new System.Drawing.Point(15, 28);
+            this.comboBoxMata.Location = new System.Drawing.Point(15, 26);
             this.comboBoxMata.Name = "comboBoxMata";
             this.comboBoxMata.Size = new System.Drawing.Size(117, 21);
             this.comboBoxMata.TabIndex = 0;
@@ -2272,7 +2259,7 @@
             this.panel6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(20, 1800);
+            this.panel6.Location = new System.Drawing.Point(20, 1786);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(890, 101);
             this.panel6.TabIndex = 75;
@@ -2605,12 +2592,46 @@
             this.inneDolegliwosci.Name = "inneDolegliwosci";
             this.inneDolegliwosci.Width = 420;
             // 
+            // comboBoxNatezenie
+            // 
+            this.comboBoxNatezenie.FormattingEnabled = true;
+            this.comboBoxNatezenie.Items.AddRange(new object[] {
+            "0.5",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.comboBoxNatezenie.Location = new System.Drawing.Point(78, 26);
+            this.comboBoxNatezenie.Name = "comboBoxNatezenie";
+            this.comboBoxNatezenie.Size = new System.Drawing.Size(48, 21);
+            this.comboBoxNatezenie.TabIndex = 44;
+            // 
+            // btnZapiszWszystko
+            // 
+            this.btnZapiszWszystko.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZapiszWszystko.Location = new System.Drawing.Point(601, 2850);
+            this.btnZapiszWszystko.Name = "btnZapiszWszystko";
+            this.btnZapiszWszystko.Size = new System.Drawing.Size(161, 44);
+            this.btnZapiszWszystko.TabIndex = 77;
+            this.btnZapiszWszystko.Text = "Zapisz";
+            this.btnZapiszWszystko.UseVisualStyleBackColor = true;
+            this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(965, 430);
+            this.Controls.Add(this.btnZapiszWszystko);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
@@ -2675,7 +2696,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViofor)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUDNatezenie)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).EndInit();
@@ -2895,7 +2915,6 @@
         private System.Windows.Forms.GroupBox groupBoxPoraDnia;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.NumericUpDown numericUDNatezenie;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.NumericUpDown numericUDKrotnosc;
         private System.Windows.Forms.Label label20;
@@ -2956,6 +2975,8 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridViewTextBoxColumn inneDolegliwosci;
+        private System.Windows.Forms.ComboBox comboBoxNatezenie;
+        private System.Windows.Forms.Button btnZapiszWszystko;
     }
 }
 
