@@ -130,10 +130,6 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.numericUDKrotnosc = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
-            this.dataGridViewViofor = new System.Windows.Forms.DataGridView();
-            this.rano = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.poPoludniu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wieczor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.comboBoxPx = new System.Windows.Forms.ComboBox();
             this.groupBoxPoraDnia = new System.Windows.Forms.GroupBox();
@@ -247,6 +243,13 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBoxWwieczor = new System.Windows.Forms.TextBox();
+            this.textBoxWRano = new System.Windows.Forms.TextBox();
+            this.textBoxWPoPoludniu = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
@@ -281,7 +284,6 @@
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViofor)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBoxPoraDnia.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -315,6 +317,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel25.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1239,6 +1242,7 @@
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel21.Controls.Add(this.groupBox1);
             this.panel21.Controls.Add(this.btnDodajViofo);
             this.panel21.Controls.Add(this.comboBox1);
             this.panel21.Controls.Add(this.label44);
@@ -1246,7 +1250,6 @@
             this.panel21.Controls.Add(this.groupBox3);
             this.panel21.Controls.Add(this.label22);
             this.panel21.Controls.Add(this.groupBox6);
-            this.panel21.Controls.Add(this.dataGridViewViofor);
             this.panel21.Controls.Add(this.groupBox4);
             this.panel21.Controls.Add(this.groupBoxPoraDnia);
             this.panel21.Controls.Add(this.groupBox5);
@@ -1270,7 +1273,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(82, 240);
+            this.comboBox1.Location = new System.Drawing.Point(85, 249);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(205, 21);
             this.comboBox1.TabIndex = 44;
@@ -1279,7 +1282,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(15, 243);
+            this.label44.Location = new System.Drawing.Point(18, 252);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(42, 13);
             this.label44.TabIndex = 43;
@@ -1391,41 +1394,6 @@
             this.label20.Size = new System.Drawing.Size(57, 13);
             this.label20.TabIndex = 42;
             this.label20.Text = "Krotność";
-            // 
-            // dataGridViewViofor
-            // 
-            this.dataGridViewViofor.AllowUserToDeleteRows = false;
-            this.dataGridViewViofor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewViofor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.rano,
-            this.poPoludniu,
-            this.wieczor});
-            this.dataGridViewViofor.Location = new System.Drawing.Point(15, 178);
-            this.dataGridViewViofor.Name = "dataGridViewViofor";
-            this.dataGridViewViofor.ReadOnly = true;
-            this.dataGridViewViofor.Size = new System.Drawing.Size(655, 46);
-            this.dataGridViewViofor.TabIndex = 41;
-            // 
-            // rano
-            // 
-            this.rano.HeaderText = "Rano";
-            this.rano.Name = "rano";
-            this.rano.ReadOnly = true;
-            this.rano.Width = 203;
-            // 
-            // poPoludniu
-            // 
-            this.poPoludniu.HeaderText = "Po południu";
-            this.poPoludniu.Name = "poPoludniu";
-            this.poPoludniu.ReadOnly = true;
-            this.poPoludniu.Width = 203;
-            // 
-            // wieczor
-            // 
-            this.wieczor.HeaderText = "Wieczorem";
-            this.wieczor.Name = "wieczor";
-            this.wieczor.ReadOnly = true;
-            this.wieczor.Width = 203;
             // 
             // groupBox4
             // 
@@ -2625,12 +2593,76 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(45, 19);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(37, 13);
+            this.label29.TabIndex = 45;
+            this.label29.Text = "Rano";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(259, 19);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(76, 13);
+            this.label35.TabIndex = 46;
+            this.label35.Text = "Po południu";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(472, 19);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(53, 13);
+            this.label36.TabIndex = 47;
+            this.label36.Text = "Wieczór";
+            // 
+            // textBoxWwieczor
+            // 
+            this.textBoxWwieczor.Location = new System.Drawing.Point(474, 35);
+            this.textBoxWwieczor.Name = "textBoxWwieczor";
+            this.textBoxWwieczor.Size = new System.Drawing.Size(144, 20);
+            this.textBoxWwieczor.TabIndex = 48;
+            // 
+            // textBoxWRano
+            // 
+            this.textBoxWRano.Location = new System.Drawing.Point(48, 35);
+            this.textBoxWRano.Name = "textBoxWRano";
+            this.textBoxWRano.Size = new System.Drawing.Size(144, 20);
+            this.textBoxWRano.TabIndex = 49;
+            // 
+            // textBoxWPoPoludniu
+            // 
+            this.textBoxWPoPoludniu.Location = new System.Drawing.Point(261, 35);
+            this.textBoxWPoPoludniu.Name = "textBoxWPoPoludniu";
+            this.textBoxWPoPoludniu.Size = new System.Drawing.Size(144, 20);
+            this.textBoxWPoPoludniu.TabIndex = 50;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBoxWPoPoludniu);
+            this.groupBox1.Controls.Add(this.textBoxWRano);
+            this.groupBox1.Controls.Add(this.textBoxWwieczor);
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.label35);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(16, 168);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(653, 69);
+            this.groupBox1.TabIndex = 51;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Wynik";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(982, 430);
+            this.ClientSize = new System.Drawing.Size(965, 430);
             this.Controls.Add(this.btnZapiszWszystko);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.panel6);
@@ -2704,7 +2736,6 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViofor)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBoxPoraDnia.ResumeLayout(false);
             this.groupBoxPoraDnia.PerformLayout();
@@ -2753,6 +2784,8 @@
             this.panel7.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2921,14 +2954,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridView dataGridViewViofor;
         private System.Windows.Forms.Button btnDodajViofo;
         private System.Windows.Forms.ComboBox comboBoxMata;
         private System.Windows.Forms.ComboBox comboBoxMx;
         private System.Windows.Forms.ComboBox comboBoxPx;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rano;
-        private System.Windows.Forms.DataGridViewTextBoxColumn poPoludniu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wieczor;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.RadioButton radioBtnOstry;
         private System.Windows.Forms.RadioButton radioBtnNiezyt;
@@ -2977,6 +3006,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn inneDolegliwosci;
         private System.Windows.Forms.ComboBox comboBoxNatezenie;
         private System.Windows.Forms.Button btnZapiszWszystko;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBoxWPoPoludniu;
+        private System.Windows.Forms.TextBox textBoxWRano;
+        private System.Windows.Forms.TextBox textBoxWwieczor;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label29;
     }
 }
 

@@ -115,15 +115,15 @@ namespace WindowsFormsApplicationEpikryza
                 //this.dataGridViewViofor.Rows.Add();
                 if (radioBtnRano.Checked)
                 {
-                    this.dataGridViewViofor.Rows[0].Cells["rano"].Value = data;
+                    textBoxWRano.Text = data;
                 }
                 if (radioBtnPopoludniu.Checked)
                 {
-                    dataGridViewViofor.Rows[0].Cells["poPoludniu"].Value = data;
+                    textBoxWPoPoludniu.Text = data;
                 }
                 if (radioBtnWieczor.Checked)
                 {
-                    dataGridViewViofor.Rows[0].Cells["wieczor"].Value = data;
+                    textBoxWwieczor.Text = data;
                 }
                 
             } catch (Exception ex)
@@ -192,15 +192,14 @@ namespace WindowsFormsApplicationEpikryza
             try
             {
                 // Vioforoterapia
-                object rano = this.dataGridViewViofor.Rows[0].Cells["rano"].Value;
-                object popoludniu = this.dataGridViewViofor.Rows[0].Cells["poPoludniu"].Value;
-                object wieczor = this.dataGridViewViofor.Rows[0].Cells["wieczor"].Value;
-                //Console.WriteLine("Rano {0} popoludnie {1} wieczor {2}", rano, popoludniu, wieczor);
+                string rano = textBoxWRano.Text;
+                string poPoludniu = textBoxWPoPoludniu.Text;
+                string wieczor = textBoxWwieczor.Text;
+                //Console.WriteLine("+++Rano {0} popoludnie {1} wieczor {2}", rano, poPoludniu, wieczor);
                 // Wywiad
                 //bool podstawowa = radioBtnPodstawowa.Checked; //? radioBtnPodstawowa.Text : null;
                 //string kontrolna = radioBtnKontrolna.Checked ? radioBtnKontrolna.Text : null;
                 //Console.WriteLine("++++ {0} {1}", podstawowa, kontrolna);
-                
                 string grypy = comboBoxGrypy.Text;
                 string anginy = comboBoxAnginy.Text;
                 GetRadioBtnText(radioBtnOmdleniaTak);
