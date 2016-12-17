@@ -191,15 +191,30 @@ namespace WindowsFormsApplicationEpikryza
         {
             try
             {
+                // Vioforoterapia
                 object rano = this.dataGridViewViofor.Rows[0].Cells["rano"].Value;
                 object popoludniu = this.dataGridViewViofor.Rows[0].Cells["poPoludniu"].Value;
                 object wieczor = this.dataGridViewViofor.Rows[0].Cells["wieczor"].Value;
                 //Console.WriteLine("Rano {0} popoludnie {1} wieczor {2}", rano, popoludniu, wieczor);
-
-
+                // Wywiad
+                //bool podstawowa = radioBtnPodstawowa.Checked; //? radioBtnPodstawowa.Text : null;
+                //string kontrolna = radioBtnKontrolna.Checked ? radioBtnKontrolna.Text : null;
+                //Console.WriteLine("++++ {0} {1}", podstawowa, kontrolna);
+                
+                string grypy = comboBoxGrypy.Text;
+                string anginy = comboBoxAnginy.Text;
+                GetRadioBtnText(radioBtnOmdleniaTak);
+                //object omdlenia = radiobtnom
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void GetRadioBtnText(RadioButton radioBtn)
+        {
+            if (radioBtn.Checked)
+            {
+                string radioBtnText = radioBtn.Text;
             }
         }
     }
