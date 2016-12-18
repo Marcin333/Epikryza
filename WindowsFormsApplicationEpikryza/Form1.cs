@@ -197,12 +197,29 @@ namespace WindowsFormsApplicationEpikryza
                 string wieczor = textBoxWwieczor.Text;
                 //Console.WriteLine("+++Rano {0} popoludnie {1} wieczor {2}", rano, poPoludniu, wieczor);
                 // Wywiad
+                var wizytaPodKon = groupBoxWizyta.Controls.OfType<RadioButton>()
+                                        .FirstOrDefault(r => r.Checked);
+                string grypy = comboBoxGrypy.Text;
+                string anginy = comboBoxAnginy.Text;
+                var omdlenia = groupBoxOmdlenia.Controls.OfType<RadioButton>()
+                                        .FirstOrDefault(r => r.Checked);
+                var nieprzytomny = groupBoxNieprzytomny.Controls.OfType<RadioButton>()
+                                        .FirstOrDefault(r => r.Checked);
+                Object niezyty = comboBoxNiezyty.Text;
+                var niezytRodzaj = groupBoxRodzaje.Controls.OfType<RadioButton>()
+                                      .FirstOrDefault(r => r.Checked);
+                //string omdlenia = radioBtnOmdleniaTak.Checked ? radioBtnOmdleniaTak.Text : radioBtnOmdleniaNie.Text;
+                //string niePrzytomny = radioBtnNieprzytTak.Checked ? radioBtnNieprzytTak.Text : radioBtnNieprzytNie.Text;
+
+                //string nieprzytomnyTak = radioBtnNieprzytTak.Checked.ToString();
                 //bool podstawowa = radioBtnPodstawowa.Checked; //? radioBtnPodstawowa.Text : null;
                 //string kontrolna = radioBtnKontrolna.Checked ? radioBtnKontrolna.Text : null;
                 //Console.WriteLine("++++ {0} {1}", podstawowa, kontrolna);
-                string grypy = comboBoxGrypy.Text;
-                string anginy = comboBoxAnginy.Text;
-                GetRadioBtnText(radioBtnOmdleniaTak);
+                //Note that this requires that all of the radio buttons be directly in the same container(eg, Panel or Form), and that there is only one group in the container. If that is not the case, you could make List< RadioButton > s in your constructor for each group, then write list.FirstOrDefault(r => r.Checked).
+
+
+                  Console.WriteLine("+++ Niezyt rodzaj {0} omdlenia {1} nieprzytomny {2} wizyta Pod Kon {3}", niezytRodzaj.Text, omdlenia.Text, nieprzytomny.Text, wizytaPodKon.Text);
+                //GetRadioBtnText(radioBtnOmdleniaTak);
                 //object omdlenia = radiobtnom
             } catch (Exception ex)
             {

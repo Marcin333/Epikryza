@@ -56,16 +56,16 @@
             this.label32 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.panelNiezyt = new System.Windows.Forms.Panel();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.groupBoxRodzaje = new System.Windows.Forms.GroupBox();
             this.radioBtnOstry = new System.Windows.Forms.RadioButton();
             this.radioBtnNiezyt = new System.Windows.Forms.RadioButton();
             this.radioBtnPrzewlekly = new System.Windows.Forms.RadioButton();
             this.comboBoxNiezyty = new System.Windows.Forms.ComboBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBoxNieprzytomny = new System.Windows.Forms.GroupBox();
             this.radioBtnNieprzytNie = new System.Windows.Forms.RadioButton();
             this.radioBtnNieprzytTak = new System.Windows.Forms.RadioButton();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBoxOmdlenia = new System.Windows.Forms.GroupBox();
             this.radioBtnOmdleniaNie = new System.Windows.Forms.RadioButton();
             this.radioBtnOmdleniaTak = new System.Windows.Forms.RadioButton();
             this.groupBoxAnginy = new System.Windows.Forms.GroupBox();
@@ -118,6 +118,13 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button8 = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxWPoPoludniu = new System.Windows.Forms.TextBox();
+            this.textBoxWRano = new System.Windows.Forms.TextBox();
+            this.textBoxWwieczor = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.btnDodajViofo = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label44 = new System.Windows.Forms.Label();
@@ -243,13 +250,6 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBoxWwieczor = new System.Windows.Forms.TextBox();
-            this.textBoxWRano = new System.Windows.Forms.TextBox();
-            this.textBoxWPoPoludniu = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
@@ -258,9 +258,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.panelNiezyt.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox9.SuspendLayout();
+            this.groupBoxRodzaje.SuspendLayout();
+            this.groupBoxNieprzytomny.SuspendLayout();
+            this.groupBoxOmdlenia.SuspendLayout();
             this.groupBoxAnginy.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBoxWizyta.SuspendLayout();
@@ -280,6 +280,7 @@
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.panel21.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -317,7 +318,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -380,8 +380,8 @@
             this.panel15.Controls.Add(this.label32);
             this.panel15.Controls.Add(this.comboBox7);
             this.panel15.Controls.Add(this.panelNiezyt);
-            this.panel15.Controls.Add(this.groupBox10);
-            this.panel15.Controls.Add(this.groupBox9);
+            this.panel15.Controls.Add(this.groupBoxNieprzytomny);
+            this.panel15.Controls.Add(this.groupBoxOmdlenia);
             this.panel15.Controls.Add(this.groupBoxAnginy);
             this.panel15.Controls.Add(this.groupBox2);
             this.panel15.Controls.Add(this.groupBoxWizyta);
@@ -569,7 +569,7 @@
             // 
             // panelNiezyt
             // 
-            this.panelNiezyt.Controls.Add(this.groupBox11);
+            this.panelNiezyt.Controls.Add(this.groupBoxRodzaje);
             this.panelNiezyt.Controls.Add(this.comboBoxNiezyty);
             this.panelNiezyt.Controls.Add(this.label41);
             this.panelNiezyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -579,17 +579,17 @@
             this.panelNiezyt.TabIndex = 85;
             this.panelNiezyt.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNiezyt_Paint);
             // 
-            // groupBox11
+            // groupBoxRodzaje
             // 
-            this.groupBox11.Controls.Add(this.radioBtnOstry);
-            this.groupBox11.Controls.Add(this.radioBtnNiezyt);
-            this.groupBox11.Controls.Add(this.radioBtnPrzewlekly);
-            this.groupBox11.Location = new System.Drawing.Point(177, 7);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(277, 55);
-            this.groupBox11.TabIndex = 84;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Rodzaje";
+            this.groupBoxRodzaje.Controls.Add(this.radioBtnOstry);
+            this.groupBoxRodzaje.Controls.Add(this.radioBtnNiezyt);
+            this.groupBoxRodzaje.Controls.Add(this.radioBtnPrzewlekly);
+            this.groupBoxRodzaje.Location = new System.Drawing.Point(177, 7);
+            this.groupBoxRodzaje.Name = "groupBoxRodzaje";
+            this.groupBoxRodzaje.Size = new System.Drawing.Size(277, 55);
+            this.groupBoxRodzaje.TabIndex = 84;
+            this.groupBoxRodzaje.TabStop = false;
+            this.groupBoxRodzaje.Text = "Rodzaje";
             // 
             // radioBtnOstry
             // 
@@ -640,7 +640,7 @@
             "Moczowy",
             "Rozrodczy",
             "Skórny"});
-            this.comboBoxNiezyty.Location = new System.Drawing.Point(11, 28);
+            this.comboBoxNiezyty.Location = new System.Drawing.Point(11, 29);
             this.comboBoxNiezyty.Name = "comboBoxNiezyty";
             this.comboBoxNiezyty.Size = new System.Drawing.Size(139, 21);
             this.comboBoxNiezyty.TabIndex = 79;
@@ -656,17 +656,17 @@
             this.label41.TabIndex = 78;
             this.label41.Text = "Nieżyty";
             // 
-            // groupBox10
+            // groupBoxNieprzytomny
             // 
-            this.groupBox10.Controls.Add(this.radioBtnNieprzytNie);
-            this.groupBox10.Controls.Add(this.radioBtnNieprzytTak);
-            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(380, 87);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(101, 69);
-            this.groupBox10.TabIndex = 81;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Nieprzytomny";
+            this.groupBoxNieprzytomny.Controls.Add(this.radioBtnNieprzytNie);
+            this.groupBoxNieprzytomny.Controls.Add(this.radioBtnNieprzytTak);
+            this.groupBoxNieprzytomny.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxNieprzytomny.Location = new System.Drawing.Point(380, 87);
+            this.groupBoxNieprzytomny.Name = "groupBoxNieprzytomny";
+            this.groupBoxNieprzytomny.Size = new System.Drawing.Size(101, 69);
+            this.groupBoxNieprzytomny.TabIndex = 81;
+            this.groupBoxNieprzytomny.TabStop = false;
+            this.groupBoxNieprzytomny.Text = "Nieprzytomny";
             // 
             // radioBtnNieprzytNie
             // 
@@ -690,17 +690,17 @@
             this.radioBtnNieprzytTak.Text = "Tak";
             this.radioBtnNieprzytTak.UseVisualStyleBackColor = true;
             // 
-            // groupBox9
+            // groupBoxOmdlenia
             // 
-            this.groupBox9.Controls.Add(this.radioBtnOmdleniaNie);
-            this.groupBox9.Controls.Add(this.radioBtnOmdleniaTak);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(270, 87);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(101, 69);
-            this.groupBox9.TabIndex = 82;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Omdlenia";
+            this.groupBoxOmdlenia.Controls.Add(this.radioBtnOmdleniaNie);
+            this.groupBoxOmdlenia.Controls.Add(this.radioBtnOmdleniaTak);
+            this.groupBoxOmdlenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxOmdlenia.Location = new System.Drawing.Point(270, 87);
+            this.groupBoxOmdlenia.Name = "groupBoxOmdlenia";
+            this.groupBoxOmdlenia.Size = new System.Drawing.Size(101, 69);
+            this.groupBoxOmdlenia.TabIndex = 82;
+            this.groupBoxOmdlenia.TabStop = false;
+            this.groupBoxOmdlenia.Text = "Omdlenia";
             // 
             // radioBtnOmdleniaNie
             // 
@@ -1259,6 +1259,70 @@
             this.panel21.Size = new System.Drawing.Size(890, 279);
             this.panel21.TabIndex = 72;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBoxWPoPoludniu);
+            this.groupBox1.Controls.Add(this.textBoxWRano);
+            this.groupBox1.Controls.Add(this.textBoxWwieczor);
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.label35);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(16, 168);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(653, 69);
+            this.groupBox1.TabIndex = 51;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Wynik";
+            // 
+            // textBoxWPoPoludniu
+            // 
+            this.textBoxWPoPoludniu.Location = new System.Drawing.Point(261, 35);
+            this.textBoxWPoPoludniu.Name = "textBoxWPoPoludniu";
+            this.textBoxWPoPoludniu.Size = new System.Drawing.Size(144, 20);
+            this.textBoxWPoPoludniu.TabIndex = 50;
+            // 
+            // textBoxWRano
+            // 
+            this.textBoxWRano.Location = new System.Drawing.Point(48, 35);
+            this.textBoxWRano.Name = "textBoxWRano";
+            this.textBoxWRano.Size = new System.Drawing.Size(144, 20);
+            this.textBoxWRano.TabIndex = 49;
+            // 
+            // textBoxWwieczor
+            // 
+            this.textBoxWwieczor.Location = new System.Drawing.Point(474, 35);
+            this.textBoxWwieczor.Name = "textBoxWwieczor";
+            this.textBoxWwieczor.Size = new System.Drawing.Size(144, 20);
+            this.textBoxWwieczor.TabIndex = 48;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(472, 19);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(53, 13);
+            this.label36.TabIndex = 47;
+            this.label36.Text = "Wieczór";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(259, 19);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(76, 13);
+            this.label35.TabIndex = 46;
+            this.label35.Text = "Po południu";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(45, 19);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(37, 13);
+            this.label29.TabIndex = 45;
+            this.label29.Text = "Rano";
+            // 
             // btnDodajViofo
             // 
             this.btnDodajViofo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1273,6 +1337,8 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Wiadro zimnej wody z rana"});
             this.comboBox1.Location = new System.Drawing.Point(85, 249);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(205, 21);
@@ -2593,70 +2659,6 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(45, 19);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(37, 13);
-            this.label29.TabIndex = 45;
-            this.label29.Text = "Rano";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(259, 19);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(76, 13);
-            this.label35.TabIndex = 46;
-            this.label35.Text = "Po południu";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(472, 19);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(53, 13);
-            this.label36.TabIndex = 47;
-            this.label36.Text = "Wieczór";
-            // 
-            // textBoxWwieczor
-            // 
-            this.textBoxWwieczor.Location = new System.Drawing.Point(474, 35);
-            this.textBoxWwieczor.Name = "textBoxWwieczor";
-            this.textBoxWwieczor.Size = new System.Drawing.Size(144, 20);
-            this.textBoxWwieczor.TabIndex = 48;
-            // 
-            // textBoxWRano
-            // 
-            this.textBoxWRano.Location = new System.Drawing.Point(48, 35);
-            this.textBoxWRano.Name = "textBoxWRano";
-            this.textBoxWRano.Size = new System.Drawing.Size(144, 20);
-            this.textBoxWRano.TabIndex = 49;
-            // 
-            // textBoxWPoPoludniu
-            // 
-            this.textBoxWPoPoludniu.Location = new System.Drawing.Point(261, 35);
-            this.textBoxWPoPoludniu.Name = "textBoxWPoPoludniu";
-            this.textBoxWPoPoludniu.Size = new System.Drawing.Size(144, 20);
-            this.textBoxWPoPoludniu.TabIndex = 50;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBoxWPoPoludniu);
-            this.groupBox1.Controls.Add(this.textBoxWRano);
-            this.groupBox1.Controls.Add(this.textBoxWwieczor);
-            this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Controls.Add(this.label35);
-            this.groupBox1.Controls.Add(this.label29);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 168);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(653, 69);
-            this.groupBox1.TabIndex = 51;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Wynik";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2695,12 +2697,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.panelNiezyt.ResumeLayout(false);
             this.panelNiezyt.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
+            this.groupBoxRodzaje.ResumeLayout(false);
+            this.groupBoxRodzaje.PerformLayout();
+            this.groupBoxNieprzytomny.ResumeLayout(false);
+            this.groupBoxNieprzytomny.PerformLayout();
+            this.groupBoxOmdlenia.ResumeLayout(false);
+            this.groupBoxOmdlenia.PerformLayout();
             this.groupBoxAnginy.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBoxWizyta.ResumeLayout(false);
@@ -2730,6 +2732,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -2784,8 +2788,6 @@
             this.panel7.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2958,14 +2960,14 @@
         private System.Windows.Forms.ComboBox comboBoxMata;
         private System.Windows.Forms.ComboBox comboBoxMx;
         private System.Windows.Forms.ComboBox comboBoxPx;
-        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox groupBoxRodzaje;
         private System.Windows.Forms.RadioButton radioBtnOstry;
         private System.Windows.Forms.RadioButton radioBtnNiezyt;
         private System.Windows.Forms.RadioButton radioBtnPrzewlekly;
-        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBoxNieprzytomny;
         private System.Windows.Forms.RadioButton radioBtnNieprzytNie;
         private System.Windows.Forms.RadioButton radioBtnNieprzytTak;
-        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox groupBoxOmdlenia;
         private System.Windows.Forms.RadioButton radioBtnOmdleniaNie;
         private System.Windows.Forms.RadioButton radioBtnOmdleniaTak;
         private System.Windows.Forms.GroupBox groupBoxAnginy;
