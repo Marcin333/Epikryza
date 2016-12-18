@@ -208,6 +208,20 @@ namespace WindowsFormsApplicationEpikryza
                 Object niezyty = comboBoxNiezyty.Text;
                 var niezytRodzaj = groupBoxRodzaje.Controls.OfType<RadioButton>()
                                       .FirstOrDefault(r => r.Checked);
+                //int counter;
+                //int alergenyTotal = 0;
+                
+                foreach (DataGridViewRow row in dataGridViewSzpital.Rows)
+                {
+                    if (row.Cells["szpital"].Value != null && row.Cells["ileRazySzpital"].Value != null)
+                    {
+                        if (row.Cells["szpital"].Value.ToString().Length != 0 && row.Cells["ileRazySzpital"].Value.ToString().Length != 0)
+                        {
+                            Console.Write("+++ {0} {1}", row.Cells["szpital"].Value, row.Cells["ileRazySzpital"].Value);
+                        }
+                    }
+                }
+                  
                 //string omdlenia = radioBtnOmdleniaTak.Checked ? radioBtnOmdleniaTak.Text : radioBtnOmdleniaNie.Text;
                 //string niePrzytomny = radioBtnNieprzytTak.Checked ? radioBtnNieprzytTak.Text : radioBtnNieprzytNie.Text;
 
@@ -218,7 +232,7 @@ namespace WindowsFormsApplicationEpikryza
                 //Note that this requires that all of the radio buttons be directly in the same container(eg, Panel or Form), and that there is only one group in the container. If that is not the case, you could make List< RadioButton > s in your constructor for each group, then write list.FirstOrDefault(r => r.Checked).
 
 
-                  Console.WriteLine("+++ Niezyt rodzaj {0} omdlenia {1} nieprzytomny {2} wizyta Pod Kon {3}", niezytRodzaj.Text, omdlenia.Text, nieprzytomny.Text, wizytaPodKon.Text);
+                Console.Write("+++ Niezyt rodzaj {0} omdlenia {1} nieprzytomny {2} wizyta Pod Kon {3}", niezytRodzaj.Text, omdlenia.Text, nieprzytomny.Text, wizytaPodKon.Text);
                 //GetRadioBtnText(radioBtnOmdleniaTak);
                 //object omdlenia = radiobtnom
             } catch (Exception ex)
@@ -232,6 +246,17 @@ namespace WindowsFormsApplicationEpikryza
             {
                 string radioBtnText = radioBtn.Text;
             }
+        }
+
+        private void DodajSzpital_Click(object sender, EventArgs e)
+        {   
+            if (!(String.IsNullOrEmpty(textBoxSzpital.Text)) && !(String.IsNullOrEmpty(comboBoxIleRazySzpital.Text)))
+            {
+                this.dataGridViewSzpital.Rows.Add(textBoxSzpital.Text, comboBoxIleRazySzpital.Text);
+                textBoxSzpital.Text = String.Empty;
+                comboBoxIleRazySzpital.Text = String.Empty;
+            }
+            
         }
     }
 }
