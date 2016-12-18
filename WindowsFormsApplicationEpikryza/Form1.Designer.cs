@@ -35,18 +35,27 @@
             this.IIIfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.IVfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.bole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSporadyczne = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrzewlekle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colOstre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.DodajSzpital = new System.Windows.Forms.Button();
+            this.comboBoxIleRazySzpital = new System.Windows.Forms.ComboBox();
+            this.textBoxSzpital = new System.Windows.Forms.TextBox();
             this.dataGridViewSzpital = new System.Windows.Forms.DataGridView();
+            this.szpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ileRazySzpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.lekiWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.inneDolegliwosci = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.bole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSporadyczne = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colPrzewlekle = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colOstre = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -248,19 +257,26 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBoxSzpital = new System.Windows.Forms.TextBox();
-            this.comboBoxIleRazySzpital = new System.Windows.Forms.ComboBox();
-            this.szpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ileRazySzpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DodajSzpital = new System.Windows.Forms.Button();
+            this.checkBoxSporadycznie = new System.Windows.Forms.CheckBox();
+            this.checkBoxPrzewlekle = new System.Windows.Forms.CheckBox();
+            this.checkBoxOstre = new System.Windows.Forms.CheckBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSzpital)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.panelNiezyt.SuspendLayout();
             this.groupBoxRodzaje.SuspendLayout();
             this.groupBoxNieprzytomny.SuspendLayout();
@@ -322,7 +338,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.groupBox8.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -373,11 +390,10 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel15.Controls.Add(this.groupBox11);
+            this.panel15.Controls.Add(this.groupBox9);
             this.panel15.Controls.Add(this.groupBox8);
-            this.panel15.Controls.Add(this.dataGridView9);
-            this.panel15.Controls.Add(this.dataGridView8);
             this.panel15.Controls.Add(this.dataGridView7);
-            this.panel15.Controls.Add(this.dataGridView6);
             this.panel15.Controls.Add(this.label34);
             this.panel15.Controls.Add(this.label33);
             this.panel15.Controls.Add(this.textBox7);
@@ -391,69 +407,42 @@
             this.panel15.Controls.Add(this.groupBox2);
             this.panel15.Controls.Add(this.groupBoxWizyta);
             this.panel15.Controls.Add(this.panel16);
+            this.panel15.Controls.Add(this.groupBox10);
             this.panel15.Location = new System.Drawing.Point(18, 1895);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(494, 983);
+            this.panel15.Size = new System.Drawing.Size(494, 1230);
             this.panel15.TabIndex = 68;
             // 
-            // dataGridViewSzpital
+            // groupBox9
             // 
-            this.dataGridViewSzpital.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSzpital.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.szpital,
-            this.ileRazySzpital});
-            this.dataGridViewSzpital.Location = new System.Drawing.Point(9, 51);
-            this.dataGridViewSzpital.Name = "dataGridViewSzpital";
-            this.dataGridViewSzpital.Size = new System.Drawing.Size(450, 136);
-            this.dataGridViewSzpital.TabIndex = 97;
+            this.groupBox9.Controls.Add(this.checkBoxOstre);
+            this.groupBox9.Controls.Add(this.checkBoxPrzewlekle);
+            this.groupBox9.Controls.Add(this.checkBoxSporadycznie);
+            this.groupBox9.Controls.Add(this.button1);
+            this.groupBox9.Controls.Add(this.textBox4);
+            this.groupBox9.Controls.Add(this.dataGridView6);
+            this.groupBox9.Location = new System.Drawing.Point(12, 508);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(470, 260);
+            this.groupBox9.TabIndex = 99;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Bóle";
             // 
-            // dataGridView9
+            // button1
             // 
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1});
-            this.dataGridView9.Location = new System.Drawing.Point(249, 833);
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.Size = new System.Drawing.Size(230, 160);
-            this.dataGridView9.TabIndex = 95;
+            this.button1.Location = new System.Drawing.Point(362, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 20);
+            this.button1.TabIndex = 103;
+            this.button1.Text = "Dodaj";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // textBox4
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Suplementy";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 185;
-            // 
-            // dataGridView8
-            // 
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lekiWywiad});
-            this.dataGridView8.Location = new System.Drawing.Point(14, 833);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(230, 160);
-            this.dataGridView8.TabIndex = 94;
-            // 
-            // lekiWywiad
-            // 
-            this.lekiWywiad.HeaderText = "Leki";
-            this.lekiWywiad.Name = "lekiWywiad";
-            this.lekiWywiad.Width = 185;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.inneDolegliwosci});
-            this.dataGridView7.Location = new System.Drawing.Point(15, 727);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(464, 160);
-            this.dataGridView7.TabIndex = 93;
-            // 
-            // inneDolegliwosci
-            // 
-            this.inneDolegliwosci.HeaderText = "Inne dolegliwości/TOP TRENDY";
-            this.inneDolegliwosci.Name = "inneDolegliwosci";
-            this.inneDolegliwosci.Width = 420;
+            this.textBox4.Location = new System.Drawing.Point(10, 21);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(238, 20);
+            this.textBox4.TabIndex = 101;
             // 
             // dataGridView6
             // 
@@ -463,9 +452,9 @@
             this.colSporadyczne,
             this.colPrzewlekle,
             this.colOstre});
-            this.dataGridView6.Location = new System.Drawing.Point(15, 551);
+            this.dataGridView6.Location = new System.Drawing.Point(10, 74);
             this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(463, 160);
+            this.dataGridView6.Size = new System.Drawing.Size(450, 175);
             this.dataGridView6.TabIndex = 92;
             // 
             // bole
@@ -479,7 +468,6 @@
             this.colSporadyczne.HeaderText = "Sporadycznie";
             this.colSporadyczne.Name = "colSporadyczne";
             this.colSporadyczne.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colSporadyczne.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.colSporadyczne.Width = 72;
             // 
             // colPrzewlekle
@@ -487,14 +475,133 @@
             this.colPrzewlekle.HeaderText = "Przewlekłe";
             this.colPrzewlekle.Name = "colPrzewlekle";
             this.colPrzewlekle.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colPrzewlekle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.colPrzewlekle.Width = 72;
             // 
             // colOstre
             // 
             this.colOstre.HeaderText = "Ostre";
             this.colOstre.Name = "colOstre";
+            this.colOstre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colOstre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.colOstre.Width = 72;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.DodajSzpital);
+            this.groupBox8.Controls.Add(this.comboBoxIleRazySzpital);
+            this.groupBox8.Controls.Add(this.textBoxSzpital);
+            this.groupBox8.Controls.Add(this.dataGridViewSzpital);
+            this.groupBox8.Location = new System.Drawing.Point(11, 305);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(470, 197);
+            this.groupBox8.TabIndex = 98;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Szpital";
+            // 
+            // DodajSzpital
+            // 
+            this.DodajSzpital.Location = new System.Drawing.Point(364, 20);
+            this.DodajSzpital.Name = "DodajSzpital";
+            this.DodajSzpital.Size = new System.Drawing.Size(95, 20);
+            this.DodajSzpital.TabIndex = 100;
+            this.DodajSzpital.Text = "Dodaj";
+            this.DodajSzpital.UseVisualStyleBackColor = true;
+            this.DodajSzpital.Click += new System.EventHandler(this.DodajSzpital_Click);
+            // 
+            // comboBoxIleRazySzpital
+            // 
+            this.comboBoxIleRazySzpital.FormattingEnabled = true;
+            this.comboBoxIleRazySzpital.Items.AddRange(new object[] {
+            "1x",
+            "2x",
+            "3x",
+            "4x",
+            "5x",
+            "Wielokrotnie"});
+            this.comboBoxIleRazySzpital.Location = new System.Drawing.Point(275, 20);
+            this.comboBoxIleRazySzpital.Name = "comboBoxIleRazySzpital";
+            this.comboBoxIleRazySzpital.Size = new System.Drawing.Size(64, 21);
+            this.comboBoxIleRazySzpital.TabIndex = 99;
+            // 
+            // textBoxSzpital
+            // 
+            this.textBoxSzpital.Location = new System.Drawing.Point(12, 20);
+            this.textBoxSzpital.Name = "textBoxSzpital";
+            this.textBoxSzpital.Size = new System.Drawing.Size(238, 20);
+            this.textBoxSzpital.TabIndex = 98;
+            // 
+            // dataGridViewSzpital
+            // 
+            this.dataGridViewSzpital.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSzpital.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.szpital,
+            this.ileRazySzpital});
+            this.dataGridViewSzpital.Location = new System.Drawing.Point(11, 51);
+            this.dataGridViewSzpital.Name = "dataGridViewSzpital";
+            this.dataGridViewSzpital.Size = new System.Drawing.Size(450, 136);
+            this.dataGridViewSzpital.TabIndex = 97;
+            // 
+            // szpital
+            // 
+            this.szpital.HeaderText = "Szpital";
+            this.szpital.Name = "szpital";
+            this.szpital.Width = 200;
+            // 
+            // ileRazySzpital
+            // 
+            this.ileRazySzpital.HeaderText = "Ilość";
+            this.ileRazySzpital.Name = "ileRazySzpital";
+            this.ileRazySzpital.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ileRazySzpital.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ileRazySzpital.Width = 60;
+            // 
+            // dataGridView9
+            // 
+            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1});
+            this.dataGridView9.Location = new System.Drawing.Point(237, 50);
+            this.dataGridView9.Name = "dataGridView9";
+            this.dataGridView9.Size = new System.Drawing.Size(224, 160);
+            this.dataGridView9.TabIndex = 95;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Suplementy";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 185;
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lekiWywiad});
+            this.dataGridView8.Location = new System.Drawing.Point(12, 50);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.Size = new System.Drawing.Size(220, 160);
+            this.dataGridView8.TabIndex = 94;
+            // 
+            // lekiWywiad
+            // 
+            this.lekiWywiad.HeaderText = "Leki";
+            this.lekiWywiad.Name = "lekiWywiad";
+            this.lekiWywiad.Width = 185;
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.inneDolegliwosci});
+            this.dataGridView7.Location = new System.Drawing.Point(23, 829);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(449, 160);
+            this.dataGridView7.TabIndex = 93;
+            // 
+            // inneDolegliwosci
+            // 
+            this.inneDolegliwosci.HeaderText = "Inne dolegliwości/TOP TRENDY";
+            this.inneDolegliwosci.Name = "inneDolegliwosci";
+            this.inneDolegliwosci.Width = 420;
             // 
             // label34
             // 
@@ -1081,7 +1188,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.Control;
-            this.panel10.Location = new System.Drawing.Point(22, 2962);
+            this.panel10.Location = new System.Drawing.Point(22, 3135);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(871, 56);
             this.panel10.TabIndex = 69;
@@ -2581,9 +2688,9 @@
             this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label19.Location = new System.Drawing.Point(4, 6);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(114, 13);
+            this.label19.Size = new System.Drawing.Size(64, 13);
             this.label19.TabIndex = 0;
-            this.label19.Text = "VIOFORETARAPIA";
+            this.label19.Text = "Ordynacja";
             // 
             // panel25
             // 
@@ -2591,17 +2698,17 @@
             this.panel25.Controls.Add(this.label43);
             this.panel25.Controls.Add(this.label42);
             this.panel25.Controls.Add(this.dateTimePicker1);
-            this.panel25.Location = new System.Drawing.Point(20, 2884);
+            this.panel25.Location = new System.Drawing.Point(518, 2739);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(488, 101);
+            this.panel25.Size = new System.Drawing.Size(392, 139);
             this.panel25.TabIndex = 76;
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(168, 46);
+            this.textBox15.Location = new System.Drawing.Point(70, 46);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(314, 39);
+            this.textBox15.Size = new System.Drawing.Size(306, 39);
             this.textBox15.TabIndex = 62;
             // 
             // label43
@@ -2609,7 +2716,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label43.Location = new System.Drawing.Point(119, 49);
+            this.label43.Location = new System.Drawing.Point(21, 49);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(42, 13);
             this.label43.TabIndex = 61;
@@ -2645,64 +2752,109 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
-            // groupBox8
+            // checkBoxSporadycznie
             // 
-            this.groupBox8.Controls.Add(this.DodajSzpital);
-            this.groupBox8.Controls.Add(this.comboBoxIleRazySzpital);
-            this.groupBox8.Controls.Add(this.textBoxSzpital);
-            this.groupBox8.Controls.Add(this.dataGridViewSzpital);
-            this.groupBox8.Location = new System.Drawing.Point(11, 305);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(470, 197);
-            this.groupBox8.TabIndex = 98;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Szpital";
+            this.checkBoxSporadycznie.AutoSize = true;
+            this.checkBoxSporadycznie.Location = new System.Drawing.Point(12, 51);
+            this.checkBoxSporadycznie.Name = "checkBoxSporadycznie";
+            this.checkBoxSporadycznie.Size = new System.Drawing.Size(90, 17);
+            this.checkBoxSporadycznie.TabIndex = 104;
+            this.checkBoxSporadycznie.Text = "Sporadycznie";
+            this.checkBoxSporadycznie.UseVisualStyleBackColor = true;
             // 
-            // textBoxSzpital
+            // checkBoxPrzewlekle
             // 
-            this.textBoxSzpital.Location = new System.Drawing.Point(12, 20);
-            this.textBoxSzpital.Name = "textBoxSzpital";
-            this.textBoxSzpital.Size = new System.Drawing.Size(238, 20);
-            this.textBoxSzpital.TabIndex = 98;
+            this.checkBoxPrzewlekle.AutoSize = true;
+            this.checkBoxPrzewlekle.Location = new System.Drawing.Point(110, 49);
+            this.checkBoxPrzewlekle.Name = "checkBoxPrzewlekle";
+            this.checkBoxPrzewlekle.Size = new System.Drawing.Size(79, 17);
+            this.checkBoxPrzewlekle.TabIndex = 105;
+            this.checkBoxPrzewlekle.Text = "Przewlekłe";
+            this.checkBoxPrzewlekle.UseVisualStyleBackColor = true;
             // 
-            // comboBoxIleRazySzpital
+            // checkBoxOstre
             // 
-            this.comboBoxIleRazySzpital.FormattingEnabled = true;
-            this.comboBoxIleRazySzpital.Items.AddRange(new object[] {
-            "1x",
-            "2x",
-            "3x",
-            "4x",
-            "5x",
-            "Wielokrotnie"});
-            this.comboBoxIleRazySzpital.Location = new System.Drawing.Point(275, 20);
-            this.comboBoxIleRazySzpital.Name = "comboBoxIleRazySzpital";
-            this.comboBoxIleRazySzpital.Size = new System.Drawing.Size(64, 21);
-            this.comboBoxIleRazySzpital.TabIndex = 99;
+            this.checkBoxOstre.AutoSize = true;
+            this.checkBoxOstre.Location = new System.Drawing.Point(197, 49);
+            this.checkBoxOstre.Name = "checkBoxOstre";
+            this.checkBoxOstre.Size = new System.Drawing.Size(51, 17);
+            this.checkBoxOstre.TabIndex = 106;
+            this.checkBoxOstre.Text = "Ostre";
+            this.checkBoxOstre.UseVisualStyleBackColor = true;
             // 
-            // szpital
+            // textBox8
             // 
-            this.szpital.HeaderText = "Szpital";
-            this.szpital.Name = "szpital";
-            this.szpital.Width = 200;
+            this.textBox8.Location = new System.Drawing.Point(11, 20);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(237, 20);
+            this.textBox8.TabIndex = 100;
             // 
-            // ileRazySzpital
+            // button10
             // 
-            this.ileRazySzpital.HeaderText = "Ilość";
-            this.ileRazySzpital.Name = "ileRazySzpital";
-            this.ileRazySzpital.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ileRazySzpital.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ileRazySzpital.Width = 60;
+            this.button10.Location = new System.Drawing.Point(358, 20);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(95, 20);
+            this.button10.TabIndex = 104;
+            this.button10.Text = "Dodaj";
+            this.button10.UseVisualStyleBackColor = true;
             // 
-            // DodajSzpital
+            // groupBox10
             // 
-            this.DodajSzpital.Location = new System.Drawing.Point(364, 20);
-            this.DodajSzpital.Name = "DodajSzpital";
-            this.DodajSzpital.Size = new System.Drawing.Size(95, 20);
-            this.DodajSzpital.TabIndex = 100;
-            this.DodajSzpital.Text = "Dodaj";
-            this.DodajSzpital.UseVisualStyleBackColor = true;
-            this.DodajSzpital.Click += new System.EventHandler(this.DodajSzpital_Click);
+            this.groupBox10.Controls.Add(this.button10);
+            this.groupBox10.Controls.Add(this.textBox8);
+            this.groupBox10.Location = new System.Drawing.Point(13, 780);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(467, 219);
+            this.groupBox10.TabIndex = 105;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Top trendy";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(177, 20);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(54, 20);
+            this.button11.TabIndex = 106;
+            this.button11.Text = "Dodaj";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(13, 20);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(159, 20);
+            this.textBox9.TabIndex = 105;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.button12);
+            this.groupBox11.Controls.Add(this.textBox10);
+            this.groupBox11.Controls.Add(this.button11);
+            this.groupBox11.Controls.Add(this.textBox9);
+            this.groupBox11.Controls.Add(this.dataGridView9);
+            this.groupBox11.Controls.Add(this.dataGridView8);
+            this.groupBox11.Location = new System.Drawing.Point(11, 1006);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(469, 221);
+            this.groupBox11.TabIndex = 107;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Leki/Suplementy";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(400, 20);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(54, 20);
+            this.button12.TabIndex = 108;
+            this.button12.Text = "Dodaj";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(236, 20);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(159, 20);
+            this.textBox10.TabIndex = 107;
             // 
             // Form1
             // 
@@ -2735,11 +2887,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSzpital)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.panelNiezyt.ResumeLayout(false);
             this.panelNiezyt.PerformLayout();
             this.groupBoxRodzaje.ResumeLayout(false);
@@ -2833,8 +2989,10 @@
             this.panel7.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3031,10 +3189,6 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bole;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colSporadyczne;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colPrzewlekle;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colOstre;
         private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.DataGridView dataGridView9;
@@ -3066,6 +3220,24 @@
         private System.Windows.Forms.TextBox textBoxSzpital;
         private System.Windows.Forms.DataGridViewTextBoxColumn szpital;
         private System.Windows.Forms.DataGridViewTextBoxColumn ileRazySzpital;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSporadyczne;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrzewlekle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colOstre;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.CheckBox checkBoxOstre;
+        private System.Windows.Forms.CheckBox checkBoxPrzewlekle;
+        private System.Windows.Forms.CheckBox checkBoxSporadycznie;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TextBox textBox10;
     }
 }
 
