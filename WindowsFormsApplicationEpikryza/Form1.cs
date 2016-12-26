@@ -258,5 +258,41 @@ namespace WindowsFormsApplicationEpikryza
             }
             
         }
+
+        private void btnDodajBol_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(textBoxBole.Text)))
+            {
+                dataGridViewBole.Rows.Add(textBoxBole.Text, 
+                    checkBoxSporadycznie.Checked ? checkBoxSporadycznie.Text : null,
+                    checkBoxPrzewlekle.Checked ? checkBoxPrzewlekle.Text : null,
+                    checkBoxOstre.Checked ? checkBoxOstre.Text : null);
+            }
+            textBoxBole.Text = String.Empty;
+            checkBoxSporadycznie.Checked = false;
+            checkBoxSporadycznie.BackColor = SystemColors.GradientInactiveCaption;
+            checkBoxPrzewlekle.Checked = false;
+            checkBoxPrzewlekle.BackColor = SystemColors.GradientInactiveCaption;
+            checkBoxOstre.Checked = false;
+            checkBoxOstre.BackColor = SystemColors.GradientInactiveCaption;
+        }
+
+        private void checkBoxSporadycznie_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = Color.Yellow;
+        }
+
+        private void checkBoxPrzewlekle_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = Color.Orange;
+        }
+
+        private void checkBoxOstre_CheckedChanged(object sender, EventArgs e)
+        {
+            Control ctrl = ((Control)sender);
+            ctrl.BackColor = Color.Red;
+        }
     }
 }
