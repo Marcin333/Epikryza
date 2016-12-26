@@ -294,5 +294,32 @@ namespace WindowsFormsApplicationEpikryza
             Control ctrl = ((Control)sender);
             ctrl.BackColor = Color.Red;
         }
+
+        private void btnDodajDoleglo_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(textBoxDolegliwosci.Text)))
+            {
+                dataGridViewDolegliwosci.Rows.Add(textBoxDolegliwosci.Text);
+            }
+            textBoxDolegliwosci.Text = String.Empty;
+        }
+
+        private void btnDodajLeki_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(textBoxLeki.Text)))
+            {
+                dataGridViewLeki.Rows.Add(textBoxLeki.Text);
+            }
+            textBoxLeki.Text = String.Empty;
+        }
+
+        private void btnDodajSuplementy_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(textBoxSuplementy.Text)))
+            {
+                dataGridViewSuplementy.Rows.Add(textBoxSuplementy.Text);
+            }
+            textBoxSuplementy.Text = String.Empty;
+        }
     }
 }
