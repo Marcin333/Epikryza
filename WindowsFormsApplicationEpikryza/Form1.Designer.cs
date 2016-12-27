@@ -165,28 +165,19 @@
             this.button9 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
             this.imgProfamilia = new System.Windows.Forms.PictureBox();
-            this.comboBoxProdukt = new System.Windows.Forms.ComboBox();
             this.textAge = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxPacjent_ID = new System.Windows.Forms.TextBox();
             this.panelDaneOsoboweTitle = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnDodajSupl = new System.Windows.Forms.Button();
             this.textSearchBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnSzukaj = new System.Windows.Forms.Button();
-            this.numericUdKolacji = new System.Windows.Forms.NumericUpDown();
-            this.numericUdSniadanie = new System.Windows.Forms.NumericUpDown();
-            this.numericUdCzczo = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.textTel = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUdSnem = new System.Windows.Forms.NumericUpDown();
-            this.numericUdOpakowania = new System.Windows.Forms.NumericUpDown();
             this.textMiasto = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBoxProducenci = new System.Windows.Forms.ComboBox();
             this.textEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textPesel = new System.Windows.Forms.TextBox();
@@ -270,6 +261,18 @@
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBoxProducenci = new System.Windows.Forms.ComboBox();
+            this.numericUdSnem = new System.Windows.Forms.NumericUpDown();
+            this.numericUdKolacji = new System.Windows.Forms.NumericUpDown();
+            this.numericUdSniadanie = new System.Windows.Forms.NumericUpDown();
+            this.numericUdCzczo = new System.Windows.Forms.NumericUpDown();
+            this.btnDodajSupl = new System.Windows.Forms.Button();
+            this.numericUdOpakowania = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxProdukt = new System.Windows.Forms.ComboBox();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -316,12 +319,6 @@
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgProfamilia)).BeginInit();
             this.panelDaneOsoboweTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).BeginInit();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupl)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelSuplementy.SuspendLayout();
@@ -345,6 +342,15 @@
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).BeginInit();
+            this.groupBox16.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.groupBox19.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1791,16 +1797,6 @@
             this.imgProfamilia.TabIndex = 59;
             this.imgProfamilia.TabStop = false;
             // 
-            // comboBoxProdukt
-            // 
-            this.comboBoxProdukt.DisplayMember = "Nazwa";
-            this.comboBoxProdukt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxProdukt.FormattingEnabled = true;
-            this.comboBoxProdukt.Location = new System.Drawing.Point(224, 16);
-            this.comboBoxProdukt.Name = "comboBoxProdukt";
-            this.comboBoxProdukt.Size = new System.Drawing.Size(182, 21);
-            this.comboBoxProdukt.TabIndex = 2;
-            // 
             // textAge
             // 
             this.textAge.Location = new System.Drawing.Point(535, 107);
@@ -1850,16 +1846,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Dane osobowe";
             // 
-            // btnDodajSupl
-            // 
-            this.btnDodajSupl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDodajSupl.Location = new System.Drawing.Point(739, 16);
-            this.btnDodajSupl.Name = "btnDodajSupl";
-            this.btnDodajSupl.Size = new System.Drawing.Size(75, 22);
-            this.btnDodajSupl.TabIndex = 13;
-            this.btnDodajSupl.Text = "Dodaj";
-            this.btnDodajSupl.UseVisualStyleBackColor = true;
-            // 
             // textSearchBox
             // 
             this.textSearchBox.AcceptsReturn = true;
@@ -1891,42 +1877,6 @@
             this.btnSzukaj.Text = "Szukaj";
             this.btnSzukaj.UseVisualStyleBackColor = true;
             this.btnSzukaj.Click += new System.EventHandler(this.btnSzukaj_Click);
-            // 
-            // numericUdKolacji
-            // 
-            this.numericUdKolacji.Location = new System.Drawing.Point(611, 17);
-            this.numericUdKolacji.Name = "numericUdKolacji";
-            this.numericUdKolacji.Size = new System.Drawing.Size(50, 20);
-            this.numericUdKolacji.TabIndex = 16;
-            this.numericUdKolacji.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUdSniadanie
-            // 
-            this.numericUdSniadanie.Location = new System.Drawing.Point(547, 17);
-            this.numericUdSniadanie.Name = "numericUdSniadanie";
-            this.numericUdSniadanie.Size = new System.Drawing.Size(50, 20);
-            this.numericUdSniadanie.TabIndex = 15;
-            this.numericUdSniadanie.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUdCzczo
-            // 
-            this.numericUdCzczo.Location = new System.Drawing.Point(482, 17);
-            this.numericUdCzczo.Name = "numericUdCzczo";
-            this.numericUdCzczo.Size = new System.Drawing.Size(50, 20);
-            this.numericUdCzczo.TabIndex = 14;
-            this.numericUdCzczo.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // label7
             // 
@@ -1970,30 +1920,6 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Email";
             // 
-            // numericUdSnem
-            // 
-            this.numericUdSnem.Location = new System.Drawing.Point(677, 17);
-            this.numericUdSnem.Name = "numericUdSnem";
-            this.numericUdSnem.Size = new System.Drawing.Size(50, 20);
-            this.numericUdSnem.TabIndex = 17;
-            this.numericUdSnem.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUdOpakowania
-            // 
-            this.numericUdOpakowania.Location = new System.Drawing.Point(420, 17);
-            this.numericUdOpakowania.Name = "numericUdOpakowania";
-            this.numericUdOpakowania.Size = new System.Drawing.Size(50, 20);
-            this.numericUdOpakowania.TabIndex = 4;
-            this.numericUdOpakowania.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // textMiasto
             // 
             this.textMiasto.Location = new System.Drawing.Point(703, 141);
@@ -2002,34 +1928,6 @@
             this.textMiasto.Size = new System.Drawing.Size(168, 20);
             this.textMiasto.TabIndex = 20;
             this.textMiasto.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel5.Controls.Add(this.comboBoxProducenci);
-            this.panel5.Controls.Add(this.numericUdSnem);
-            this.panel5.Controls.Add(this.numericUdKolacji);
-            this.panel5.Controls.Add(this.numericUdSniadanie);
-            this.panel5.Controls.Add(this.numericUdCzczo);
-            this.panel5.Controls.Add(this.btnDodajSupl);
-            this.panel5.Controls.Add(this.numericUdOpakowania);
-            this.panel5.Controls.Add(this.comboBoxProdukt);
-            this.panel5.Location = new System.Drawing.Point(16, 40);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(830, 58);
-            this.panel5.TabIndex = 13;
-            // 
-            // comboBoxProducenci
-            // 
-            this.comboBoxProducenci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxProducenci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxProducenci.DisplayMember = "Nazwa";
-            this.comboBoxProducenci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxProducenci.FormattingEnabled = true;
-            this.comboBoxProducenci.Location = new System.Drawing.Point(17, 16);
-            this.comboBoxProducenci.Name = "comboBoxProducenci";
-            this.comboBoxProducenci.Size = new System.Drawing.Size(190, 21);
-            this.comboBoxProducenci.TabIndex = 18;
             // 
             // textEmail
             // 
@@ -2091,10 +1989,10 @@
             this.Do_sniadania,
             this.Do_kolacji,
             this.Przed_snem});
-            this.dataGridViewSupl.Location = new System.Drawing.Point(16, 113);
+            this.dataGridViewSupl.Location = new System.Drawing.Point(16, 103);
             this.dataGridViewSupl.Name = "dataGridViewSupl";
             this.dataGridViewSupl.ReadOnly = true;
-            this.dataGridViewSupl.Size = new System.Drawing.Size(830, 206);
+            this.dataGridViewSupl.Size = new System.Drawing.Size(855, 206);
             this.dataGridViewSupl.TabIndex = 8;
             // 
             // Producent
@@ -2251,7 +2149,11 @@
             // panelSuplementy
             // 
             this.panelSuplementy.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelSuplementy.Controls.Add(this.panel5);
+            this.panelSuplementy.Controls.Add(this.groupBox19);
+            this.panelSuplementy.Controls.Add(this.groupBox18);
+            this.panelSuplementy.Controls.Add(this.groupBox17);
+            this.panelSuplementy.Controls.Add(this.groupBox16);
+            this.panelSuplementy.Controls.Add(this.btnDodajSupl);
             this.panelSuplementy.Controls.Add(this.dataGridViewSupl);
             this.panelSuplementy.Controls.Add(this.panel2);
             this.panelSuplementy.Location = new System.Drawing.Point(20, 902);
@@ -2886,6 +2788,141 @@
             this.zywienie.Name = "zywienie";
             this.zywienie.Width = 390;
             // 
+            // comboBoxProducenci
+            // 
+            this.comboBoxProducenci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxProducenci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxProducenci.DisplayMember = "Nazwa";
+            this.comboBoxProducenci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProducenci.FormattingEnabled = true;
+            this.comboBoxProducenci.Location = new System.Drawing.Point(12, 22);
+            this.comboBoxProducenci.Name = "comboBoxProducenci";
+            this.comboBoxProducenci.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxProducenci.TabIndex = 26;
+            // 
+            // numericUdSnem
+            // 
+            this.numericUdSnem.Location = new System.Drawing.Point(198, 22);
+            this.numericUdSnem.Name = "numericUdSnem";
+            this.numericUdSnem.Size = new System.Drawing.Size(50, 20);
+            this.numericUdSnem.TabIndex = 25;
+            this.numericUdSnem.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUdKolacji
+            // 
+            this.numericUdKolacji.Location = new System.Drawing.Point(136, 22);
+            this.numericUdKolacji.Name = "numericUdKolacji";
+            this.numericUdKolacji.Size = new System.Drawing.Size(50, 20);
+            this.numericUdKolacji.TabIndex = 24;
+            this.numericUdKolacji.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUdSniadanie
+            // 
+            this.numericUdSniadanie.Location = new System.Drawing.Point(74, 22);
+            this.numericUdSniadanie.Name = "numericUdSniadanie";
+            this.numericUdSniadanie.Size = new System.Drawing.Size(50, 20);
+            this.numericUdSniadanie.TabIndex = 23;
+            this.numericUdSniadanie.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUdCzczo
+            // 
+            this.numericUdCzczo.Location = new System.Drawing.Point(12, 22);
+            this.numericUdCzczo.Name = "numericUdCzczo";
+            this.numericUdCzczo.Size = new System.Drawing.Size(50, 20);
+            this.numericUdCzczo.TabIndex = 22;
+            this.numericUdCzczo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // btnDodajSupl
+            // 
+            this.btnDodajSupl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDodajSupl.Location = new System.Drawing.Point(794, 55);
+            this.btnDodajSupl.Name = "btnDodajSupl";
+            this.btnDodajSupl.Size = new System.Drawing.Size(75, 22);
+            this.btnDodajSupl.TabIndex = 21;
+            this.btnDodajSupl.Text = "Dodaj";
+            this.btnDodajSupl.UseVisualStyleBackColor = true;
+            // 
+            // numericUdOpakowania
+            // 
+            this.numericUdOpakowania.Location = new System.Drawing.Point(9, 22);
+            this.numericUdOpakowania.Name = "numericUdOpakowania";
+            this.numericUdOpakowania.Size = new System.Drawing.Size(50, 20);
+            this.numericUdOpakowania.TabIndex = 20;
+            this.numericUdOpakowania.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // comboBoxProdukt
+            // 
+            this.comboBoxProdukt.DisplayMember = "Nazwa";
+            this.comboBoxProdukt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProdukt.FormattingEnabled = true;
+            this.comboBoxProdukt.Location = new System.Drawing.Point(13, 22);
+            this.comboBoxProdukt.Name = "comboBoxProdukt";
+            this.comboBoxProdukt.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxProdukt.TabIndex = 19;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.comboBoxProducenci);
+            this.groupBox16.Location = new System.Drawing.Point(16, 35);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(207, 56);
+            this.groupBox16.TabIndex = 27;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Producenci";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.comboBoxProdukt);
+            this.groupBox17.Location = new System.Drawing.Point(230, 35);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(207, 56);
+            this.groupBox17.TabIndex = 28;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Produkty";
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.numericUdSnem);
+            this.groupBox18.Controls.Add(this.numericUdKolacji);
+            this.groupBox18.Controls.Add(this.numericUdSniadanie);
+            this.groupBox18.Controls.Add(this.numericUdCzczo);
+            this.groupBox18.Location = new System.Drawing.Point(521, 34);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(260, 56);
+            this.groupBox18.TabIndex = 29;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Dawkowanie";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.numericUdOpakowania);
+            this.groupBox19.Location = new System.Drawing.Point(444, 35);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(70, 56);
+            this.groupBox19.TabIndex = 30;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Miesiące";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2986,12 +3023,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgProfamilia)).EndInit();
             this.panelDaneOsoboweTitle.ResumeLayout(false);
             this.panelDaneOsoboweTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).EndInit();
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupl)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -3026,6 +3057,15 @@
             this.groupBox13.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).EndInit();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox19.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3086,28 +3126,19 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.PictureBox imgProfamilia;
-        private System.Windows.Forms.ComboBox comboBoxProdukt;
         private System.Windows.Forms.TextBox textAge;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBoxPacjent_ID;
         private System.Windows.Forms.Panel panelDaneOsoboweTitle;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnDodajSupl;
         private System.Windows.Forms.TextBox textSearchBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnSzukaj;
-        private System.Windows.Forms.NumericUpDown numericUdKolacji;
-        private System.Windows.Forms.NumericUpDown numericUdSniadanie;
-        private System.Windows.Forms.NumericUpDown numericUdCzczo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textTel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUdSnem;
-        private System.Windows.Forms.NumericUpDown numericUdOpakowania;
         private System.Windows.Forms.TextBox textMiasto;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox comboBoxProducenci;
         private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textPesel;
@@ -3273,6 +3304,18 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.DataGridViewTextBoxColumn zywienie;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.NumericUpDown numericUdOpakowania;
+        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.NumericUpDown numericUdSnem;
+        private System.Windows.Forms.NumericUpDown numericUdKolacji;
+        private System.Windows.Forms.NumericUpDown numericUdSniadanie;
+        private System.Windows.Forms.NumericUpDown numericUdCzczo;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.ComboBox comboBoxProdukt;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.ComboBox comboBoxProducenci;
+        private System.Windows.Forms.Button btnDodajSupl;
     }
 }
 
