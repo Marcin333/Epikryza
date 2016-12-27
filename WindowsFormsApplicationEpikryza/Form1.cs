@@ -321,5 +321,31 @@ namespace WindowsFormsApplicationEpikryza
             }
             textBoxSuplementy.Text = String.Empty;
         }
+
+        private void btnDodajZywienie_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(comboBoxZywienie.Text)))
+            {
+                dataGridViewZywienie.Rows.Add(comboBoxZywienie.Text);
+            }
+            int counter;
+            int zywienieTotal = 0;
+
+            for (counter = 0; counter < (dataGridViewZywienie.Rows.Count);
+               counter++)
+            {
+                if (dataGridViewZywienie.Rows[counter].Cells["zywienie"].Value
+                    != null)
+                {
+                    if (dataGridViewZywienie.Rows[counter].
+                        Cells["zywienie"].Value.ToString().Length != 0)
+                    {
+                        zywienieTotal += 1;
+                        this.textBoxCountZywieniowe.Text = zywienieTotal.ToString();
+                        Console.WriteLine(zywienieTotal);
+                    }
+                }
+            }
+        }
     }
 }

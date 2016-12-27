@@ -128,13 +128,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.labelk = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.textBoxCountZywieniowe = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button8 = new System.Windows.Forms.Button();
+            this.comboBoxZywienie = new System.Windows.Forms.ComboBox();
+            this.dataGridViewZywienie = new System.Windows.Forms.DataGridView();
+            this.btnDodajZywienie = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxWPoPoludniu = new System.Windows.Forms.TextBox();
@@ -271,6 +269,7 @@
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -303,7 +302,7 @@
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).BeginInit();
             this.panel21.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -1369,25 +1368,15 @@
             this.labelk.TabIndex = 0;
             this.labelk.Text = "Model";
             // 
-            // textBox12
+            // textBoxCountZywieniowe
             // 
-            this.textBox12.Location = new System.Drawing.Point(476, 87);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(99, 20);
-            this.textBox12.TabIndex = 40;
-            this.textBox12.TabStop = false;
-            this.textBox12.Text = "0";
-            // 
-            // button7
-            // 
-            this.button7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button7.Location = new System.Drawing.Point(476, 123);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(99, 25);
-            this.button7.TabIndex = 33;
-            this.button7.Text = "Zapisz";
-            this.button7.UseVisualStyleBackColor = true;
+            this.textBoxCountZywieniowe.Location = new System.Drawing.Point(476, 87);
+            this.textBoxCountZywieniowe.Name = "textBoxCountZywieniowe";
+            this.textBoxCountZywieniowe.ReadOnly = true;
+            this.textBoxCountZywieniowe.Size = new System.Drawing.Size(99, 20);
+            this.textBoxCountZywieniowe.TabIndex = 40;
+            this.textBoxCountZywieniowe.TabStop = false;
+            this.textBoxCountZywieniowe.Text = "0";
             // 
             // label38
             // 
@@ -1400,54 +1389,39 @@
             this.label38.TabIndex = 39;
             this.label38.Text = "Ilość rekordów:";
             // 
-            // comboBox4
+            // comboBoxZywienie
             // 
-            this.comboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "aalergen",
-            "balergen",
-            "calergen",
-            "dalergern",
-            "ealergen",
-            "falergen",
-            "galergen",
-            "halergen",
-            "ialergen",
-            "jaleregne",
-            "kaleregen",
-            "laleregen"});
-            this.comboBox4.Location = new System.Drawing.Point(20, 36);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(295, 21);
-            this.comboBox4.TabIndex = 32;
+            this.comboBoxZywienie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxZywienie.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxZywienie.FormattingEnabled = true;
+            this.comboBoxZywienie.Items.AddRange(new object[] {
+            "zalecenie 1",
+            "zalecenie 2"});
+            this.comboBoxZywienie.Location = new System.Drawing.Point(20, 36);
+            this.comboBoxZywienie.Name = "comboBoxZywienie";
+            this.comboBoxZywienie.Size = new System.Drawing.Size(295, 21);
+            this.comboBoxZywienie.TabIndex = 32;
             // 
-            // dataGridView5
+            // dataGridViewZywienie
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4});
-            this.dataGridView5.Location = new System.Drawing.Point(20, 70);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(427, 160);
-            this.dataGridView5.TabIndex = 31;
+            this.dataGridViewZywienie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewZywienie.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.zywienie});
+            this.dataGridViewZywienie.Location = new System.Drawing.Point(20, 70);
+            this.dataGridViewZywienie.Name = "dataGridViewZywienie";
+            this.dataGridViewZywienie.Size = new System.Drawing.Size(427, 160);
+            this.dataGridViewZywienie.TabIndex = 31;
             // 
-            // dataGridViewTextBoxColumn4
+            // btnDodajZywienie
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Zalecenia żywieniowe";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 390;
-            // 
-            // button8
-            // 
-            this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button8.Location = new System.Drawing.Point(348, 36);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(99, 23);
-            this.button8.TabIndex = 29;
-            this.button8.Text = "Dodaj";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnDodajZywienie.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDodajZywienie.Location = new System.Drawing.Point(348, 36);
+            this.btnDodajZywienie.Name = "btnDodajZywienie";
+            this.btnDodajZywienie.Size = new System.Drawing.Size(99, 23);
+            this.btnDodajZywienie.TabIndex = 29;
+            this.btnDodajZywienie.Text = "Dodaj";
+            this.btnDodajZywienie.UseVisualStyleBackColor = true;
+            this.btnDodajZywienie.Click += new System.EventHandler(this.btnDodajZywienie_Click);
             // 
             // panel21
             // 
@@ -1796,12 +1770,11 @@
             // 
             this.panel19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel19.Controls.Add(this.panel20);
-            this.panel19.Controls.Add(this.textBox12);
-            this.panel19.Controls.Add(this.button7);
+            this.panel19.Controls.Add(this.textBoxCountZywieniowe);
             this.panel19.Controls.Add(this.label38);
-            this.panel19.Controls.Add(this.comboBox4);
-            this.panel19.Controls.Add(this.dataGridView5);
-            this.panel19.Controls.Add(this.button8);
+            this.panel19.Controls.Add(this.comboBoxZywienie);
+            this.panel19.Controls.Add(this.dataGridViewZywienie);
+            this.panel19.Controls.Add(this.btnDodajZywienie);
             this.panel19.Location = new System.Drawing.Point(20, 1243);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(890, 245);
@@ -2907,6 +2880,12 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "IV faza";
             // 
+            // zywienie
+            // 
+            this.zywienie.HeaderText = "Zalecenia żywieniowe";
+            this.zywienie.Name = "zywienie";
+            this.zywienie.Width = 390;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2985,7 +2964,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -3097,13 +3076,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label labelk;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBoxCountZywieniowe;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ComboBox comboBoxZywienie;
+        private System.Windows.Forms.DataGridView dataGridViewZywienie;
+        private System.Windows.Forms.Button btnDodajZywienie;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Button button9;
@@ -3295,6 +3272,7 @@
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zywienie;
     }
 }
 
