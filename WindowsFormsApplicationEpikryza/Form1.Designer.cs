@@ -97,15 +97,13 @@
             this.textBoxDolegliwosci = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUDhome = new System.Windows.Forms.NumericUpDown();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxKHomeCount = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ilosc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewKHome = new System.Windows.Forms.DataGridView();
             this.btnDodajHomo = new System.Windows.Forms.Button();
             this.comboBoxHomeop = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -233,7 +231,7 @@
             this.textCountRowAlergeny = new System.Windows.Forms.TextBox();
             this.saveAlergeny = new System.Windows.Forms.Button();
             this.labelAlergeny = new System.Windows.Forms.Label();
-            this.comboBoxAlergeny = new System.Windows.Forms.ComboBox();
+            this.comboBoxOpisAlergii = new System.Windows.Forms.ComboBox();
             this.dataGridViewOpisAlergii = new System.Windows.Forms.DataGridView();
             this.opisAlergi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajAlergen = new System.Windows.Forms.Button();
@@ -273,6 +271,8 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
+            this.kompleksHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ilosc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -293,9 +293,9 @@
             this.panel16.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUDhome)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKHome)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -1066,12 +1066,12 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel8.Controls.Add(this.numericUpDown1);
+            this.panel8.Controls.Add(this.numericUDhome);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.textBox2);
+            this.panel8.Controls.Add(this.textBoxKHomeCount);
             this.panel8.Controls.Add(this.label24);
-            this.panel8.Controls.Add(this.dataGridView2);
+            this.panel8.Controls.Add(this.dataGridViewKHome);
             this.panel8.Controls.Add(this.btnDodajHomo);
             this.panel8.Controls.Add(this.comboBoxHomeop);
             this.panel8.Location = new System.Drawing.Point(469, 305);
@@ -1079,13 +1079,13 @@
             this.panel8.Size = new System.Drawing.Size(441, 283);
             this.panel8.TabIndex = 65;
             // 
-            // numericUpDown1
+            // numericUDhome
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(252, 38);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown1.TabIndex = 39;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUDhome.Location = new System.Drawing.Point(252, 38);
+            this.numericUDhome.Name = "numericUDhome";
+            this.numericUDhome.Size = new System.Drawing.Size(52, 20);
+            this.numericUDhome.TabIndex = 39;
+            this.numericUDhome.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -1121,13 +1121,13 @@
             this.button3.Text = "Zapisz";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // textBoxKHomeCount
             // 
-            this.textBox2.Location = new System.Drawing.Point(326, 93);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(91, 20);
-            this.textBox2.TabIndex = 38;
+            this.textBoxKHomeCount.Location = new System.Drawing.Point(326, 93);
+            this.textBoxKHomeCount.Name = "textBoxKHomeCount";
+            this.textBoxKHomeCount.ReadOnly = true;
+            this.textBoxKHomeCount.Size = new System.Drawing.Size(91, 20);
+            this.textBoxKHomeCount.TabIndex = 38;
             // 
             // label24
             // 
@@ -1140,28 +1140,16 @@
             this.label24.TabIndex = 37;
             this.label24.Text = "Ilość rekordów:";
             // 
-            // dataGridView2
+            // dataGridViewKHome
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewKHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewKHome.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kompleksHome,
             this.Ilosc});
-            this.dataGridView2.Location = new System.Drawing.Point(14, 72);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(290, 197);
-            this.dataGridView2.TabIndex = 36;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "K. homeopatyczny";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 206;
-            // 
-            // Ilosc
-            // 
-            this.Ilosc.HeaderText = "Ilość";
-            this.Ilosc.Name = "Ilosc";
-            this.Ilosc.Width = 40;
+            this.dataGridViewKHome.Location = new System.Drawing.Point(14, 72);
+            this.dataGridViewKHome.Name = "dataGridViewKHome";
+            this.dataGridViewKHome.Size = new System.Drawing.Size(290, 197);
+            this.dataGridViewKHome.TabIndex = 36;
             // 
             // btnDodajHomo
             // 
@@ -2466,7 +2454,7 @@
             this.panelAlergeny.Controls.Add(this.textCountRowAlergeny);
             this.panelAlergeny.Controls.Add(this.saveAlergeny);
             this.panelAlergeny.Controls.Add(this.labelAlergeny);
-            this.panelAlergeny.Controls.Add(this.comboBoxAlergeny);
+            this.panelAlergeny.Controls.Add(this.comboBoxOpisAlergii);
             this.panelAlergeny.Controls.Add(this.dataGridViewOpisAlergii);
             this.panelAlergeny.Controls.Add(this.btnDodajAlergen);
             this.panelAlergeny.Location = new System.Drawing.Point(470, 598);
@@ -2525,12 +2513,12 @@
             this.labelAlergeny.TabIndex = 39;
             this.labelAlergeny.Text = "Ilość rekordów:";
             // 
-            // comboBoxAlergeny
+            // comboBoxOpisAlergii
             // 
-            this.comboBoxAlergeny.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxAlergeny.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxAlergeny.FormattingEnabled = true;
-            this.comboBoxAlergeny.Items.AddRange(new object[] {
+            this.comboBoxOpisAlergii.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxOpisAlergii.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxOpisAlergii.FormattingEnabled = true;
+            this.comboBoxOpisAlergii.Items.AddRange(new object[] {
             "aalergen",
             "balergen",
             "calergen",
@@ -2543,10 +2531,10 @@
             "jaleregne",
             "kaleregen",
             "laleregen"});
-            this.comboBoxAlergeny.Location = new System.Drawing.Point(20, 41);
-            this.comboBoxAlergeny.Name = "comboBoxAlergeny";
-            this.comboBoxAlergeny.Size = new System.Drawing.Size(284, 21);
-            this.comboBoxAlergeny.TabIndex = 32;
+            this.comboBoxOpisAlergii.Location = new System.Drawing.Point(20, 41);
+            this.comboBoxOpisAlergii.Name = "comboBoxOpisAlergii";
+            this.comboBoxOpisAlergii.Size = new System.Drawing.Size(284, 21);
+            this.comboBoxOpisAlergii.TabIndex = 32;
             // 
             // dataGridViewOpisAlergii
             // 
@@ -2943,6 +2931,18 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
+            // kompleksHome
+            // 
+            this.kompleksHome.HeaderText = "K. homeopatyczny";
+            this.kompleksHome.Name = "kompleksHome";
+            this.kompleksHome.Width = 206;
+            // 
+            // Ilosc
+            // 
+            this.Ilosc.HeaderText = "Ilość";
+            this.Ilosc.Name = "Ilosc";
+            this.Ilosc.Width = 40;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3003,10 +3003,10 @@
             this.groupBox10.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUDhome)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKHome)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -3105,13 +3105,13 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUDhome;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxKHomeCount;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewKHome;
         private System.Windows.Forms.Button btnDodajHomo;
         private System.Windows.Forms.ComboBox comboBoxHomeop;
         private System.Windows.Forms.Label label39;
@@ -3194,7 +3194,7 @@
         private System.Windows.Forms.TextBox textCountRowAlergeny;
         private System.Windows.Forms.Button saveAlergeny;
         private System.Windows.Forms.Label labelAlergeny;
-        private System.Windows.Forms.ComboBox comboBoxAlergeny;
+        private System.Windows.Forms.ComboBox comboBoxOpisAlergii;
         private System.Windows.Forms.DataGridView dataGridViewOpisAlergii;
         private System.Windows.Forms.Button btnDodajAlergen;
         private System.Windows.Forms.Button btnDodajPato;
@@ -3333,9 +3333,9 @@
         private System.Windows.Forms.ComboBox comboBoxProducenci;
         private System.Windows.Forms.Button btnDodajSupl;
         private System.Windows.Forms.ComboBox comboBoxBole;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ilosc;
         private System.Windows.Forms.DataGridViewTextBoxColumn Patomorfologia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kompleksHome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ilosc;
     }
 }
 

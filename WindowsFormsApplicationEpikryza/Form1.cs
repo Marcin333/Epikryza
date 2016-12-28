@@ -375,23 +375,23 @@ namespace WindowsFormsApplicationEpikryza
 
         private void btnDodajHomo_Click(object sender, EventArgs e)
         {
-            if (!(String.IsNullOrEmpty(comboBoxPatomorfologia.Text)))
+            if (!(String.IsNullOrEmpty(comboBoxHomeop.Text)))
             {
-                dataGridViewPato.Rows.Add(comboBoxPatomorfologia.Text);
-                comboBoxPatomorfologia.Text = String.Empty;
+                dataGridViewKHome.Rows.Add(comboBoxHomeop.Text, numericUDhome.Value);
+                comboBoxHomeop.Text = String.Empty;
             }
             int counter;
-            int patoTotal = 0;
+            int kompleksTotal = 0;
 
-            for (counter = 0; counter < (dataGridViewPato.Rows.Count); counter++)
+            for (counter = 0; counter < (dataGridViewKHome.Rows.Count); counter++)
             {
-                if (dataGridViewPato.Rows[counter].Cells["Patomorfologia"].Value != null)
+                if (dataGridViewKHome.Rows[counter].Cells["kompleksHome"].Value != null)
                 {
-                    if (dataGridViewPato.Rows[counter].Cells["Patomorfologia"].
+                    if (dataGridViewKHome.Rows[counter].Cells["kompleksHome"].
                         Value.ToString().Length != 0)
                     {
-                        patoTotal += 1;
-                        this.textCountRowPato.Text = patoTotal.ToString();
+                        kompleksTotal += 1;
+                        this.textBoxKHomeCount.Text = kompleksTotal.ToString();
                     }
                 }
             }
