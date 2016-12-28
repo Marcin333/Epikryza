@@ -396,5 +396,29 @@ namespace WindowsFormsApplicationEpikryza
                 }
             }
         }
+
+        private void btnDodajOpisAlergii_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(comboBoxOpisAlergii.Text)))
+            {
+                dataGridViewOpisAlergii.Rows.Add(comboBoxOpisAlergii.Text, numericUDhome.Value);
+                comboBoxOpisAlergii.Text = String.Empty;
+            }
+            int counter;
+            int alergenyOpisTotal = 0;
+
+            for (counter = 0; counter < (dataGridViewOpisAlergii.Rows.Count); counter++)
+            {
+                if (dataGridViewOpisAlergii.Rows[counter].Cells["opisAlergi"].Value != null)
+                {
+                    if (dataGridViewOpisAlergii.Rows[counter].Cells["opisAlergi"].
+                        Value.ToString().Length != 0)
+                    {
+                        alergenyOpisTotal += 1;
+                        this.textCountRowOpisAlergii.Text = alergenyOpisTotal.ToString();
+                    }
+                }
+            }
+        }
     }
 }
