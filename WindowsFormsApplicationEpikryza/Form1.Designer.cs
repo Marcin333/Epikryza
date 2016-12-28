@@ -45,11 +45,11 @@
             this.dataGridViewLeki = new System.Windows.Forms.DataGridView();
             this.lekiWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.comboBoxBole = new System.Windows.Forms.ComboBox();
             this.checkBoxOstre = new System.Windows.Forms.CheckBox();
             this.checkBoxPrzewlekle = new System.Windows.Forms.CheckBox();
             this.checkBoxSporadycznie = new System.Windows.Forms.CheckBox();
             this.btnDodajBol = new System.Windows.Forms.Button();
-            this.textBoxBole = new System.Windows.Forms.TextBox();
             this.dataGridViewBole = new System.Windows.Forms.DataGridView();
             this.bole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSporadyczne = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,7 +106,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ilosc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDodajHomo = new System.Windows.Forms.Button();
             this.comboBoxHomeop = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -132,6 +132,7 @@
             this.label38 = new System.Windows.Forms.Label();
             this.comboBoxZywienie = new System.Windows.Forms.ComboBox();
             this.dataGridViewZywienie = new System.Windows.Forms.DataGridView();
+            this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajZywienie = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -202,6 +203,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textImie = new System.Windows.Forms.TextBox();
             this.panelSuplementy = new System.Windows.Forms.Panel();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.numericUdOpakowania = new System.Windows.Forms.NumericUpDown();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.numericUdSnem = new System.Windows.Forms.NumericUpDown();
+            this.numericUdKolacji = new System.Windows.Forms.NumericUpDown();
+            this.numericUdSniadanie = new System.Windows.Forms.NumericUpDown();
+            this.numericUdCzczo = new System.Windows.Forms.NumericUpDown();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.comboBoxProdukt = new System.Windows.Forms.ComboBox();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.comboBoxProducenci = new System.Windows.Forms.ComboBox();
+            this.btnDodajSupl = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panelDaneOsobowe = new System.Windows.Forms.Panel();
@@ -211,7 +224,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.textBoxPesel = new System.Windows.Forms.TextBox();
             this.savePato = new System.Windows.Forms.Button();
-            this.Patomorfologia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.textCountRowPato = new System.Windows.Forms.TextBox();
@@ -229,6 +241,7 @@
             this.comboBoxPatomorfologia = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridViewPato = new System.Windows.Forms.DataGridView();
+            this.Patomorfologia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelPato = new System.Windows.Forms.Panel();
             this.forHealthDBDataSet = new WindowsFormsApplicationEpikryza.ForHealthDBDataSet();
             this.tblDanePacjentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -244,6 +257,14 @@
             this.alergen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bDodajAlergen = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -252,27 +273,6 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBoxProducenci = new System.Windows.Forms.ComboBox();
-            this.numericUdSnem = new System.Windows.Forms.NumericUpDown();
-            this.numericUdKolacji = new System.Windows.Forms.NumericUpDown();
-            this.numericUdSniadanie = new System.Windows.Forms.NumericUpDown();
-            this.numericUdCzczo = new System.Windows.Forms.NumericUpDown();
-            this.btnDodajSupl = new System.Windows.Forms.Button();
-            this.numericUdOpakowania = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxProdukt = new System.Windows.Forms.ComboBox();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -322,6 +322,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupl)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelSuplementy.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).BeginInit();
+            this.groupBox18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).BeginInit();
+            this.groupBox17.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelDaneOsobowe.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -336,21 +345,12 @@
             this.panel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlergen)).BeginInit();
             this.panel6.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).BeginInit();
-            this.groupBox16.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.groupBox18.SuspendLayout();
-            this.groupBox19.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -507,11 +507,11 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.comboBoxBole);
             this.groupBox9.Controls.Add(this.checkBoxOstre);
             this.groupBox9.Controls.Add(this.checkBoxPrzewlekle);
             this.groupBox9.Controls.Add(this.checkBoxSporadycznie);
             this.groupBox9.Controls.Add(this.btnDodajBol);
-            this.groupBox9.Controls.Add(this.textBoxBole);
             this.groupBox9.Controls.Add(this.dataGridViewBole);
             this.groupBox9.Location = new System.Drawing.Point(12, 508);
             this.groupBox9.Name = "groupBox9";
@@ -519,6 +519,21 @@
             this.groupBox9.TabIndex = 99;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Bóle";
+            // 
+            // comboBoxBole
+            // 
+            this.comboBoxBole.FormattingEnabled = true;
+            this.comboBoxBole.Items.AddRange(new object[] {
+            "Głowy",
+            "Serca",
+            "Żołądka",
+            "Wątroby",
+            "Jelit",
+            "Stawy"});
+            this.comboBoxBole.Location = new System.Drawing.Point(12, 19);
+            this.comboBoxBole.Name = "comboBoxBole";
+            this.comboBoxBole.Size = new System.Drawing.Size(236, 21);
+            this.comboBoxBole.TabIndex = 107;
             // 
             // checkBoxOstre
             // 
@@ -555,20 +570,13 @@
             // 
             // btnDodajBol
             // 
-            this.btnDodajBol.Location = new System.Drawing.Point(362, 18);
+            this.btnDodajBol.Location = new System.Drawing.Point(362, 19);
             this.btnDodajBol.Name = "btnDodajBol";
-            this.btnDodajBol.Size = new System.Drawing.Size(95, 20);
+            this.btnDodajBol.Size = new System.Drawing.Size(95, 21);
             this.btnDodajBol.TabIndex = 103;
             this.btnDodajBol.Text = "Dodaj";
             this.btnDodajBol.UseVisualStyleBackColor = true;
             this.btnDodajBol.Click += new System.EventHandler(this.btnDodajBol_Click);
-            // 
-            // textBoxBole
-            // 
-            this.textBoxBole.Location = new System.Drawing.Point(10, 21);
-            this.textBoxBole.Name = "textBoxBole";
-            this.textBoxBole.Size = new System.Drawing.Size(238, 20);
-            this.textBoxBole.TabIndex = 101;
             // 
             // dataGridViewBole
             // 
@@ -1064,16 +1072,16 @@
             this.panel8.Controls.Add(this.textBox2);
             this.panel8.Controls.Add(this.label24);
             this.panel8.Controls.Add(this.dataGridView2);
-            this.panel8.Controls.Add(this.button4);
+            this.panel8.Controls.Add(this.btnDodajHomo);
             this.panel8.Controls.Add(this.comboBoxHomeop);
-            this.panel8.Location = new System.Drawing.Point(470, 305);
+            this.panel8.Location = new System.Drawing.Point(469, 305);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(440, 288);
+            this.panel8.Size = new System.Drawing.Size(441, 283);
             this.panel8.TabIndex = 65;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(231, 40);
+            this.numericUpDown1.Location = new System.Drawing.Point(252, 38);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(52, 20);
             this.numericUpDown1.TabIndex = 39;
@@ -1106,7 +1114,7 @@
             // button3
             // 
             this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(308, 129);
+            this.button3.Location = new System.Drawing.Point(326, 129);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 25);
             this.button3.TabIndex = 34;
@@ -1115,8 +1123,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(308, 93);
+            this.textBox2.Location = new System.Drawing.Point(326, 93);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(91, 20);
             this.textBox2.TabIndex = 38;
             // 
@@ -1125,7 +1134,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label24.Location = new System.Drawing.Point(305, 76);
+            this.label24.Location = new System.Drawing.Point(324, 76);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(94, 13);
             this.label24.TabIndex = 37;
@@ -1137,16 +1146,16 @@
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
             this.Ilosc});
-            this.dataGridView2.Location = new System.Drawing.Point(22, 73);
+            this.dataGridView2.Location = new System.Drawing.Point(14, 72);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(261, 197);
+            this.dataGridView2.Size = new System.Drawing.Size(290, 197);
             this.dataGridView2.TabIndex = 36;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "K. homeopatyczny";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 180;
+            this.dataGridViewTextBoxColumn2.Width = 206;
             // 
             // Ilosc
             // 
@@ -1154,15 +1163,17 @@
             this.Ilosc.Name = "Ilosc";
             this.Ilosc.Width = 40;
             // 
-            // button4
+            // btnDodajHomo
             // 
-            this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button4.Location = new System.Drawing.Point(308, 38);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 25);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Dodaj";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDodajHomo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodajHomo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDodajHomo.Location = new System.Drawing.Point(326, 38);
+            this.btnDodajHomo.Name = "btnDodajHomo";
+            this.btnDodajHomo.Size = new System.Drawing.Size(91, 20);
+            this.btnDodajHomo.TabIndex = 35;
+            this.btnDodajHomo.Text = "Dodaj";
+            this.btnDodajHomo.UseVisualStyleBackColor = true;
+            this.btnDodajHomo.Click += new System.EventHandler(this.btnDodajHomo_Click);
             // 
             // comboBoxHomeop
             // 
@@ -1170,9 +1181,12 @@
             this.comboBoxHomeop.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxHomeop.DisplayMember = "Patomorfologia";
             this.comboBoxHomeop.FormattingEnabled = true;
-            this.comboBoxHomeop.Location = new System.Drawing.Point(22, 38);
+            this.comboBoxHomeop.Items.AddRange(new object[] {
+            "kompleks 1",
+            "kompleks 2"});
+            this.comboBoxHomeop.Location = new System.Drawing.Point(14, 38);
             this.comboBoxHomeop.Name = "comboBoxHomeop";
-            this.comboBoxHomeop.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxHomeop.Size = new System.Drawing.Size(216, 21);
             this.comboBoxHomeop.TabIndex = 33;
             this.comboBoxHomeop.ValueMember = "Patomorfologia";
             // 
@@ -1417,6 +1431,12 @@
             this.dataGridViewZywienie.Name = "dataGridViewZywienie";
             this.dataGridViewZywienie.Size = new System.Drawing.Size(427, 160);
             this.dataGridViewZywienie.TabIndex = 31;
+            // 
+            // zywienie
+            // 
+            this.zywienie.HeaderText = "Zalecenia żywieniowe";
+            this.zywienie.Name = "zywienie";
+            this.zywienie.Width = 390;
             // 
             // btnDodajZywienie
             // 
@@ -2161,6 +2181,141 @@
             this.panelSuplementy.Size = new System.Drawing.Size(889, 336);
             this.panelSuplementy.TabIndex = 61;
             // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.numericUdOpakowania);
+            this.groupBox19.Location = new System.Drawing.Point(444, 35);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(70, 56);
+            this.groupBox19.TabIndex = 30;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Miesiące";
+            // 
+            // numericUdOpakowania
+            // 
+            this.numericUdOpakowania.Location = new System.Drawing.Point(9, 22);
+            this.numericUdOpakowania.Name = "numericUdOpakowania";
+            this.numericUdOpakowania.Size = new System.Drawing.Size(50, 20);
+            this.numericUdOpakowania.TabIndex = 20;
+            this.numericUdOpakowania.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.numericUdSnem);
+            this.groupBox18.Controls.Add(this.numericUdKolacji);
+            this.groupBox18.Controls.Add(this.numericUdSniadanie);
+            this.groupBox18.Controls.Add(this.numericUdCzczo);
+            this.groupBox18.Location = new System.Drawing.Point(521, 34);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(260, 56);
+            this.groupBox18.TabIndex = 29;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Dawkowanie";
+            // 
+            // numericUdSnem
+            // 
+            this.numericUdSnem.Location = new System.Drawing.Point(198, 22);
+            this.numericUdSnem.Name = "numericUdSnem";
+            this.numericUdSnem.Size = new System.Drawing.Size(50, 20);
+            this.numericUdSnem.TabIndex = 25;
+            this.numericUdSnem.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUdKolacji
+            // 
+            this.numericUdKolacji.Location = new System.Drawing.Point(136, 22);
+            this.numericUdKolacji.Name = "numericUdKolacji";
+            this.numericUdKolacji.Size = new System.Drawing.Size(50, 20);
+            this.numericUdKolacji.TabIndex = 24;
+            this.numericUdKolacji.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUdSniadanie
+            // 
+            this.numericUdSniadanie.Location = new System.Drawing.Point(74, 22);
+            this.numericUdSniadanie.Name = "numericUdSniadanie";
+            this.numericUdSniadanie.Size = new System.Drawing.Size(50, 20);
+            this.numericUdSniadanie.TabIndex = 23;
+            this.numericUdSniadanie.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUdCzczo
+            // 
+            this.numericUdCzczo.Location = new System.Drawing.Point(12, 22);
+            this.numericUdCzczo.Name = "numericUdCzczo";
+            this.numericUdCzczo.Size = new System.Drawing.Size(50, 20);
+            this.numericUdCzczo.TabIndex = 22;
+            this.numericUdCzczo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.comboBoxProdukt);
+            this.groupBox17.Location = new System.Drawing.Point(230, 35);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(207, 56);
+            this.groupBox17.TabIndex = 28;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Produkty";
+            // 
+            // comboBoxProdukt
+            // 
+            this.comboBoxProdukt.DisplayMember = "Nazwa";
+            this.comboBoxProdukt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProdukt.FormattingEnabled = true;
+            this.comboBoxProdukt.Location = new System.Drawing.Point(13, 22);
+            this.comboBoxProdukt.Name = "comboBoxProdukt";
+            this.comboBoxProdukt.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxProdukt.TabIndex = 19;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.comboBoxProducenci);
+            this.groupBox16.Location = new System.Drawing.Point(16, 35);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(207, 56);
+            this.groupBox16.TabIndex = 27;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Producenci";
+            // 
+            // comboBoxProducenci
+            // 
+            this.comboBoxProducenci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxProducenci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxProducenci.DisplayMember = "Nazwa";
+            this.comboBoxProducenci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProducenci.FormattingEnabled = true;
+            this.comboBoxProducenci.Location = new System.Drawing.Point(12, 22);
+            this.comboBoxProducenci.Name = "comboBoxProducenci";
+            this.comboBoxProducenci.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxProducenci.TabIndex = 26;
+            // 
+            // btnDodajSupl
+            // 
+            this.btnDodajSupl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDodajSupl.Location = new System.Drawing.Point(794, 55);
+            this.btnDodajSupl.Name = "btnDodajSupl";
+            this.btnDodajSupl.Size = new System.Drawing.Size(75, 22);
+            this.btnDodajSupl.TabIndex = 21;
+            this.btnDodajSupl.Text = "Dodaj";
+            this.btnDodajSupl.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -2269,19 +2424,12 @@
             // savePato
             // 
             this.savePato.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.savePato.Location = new System.Drawing.Point(308, 131);
+            this.savePato.Location = new System.Drawing.Point(326, 131);
             this.savePato.Name = "savePato";
             this.savePato.Size = new System.Drawing.Size(91, 25);
             this.savePato.TabIndex = 34;
             this.savePato.Text = "Zapisz";
             this.savePato.UseVisualStyleBackColor = true;
-            // 
-            // Patomorfologia
-            // 
-            this.Patomorfologia.HeaderText = "Patomorfologia";
-            this.Patomorfologia.Name = "Patomorfologia";
-            this.Patomorfologia.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Patomorfologia.Width = 217;
             // 
             // panel3
             // 
@@ -2305,8 +2453,9 @@
             // 
             // textCountRowPato
             // 
-            this.textCountRowPato.Location = new System.Drawing.Point(308, 95);
+            this.textCountRowPato.Location = new System.Drawing.Point(326, 95);
             this.textCountRowPato.Name = "textCountRowPato";
+            this.textCountRowPato.ReadOnly = true;
             this.textCountRowPato.Size = new System.Drawing.Size(91, 20);
             this.textCountRowPato.TabIndex = 38;
             // 
@@ -2427,13 +2576,15 @@
             // 
             // btnDodajPato
             // 
+            this.btnDodajPato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodajPato.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDodajPato.Location = new System.Drawing.Point(308, 39);
+            this.btnDodajPato.Location = new System.Drawing.Point(326, 38);
             this.btnDodajPato.Name = "btnDodajPato";
-            this.btnDodajPato.Size = new System.Drawing.Size(91, 25);
+            this.btnDodajPato.Size = new System.Drawing.Size(91, 20);
             this.btnDodajPato.TabIndex = 35;
             this.btnDodajPato.Text = "Dodaj";
             this.btnDodajPato.UseVisualStyleBackColor = true;
+            this.btnDodajPato.Click += new System.EventHandler(this.btnDodajPato_Click);
             // 
             // comboBoxPatomorfologia
             // 
@@ -2441,9 +2592,12 @@
             this.comboBoxPatomorfologia.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxPatomorfologia.DisplayMember = "Patomorfologia";
             this.comboBoxPatomorfologia.FormattingEnabled = true;
-            this.comboBoxPatomorfologia.Location = new System.Drawing.Point(22, 39);
+            this.comboBoxPatomorfologia.Items.AddRange(new object[] {
+            "pato 1",
+            "pato 2"});
+            this.comboBoxPatomorfologia.Location = new System.Drawing.Point(14, 38);
             this.comboBoxPatomorfologia.Name = "comboBoxPatomorfologia";
-            this.comboBoxPatomorfologia.Size = new System.Drawing.Size(261, 21);
+            this.comboBoxPatomorfologia.Size = new System.Drawing.Size(290, 21);
             this.comboBoxPatomorfologia.TabIndex = 33;
             this.comboBoxPatomorfologia.ValueMember = "Patomorfologia";
             // 
@@ -2452,7 +2606,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(305, 78);
+            this.label13.Location = new System.Drawing.Point(324, 78);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(94, 13);
             this.label13.TabIndex = 37;
@@ -2463,10 +2617,17 @@
             this.dataGridViewPato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPato.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Patomorfologia});
-            this.dataGridViewPato.Location = new System.Drawing.Point(21, 72);
+            this.dataGridViewPato.Location = new System.Drawing.Point(14, 72);
             this.dataGridViewPato.Name = "dataGridViewPato";
-            this.dataGridViewPato.Size = new System.Drawing.Size(261, 197);
+            this.dataGridViewPato.Size = new System.Drawing.Size(290, 197);
             this.dataGridViewPato.TabIndex = 36;
+            // 
+            // Patomorfologia
+            // 
+            this.Patomorfologia.HeaderText = "Patomorfologia";
+            this.Patomorfologia.Name = "Patomorfologia";
+            this.Patomorfologia.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Patomorfologia.Width = 246;
             // 
             // panelPato
             // 
@@ -2480,7 +2641,7 @@
             this.panelPato.Controls.Add(this.comboBoxPatomorfologia);
             this.panelPato.Location = new System.Drawing.Point(23, 304);
             this.panelPato.Name = "panelPato";
-            this.panelPato.Size = new System.Drawing.Size(440, 289);
+            this.panelPato.Size = new System.Drawing.Size(441, 283);
             this.panelPato.TabIndex = 64;
             // 
             // forHealthDBDataSet
@@ -2622,6 +2783,86 @@
             this.panel6.Size = new System.Drawing.Size(890, 101);
             this.panel6.TabIndex = 75;
             // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.comboBox7);
+            this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox15.Location = new System.Drawing.Point(621, 34);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(184, 58);
+            this.groupBox15.TabIndex = 38;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "IV faza";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(15, 23);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(156, 21);
+            this.comboBox7.TabIndex = 34;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.comboBox6);
+            this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.Location = new System.Drawing.Point(418, 34);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(184, 58);
+            this.groupBox14.TabIndex = 37;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "III faza";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(13, 23);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(156, 21);
+            this.comboBox6.TabIndex = 33;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.comboBox5);
+            this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.Location = new System.Drawing.Point(215, 34);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(184, 58);
+            this.groupBox13.TabIndex = 36;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "II faza";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(14, 23);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(156, 21);
+            this.comboBox5.TabIndex = 32;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.comboBox2);
+            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.Location = new System.Drawing.Point(12, 34);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(184, 58);
+            this.groupBox12.TabIndex = 35;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "I faza";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(13, 23);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(156, 21);
+            this.comboBox2.TabIndex = 31;
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -2701,227 +2942,6 @@
             this.btnZapiszWszystko.Text = "Zapisz";
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(13, 23);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(156, 21);
-            this.comboBox2.TabIndex = 31;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(14, 23);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(156, 21);
-            this.comboBox5.TabIndex = 32;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(13, 23);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(156, 21);
-            this.comboBox6.TabIndex = 33;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(15, 23);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(156, 21);
-            this.comboBox7.TabIndex = 34;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.comboBox2);
-            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.Location = new System.Drawing.Point(12, 34);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(184, 58);
-            this.groupBox12.TabIndex = 35;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "I faza";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.comboBox5);
-            this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(215, 34);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(184, 58);
-            this.groupBox13.TabIndex = 36;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "II faza";
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.comboBox6);
-            this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(418, 34);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(184, 58);
-            this.groupBox14.TabIndex = 37;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "III faza";
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.comboBox7);
-            this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox15.Location = new System.Drawing.Point(621, 34);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(184, 58);
-            this.groupBox15.TabIndex = 38;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "IV faza";
-            // 
-            // zywienie
-            // 
-            this.zywienie.HeaderText = "Zalecenia żywieniowe";
-            this.zywienie.Name = "zywienie";
-            this.zywienie.Width = 390;
-            // 
-            // comboBoxProducenci
-            // 
-            this.comboBoxProducenci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxProducenci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxProducenci.DisplayMember = "Nazwa";
-            this.comboBoxProducenci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxProducenci.FormattingEnabled = true;
-            this.comboBoxProducenci.Location = new System.Drawing.Point(12, 22);
-            this.comboBoxProducenci.Name = "comboBoxProducenci";
-            this.comboBoxProducenci.Size = new System.Drawing.Size(182, 21);
-            this.comboBoxProducenci.TabIndex = 26;
-            // 
-            // numericUdSnem
-            // 
-            this.numericUdSnem.Location = new System.Drawing.Point(198, 22);
-            this.numericUdSnem.Name = "numericUdSnem";
-            this.numericUdSnem.Size = new System.Drawing.Size(50, 20);
-            this.numericUdSnem.TabIndex = 25;
-            this.numericUdSnem.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUdKolacji
-            // 
-            this.numericUdKolacji.Location = new System.Drawing.Point(136, 22);
-            this.numericUdKolacji.Name = "numericUdKolacji";
-            this.numericUdKolacji.Size = new System.Drawing.Size(50, 20);
-            this.numericUdKolacji.TabIndex = 24;
-            this.numericUdKolacji.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUdSniadanie
-            // 
-            this.numericUdSniadanie.Location = new System.Drawing.Point(74, 22);
-            this.numericUdSniadanie.Name = "numericUdSniadanie";
-            this.numericUdSniadanie.Size = new System.Drawing.Size(50, 20);
-            this.numericUdSniadanie.TabIndex = 23;
-            this.numericUdSniadanie.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUdCzczo
-            // 
-            this.numericUdCzczo.Location = new System.Drawing.Point(12, 22);
-            this.numericUdCzczo.Name = "numericUdCzczo";
-            this.numericUdCzczo.Size = new System.Drawing.Size(50, 20);
-            this.numericUdCzczo.TabIndex = 22;
-            this.numericUdCzczo.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // btnDodajSupl
-            // 
-            this.btnDodajSupl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDodajSupl.Location = new System.Drawing.Point(794, 55);
-            this.btnDodajSupl.Name = "btnDodajSupl";
-            this.btnDodajSupl.Size = new System.Drawing.Size(75, 22);
-            this.btnDodajSupl.TabIndex = 21;
-            this.btnDodajSupl.Text = "Dodaj";
-            this.btnDodajSupl.UseVisualStyleBackColor = true;
-            // 
-            // numericUdOpakowania
-            // 
-            this.numericUdOpakowania.Location = new System.Drawing.Point(9, 22);
-            this.numericUdOpakowania.Name = "numericUdOpakowania";
-            this.numericUdOpakowania.Size = new System.Drawing.Size(50, 20);
-            this.numericUdOpakowania.TabIndex = 20;
-            this.numericUdOpakowania.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // comboBoxProdukt
-            // 
-            this.comboBoxProdukt.DisplayMember = "Nazwa";
-            this.comboBoxProdukt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxProdukt.FormattingEnabled = true;
-            this.comboBoxProdukt.Location = new System.Drawing.Point(13, 22);
-            this.comboBoxProdukt.Name = "comboBoxProdukt";
-            this.comboBoxProdukt.Size = new System.Drawing.Size(182, 21);
-            this.comboBoxProdukt.TabIndex = 19;
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.comboBoxProducenci);
-            this.groupBox16.Location = new System.Drawing.Point(16, 35);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(207, 56);
-            this.groupBox16.TabIndex = 27;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Producenci";
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.comboBoxProdukt);
-            this.groupBox17.Location = new System.Drawing.Point(230, 35);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(207, 56);
-            this.groupBox17.TabIndex = 28;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "Produkty";
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Controls.Add(this.numericUdSnem);
-            this.groupBox18.Controls.Add(this.numericUdKolacji);
-            this.groupBox18.Controls.Add(this.numericUdSniadanie);
-            this.groupBox18.Controls.Add(this.numericUdCzczo);
-            this.groupBox18.Location = new System.Drawing.Point(521, 34);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(260, 56);
-            this.groupBox18.TabIndex = 29;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Dawkowanie";
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.numericUdOpakowania);
-            this.groupBox19.Location = new System.Drawing.Point(444, 35);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(70, 56);
-            this.groupBox19.TabIndex = 30;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Miesiące";
             // 
             // Form1
             // 
@@ -3027,6 +3047,15 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelSuplementy.ResumeLayout(false);
+            this.groupBox19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).EndInit();
+            this.groupBox18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).EndInit();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panelDaneOsobowe.ResumeLayout(false);
@@ -3049,23 +3078,14 @@
             this.panel24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlergen)).EndInit();
             this.panel6.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSnem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdKolacji)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdSniadanie)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdCzczo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUdOpakowania)).EndInit();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox19.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3092,9 +3112,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ilosc;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDodajHomo;
         private System.Windows.Forms.ComboBox comboBoxHomeop;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel11;
@@ -3167,7 +3185,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panelDaneOsobowe;
         private System.Windows.Forms.Button savePato;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Patomorfologia;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textCountRowPato;
@@ -3279,7 +3296,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ileRazySzpital;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button btnDodajBol;
-        private System.Windows.Forms.TextBox textBoxBole;
         private System.Windows.Forms.DataGridViewTextBoxColumn bole;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSporadyczne;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrzewlekle;
@@ -3316,6 +3332,10 @@
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.ComboBox comboBoxProducenci;
         private System.Windows.Forms.Button btnDodajSupl;
+        private System.Windows.Forms.ComboBox comboBoxBole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ilosc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Patomorfologia;
     }
 }
 

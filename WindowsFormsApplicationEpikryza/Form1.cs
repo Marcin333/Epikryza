@@ -261,14 +261,14 @@ namespace WindowsFormsApplicationEpikryza
 
         private void btnDodajBol_Click(object sender, EventArgs e)
         {
-            if (!(String.IsNullOrEmpty(textBoxBole.Text)))
+            if (!(String.IsNullOrEmpty(comboBoxBole.Text)))
             {
-                dataGridViewBole.Rows.Add(textBoxBole.Text, 
+                dataGridViewBole.Rows.Add(comboBoxBole.Text, 
                     checkBoxSporadycznie.Checked ? checkBoxSporadycznie.Text : null,
                     checkBoxPrzewlekle.Checked ? checkBoxPrzewlekle.Text : null,
                     checkBoxOstre.Checked ? checkBoxOstre.Text : null);
             }
-            textBoxBole.Text = String.Empty;
+            comboBoxBole.Text = String.Empty;
             checkBoxSporadycznie.Checked = false;
             checkBoxSporadycznie.BackColor = SystemColors.GradientInactiveCaption;
             checkBoxPrzewlekle.Checked = false;
@@ -342,7 +342,56 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         zywienieTotal += 1;
                         this.textBoxCountZywieniowe.Text = zywienieTotal.ToString();
-                        Console.WriteLine(zywienieTotal);
+                        //Console.WriteLine(zywienieTotal);
+                    }
+                }
+            }
+        }
+
+        private void btnDodajPato_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(comboBoxPatomorfologia.Text)))
+            {
+                dataGridViewPato.Rows.Add(comboBoxPatomorfologia.Text);
+                comboBoxPatomorfologia.Text = String.Empty;
+            }
+            int counter;
+            int patoTotal = 0;
+
+            for (counter = 0; counter < (dataGridViewPato.Rows.Count); counter++)
+            {
+                if (dataGridViewPato.Rows[counter].Cells["Patomorfologia"].Value != null)
+                {
+                    if (dataGridViewPato.Rows[counter].Cells["Patomorfologia"].
+                        Value.ToString().Length != 0)
+                    {
+                        patoTotal += 1;
+                        this.textCountRowPato.Text = patoTotal.ToString();
+                    }
+                }
+            }
+
+        }
+
+        private void btnDodajHomo_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(comboBoxPatomorfologia.Text)))
+            {
+                dataGridViewPato.Rows.Add(comboBoxPatomorfologia.Text);
+                comboBoxPatomorfologia.Text = String.Empty;
+            }
+            int counter;
+            int patoTotal = 0;
+
+            for (counter = 0; counter < (dataGridViewPato.Rows.Count); counter++)
+            {
+                if (dataGridViewPato.Rows[counter].Cells["Patomorfologia"].Value != null)
+                {
+                    if (dataGridViewPato.Rows[counter].Cells["Patomorfologia"].
+                        Value.ToString().Length != 0)
+                    {
+                        patoTotal += 1;
+                        this.textCountRowPato.Text = patoTotal.ToString();
                     }
                 }
             }
