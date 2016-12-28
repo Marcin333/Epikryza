@@ -428,6 +428,14 @@ namespace WindowsFormsApplicationEpikryza
                 dataGridViewSupl.Rows.Add(comboBoxProducenci.Text, comboBoxProdukty.Text,
                     numericUdOpakowania.Value, numericUdCzczo.Value, numericUdSniadanie.Value,
                     numericUdKolacji.Value, numericUdSnem.Value);
+                comboBoxProducenci.Text = String.Empty;
+                comboBoxProdukty.Text = String.Empty;
+                numericUdOpakowania.Value = 1;
+                numericUdCzczo.Value = 1;
+                numericUdSniadanie.Value = 1;
+                numericUdKolacji.Value = 1;
+                numericUdSnem.Value = 1;
+
             }
         }
     }
