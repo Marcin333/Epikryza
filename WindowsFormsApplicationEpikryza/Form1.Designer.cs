@@ -201,7 +201,7 @@
             this.numericUdSniadanie = new System.Windows.Forms.NumericUpDown();
             this.numericUdCzczo = new System.Windows.Forms.NumericUpDown();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.comboBoxProdukt = new System.Windows.Forms.ComboBox();
+            this.comboBoxProdukty = new System.Windows.Forms.ComboBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.comboBoxProducenci = new System.Windows.Forms.ComboBox();
             this.btnDodajSupl = new System.Windows.Forms.Button();
@@ -415,7 +415,7 @@
             this.panel15.Controls.Add(this.groupBoxWizyta);
             this.panel15.Controls.Add(this.panel16);
             this.panel15.Controls.Add(this.groupBox10);
-            this.panel15.Location = new System.Drawing.Point(18, 1895);
+            this.panel15.Location = new System.Drawing.Point(22, 1854);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(494, 1230);
             this.panel15.TabIndex = 68;
@@ -428,7 +428,7 @@
             this.groupBox11.Controls.Add(this.textBoxLeki);
             this.groupBox11.Controls.Add(this.dataGridViewSuplementy);
             this.groupBox11.Controls.Add(this.dataGridViewLeki);
-            this.groupBox11.Location = new System.Drawing.Point(11, 1006);
+            this.groupBox11.Location = new System.Drawing.Point(13, 1006);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(469, 221);
             this.groupBox11.TabIndex = 107;
@@ -509,7 +509,7 @@
             this.groupBox9.Controls.Add(this.checkBoxSporadycznie);
             this.groupBox9.Controls.Add(this.btnDodajBol);
             this.groupBox9.Controls.Add(this.dataGridViewBole);
-            this.groupBox9.Location = new System.Drawing.Point(12, 508);
+            this.groupBox9.Location = new System.Drawing.Point(14, 508);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(470, 260);
             this.groupBox9.TabIndex = 99;
@@ -621,7 +621,7 @@
             this.groupBox8.Controls.Add(this.comboBoxIleRazySzpital);
             this.groupBox8.Controls.Add(this.textBoxSzpital);
             this.groupBox8.Controls.Add(this.dataGridViewSzpital);
-            this.groupBox8.Location = new System.Drawing.Point(11, 305);
+            this.groupBox8.Location = new System.Drawing.Point(14, 305);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(470, 197);
             this.groupBox8.TabIndex = 98;
@@ -764,7 +764,7 @@
             this.panelNiezyt.Controls.Add(this.comboBoxNiezyty);
             this.panelNiezyt.Controls.Add(this.label41);
             this.panelNiezyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelNiezyt.Location = new System.Drawing.Point(16, 170);
+            this.panelNiezyt.Location = new System.Drawing.Point(14, 170);
             this.panelNiezyt.Name = "panelNiezyt";
             this.panelNiezyt.Size = new System.Drawing.Size(465, 76);
             this.panelNiezyt.TabIndex = 85;
@@ -1327,7 +1327,7 @@
             this.panel17.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel17.Controls.Add(this.pictureBox1);
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(518, 1894);
+            this.panel17.Location = new System.Drawing.Point(521, 1854);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(391, 839);
             this.panel17.TabIndex = 70;
@@ -1390,7 +1390,7 @@
             this.comboBoxZywienie.Items.AddRange(new object[] {
             "zalecenie 1",
             "zalecenie 2"});
-            this.comboBoxZywienie.Location = new System.Drawing.Point(20, 36);
+            this.comboBoxZywienie.Location = new System.Drawing.Point(14, 36);
             this.comboBoxZywienie.Name = "comboBoxZywienie";
             this.comboBoxZywienie.Size = new System.Drawing.Size(295, 21);
             this.comboBoxZywienie.TabIndex = 32;
@@ -1400,7 +1400,7 @@
             this.dataGridViewZywienie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewZywienie.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.zywienie});
-            this.dataGridViewZywienie.Location = new System.Drawing.Point(20, 70);
+            this.dataGridViewZywienie.Location = new System.Drawing.Point(14, 70);
             this.dataGridViewZywienie.Name = "dataGridViewZywienie";
             this.dataGridViewZywienie.Size = new System.Drawing.Size(427, 160);
             this.dataGridViewZywienie.TabIndex = 31;
@@ -1437,7 +1437,7 @@
             this.panel21.Controls.Add(this.groupBoxPoraDnia);
             this.panel21.Controls.Add(this.groupBox5);
             this.panel21.Controls.Add(this.panel22);
-            this.panel21.Location = new System.Drawing.Point(20, 1493);
+            this.panel21.Location = new System.Drawing.Point(22, 1462);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(890, 279);
             this.panel21.TabIndex = 72;
@@ -1451,7 +1451,7 @@
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 168);
+            this.groupBox1.Location = new System.Drawing.Point(14, 168);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(653, 69);
             this.groupBox1.TabIndex = 51;
@@ -1460,6 +1460,7 @@
             // 
             // textBoxWPoPoludniu
             // 
+            this.textBoxWPoPoludniu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxWPoPoludniu.Location = new System.Drawing.Point(261, 35);
             this.textBoxWPoPoludniu.Name = "textBoxWPoPoludniu";
             this.textBoxWPoPoludniu.Size = new System.Drawing.Size(144, 20);
@@ -1467,6 +1468,7 @@
             // 
             // textBoxWRano
             // 
+            this.textBoxWRano.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxWRano.Location = new System.Drawing.Point(48, 35);
             this.textBoxWRano.Name = "textBoxWRano";
             this.textBoxWRano.Size = new System.Drawing.Size(144, 20);
@@ -1474,6 +1476,7 @@
             // 
             // textBoxWwieczor
             // 
+            this.textBoxWwieczor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxWwieczor.Location = new System.Drawing.Point(474, 35);
             this.textBoxWwieczor.Name = "textBoxWwieczor";
             this.textBoxWwieczor.Size = new System.Drawing.Size(144, 20);
@@ -1541,7 +1544,7 @@
             // 
             this.groupBox7.Controls.Add(this.comboBoxNatezenie);
             this.groupBox7.Controls.Add(this.label21);
-            this.groupBox7.Location = new System.Drawing.Point(526, 93);
+            this.groupBox7.Location = new System.Drawing.Point(526, 92);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(143, 69);
             this.groupBox7.TabIndex = 39;
@@ -1583,7 +1586,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.comboBoxMata);
-            this.groupBox3.Location = new System.Drawing.Point(15, 93);
+            this.groupBox3.Location = new System.Drawing.Point(14, 92);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(143, 69);
             this.groupBox3.TabIndex = 38;
@@ -1615,7 +1618,7 @@
             // 
             this.groupBox6.Controls.Add(this.numericUDKrotnosc);
             this.groupBox6.Controls.Add(this.label20);
-            this.groupBox6.Location = new System.Drawing.Point(373, 93);
+            this.groupBox6.Location = new System.Drawing.Point(373, 92);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(143, 69);
             this.groupBox6.TabIndex = 39;
@@ -1647,7 +1650,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.comboBoxPx);
-            this.groupBox4.Location = new System.Drawing.Point(169, 93);
+            this.groupBox4.Location = new System.Drawing.Point(169, 92);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(92, 69);
             this.groupBox4.TabIndex = 39;
@@ -1673,7 +1676,7 @@
             this.groupBoxPoraDnia.Controls.Add(this.radioBtnPopoludniu);
             this.groupBoxPoraDnia.Controls.Add(this.radioBtnRano);
             this.groupBoxPoraDnia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxPoraDnia.Location = new System.Drawing.Point(15, 35);
+            this.groupBoxPoraDnia.Location = new System.Drawing.Point(14, 35);
             this.groupBoxPoraDnia.Name = "groupBoxPoraDnia";
             this.groupBoxPoraDnia.Size = new System.Drawing.Size(340, 50);
             this.groupBoxPoraDnia.TabIndex = 34;
@@ -1725,7 +1728,7 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.comboBoxMx);
-            this.groupBox5.Location = new System.Drawing.Point(271, 93);
+            this.groupBox5.Location = new System.Drawing.Point(271, 92);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(92, 69);
             this.groupBox5.TabIndex = 39;
@@ -1774,9 +1777,9 @@
             this.panel19.Controls.Add(this.comboBoxZywienie);
             this.panel19.Controls.Add(this.dataGridViewZywienie);
             this.panel19.Controls.Add(this.btnDodajZywienie);
-            this.panel19.Location = new System.Drawing.Point(20, 1243);
+            this.panel19.Location = new System.Drawing.Point(23, 1211);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(890, 245);
+            this.panel19.Size = new System.Drawing.Size(889, 245);
             this.panel19.TabIndex = 71;
             // 
             // imgProfamilia
@@ -2113,7 +2116,7 @@
             this.groupBox19.Size = new System.Drawing.Size(70, 56);
             this.groupBox19.TabIndex = 30;
             this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Miesiące";
+            this.groupBox19.Text = "Miesiąc";
             // 
             // numericUdOpakowania
             // 
@@ -2196,7 +2199,7 @@
             // 
             // groupBox17
             // 
-            this.groupBox17.Controls.Add(this.comboBoxProdukt);
+            this.groupBox17.Controls.Add(this.comboBoxProdukty);
             this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox17.Location = new System.Drawing.Point(230, 34);
             this.groupBox17.Name = "groupBox17";
@@ -2205,16 +2208,19 @@
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Produkty";
             // 
-            // comboBoxProdukt
+            // comboBoxProdukty
             // 
-            this.comboBoxProdukt.DisplayMember = "Nazwa";
-            this.comboBoxProdukt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxProdukt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxProdukt.FormattingEnabled = true;
-            this.comboBoxProdukt.Location = new System.Drawing.Point(13, 22);
-            this.comboBoxProdukt.Name = "comboBoxProdukt";
-            this.comboBoxProdukt.Size = new System.Drawing.Size(182, 21);
-            this.comboBoxProdukt.TabIndex = 19;
+            this.comboBoxProdukty.DisplayMember = "Nazwa";
+            this.comboBoxProdukty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProdukty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxProdukty.FormattingEnabled = true;
+            this.comboBoxProdukty.Items.AddRange(new object[] {
+            "produkt 1",
+            "produkt 2"});
+            this.comboBoxProdukty.Location = new System.Drawing.Point(13, 22);
+            this.comboBoxProdukty.Name = "comboBoxProdukty";
+            this.comboBoxProdukty.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxProdukty.TabIndex = 19;
             // 
             // groupBox16
             // 
@@ -2235,6 +2241,9 @@
             this.comboBoxProducenci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxProducenci.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxProducenci.FormattingEnabled = true;
+            this.comboBoxProducenci.Items.AddRange(new object[] {
+            "produkt 1",
+            "produkt 2"});
             this.comboBoxProducenci.Location = new System.Drawing.Point(12, 22);
             this.comboBoxProducenci.Name = "comboBoxProducenci";
             this.comboBoxProducenci.Size = new System.Drawing.Size(182, 21);
@@ -2250,6 +2259,7 @@
             this.btnDodajSupl.TabIndex = 21;
             this.btnDodajSupl.Text = "Dodaj";
             this.btnDodajSupl.UseVisualStyleBackColor = true;
+            this.btnDodajSupl.Click += new System.EventHandler(this.btnDodajSupl_Click);
             // 
             // panel2
             // 
@@ -2672,7 +2682,7 @@
             this.panel6.Controls.Add(this.groupBox13);
             this.panel6.Controls.Add(this.groupBox12);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(20, 1786);
+            this.panel6.Location = new System.Drawing.Point(22, 1747);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(890, 101);
             this.panel6.TabIndex = 75;
@@ -2681,7 +2691,7 @@
             // 
             this.groupBox15.Controls.Add(this.comboBox7);
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox15.Location = new System.Drawing.Point(621, 34);
+            this.groupBox15.Location = new System.Drawing.Point(620, 34);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(184, 58);
             this.groupBox15.TabIndex = 38;
@@ -2721,7 +2731,7 @@
             // 
             this.groupBox13.Controls.Add(this.comboBox5);
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(215, 34);
+            this.groupBox13.Location = new System.Drawing.Point(216, 34);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(184, 58);
             this.groupBox13.TabIndex = 36;
@@ -2741,7 +2751,7 @@
             // 
             this.groupBox12.Controls.Add(this.comboBox2);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.Location = new System.Drawing.Point(12, 34);
+            this.groupBox12.Location = new System.Drawing.Point(14, 34);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(184, 58);
             this.groupBox12.TabIndex = 35;
@@ -3283,7 +3293,7 @@
         private System.Windows.Forms.NumericUpDown numericUdSniadanie;
         private System.Windows.Forms.NumericUpDown numericUdCzczo;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.ComboBox comboBoxProdukt;
+        private System.Windows.Forms.ComboBox comboBoxProdukty;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.ComboBox comboBoxProducenci;
         private System.Windows.Forms.Button btnDodajSupl;

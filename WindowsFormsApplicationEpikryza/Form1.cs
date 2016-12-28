@@ -420,5 +420,15 @@ namespace WindowsFormsApplicationEpikryza
                 }
             }
         }
+
+        private void btnDodajSupl_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(comboBoxProducenci.Text)) && !(String.IsNullOrEmpty(comboBoxProdukty.Text)))
+            {
+                dataGridViewSupl.Rows.Add(comboBoxProducenci.Text, comboBoxProdukty.Text,
+                    numericUdOpakowania.Value, numericUdCzczo.Value, numericUdSniadanie.Value,
+                    numericUdKolacji.Value, numericUdSnem.Value);
+            }
+        }
     }
 }
