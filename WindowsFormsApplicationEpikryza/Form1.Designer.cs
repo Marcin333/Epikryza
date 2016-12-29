@@ -2534,6 +2534,8 @@
             this.dataGridViewOpisAlergii.Name = "dataGridViewOpisAlergii";
             this.dataGridViewOpisAlergii.Size = new System.Drawing.Size(290, 202);
             this.dataGridViewOpisAlergii.TabIndex = 31;
+            this.dataGridViewOpisAlergii.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.rowsAddedOpisAlergii);
+            this.dataGridViewOpisAlergii.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowOpisAlergii);
             // 
             // opisAlergi
             // 

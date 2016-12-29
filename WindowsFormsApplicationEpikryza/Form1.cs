@@ -79,6 +79,7 @@ namespace WindowsFormsApplicationEpikryza
         {
             Object selectedItem = comboBAlergen.SelectedItem;
             this.dataGridViewAlergen.Rows.Add(selectedItem);
+            comboBAlergen.Text = String.Empty;
             int counter;
             int alergenyTotal = 0;
 
@@ -93,7 +94,7 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         alergenyTotal += 1;
                         this.textBoxCountAlergeny.Text = alergenyTotal.ToString();
-                        Console.WriteLine(alergenyTotal);
+                        //Console.WriteLine(alergenyTotal);
                     }
                 }
             }
@@ -502,6 +503,28 @@ namespace WindowsFormsApplicationEpikryza
                 countAlergen = int.Parse(textBoxCountAlergeny.Text);
                 countAlergen--;
                 textBoxCountAlergeny.Text = countAlergen.ToString();
+            }
+        }
+
+        private void rowsAddedOpisAlergii(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            int countOpisAlergen;
+            if (textCountRowOpisAlergii.Text != String.Empty)
+            {
+                countOpisAlergen = int.Parse(textCountRowOpisAlergii.Text);
+                countOpisAlergen++;
+                textCountRowOpisAlergii.Text = countOpisAlergen.ToString();
+            }
+        }
+
+        private void userDeletedRowOpisAlergii(object sender, DataGridViewRowEventArgs e)
+        {
+            int countOpisAlergen;
+            if ((textCountRowOpisAlergii.Text != String.Empty) && (int.Parse(textCountRowOpisAlergii.Text) > 0))
+            {
+                countOpisAlergen = int.Parse(textCountRowOpisAlergii.Text);
+                countOpisAlergen--;
+                textCountRowOpisAlergii.Text = countOpisAlergen.ToString();
             }
         }
     }
