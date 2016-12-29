@@ -103,6 +103,8 @@
             this.textBoxKHomeCount = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.dataGridViewKHome = new System.Windows.Forms.DataGridView();
+            this.kompleksHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ilosc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajHomo = new System.Windows.Forms.Button();
             this.comboBoxHomeop = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -160,7 +162,6 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.comboBoxMx = new System.Windows.Forms.ComboBox();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
             this.imgProfamilia = new System.Windows.Forms.PictureBox();
             this.textAge = new System.Windows.Forms.TextBox();
@@ -182,6 +183,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textPlec = new System.Windows.Forms.TextBox();
             this.dataGridViewSupl = new System.Windows.Forms.DataGridView();
+            this.Producent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Produkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ilosc_opakowan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Na_czczo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Do_sniadania = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Do_kolacji = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Przed_snem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.textWiek = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -223,6 +231,7 @@
             this.labelAlergeny = new System.Windows.Forms.Label();
             this.comboBoxOpisAlergii = new System.Windows.Forms.ComboBox();
             this.dataGridViewOpisAlergii = new System.Windows.Forms.DataGridView();
+            this.opisAlergi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajOpisAlergii = new System.Windows.Forms.Button();
             this.btnDodajPato = new System.Windows.Forms.Button();
             this.comboBoxPatomorfologia = new System.Windows.Forms.ComboBox();
@@ -240,6 +249,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.comboBAlergen = new System.Windows.Forms.ComboBox();
             this.dataGridViewAlergen = new System.Windows.Forms.DataGridView();
+            this.alergen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bDodajAlergen = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
@@ -258,17 +268,6 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
-            this.kompleksHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ilosc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.opisAlergi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alergen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Produkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ilosc_opakowan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Na_czczo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Do_sniadania = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Do_kolacji = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Przed_snem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -1069,7 +1068,7 @@
             this.panel8.Controls.Add(this.dataGridViewKHome);
             this.panel8.Controls.Add(this.btnDodajHomo);
             this.panel8.Controls.Add(this.comboBoxHomeop);
-            this.panel8.Location = new System.Drawing.Point(469, 305);
+            this.panel8.Location = new System.Drawing.Point(469, 304);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(441, 283);
             this.panel8.TabIndex = 65;
@@ -1113,6 +1112,7 @@
             this.textBoxKHomeCount.ReadOnly = true;
             this.textBoxKHomeCount.Size = new System.Drawing.Size(91, 20);
             this.textBoxKHomeCount.TabIndex = 38;
+            this.textBoxKHomeCount.Text = "0";
             // 
             // label24
             // 
@@ -1135,6 +1135,18 @@
             this.dataGridViewKHome.Name = "dataGridViewKHome";
             this.dataGridViewKHome.Size = new System.Drawing.Size(290, 197);
             this.dataGridViewKHome.TabIndex = 36;
+            // 
+            // kompleksHome
+            // 
+            this.kompleksHome.HeaderText = "K. homeopatyczny";
+            this.kompleksHome.Name = "kompleksHome";
+            this.kompleksHome.Width = 206;
+            // 
+            // Ilosc
+            // 
+            this.Ilosc.HeaderText = "Ilość";
+            this.Ilosc.Name = "Ilosc";
+            this.Ilosc.Width = 40;
             // 
             // btnDodajHomo
             // 
@@ -1757,17 +1769,6 @@
             this.panel22.Size = new System.Drawing.Size(889, 26);
             this.panel22.TabIndex = 30;
             // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button9.Location = new System.Drawing.Point(18, 2215);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 28);
-            this.button9.TabIndex = 73;
-            this.button9.Text = "Zapisz";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -1990,6 +1991,56 @@
             this.dataGridViewSupl.ReadOnly = true;
             this.dataGridViewSupl.Size = new System.Drawing.Size(860, 206);
             this.dataGridViewSupl.TabIndex = 8;
+            // 
+            // Producent
+            // 
+            this.Producent.HeaderText = "Producent";
+            this.Producent.Name = "Producent";
+            this.Producent.ReadOnly = true;
+            this.Producent.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Producent.Width = 195;
+            // 
+            // Produkt
+            // 
+            this.Produkt.HeaderText = "Produkt";
+            this.Produkt.Name = "Produkt";
+            this.Produkt.ReadOnly = true;
+            this.Produkt.Width = 195;
+            // 
+            // Ilosc_opakowan
+            // 
+            this.Ilosc_opakowan.HeaderText = "Opakowania";
+            this.Ilosc_opakowan.Name = "Ilosc_opakowan";
+            this.Ilosc_opakowan.ReadOnly = true;
+            this.Ilosc_opakowan.Width = 86;
+            // 
+            // Na_czczo
+            // 
+            this.Na_czczo.HeaderText = "Na czczo";
+            this.Na_czczo.Name = "Na_czczo";
+            this.Na_czczo.ReadOnly = true;
+            this.Na_czczo.Width = 85;
+            // 
+            // Do_sniadania
+            // 
+            this.Do_sniadania.HeaderText = "Do śniadania";
+            this.Do_sniadania.Name = "Do_sniadania";
+            this.Do_sniadania.ReadOnly = true;
+            this.Do_sniadania.Width = 85;
+            // 
+            // Do_kolacji
+            // 
+            this.Do_kolacji.HeaderText = "Do kolacji";
+            this.Do_kolacji.Name = "Do_kolacji";
+            this.Do_kolacji.ReadOnly = true;
+            this.Do_kolacji.Width = 85;
+            // 
+            // Przed_snem
+            // 
+            this.Przed_snem.HeaderText = "Przed snem";
+            this.Przed_snem.Name = "Przed_snem";
+            this.Przed_snem.ReadOnly = true;
+            this.Przed_snem.Width = 85;
             // 
             // label6
             // 
@@ -2238,7 +2289,6 @@
             this.comboBoxProducenci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBoxProducenci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxProducenci.DisplayMember = "Nazwa";
-            this.comboBoxProducenci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxProducenci.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxProducenci.FormattingEnabled = true;
             this.comboBoxProducenci.Items.AddRange(new object[] {
@@ -2314,7 +2364,7 @@
             this.panelDaneOsobowe.Controls.Add(this.textNazwisko);
             this.panelDaneOsobowe.Controls.Add(this.label1);
             this.panelDaneOsobowe.Controls.Add(this.textImie);
-            this.panelDaneOsobowe.Location = new System.Drawing.Point(23, 99);
+            this.panelDaneOsobowe.Location = new System.Drawing.Point(23, 98);
             this.panelDaneOsobowe.Name = "panelDaneOsobowe";
             this.panelDaneOsobowe.Size = new System.Drawing.Size(887, 200);
             this.panelDaneOsobowe.TabIndex = 60;
@@ -2393,6 +2443,7 @@
             this.textCountRowPato.ReadOnly = true;
             this.textCountRowPato.Size = new System.Drawing.Size(91, 20);
             this.textCountRowPato.TabIndex = 38;
+            this.textCountRowPato.Text = "0";
             // 
             // panelAlergeny
             // 
@@ -2403,7 +2454,7 @@
             this.panelAlergeny.Controls.Add(this.comboBoxOpisAlergii);
             this.panelAlergeny.Controls.Add(this.dataGridViewOpisAlergii);
             this.panelAlergeny.Controls.Add(this.btnDodajOpisAlergii);
-            this.panelAlergeny.Location = new System.Drawing.Point(470, 593);
+            this.panelAlergeny.Location = new System.Drawing.Point(469, 593);
             this.panelAlergeny.Name = "panelAlergeny";
             this.panelAlergeny.Size = new System.Drawing.Size(441, 283);
             this.panelAlergeny.TabIndex = 62;
@@ -2482,6 +2533,12 @@
             this.dataGridViewOpisAlergii.Size = new System.Drawing.Size(290, 202);
             this.dataGridViewOpisAlergii.TabIndex = 31;
             // 
+            // opisAlergi
+            // 
+            this.opisAlergi.HeaderText = "Opis Alergii";
+            this.opisAlergi.Name = "opisAlergi";
+            this.opisAlergi.Width = 246;
+            // 
             // btnDodajOpisAlergii
             // 
             this.btnDodajOpisAlergii.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2541,6 +2598,8 @@
             this.dataGridViewPato.Name = "dataGridViewPato";
             this.dataGridViewPato.Size = new System.Drawing.Size(290, 197);
             this.dataGridViewPato.TabIndex = 36;
+            this.dataGridViewPato.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.RowsAddedPatom);
+            this.dataGridViewPato.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowPato);
             // 
             // Patomorfologia
             // 
@@ -2662,6 +2721,12 @@
             this.dataGridViewAlergen.Name = "dataGridViewAlergen";
             this.dataGridViewAlergen.Size = new System.Drawing.Size(290, 202);
             this.dataGridViewAlergen.TabIndex = 31;
+            // 
+            // alergen
+            // 
+            this.alergen.HeaderText = "Alergeny";
+            this.alergen.Name = "alergen";
+            this.alergen.Width = 246;
             // 
             // bDodajAlergen
             // 
@@ -2847,80 +2912,6 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
-            // kompleksHome
-            // 
-            this.kompleksHome.HeaderText = "K. homeopatyczny";
-            this.kompleksHome.Name = "kompleksHome";
-            this.kompleksHome.Width = 206;
-            // 
-            // Ilosc
-            // 
-            this.Ilosc.HeaderText = "Ilość";
-            this.Ilosc.Name = "Ilosc";
-            this.Ilosc.Width = 40;
-            // 
-            // opisAlergi
-            // 
-            this.opisAlergi.HeaderText = "Opis Alergii";
-            this.opisAlergi.Name = "opisAlergi";
-            this.opisAlergi.Width = 246;
-            // 
-            // alergen
-            // 
-            this.alergen.HeaderText = "Alergeny";
-            this.alergen.Name = "alergen";
-            this.alergen.Width = 246;
-            // 
-            // Producent
-            // 
-            this.Producent.HeaderText = "Producent";
-            this.Producent.Name = "Producent";
-            this.Producent.ReadOnly = true;
-            this.Producent.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Producent.Width = 195;
-            // 
-            // Produkt
-            // 
-            this.Produkt.HeaderText = "Produkt";
-            this.Produkt.Name = "Produkt";
-            this.Produkt.ReadOnly = true;
-            this.Produkt.Width = 195;
-            // 
-            // Ilosc_opakowan
-            // 
-            this.Ilosc_opakowan.HeaderText = "Opakowania";
-            this.Ilosc_opakowan.Name = "Ilosc_opakowan";
-            this.Ilosc_opakowan.ReadOnly = true;
-            this.Ilosc_opakowan.Width = 86;
-            // 
-            // Na_czczo
-            // 
-            this.Na_czczo.HeaderText = "Na czczo";
-            this.Na_czczo.Name = "Na_czczo";
-            this.Na_czczo.ReadOnly = true;
-            this.Na_czczo.Width = 85;
-            // 
-            // Do_sniadania
-            // 
-            this.Do_sniadania.HeaderText = "Do śniadania";
-            this.Do_sniadania.Name = "Do_sniadania";
-            this.Do_sniadania.ReadOnly = true;
-            this.Do_sniadania.Width = 85;
-            // 
-            // Do_kolacji
-            // 
-            this.Do_kolacji.HeaderText = "Do kolacji";
-            this.Do_kolacji.Name = "Do_kolacji";
-            this.Do_kolacji.ReadOnly = true;
-            this.Do_kolacji.Width = 85;
-            // 
-            // Przed_snem
-            // 
-            this.Przed_snem.HeaderText = "Przed snem";
-            this.Przed_snem.Name = "Przed_snem";
-            this.Przed_snem.ReadOnly = true;
-            this.Przed_snem.Width = 85;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2938,7 +2929,6 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel21);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.imgProfamilia);
             this.Controls.Add(this.panel1);
@@ -3118,7 +3108,6 @@
         private System.Windows.Forms.Button btnDodajZywienie;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.PictureBox imgProfamilia;
         private System.Windows.Forms.TextBox textAge;

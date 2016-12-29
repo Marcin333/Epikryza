@@ -428,7 +428,7 @@ namespace WindowsFormsApplicationEpikryza
                 dataGridViewSupl.Rows.Add(comboBoxProducenci.Text, comboBoxProdukty.Text,
                     numericUdOpakowania.Value, numericUdCzczo.Value, numericUdSniadanie.Value,
                     numericUdKolacji.Value, numericUdSnem.Value);
-                comboBoxProducenci.Text = String.Empty;
+                comboBoxProducenci.ResetText();
                 comboBoxProdukty.Text = String.Empty;
                 numericUdOpakowania.Value = 1;
                 numericUdCzczo.Value = 1;
@@ -438,5 +438,59 @@ namespace WindowsFormsApplicationEpikryza
 
             }
         }
+
+        private void RowsAddedPatom(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            int countPato;
+            if ((textCountRowPato.Text != String.Empty))
+            {
+                countPato = int.Parse(textCountRowPato.Text);
+                countPato++;
+                textCountRowPato.Text = countPato.ToString();
+            }
+        }
+
+        private void userDeletedRowPato(object sender, DataGridViewRowEventArgs e)
+        {
+            int countPato;
+            if ((textCountRowPato.Text != String.Empty) && (int.Parse(textCountRowPato.Text) > 0))
+            {
+                countPato = int.Parse(textCountRowPato.Text);
+                countPato--;
+                textCountRowPato.Text = countPato.ToString();
+            }
+        }
     }
 }
+
+/*private void userDeletedAlergen(object sender, DataGridViewRowEventArgs e)
+        {
+            // !uwaga if textCountRowAlergeny.Text == "" is not gonna count
+            // uwaga 2 sprawdzanie czy wartosc zostala wybrana z combobox
+            int countAlergeny;
+            if (textCountRowAlergeny.Text != "")
+            {
+                countAlergeny = int.Parse(textCountRowAlergeny.Text);
+                textCountRowAlergeny.Text = countAlergeny.ToString();
+                if (countAlergeny >= 0)     //&& !(countAlergeny < 0)
+                {
+                    countAlergeny--;
+                    textCountRowAlergeny.Text = countAlergeny.ToString();
+                } 
+            }
+        }
+
+        private void userAddedAlergen(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            int countAlergeny;
+            if (textCountRowAlergeny.Text != "")
+            {
+                countAlergeny = int.Parse(textCountRowAlergeny.Text);
+                countAlergeny++;
+                textCountRowAlergeny.Text = countAlergeny.ToString();  
+            }
+            
+            
+        }
+  
+ */
