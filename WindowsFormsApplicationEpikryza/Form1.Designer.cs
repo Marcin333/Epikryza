@@ -1135,6 +1135,8 @@
             this.dataGridViewKHome.Name = "dataGridViewKHome";
             this.dataGridViewKHome.Size = new System.Drawing.Size(290, 197);
             this.dataGridViewKHome.TabIndex = 36;
+            this.dataGridViewKHome.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.rowsAddedHomeo);
+            this.dataGridViewKHome.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowHomeo);
             // 
             // kompleksHome
             // 

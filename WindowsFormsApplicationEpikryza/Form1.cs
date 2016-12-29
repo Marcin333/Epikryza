@@ -460,6 +460,28 @@ namespace WindowsFormsApplicationEpikryza
                 textCountRowPato.Text = countPato.ToString();
             }
         }
+
+        private void rowsAddedHomeo(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            int countHomeo;
+            if ((textBoxKHomeCount.Text != String.Empty))
+            {
+                countHomeo = int.Parse(textBoxKHomeCount.Text);
+                countHomeo++;
+                textBoxKHomeCount.Text = countHomeo.ToString();
+            }
+        }
+
+        private void userDeletedRowHomeo(object sender, DataGridViewRowEventArgs e)
+        {
+            int countHomeo;
+            if ((textBoxKHomeCount.Text != String.Empty) && (int.Parse(textBoxKHomeCount.Text) > 0))
+            {
+                countHomeo = int.Parse(textBoxKHomeCount.Text);
+                countHomeo--;
+                textBoxKHomeCount.Text = countHomeo.ToString();
+            }
+        }
     }
 }
 
