@@ -482,6 +482,28 @@ namespace WindowsFormsApplicationEpikryza
                 textBoxKHomeCount.Text = countHomeo.ToString();
             }
         }
+
+        private void rowsAddedAlergeny(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            int countAlergen;
+            if (textBoxCountAlergeny.Text != String.Empty)
+            {
+                countAlergen = int.Parse(textBoxCountAlergeny.Text);
+                countAlergen++;
+                textBoxCountAlergeny.Text = countAlergen.ToString();
+            }
+        }
+
+        private void userDeletedRowAlergen(object sender, DataGridViewRowEventArgs e)
+        {
+            int countAlergen;
+            if ((textBoxCountAlergeny.Text != String.Empty) && (int.Parse(textBoxCountAlergeny.Text) > 0))
+            {
+                countAlergen = int.Parse(textBoxCountAlergeny.Text);
+                countAlergen--;
+                textBoxCountAlergeny.Text = countAlergen.ToString();
+            }
+        }
     }
 }
 

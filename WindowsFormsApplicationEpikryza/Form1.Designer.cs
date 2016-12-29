@@ -2723,6 +2723,8 @@
             this.dataGridViewAlergen.Name = "dataGridViewAlergen";
             this.dataGridViewAlergen.Size = new System.Drawing.Size(290, 202);
             this.dataGridViewAlergen.TabIndex = 31;
+            this.dataGridViewAlergen.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.rowsAddedAlergeny);
+            this.dataGridViewAlergen.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowAlergen);
             // 
             // alergen
             // 
