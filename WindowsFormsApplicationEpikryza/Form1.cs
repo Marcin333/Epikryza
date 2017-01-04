@@ -193,22 +193,63 @@ namespace WindowsFormsApplicationEpikryza
             try
             {
                 // Vioforoterapia
-                string rano = textBoxWRano.Text;
-                string poPoludniu = textBoxWPoPoludniu.Text;
-                string wieczor = textBoxWwieczor.Text;
-                //Console.WriteLine("+++Rano {0} popoludnie {1} wieczor {2}", rano, poPoludniu, wieczor);
+                if (!(String.IsNullOrEmpty(textBoxWRano.Text)))
+                {
+                    string rano = textBoxWRano.Text;
+                    Console.WriteLine(rano);
+                }
+                if (!(String.IsNullOrEmpty(textBoxWPoPoludniu.Text)))
+                {
+                    string poPoludniu = textBoxWPoPoludniu.Text;
+                    Console.WriteLine(poPoludniu);
+                }
+                if (!(String.IsNullOrEmpty(textBoxWwieczor.Text)))
+                {
+                    string wieczor = textBoxWwieczor.Text;
+                    Console.WriteLine(wieczor);
+                }
+                
                 // Wywiad
-                var wizytaPodKon = groupBoxWizyta.Controls.OfType<RadioButton>()
+                try
+                {
+                    var wizytaPodKon = groupBoxWizyta.Controls.OfType<RadioButton>()
                                         .FirstOrDefault(r => r.Checked);
+                } catch (Exception)
+                {
+                    MessageBox.Show("Wybierz jedną z wartości pola Wizyta.");
+                }
+
+                try
+                {
+                    var omdlenia = groupBoxOmdlenia.Controls.OfType<RadioButton>()
+                                        .FirstOrDefault(r => r.Checked);
+                } catch
+                {
+                    MessageBox.Show("Wybierz jedną z wartości pola Omdlenia.");
+                }
+                
+                try
+                {
+                    var nieprzytomny = groupBoxNieprzytomny.Controls.OfType<RadioButton>()
+                                        .FirstOrDefault(r => r.Checked);
+                } catch
+                {
+                    MessageBox.Show("Wybierz jedną z wartości pola Nieprzytomny");
+                }
+
+                try
+                {
+                    var niezytRodzaj = groupBoxRodzaje.Controls.OfType<RadioButton>()
+                                      .FirstOrDefault(r => r.Checked);
+                } catch
+                {
+                    MessageBox.Show("Wybierz jedną z wartości pola Nieżyty");
+                }
                 string grypy = comboBoxGrypy.Text;
                 string anginy = comboBoxAnginy.Text;
-                var omdlenia = groupBoxOmdlenia.Controls.OfType<RadioButton>()
-                                        .FirstOrDefault(r => r.Checked);
-                var nieprzytomny = groupBoxNieprzytomny.Controls.OfType<RadioButton>()
-                                        .FirstOrDefault(r => r.Checked);
+   
                 Object niezyty = comboBoxNiezyty.Text;
-                var niezytRodzaj = groupBoxRodzaje.Controls.OfType<RadioButton>()
-                                      .FirstOrDefault(r => r.Checked);
+                
                 //int counter;
                 //int alergenyTotal = 0;
                 
@@ -233,7 +274,7 @@ namespace WindowsFormsApplicationEpikryza
                 //Note that this requires that all of the radio buttons be directly in the same container(eg, Panel or Form), and that there is only one group in the container. If that is not the case, you could make List< RadioButton > s in your constructor for each group, then write list.FirstOrDefault(r => r.Checked).
 
 
-                Console.Write("+++ Niezyt rodzaj {0} omdlenia {1} nieprzytomny {2} wizyta Pod Kon {3}", niezytRodzaj.Text, omdlenia.Text, nieprzytomny.Text, wizytaPodKon.Text);
+                //Console.Write("+++ Niezyt rodzaj {0} omdlenia {1} nieprzytomny {2} wizyta Pod Kon {3}", niezytRodzaj.Text, omdlenia.Text, nieprzytomny.Text, wizytaPodKon.Text);
                 //GetRadioBtnText(radioBtnOmdleniaTak);
                 //object omdlenia = radiobtnom
             } catch (Exception ex)
