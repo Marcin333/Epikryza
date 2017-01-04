@@ -256,9 +256,6 @@ namespace WindowsFormsApplicationEpikryza
                     Console.WriteLine("anginy {0}", wypadki);
                 }
 
-                //int counter;
-                //int alergenyTotal = 0;
-
                 foreach (DataGridViewRow row in dataGridViewSzpital.Rows)
                 {
                     if (row.Cells["szpital"].Value != null)
@@ -321,6 +318,35 @@ namespace WindowsFormsApplicationEpikryza
                         && !(String.IsNullOrEmpty(comboBoxFaza3.Text)) && !(String.IsNullOrEmpty(comboBoxFaza4.Text)))
                 {
                     // fazy
+                }
+
+                foreach (DataGridViewRow row in dataGridViewZywienie.Rows)
+                {
+                    if (row.Cells["zywienie"].Value != null)
+                    {
+                        if (row.Cells["zywienie"].Value.ToString().Length != 0)
+                        {
+                            Console.Write("+++ {0}", row.Cells["zywienie"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewSupl.Rows)
+                {
+                    if (row.Cells["Producent"].Value != null && row.Cells["Produkt"].Value != null)
+                    {
+                        if (row.Cells["Producent"].Value.ToString().Length != 0  && 
+                            row.Cells["Produkt"].Value.ToString().Length != 0)
+                        {
+                            Console.WriteLine("{0}", row.Cells["Producent"].Value);
+                            Console.WriteLine("{0}", row.Cells["Produkt"].Value);
+                            Console.WriteLine("{0}", row.Cells["Ilosc_opakowan"].Value);
+                            Console.WriteLine("{0}", row.Cells["Na_czczo"].Value);
+                            Console.WriteLine("{0}", row.Cells["Do_sniadania"].Value);
+                            Console.WriteLine("{0}", row.Cells["Do_kolacji"].Value);
+                            Console.WriteLine("{0}", row.Cells["Przed_snem"].Value);
+                        }
+                    }
                 }
                 //string omdlenia = radioBtnOmdleniaTak.Checked ? radioBtnOmdleniaTak.Text : radioBtnOmdleniaNie.Text;
                 //string niePrzytomny = radioBtnNieprzytTak.Checked ? radioBtnNieprzytTak.Text : radioBtnNieprzytNie.Text;
