@@ -41,7 +41,6 @@
             this.btnDodajLeki = new System.Windows.Forms.Button();
             this.textBoxLeki = new System.Windows.Forms.TextBox();
             this.dataGridViewSuplementy = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewLeki = new System.Windows.Forms.DataGridView();
             this.lekiWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -57,11 +56,8 @@
             this.colOstre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.DodajSzpital = new System.Windows.Forms.Button();
-            this.comboBoxIleRazySzpital = new System.Windows.Forms.ComboBox();
             this.textBoxSzpital = new System.Windows.Forms.TextBox();
             this.dataGridViewSzpital = new System.Windows.Forms.DataGridView();
-            this.szpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ileRazySzpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDolegliwosci = new System.Windows.Forms.DataGridView();
             this.inneDolegliwosci = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label34 = new System.Windows.Forms.Label();
@@ -253,13 +249,13 @@
             this.bDodajAlergen = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFaza4 = new System.Windows.Forms.ComboBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFaza3 = new System.Windows.Forms.ComboBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFaza2 = new System.Windows.Forms.ComboBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -268,6 +264,8 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
+            this.szpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.suplementyWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -472,17 +470,11 @@
             // 
             this.dataGridViewSuplementy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSuplementy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1});
+            this.suplementyWywiad});
             this.dataGridViewSuplementy.Location = new System.Drawing.Point(237, 50);
             this.dataGridViewSuplementy.Name = "dataGridViewSuplementy";
             this.dataGridViewSuplementy.Size = new System.Drawing.Size(224, 160);
             this.dataGridViewSuplementy.TabIndex = 95;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Suplementy";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 185;
             // 
             // dataGridViewLeki
             // 
@@ -617,7 +609,6 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.DodajSzpital);
-            this.groupBox8.Controls.Add(this.comboBoxIleRazySzpital);
             this.groupBox8.Controls.Add(this.textBoxSzpital);
             this.groupBox8.Controls.Add(this.dataGridViewSzpital);
             this.groupBox8.Location = new System.Drawing.Point(14, 305);
@@ -637,52 +628,22 @@
             this.DodajSzpital.UseVisualStyleBackColor = true;
             this.DodajSzpital.Click += new System.EventHandler(this.DodajSzpital_Click);
             // 
-            // comboBoxIleRazySzpital
-            // 
-            this.comboBoxIleRazySzpital.FormattingEnabled = true;
-            this.comboBoxIleRazySzpital.Items.AddRange(new object[] {
-            "1x",
-            "2x",
-            "3x",
-            "4x",
-            "5x",
-            "Wielokrotnie"});
-            this.comboBoxIleRazySzpital.Location = new System.Drawing.Point(275, 20);
-            this.comboBoxIleRazySzpital.Name = "comboBoxIleRazySzpital";
-            this.comboBoxIleRazySzpital.Size = new System.Drawing.Size(64, 21);
-            this.comboBoxIleRazySzpital.TabIndex = 99;
-            // 
             // textBoxSzpital
             // 
             this.textBoxSzpital.Location = new System.Drawing.Point(12, 20);
             this.textBoxSzpital.Name = "textBoxSzpital";
-            this.textBoxSzpital.Size = new System.Drawing.Size(238, 20);
+            this.textBoxSzpital.Size = new System.Drawing.Size(323, 20);
             this.textBoxSzpital.TabIndex = 98;
             // 
             // dataGridViewSzpital
             // 
             this.dataGridViewSzpital.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSzpital.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.szpital,
-            this.ileRazySzpital});
+            this.szpital});
             this.dataGridViewSzpital.Location = new System.Drawing.Point(11, 51);
             this.dataGridViewSzpital.Name = "dataGridViewSzpital";
             this.dataGridViewSzpital.Size = new System.Drawing.Size(450, 136);
             this.dataGridViewSzpital.TabIndex = 97;
-            // 
-            // szpital
-            // 
-            this.szpital.HeaderText = "Szpital";
-            this.szpital.Name = "szpital";
-            this.szpital.Width = 200;
-            // 
-            // ileRazySzpital
-            // 
-            this.ileRazySzpital.HeaderText = "Ilość";
-            this.ileRazySzpital.Name = "ileRazySzpital";
-            this.ileRazySzpital.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ileRazySzpital.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ileRazySzpital.Width = 60;
             // 
             // dataGridViewDolegliwosci
             // 
@@ -2760,7 +2721,7 @@
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.comboBox7);
+            this.groupBox15.Controls.Add(this.comboBoxFaza4);
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.Location = new System.Drawing.Point(620, 34);
             this.groupBox15.Name = "groupBox15";
@@ -2769,18 +2730,18 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "IV faza";
             // 
-            // comboBox7
+            // comboBoxFaza4
             // 
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(15, 23);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(156, 21);
-            this.comboBox7.TabIndex = 34;
+            this.comboBoxFaza4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxFaza4.FormattingEnabled = true;
+            this.comboBoxFaza4.Location = new System.Drawing.Point(15, 23);
+            this.comboBoxFaza4.Name = "comboBoxFaza4";
+            this.comboBoxFaza4.Size = new System.Drawing.Size(156, 21);
+            this.comboBoxFaza4.TabIndex = 34;
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.comboBox6);
+            this.groupBox14.Controls.Add(this.comboBoxFaza3);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(418, 34);
             this.groupBox14.Name = "groupBox14";
@@ -2789,18 +2750,18 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "III faza";
             // 
-            // comboBox6
+            // comboBoxFaza3
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(13, 23);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(156, 21);
-            this.comboBox6.TabIndex = 33;
+            this.comboBoxFaza3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxFaza3.FormattingEnabled = true;
+            this.comboBoxFaza3.Location = new System.Drawing.Point(13, 23);
+            this.comboBoxFaza3.Name = "comboBoxFaza3";
+            this.comboBoxFaza3.Size = new System.Drawing.Size(156, 21);
+            this.comboBoxFaza3.TabIndex = 33;
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.comboBox5);
+            this.groupBox13.Controls.Add(this.comboBoxFaza2);
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(216, 34);
             this.groupBox13.Name = "groupBox13";
@@ -2809,18 +2770,18 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "II faza";
             // 
-            // comboBox5
+            // comboBoxFaza2
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(14, 23);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(156, 21);
-            this.comboBox5.TabIndex = 32;
+            this.comboBoxFaza2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxFaza2.FormattingEnabled = true;
+            this.comboBoxFaza2.Location = new System.Drawing.Point(14, 23);
+            this.comboBoxFaza2.Name = "comboBoxFaza2";
+            this.comboBoxFaza2.Size = new System.Drawing.Size(156, 21);
+            this.comboBoxFaza2.TabIndex = 32;
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.comboBox2);
+            this.groupBox12.Controls.Add(this.comboBoxFaza1);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox12.Location = new System.Drawing.Point(14, 34);
             this.groupBox12.Name = "groupBox12";
@@ -2829,14 +2790,14 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "I faza";
             // 
-            // comboBox2
+            // comboBoxFaza1
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(13, 23);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(156, 21);
-            this.comboBox2.TabIndex = 31;
+            this.comboBoxFaza1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxFaza1.FormattingEnabled = true;
+            this.comboBoxFaza1.Location = new System.Drawing.Point(13, 23);
+            this.comboBoxFaza1.Name = "comboBoxFaza1";
+            this.comboBoxFaza1.Size = new System.Drawing.Size(156, 21);
+            this.comboBoxFaza1.TabIndex = 31;
             // 
             // panel7
             // 
@@ -2918,12 +2879,24 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
+            // szpital
+            // 
+            this.szpital.HeaderText = "Szpital";
+            this.szpital.Name = "szpital";
+            this.szpital.Width = 400;
+            // 
+            // suplementyWywiad
+            // 
+            this.suplementyWywiad.HeaderText = "Suplementy";
+            this.suplementyWywiad.Name = "suplementyWywiad";
+            this.suplementyWywiad.Width = 185;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(982, 430);
+            this.ClientSize = new System.Drawing.Size(965, 430);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.btnZapiszWszystko);
             this.Controls.Add(this.panel6);
@@ -3226,7 +3199,6 @@
         private System.Windows.Forms.DataGridView dataGridViewLeki;
         private System.Windows.Forms.DataGridView dataGridViewDolegliwosci;
         private System.Windows.Forms.DataGridView dataGridViewSuplementy;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn lekiWywiad;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label31;
@@ -3250,10 +3222,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button DodajSzpital;
-        private System.Windows.Forms.ComboBox comboBoxIleRazySzpital;
         private System.Windows.Forms.TextBox textBoxSzpital;
-        private System.Windows.Forms.DataGridViewTextBoxColumn szpital;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ileRazySzpital;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button btnDodajBol;
         private System.Windows.Forms.DataGridViewTextBoxColumn bole;
@@ -3271,10 +3240,10 @@
         private System.Windows.Forms.TextBox textBoxDolegliwosci;
         private System.Windows.Forms.Button btnDodajSuplementy;
         private System.Windows.Forms.TextBox textBoxSuplementy;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxFaza4;
+        private System.Windows.Forms.ComboBox comboBoxFaza3;
+        private System.Windows.Forms.ComboBox comboBoxFaza2;
+        private System.Windows.Forms.ComboBox comboBoxFaza1;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.GroupBox groupBox13;
@@ -3305,6 +3274,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Do_sniadania;
         private System.Windows.Forms.DataGridViewTextBoxColumn Do_kolacji;
         private System.Windows.Forms.DataGridViewTextBoxColumn Przed_snem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn szpital;
+        private System.Windows.Forms.DataGridViewTextBoxColumn suplementyWywiad;
     }
 }
 

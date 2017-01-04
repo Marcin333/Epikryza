@@ -230,10 +230,7 @@ namespace WindowsFormsApplicationEpikryza
                     var niezytRodzaj = groupBoxRodzaje.Controls.OfType<RadioButton>()
                                       .FirstOrDefault(r => r.Checked);
                     Console.WriteLine(niezytRodzaj.Text);
-                } else
-                {
-                    MessageBox.Show("Wybierz jedną z opcji - Nieżyt");
-                }
+                } 
                
                 if (!(String.IsNullOrEmpty(comboBoxGrypy.Text)))
                 {
@@ -272,7 +269,59 @@ namespace WindowsFormsApplicationEpikryza
                         }
                     }
                 }
-                  
+
+                foreach (DataGridViewRow row in dataGridViewBole.Rows)
+                {
+                    if (row.Cells["bole"].Value != null)
+                    {
+                        if (row.Cells["bole"].Value.ToString().Length != 0)
+                        {
+                            Console.Write("+++ {0} {1} {2} {3}", row.Cells["bole"].Value, 
+                                        row.Cells["colSporadyczne"].Value,
+                                        row.Cells["colPrzewlekle"].Value,
+                                        row.Cells["colOstre"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewDolegliwosci.Rows)
+                {
+                    if (row.Cells["inneDolegliwosci"].Value != null)
+                    {
+                        if (row.Cells["inneDolegliwosci"].Value.ToString().Length != 0)
+                        {
+                            Console.Write("+++ {0}", row.Cells["inneDolegliwosci"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewLeki.Rows)
+                {
+                    if (row.Cells["lekiWywiad"].Value != null)
+                    {
+                        if (row.Cells["lekiWywiad"].Value.ToString().Length != 0)
+                        {
+                            Console.Write("+++ {0}", row.Cells["lekiWywiad"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewSuplementy.Rows)
+                {
+                    if (row.Cells["suplementyWywiad"].Value != null)
+                    {
+                        if (row.Cells["suplementyWywiad"].Value.ToString().Length != 0)
+                        {
+                            Console.Write("+++ {0}", row.Cells["suplementyWywiad"].Value);
+                        }
+                    }
+                }
+
+                if (!(String.IsNullOrEmpty(comboBoxFaza1.Text)) && !(String.IsNullOrEmpty(comboBoxFaza2.Text)) 
+                        && !(String.IsNullOrEmpty(comboBoxFaza3.Text)) && !(String.IsNullOrEmpty(comboBoxFaza4.Text)))
+                {
+                    // fazy
+                }
                 //string omdlenia = radioBtnOmdleniaTak.Checked ? radioBtnOmdleniaTak.Text : radioBtnOmdleniaNie.Text;
                 //string niePrzytomny = radioBtnNieprzytTak.Checked ? radioBtnNieprzytTak.Text : radioBtnNieprzytNie.Text;
 
@@ -301,11 +350,11 @@ namespace WindowsFormsApplicationEpikryza
 
         private void DodajSzpital_Click(object sender, EventArgs e)
         {   
-            if (!(String.IsNullOrEmpty(textBoxSzpital.Text)) && !(String.IsNullOrEmpty(comboBoxIleRazySzpital.Text)))
+            if (!(String.IsNullOrEmpty(textBoxSzpital.Text)))
             {
-                this.dataGridViewSzpital.Rows.Add(textBoxSzpital.Text, comboBoxIleRazySzpital.Text);
+                this.dataGridViewSzpital.Rows.Add(textBoxSzpital.Text);
                 textBoxSzpital.Text = String.Empty;
-                comboBoxIleRazySzpital.Text = String.Empty;
+                
             }
             
         }
