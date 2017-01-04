@@ -73,7 +73,7 @@
             this.panelNiezyt = new System.Windows.Forms.Panel();
             this.groupBoxRodzaje = new System.Windows.Forms.GroupBox();
             this.radioBtnOstry = new System.Windows.Forms.RadioButton();
-            this.radioBtnNiezyt = new System.Windows.Forms.RadioButton();
+            this.radioBtnPodostry = new System.Windows.Forms.RadioButton();
             this.radioBtnPrzewlekly = new System.Windows.Forms.RadioButton();
             this.comboBoxNiezyty = new System.Windows.Forms.ComboBox();
             this.label41 = new System.Windows.Forms.Label();
@@ -772,7 +772,7 @@
             // groupBoxRodzaje
             // 
             this.groupBoxRodzaje.Controls.Add(this.radioBtnOstry);
-            this.groupBoxRodzaje.Controls.Add(this.radioBtnNiezyt);
+            this.groupBoxRodzaje.Controls.Add(this.radioBtnPodostry);
             this.groupBoxRodzaje.Controls.Add(this.radioBtnPrzewlekly);
             this.groupBoxRodzaje.Location = new System.Drawing.Point(177, 7);
             this.groupBoxRodzaje.Name = "groupBoxRodzaje";
@@ -794,18 +794,18 @@
             this.radioBtnOstry.UseVisualStyleBackColor = true;
             this.radioBtnOstry.CheckedChanged += new System.EventHandler(this.radioBtnOstry_CheckedChanged);
             // 
-            // radioBtnNiezyt
+            // radioBtnPodostry
             // 
-            this.radioBtnNiezyt.AutoSize = true;
-            this.radioBtnNiezyt.Location = new System.Drawing.Point(128, 21);
-            this.radioBtnNiezyt.Name = "radioBtnNiezyt";
-            this.radioBtnNiezyt.Padding = new System.Windows.Forms.Padding(3);
-            this.radioBtnNiezyt.Size = new System.Drawing.Size(55, 23);
-            this.radioBtnNiezyt.TabIndex = 71;
-            this.radioBtnNiezyt.TabStop = true;
-            this.radioBtnNiezyt.Text = "Jakiś";
-            this.radioBtnNiezyt.UseVisualStyleBackColor = true;
-            this.radioBtnNiezyt.CheckedChanged += new System.EventHandler(this.radioBtnNiezyt_CheckedChanged);
+            this.radioBtnPodostry.AutoSize = true;
+            this.radioBtnPodostry.Location = new System.Drawing.Point(128, 21);
+            this.radioBtnPodostry.Name = "radioBtnPodostry";
+            this.radioBtnPodostry.Padding = new System.Windows.Forms.Padding(3);
+            this.radioBtnPodostry.Size = new System.Drawing.Size(72, 23);
+            this.radioBtnPodostry.TabIndex = 71;
+            this.radioBtnPodostry.TabStop = true;
+            this.radioBtnPodostry.Text = "Podostry";
+            this.radioBtnPodostry.UseVisualStyleBackColor = true;
+            this.radioBtnPodostry.CheckedChanged += new System.EventHandler(this.radioBtnNiezyt_CheckedChanged);
             // 
             // radioBtnPrzewlekly
             // 
@@ -2923,7 +2923,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(965, 430);
+            this.ClientSize = new System.Drawing.Size(982, 430);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.btnZapiszWszystko);
             this.Controls.Add(this.panel6);
@@ -3201,7 +3201,7 @@
         private System.Windows.Forms.ComboBox comboBoxPx;
         private System.Windows.Forms.GroupBox groupBoxRodzaje;
         private System.Windows.Forms.RadioButton radioBtnOstry;
-        private System.Windows.Forms.RadioButton radioBtnNiezyt;
+        private System.Windows.Forms.RadioButton radioBtnPodostry;
         private System.Windows.Forms.RadioButton radioBtnPrzewlekly;
         private System.Windows.Forms.GroupBox groupBoxNieprzytomny;
         private System.Windows.Forms.RadioButton radioBtnNieprzytNie;

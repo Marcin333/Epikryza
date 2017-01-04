@@ -144,7 +144,7 @@ namespace WindowsFormsApplicationEpikryza
         {
             Control ctrl = ((Control)sender);
             ctrl.BackColor = Color.Yellow;
-            if (radioBtnNiezyt.Checked || radioBtnOstry.Checked)
+            if (radioBtnPodostry.Checked || radioBtnOstry.Checked)
             {
                 ctrl.BackColor = SystemColors.GradientInactiveCaption;
             }
@@ -164,7 +164,7 @@ namespace WindowsFormsApplicationEpikryza
         {
             Control ctrl = ((Control)sender);
             ctrl.BackColor = Color.Red;
-            if (radioBtnNiezyt.Checked || radioBtnPrzewlekly.Checked)
+            if (radioBtnPodostry.Checked || radioBtnPrzewlekly.Checked)
             {
                 ctrl.BackColor = SystemColors.GradientInactiveCaption;
             }
@@ -196,70 +196,79 @@ namespace WindowsFormsApplicationEpikryza
                 if (!(String.IsNullOrEmpty(textBoxWRano.Text)))
                 {
                     string rano = textBoxWRano.Text;
-                    Console.WriteLine(rano);
                 }
                 if (!(String.IsNullOrEmpty(textBoxWPoPoludniu.Text)))
                 {
                     string poPoludniu = textBoxWPoPoludniu.Text;
-                    Console.WriteLine(poPoludniu);
                 }
                 if (!(String.IsNullOrEmpty(textBoxWwieczor.Text)))
                 {
                     string wieczor = textBoxWwieczor.Text;
-                    Console.WriteLine(wieczor);
-                }
-                
-                // Wywiad
-                try
-                {
-                    var wizytaPodKon = groupBoxWizyta.Controls.OfType<RadioButton>()
-                                        .FirstOrDefault(r => r.Checked);
-                } catch (Exception)
-                {
-                    MessageBox.Show("Wybierz jedną z wartości pola Wizyta.");
                 }
 
-                try
+                // Wywiad
+                string podstawowaKontrolna = radioBtnPodstawowa.Checked ?
+                            radioBtnPodstawowa.Text : radioBtnKontrolna.Text;
+                Console.WriteLine(podstawowaKontrolna);
+                
+                if (radioBtnOmdleniaTak.Checked || radioBtnOmdleniaNie.Checked)
                 {
                     var omdlenia = groupBoxOmdlenia.Controls.OfType<RadioButton>()
                                         .FirstOrDefault(r => r.Checked);
-                } catch
-                {
-                    MessageBox.Show("Wybierz jedną z wartości pola Omdlenia.");
+                    Console.WriteLine(omdlenia.Text);
                 }
-                
-                try
+
+                if (radioBtnNieprzytTak.Checked || radioBtnNieprzytTak.Checked)
                 {
                     var nieprzytomny = groupBoxNieprzytomny.Controls.OfType<RadioButton>()
                                         .FirstOrDefault(r => r.Checked);
-                } catch
-                {
-                    MessageBox.Show("Wybierz jedną z wartości pola Nieprzytomny");
+                    Console.WriteLine(nieprzytomny.Text);
                 }
 
-                try
+                if (radioBtnPrzewlekly.Checked || radioBtnPodostry.Checked || radioBtnOstry.Checked)
                 {
                     var niezytRodzaj = groupBoxRodzaje.Controls.OfType<RadioButton>()
                                       .FirstOrDefault(r => r.Checked);
-                } catch
+                    Console.WriteLine(niezytRodzaj.Text);
+                } else
                 {
-                    MessageBox.Show("Wybierz jedną z wartości pola Nieżyty");
+                    MessageBox.Show("Wybierz jedną z opcji - Nieżyt");
                 }
-                string grypy = comboBoxGrypy.Text;
-                string anginy = comboBoxAnginy.Text;
-   
-                Object niezyty = comboBoxNiezyty.Text;
-                
+               
+                if (!(String.IsNullOrEmpty(comboBoxGrypy.Text)))
+                {
+                    string grypy = comboBoxGrypy.Text;
+                    Console.WriteLine("Grypy {0}", grypy);
+                }
+
+                if (!(String.IsNullOrEmpty(comboBoxNiezyty.Text)))
+                {
+                    Object niezyty = comboBoxNiezyty.Text;
+                    Console.WriteLine("niezyty {0}", niezyty);
+                }
+
+                if (!(String.IsNullOrEmpty(comboBoxAnginy.Text)))
+                {
+                    string anginy = comboBoxAnginy.Text;
+                    Console.WriteLine("anginy {0}", anginy);
+                }
+
+                if (!(String.IsNullOrEmpty(comboBoxWypadki.Text)))
+                {
+                    string wypadki = comboBoxWypadki.Text;
+                    Console.WriteLine("anginy {0}", wypadki);
+                }
+
                 //int counter;
                 //int alergenyTotal = 0;
-                
+
                 foreach (DataGridViewRow row in dataGridViewSzpital.Rows)
                 {
-                    if (row.Cells["szpital"].Value != null && row.Cells["ileRazySzpital"].Value != null)
+                    if (row.Cells["szpital"].Value != null)
                     {
-                        if (row.Cells["szpital"].Value.ToString().Length != 0 && row.Cells["ileRazySzpital"].Value.ToString().Length != 0)
+                        if (row.Cells["szpital"].Value.ToString().Length != 0)
                         {
-                            Console.Write("+++ {0} {1}", row.Cells["szpital"].Value, row.Cells["ileRazySzpital"].Value);
+                            Console.Write("+++ {0}", row.Cells["szpital"].Value);
                         }
                     }
                 }
