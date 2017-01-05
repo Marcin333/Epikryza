@@ -41,6 +41,7 @@
             this.btnDodajLeki = new System.Windows.Forms.Button();
             this.textBoxLeki = new System.Windows.Forms.TextBox();
             this.dataGridViewSuplementy = new System.Windows.Forms.DataGridView();
+            this.suplementyWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewLeki = new System.Windows.Forms.DataGridView();
             this.lekiWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -58,6 +59,7 @@
             this.DodajSzpital = new System.Windows.Forms.Button();
             this.textBoxSzpital = new System.Windows.Forms.TextBox();
             this.dataGridViewSzpital = new System.Windows.Forms.DataGridView();
+            this.szpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDolegliwosci = new System.Windows.Forms.DataGridView();
             this.inneDolegliwosci = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label34 = new System.Windows.Forms.Label();
@@ -99,8 +101,6 @@
             this.textBoxKHomeCount = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.dataGridViewKHome = new System.Windows.Forms.DataGridView();
-            this.kompleksHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ilosc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajHomo = new System.Windows.Forms.Button();
             this.comboBoxHomeop = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -264,8 +264,8 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
-            this.szpital = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.suplementyWywiad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kompleksHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iloscHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -476,6 +476,12 @@
             this.dataGridViewSuplementy.Size = new System.Drawing.Size(224, 160);
             this.dataGridViewSuplementy.TabIndex = 95;
             // 
+            // suplementyWywiad
+            // 
+            this.suplementyWywiad.HeaderText = "Suplementy";
+            this.suplementyWywiad.Name = "suplementyWywiad";
+            this.suplementyWywiad.Width = 185;
+            // 
             // dataGridViewLeki
             // 
             this.dataGridViewLeki.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -644,6 +650,12 @@
             this.dataGridViewSzpital.Name = "dataGridViewSzpital";
             this.dataGridViewSzpital.Size = new System.Drawing.Size(450, 136);
             this.dataGridViewSzpital.TabIndex = 97;
+            // 
+            // szpital
+            // 
+            this.szpital.HeaderText = "Szpital";
+            this.szpital.Name = "szpital";
+            this.szpital.Width = 400;
             // 
             // dataGridViewDolegliwosci
             // 
@@ -1091,25 +1103,13 @@
             this.dataGridViewKHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKHome.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kompleksHome,
-            this.Ilosc});
+            this.iloscHome});
             this.dataGridViewKHome.Location = new System.Drawing.Point(14, 72);
             this.dataGridViewKHome.Name = "dataGridViewKHome";
             this.dataGridViewKHome.Size = new System.Drawing.Size(290, 197);
             this.dataGridViewKHome.TabIndex = 36;
             this.dataGridViewKHome.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.rowsAddedHomeo);
             this.dataGridViewKHome.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowHomeo);
-            // 
-            // kompleksHome
-            // 
-            this.kompleksHome.HeaderText = "K. homeopatyczny";
-            this.kompleksHome.Name = "kompleksHome";
-            this.kompleksHome.Width = 206;
-            // 
-            // Ilosc
-            // 
-            this.Ilosc.HeaderText = "Ilość";
-            this.Ilosc.Name = "Ilosc";
-            this.Ilosc.Width = 40;
             // 
             // btnDodajHomo
             // 
@@ -2879,24 +2879,24 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
-            // szpital
+            // kompleksHome
             // 
-            this.szpital.HeaderText = "Szpital";
-            this.szpital.Name = "szpital";
-            this.szpital.Width = 400;
+            this.kompleksHome.HeaderText = "K. homeopatyczny";
+            this.kompleksHome.Name = "kompleksHome";
+            this.kompleksHome.Width = 206;
             // 
-            // suplementyWywiad
+            // iloscHome
             // 
-            this.suplementyWywiad.HeaderText = "Suplementy";
-            this.suplementyWywiad.Name = "suplementyWywiad";
-            this.suplementyWywiad.Width = 185;
+            this.iloscHome.HeaderText = "Ilość";
+            this.iloscHome.Name = "iloscHome";
+            this.iloscHome.Width = 40;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(965, 430);
+            this.ClientSize = new System.Drawing.Size(982, 430);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.btnZapiszWszystko);
             this.Controls.Add(this.panel6);
@@ -3263,8 +3263,6 @@
         private System.Windows.Forms.Button btnDodajSupl;
         private System.Windows.Forms.ComboBox comboBoxBole;
         private System.Windows.Forms.DataGridViewTextBoxColumn Patomorfologia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kompleksHome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ilosc;
         private System.Windows.Forms.DataGridViewTextBoxColumn opisAlergi;
         private System.Windows.Forms.DataGridViewTextBoxColumn alergen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producent;
@@ -3276,6 +3274,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Przed_snem;
         private System.Windows.Forms.DataGridViewTextBoxColumn szpital;
         private System.Windows.Forms.DataGridViewTextBoxColumn suplementyWywiad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kompleksHome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iloscHome;
     }
 }
 

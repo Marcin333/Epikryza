@@ -209,27 +209,27 @@ namespace WindowsFormsApplicationEpikryza
                 // Wywiad
                 string podstawowaKontrolna = radioBtnPodstawowa.Checked ?
                             radioBtnPodstawowa.Text : radioBtnKontrolna.Text;
-                Console.WriteLine(podstawowaKontrolna);
+                Console.WriteLine("podstawowaKontrolna - {0}", podstawowaKontrolna);
                 
                 if (radioBtnOmdleniaTak.Checked || radioBtnOmdleniaNie.Checked)
                 {
                     var omdlenia = groupBoxOmdlenia.Controls.OfType<RadioButton>()
                                         .FirstOrDefault(r => r.Checked);
-                    Console.WriteLine(omdlenia.Text);
+                    Console.WriteLine("omdlenia - {0}", omdlenia.Text);
                 }
 
                 if (radioBtnNieprzytTak.Checked || radioBtnNieprzytTak.Checked)
                 {
                     var nieprzytomny = groupBoxNieprzytomny.Controls.OfType<RadioButton>()
                                         .FirstOrDefault(r => r.Checked);
-                    Console.WriteLine(nieprzytomny.Text);
+                    Console.WriteLine("nieprzytomny - {0}", nieprzytomny.Text);
                 }
 
                 if (radioBtnPrzewlekly.Checked || radioBtnPodostry.Checked || radioBtnOstry.Checked)
                 {
                     var niezytRodzaj = groupBoxRodzaje.Controls.OfType<RadioButton>()
                                       .FirstOrDefault(r => r.Checked);
-                    Console.WriteLine(niezytRodzaj.Text);
+                    Console.WriteLine("niezyt rodzaj - {0}", niezytRodzaj.Text);
                 } 
                
                 if (!(String.IsNullOrEmpty(comboBoxGrypy.Text)))
@@ -253,7 +253,7 @@ namespace WindowsFormsApplicationEpikryza
                 if (!(String.IsNullOrEmpty(comboBoxWypadki.Text)))
                 {
                     string wypadki = comboBoxWypadki.Text;
-                    Console.WriteLine("anginy {0}", wypadki);
+                    Console.WriteLine("wypadki {0}", wypadki);
                 }
 
                 foreach (DataGridViewRow row in dataGridViewSzpital.Rows)
@@ -262,7 +262,7 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         if (row.Cells["szpital"].Value.ToString().Length != 0)
                         {
-                            Console.Write("+++ {0}", row.Cells["szpital"].Value);
+                            Console.Write("szpital - {0}", row.Cells["szpital"].Value);
                         }
                     }
                 }
@@ -273,10 +273,10 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         if (row.Cells["bole"].Value.ToString().Length != 0)
                         {
-                            Console.Write("+++ {0} {1} {2} {3}", row.Cells["bole"].Value, 
-                                        row.Cells["colSporadyczne"].Value,
-                                        row.Cells["colPrzewlekle"].Value,
-                                        row.Cells["colOstre"].Value);
+                            Console.WriteLine("Bole - {0}", row.Cells["bole"].Value);
+                            Console.WriteLine("Sporadyczne - {0}", row.Cells["colSporadyczne"].Value);
+                            Console.WriteLine("Przewlekle - {0}", row.Cells["colPrzewlekle"].Value);
+                            Console.WriteLine("Ostre - {0}", row.Cells["colOstre"].Value);            
                         }
                     }
                 }
@@ -287,7 +287,7 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         if (row.Cells["inneDolegliwosci"].Value.ToString().Length != 0)
                         {
-                            Console.Write("+++ {0}", row.Cells["inneDolegliwosci"].Value);
+                            Console.Write("inneDolegliwosci - {0}", row.Cells["inneDolegliwosci"].Value);
                         }
                     }
                 }
@@ -298,7 +298,7 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         if (row.Cells["lekiWywiad"].Value.ToString().Length != 0)
                         {
-                            Console.Write("+++ {0}", row.Cells["lekiWywiad"].Value);
+                            Console.WriteLine("lekiWywiad - {0}", row.Cells["lekiWywiad"].Value);
                         }
                     }
                 }
@@ -309,7 +309,7 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         if (row.Cells["suplementyWywiad"].Value.ToString().Length != 0)
                         {
-                            Console.Write("+++ {0}", row.Cells["suplementyWywiad"].Value);
+                            Console.WriteLine("suplementyWywiad - {0}", row.Cells["suplementyWywiad"].Value);
                         }
                     }
                 }
@@ -326,7 +326,7 @@ namespace WindowsFormsApplicationEpikryza
                     {
                         if (row.Cells["zywienie"].Value.ToString().Length != 0)
                         {
-                            Console.Write("+++ {0}", row.Cells["zywienie"].Value);
+                            Console.WriteLine("zywienie - {0}", row.Cells["zywienie"].Value);
                         }
                     }
                 }
@@ -338,13 +338,59 @@ namespace WindowsFormsApplicationEpikryza
                         if (row.Cells["Producent"].Value.ToString().Length != 0  && 
                             row.Cells["Produkt"].Value.ToString().Length != 0)
                         {
-                            Console.WriteLine("{0}", row.Cells["Producent"].Value);
-                            Console.WriteLine("{0}", row.Cells["Produkt"].Value);
-                            Console.WriteLine("{0}", row.Cells["Ilosc_opakowan"].Value);
-                            Console.WriteLine("{0}", row.Cells["Na_czczo"].Value);
-                            Console.WriteLine("{0}", row.Cells["Do_sniadania"].Value);
-                            Console.WriteLine("{0}", row.Cells["Do_kolacji"].Value);
-                            Console.WriteLine("{0}", row.Cells["Przed_snem"].Value);
+                            Console.WriteLine("Producent - {0}", row.Cells["Producent"].Value);
+                            Console.WriteLine("Produkt - {0}", row.Cells["Produkt"].Value);
+                            Console.WriteLine("Ilosc_opakowan - {0}", row.Cells["Ilosc_opakowan"].Value);
+                            Console.WriteLine("Na_czczo - {0}", row.Cells["Na_czczo"].Value);
+                            Console.WriteLine("Do_sniadania - {0}", row.Cells["Do_sniadania"].Value);
+                            Console.WriteLine("Do_kolacji - {0}", row.Cells["Do_kolacji"].Value);
+                            Console.WriteLine("Przed_snem - {0}", row.Cells["Przed_snem"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewAlergen.Rows)
+                {
+                    if (row.Cells["alergen"].Value != null)
+                    {
+                        if (row.Cells["alergen"].Value.ToString().Length != 0)
+                        {
+                            Console.WriteLine("alergen - {0}", row.Cells["alergen"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewOpisAlergii.Rows)
+                {
+                    if (row.Cells["opisAlergi"].Value != null)
+                    {
+                        if (row.Cells["opisAlergi"].Value.ToString().Length != 0)
+                        {
+                            Console.WriteLine("opisAlergi - {0}", row.Cells["opisAlergi"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewKHome.Rows)
+                {
+                    if (row.Cells["kompleksHome"].Value != null && row.Cells["iloscHome"].Value != null)
+                    {
+                        if (row.Cells["kompleksHome"].Value.ToString().Length != 0 
+                            && row.Cells["iloscHome"].Value.ToString().Length != 0)
+                        {
+                            Console.WriteLine("kompleksHome - {0}", row.Cells["kompleksHome"].Value);
+                            Console.WriteLine("iloscHome - {0}", row.Cells["iloscHome"].Value);
+                        }
+                    }
+                }
+
+                foreach (DataGridViewRow row in dataGridViewPato.Rows)
+                {
+                    if (row.Cells["Patomorfologia"].Value != null)
+                    {
+                        if (row.Cells["Patomorfologia"].Value.ToString().Length != 0)
+                        {
+                            Console.WriteLine("Patomorfologia - {0}", row.Cells["Patomorfologia"].Value);
                         }
                     }
                 }
