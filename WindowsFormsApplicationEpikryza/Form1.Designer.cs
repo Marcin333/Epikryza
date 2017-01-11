@@ -101,6 +101,8 @@
             this.textBoxKHomeCount = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.dataGridViewKHome = new System.Windows.Forms.DataGridView();
+            this.kompleksHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iloscHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajHomo = new System.Windows.Forms.Button();
             this.comboBoxHomeop = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -264,8 +266,19 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
-            this.kompleksHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iloscHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label40 = new System.Windows.Forms.Label();
+            this.txtGrupaKrwi = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.btnDodajZabiegChirurgiczny = new System.Windows.Forms.Button();
+            this.txtZabiegiChirurgiczne = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.btnDodajAtaki = new System.Windows.Forms.Button();
+            this.txtAtaki = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.atakiCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zabiegiChirurgiczneCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -344,6 +357,11 @@
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel25.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -394,6 +412,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel15.Controls.Add(this.panel16);
             this.panel15.Controls.Add(this.groupBox11);
             this.panel15.Controls.Add(this.groupBox9);
             this.panel15.Controls.Add(this.groupBox8);
@@ -410,11 +429,10 @@
             this.panel15.Controls.Add(this.groupBoxAnginy);
             this.panel15.Controls.Add(this.groupBox2);
             this.panel15.Controls.Add(this.groupBoxWizyta);
-            this.panel15.Controls.Add(this.panel16);
             this.panel15.Controls.Add(this.groupBox10);
             this.panel15.Location = new System.Drawing.Point(22, 1854);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(494, 1230);
+            this.panel15.Size = new System.Drawing.Size(494, 1239);
             this.panel15.TabIndex = 68;
             // 
             // groupBox11
@@ -978,7 +996,7 @@
             this.panel16.Controls.Add(this.label28);
             this.panel16.Location = new System.Drawing.Point(0, 1);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(889, 26);
+            this.panel16.Size = new System.Drawing.Size(494, 26);
             this.panel16.TabIndex = 29;
             // 
             // label28
@@ -1110,6 +1128,18 @@
             this.dataGridViewKHome.TabIndex = 36;
             this.dataGridViewKHome.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.rowsAddedHomeo);
             this.dataGridViewKHome.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowHomeo);
+            // 
+            // kompleksHome
+            // 
+            this.kompleksHome.HeaderText = "K. homeopatyczny";
+            this.kompleksHome.Name = "kompleksHome";
+            this.kompleksHome.Width = 206;
+            // 
+            // iloscHome
+            // 
+            this.iloscHome.HeaderText = "Ilość";
+            this.iloscHome.Name = "iloscHome";
+            this.iloscHome.Width = 40;
             // 
             // btnDodajHomo
             // 
@@ -1272,7 +1302,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.Control;
-            this.panel10.Location = new System.Drawing.Point(22, 3135);
+            this.panel10.Location = new System.Drawing.Point(22, 3234);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(871, 56);
             this.panel10.TabIndex = 69;
@@ -1302,9 +1332,9 @@
             this.panel17.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel17.Controls.Add(this.pictureBox1);
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(521, 1854);
+            this.panel17.Location = new System.Drawing.Point(522, 1855);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(391, 839);
+            this.panel17.Size = new System.Drawing.Size(391, 767);
             this.panel17.TabIndex = 70;
             // 
             // pictureBox1
@@ -1804,7 +1834,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Dane osobowe";
+            this.label3.Text = "Dane Pacjenta";
             // 
             // textSearchBox
             // 
@@ -2297,6 +2327,8 @@
             // panelDaneOsobowe
             // 
             this.panelDaneOsobowe.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelDaneOsobowe.Controls.Add(this.txtGrupaKrwi);
+            this.panelDaneOsobowe.Controls.Add(this.label40);
             this.panelDaneOsobowe.Controls.Add(this.textBox6);
             this.panelDaneOsobowe.Controls.Add(this.label31);
             this.panelDaneOsobowe.Controls.Add(this.textBox5);
@@ -2334,7 +2366,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(810, 173);
+            this.textBox6.Location = new System.Drawing.Point(810, 171);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(61, 20);
@@ -2825,7 +2857,7 @@
             this.panel25.Controls.Add(this.label43);
             this.panel25.Controls.Add(this.label42);
             this.panel25.Controls.Add(this.dateTimePicker1);
-            this.panel25.Location = new System.Drawing.Point(518, 2739);
+            this.panel25.Location = new System.Drawing.Point(202, 3099);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(392, 139);
             this.panel25.TabIndex = 76;
@@ -2871,7 +2903,7 @@
             // btnZapiszWszystko
             // 
             this.btnZapiszWszystko.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZapiszWszystko.Location = new System.Drawing.Point(666, 2912);
+            this.btnZapiszWszystko.Location = new System.Drawing.Point(29, 3099);
             this.btnZapiszWszystko.Name = "btnZapiszWszystko";
             this.btnZapiszWszystko.Size = new System.Drawing.Size(161, 44);
             this.btnZapiszWszystko.TabIndex = 77;
@@ -2879,17 +2911,123 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
-            // kompleksHome
+            // label40
             // 
-            this.kompleksHome.HeaderText = "K. homeopatyczny";
-            this.kompleksHome.Name = "kompleksHome";
-            this.kompleksHome.Width = 206;
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label40.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label40.Location = new System.Drawing.Point(4, 174);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(68, 13);
+            this.label40.TabIndex = 84;
+            this.label40.Text = "Grupa krwi";
             // 
-            // iloscHome
+            // txtGrupaKrwi
             // 
-            this.iloscHome.HeaderText = "Ilość";
-            this.iloscHome.Name = "iloscHome";
-            this.iloscHome.Width = 40;
+            this.txtGrupaKrwi.Location = new System.Drawing.Point(103, 171);
+            this.txtGrupaKrwi.Name = "txtGrupaKrwi";
+            this.txtGrupaKrwi.ReadOnly = true;
+            this.txtGrupaKrwi.Size = new System.Drawing.Size(168, 20);
+            this.txtGrupaKrwi.TabIndex = 85;
+            this.txtGrupaKrwi.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel5.Controls.Add(this.groupBox21);
+            this.panel5.Controls.Add(this.groupBox20);
+            this.panel5.Location = new System.Drawing.Point(522, 2628);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(391, 465);
+            this.panel5.TabIndex = 78;
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.btnDodajZabiegChirurgiczny);
+            this.groupBox20.Controls.Add(this.txtZabiegiChirurgiczne);
+            this.groupBox20.Controls.Add(this.dataGridView1);
+            this.groupBox20.Location = new System.Drawing.Point(9, 5);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(370, 219);
+            this.groupBox20.TabIndex = 99;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Zabiegi chirurgiczne";
+            // 
+            // btnDodajZabiegChirurgiczny
+            // 
+            this.btnDodajZabiegChirurgiczny.Location = new System.Drawing.Point(305, 20);
+            this.btnDodajZabiegChirurgiczny.Name = "btnDodajZabiegChirurgiczny";
+            this.btnDodajZabiegChirurgiczny.Size = new System.Drawing.Size(51, 20);
+            this.btnDodajZabiegChirurgiczny.TabIndex = 100;
+            this.btnDodajZabiegChirurgiczny.Text = "Dodaj";
+            this.btnDodajZabiegChirurgiczny.UseVisualStyleBackColor = true;
+            // 
+            // txtZabiegiChirurgiczne
+            // 
+            this.txtZabiegiChirurgiczne.Location = new System.Drawing.Point(12, 20);
+            this.txtZabiegiChirurgiczne.Name = "txtZabiegiChirurgiczne";
+            this.txtZabiegiChirurgiczne.Size = new System.Drawing.Size(187, 20);
+            this.txtZabiegiChirurgiczne.TabIndex = 98;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.zabiegiChirurgiczneCol});
+            this.dataGridView1.Location = new System.Drawing.Point(11, 51);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(344, 160);
+            this.dataGridView1.TabIndex = 97;
+            // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.btnDodajAtaki);
+            this.groupBox21.Controls.Add(this.txtAtaki);
+            this.groupBox21.Controls.Add(this.dataGridView2);
+            this.groupBox21.Location = new System.Drawing.Point(9, 233);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(370, 219);
+            this.groupBox21.TabIndex = 100;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "Ataki";
+            // 
+            // btnDodajAtaki
+            // 
+            this.btnDodajAtaki.Location = new System.Drawing.Point(305, 20);
+            this.btnDodajAtaki.Name = "btnDodajAtaki";
+            this.btnDodajAtaki.Size = new System.Drawing.Size(51, 20);
+            this.btnDodajAtaki.TabIndex = 100;
+            this.btnDodajAtaki.Text = "Dodaj";
+            this.btnDodajAtaki.UseVisualStyleBackColor = true;
+            // 
+            // txtAtaki
+            // 
+            this.txtAtaki.Location = new System.Drawing.Point(12, 20);
+            this.txtAtaki.Name = "txtAtaki";
+            this.txtAtaki.Size = new System.Drawing.Size(187, 20);
+            this.txtAtaki.TabIndex = 98;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.atakiCol});
+            this.dataGridView2.Location = new System.Drawing.Point(11, 51);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(344, 160);
+            this.dataGridView2.TabIndex = 97;
+            // 
+            // atakiCol
+            // 
+            this.atakiCol.HeaderText = "Ataki";
+            this.atakiCol.Name = "atakiCol";
+            this.atakiCol.Width = 300;
+            // 
+            // zabiegiChirurgiczneCol
+            // 
+            this.zabiegiChirurgiczneCol.HeaderText = "Zabiegi chirurgiczne";
+            this.zabiegiChirurgiczneCol.Name = "zabiegiChirurgiczneCol";
+            this.zabiegiChirurgiczneCol.Width = 300;
             // 
             // Form1
             // 
@@ -2897,6 +3035,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(982, 430);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.btnZapiszWszystko);
             this.Controls.Add(this.panel6);
@@ -3033,6 +3172,13 @@
             this.panel7.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3276,6 +3422,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn suplementyWywiad;
         private System.Windows.Forms.DataGridViewTextBoxColumn kompleksHome;
         private System.Windows.Forms.DataGridViewTextBoxColumn iloscHome;
+        private System.Windows.Forms.TextBox txtGrupaKrwi;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.Button btnDodajAtaki;
+        private System.Windows.Forms.TextBox txtAtaki;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn atakiCol;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.Button btnDodajZabiegChirurgiczny;
+        private System.Windows.Forms.TextBox txtZabiegiChirurgiczne;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zabiegiChirurgiczneCol;
     }
 }
 
