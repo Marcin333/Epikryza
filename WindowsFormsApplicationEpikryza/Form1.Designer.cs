@@ -1549,7 +1549,7 @@
             // 
             this.groupBox7.Controls.Add(this.comboBoxNatezenie);
             this.groupBox7.Controls.Add(this.label21);
-            this.groupBox7.Location = new System.Drawing.Point(526, 92);
+            this.groupBox7.Location = new System.Drawing.Point(523, 92);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(143, 69);
             this.groupBox7.TabIndex = 39;
@@ -1593,7 +1593,7 @@
             this.groupBox3.Controls.Add(this.comboBoxMata);
             this.groupBox3.Location = new System.Drawing.Point(14, 92);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(143, 69);
+            this.groupBox3.Size = new System.Drawing.Size(150, 69);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "I";
@@ -1604,11 +1604,11 @@
             this.comboBoxMata.FormattingEnabled = true;
             this.comboBoxMata.Items.AddRange(new object[] {
             "MATA DUŻA A1",
-            "MATA DUŻA A2",
-            "MATA DUŻA A3"});
-            this.comboBoxMata.Location = new System.Drawing.Point(15, 26);
+            "MATA MAŁA A2",
+            "APLIKATOR ELIPSA AE"});
+            this.comboBoxMata.Location = new System.Drawing.Point(11, 26);
             this.comboBoxMata.Name = "comboBoxMata";
-            this.comboBoxMata.Size = new System.Drawing.Size(117, 21);
+            this.comboBoxMata.Size = new System.Drawing.Size(129, 21);
             this.comboBoxMata.TabIndex = 0;
             // 
             // label22
@@ -1623,7 +1623,7 @@
             // 
             this.groupBox6.Controls.Add(this.numericUDKrotnosc);
             this.groupBox6.Controls.Add(this.label20);
-            this.groupBox6.Location = new System.Drawing.Point(373, 92);
+            this.groupBox6.Location = new System.Drawing.Point(372, 92);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(143, 69);
             this.groupBox6.TabIndex = 39;
@@ -1632,7 +1632,7 @@
             // 
             // numericUDKrotnosc
             // 
-            this.numericUDKrotnosc.Location = new System.Drawing.Point(78, 26);
+            this.numericUDKrotnosc.Location = new System.Drawing.Point(74, 26);
             this.numericUDKrotnosc.Maximum = new decimal(new int[] {
             4,
             0,
@@ -1646,7 +1646,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(16, 29);
+            this.label20.Location = new System.Drawing.Point(12, 29);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(57, 13);
             this.label20.TabIndex = 42;
@@ -1655,7 +1655,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.comboBoxPx);
-            this.groupBox4.Location = new System.Drawing.Point(169, 92);
+            this.groupBox4.Location = new System.Drawing.Point(172, 92);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(92, 69);
             this.groupBox4.TabIndex = 39;
@@ -1670,7 +1670,7 @@
             "P1",
             "P2",
             "P3"});
-            this.comboBoxPx.Location = new System.Drawing.Point(11, 26);
+            this.comboBoxPx.Location = new System.Drawing.Point(15, 26);
             this.comboBoxPx.Name = "comboBoxPx";
             this.comboBoxPx.Size = new System.Drawing.Size(64, 21);
             this.comboBoxPx.TabIndex = 1;
@@ -1733,7 +1733,7 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.comboBoxMx);
-            this.groupBox5.Location = new System.Drawing.Point(271, 92);
+            this.groupBox5.Location = new System.Drawing.Point(272, 92);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(92, 69);
             this.groupBox5.TabIndex = 39;
@@ -1748,7 +1748,7 @@
             "M1",
             "M2",
             "M3"});
-            this.comboBoxMx.Location = new System.Drawing.Point(18, 26);
+            this.comboBoxMx.Location = new System.Drawing.Point(14, 26);
             this.comboBoxMx.Name = "comboBoxMx";
             this.comboBoxMx.Size = new System.Drawing.Size(64, 21);
             this.comboBoxMx.TabIndex = 2;
