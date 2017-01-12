@@ -276,7 +276,7 @@
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpPoKolacji = new System.Windows.Forms.NumericUpDown();
             this.Producent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Produkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ilosc_opakowan = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -372,7 +372,7 @@
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
             this.groupBox25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpPoKolacji)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -3029,7 +3029,7 @@
             // 
             // groupBox25
             // 
-            this.groupBox25.Controls.Add(this.numericUpDown1);
+            this.groupBox25.Controls.Add(this.numericUpPoKolacji);
             this.groupBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox25.Location = new System.Drawing.Point(704, 34);
             this.groupBox25.Name = "groupBox25";
@@ -3038,14 +3038,14 @@
             this.groupBox25.TabStop = false;
             this.groupBox25.Text = "Po kolacji";
             // 
-            // numericUpDown1
+            // numericUpPoKolacji
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(15, 21);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(50, 20);
-            this.numericUpDown1.TabIndex = 25;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpPoKolacji.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpPoKolacji.Location = new System.Drawing.Point(15, 21);
+            this.numericUpPoKolacji.Name = "numericUpPoKolacji";
+            this.numericUpPoKolacji.Size = new System.Drawing.Size(50, 20);
+            this.numericUpPoKolacji.TabIndex = 25;
+            this.numericUpPoKolacji.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -3262,7 +3262,7 @@
             this.groupBox23.ResumeLayout(false);
             this.groupBox24.ResumeLayout(false);
             this.groupBox25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpPoKolacji)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3521,7 +3521,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn poKolacji;
         private System.Windows.Forms.DataGridViewTextBoxColumn Przed_snem;
         private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpPoKolacji;
         private System.Windows.Forms.GroupBox groupBox24;
         private System.Windows.Forms.GroupBox groupBox23;
         private System.Windows.Forms.GroupBox groupBox22;
