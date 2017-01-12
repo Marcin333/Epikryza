@@ -699,6 +699,25 @@ namespace WindowsFormsApplicationEpikryza
                 textCountRowOpisAlergii.Text = countOpisAlergen.ToString();
             }
         }
+
+        private void btnDodajZabiegChirurgiczny_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(txtZabiegiChirurgiczne.Text)))
+            {
+                dgvZabiegiChirurgiczne.Rows.Add(txtZabiegiChirurgiczne.Text);
+                txtZabiegiChirurgiczne.Text = String.Empty;
+            }
+                
+        }
+
+        private void btnDodajAtaki_Click(object sender, EventArgs e)
+        {
+            if (!(String.IsNullOrEmpty(txtAtaki.Text)))
+            {
+                dgvAtaki.Rows.Add(txtAtaki.Text);
+                txtAtaki.Text = String.Empty;
+            }
+        }
     }
 }
 
