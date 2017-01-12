@@ -128,8 +128,7 @@
             this.label35 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.btnDodajViofo = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label44 = new System.Windows.Forms.Label();
+            this.cbUwagi = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.comboBoxNatezenie = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -282,6 +281,7 @@
             this.groupBox27 = new System.Windows.Forms.GroupBox();
             this.groupBox28 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -372,6 +372,7 @@
             this.groupBox26.SuspendLayout();
             this.groupBox27.SuspendLayout();
             this.groupBox28.SuspendLayout();
+            this.groupBox29.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1296,10 +1297,9 @@
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel21.Controls.Add(this.groupBox29);
             this.panel21.Controls.Add(this.groupBox1);
             this.panel21.Controls.Add(this.btnDodajViofo);
-            this.panel21.Controls.Add(this.comboBox1);
-            this.panel21.Controls.Add(this.label44);
             this.panel21.Controls.Add(this.groupBox7);
             this.panel21.Controls.Add(this.groupBox3);
             this.panel21.Controls.Add(this.label22);
@@ -1322,17 +1322,17 @@
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 113);
+            this.groupBox1.Location = new System.Drawing.Point(14, 107);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(653, 69);
+            this.groupBox1.Size = new System.Drawing.Size(603, 69);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Wynik";
+            this.groupBox1.Text = "Wyniki";
             // 
             // textBoxWPoPoludniu
             // 
             this.textBoxWPoPoludniu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxWPoPoludniu.Location = new System.Drawing.Point(261, 35);
+            this.textBoxWPoPoludniu.Location = new System.Drawing.Point(224, 37);
             this.textBoxWPoPoludniu.Name = "textBoxWPoPoludniu";
             this.textBoxWPoPoludniu.Size = new System.Drawing.Size(144, 20);
             this.textBoxWPoPoludniu.TabIndex = 50;
@@ -1340,7 +1340,7 @@
             // textBoxWRano
             // 
             this.textBoxWRano.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxWRano.Location = new System.Drawing.Point(48, 35);
+            this.textBoxWRano.Location = new System.Drawing.Point(11, 37);
             this.textBoxWRano.Name = "textBoxWRano";
             this.textBoxWRano.Size = new System.Drawing.Size(144, 20);
             this.textBoxWRano.TabIndex = 49;
@@ -1348,7 +1348,7 @@
             // textBoxWwieczor
             // 
             this.textBoxWwieczor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxWwieczor.Location = new System.Drawing.Point(474, 35);
+            this.textBoxWwieczor.Location = new System.Drawing.Point(437, 37);
             this.textBoxWwieczor.Name = "textBoxWwieczor";
             this.textBoxWwieczor.Size = new System.Drawing.Size(144, 20);
             this.textBoxWwieczor.TabIndex = 48;
@@ -1356,7 +1356,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(472, 19);
+            this.label36.Location = new System.Drawing.Point(435, 21);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(53, 13);
             this.label36.TabIndex = 47;
@@ -1365,7 +1365,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(259, 19);
+            this.label35.Location = new System.Drawing.Point(222, 21);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(76, 13);
             this.label35.TabIndex = 46;
@@ -1374,7 +1374,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(45, 19);
+            this.label29.Location = new System.Drawing.Point(8, 21);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(37, 13);
             this.label29.TabIndex = 45;
@@ -1383,7 +1383,7 @@
             // btnDodajViofo
             // 
             this.btnDodajViofo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodajViofo.Location = new System.Drawing.Point(802, 109);
+            this.btnDodajViofo.Location = new System.Drawing.Point(705, 127);
             this.btnDodajViofo.Name = "btnDodajViofo";
             this.btnDodajViofo.Size = new System.Drawing.Size(75, 35);
             this.btnDodajViofo.TabIndex = 40;
@@ -1391,33 +1391,23 @@
             this.btnDodajViofo.UseVisualStyleBackColor = true;
             this.btnDodajViofo.Click += new System.EventHandler(this.btnDodajViofo_Click);
             // 
-            // comboBox1
+            // cbUwagi
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbUwagi.FormattingEnabled = true;
+            this.cbUwagi.Items.AddRange(new object[] {
             "Wiadro zimnej wody z rana"});
-            this.comboBox1.Location = new System.Drawing.Point(85, 194);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 21);
-            this.comboBox1.TabIndex = 44;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(18, 197);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(42, 13);
-            this.label44.TabIndex = 43;
-            this.label44.Text = "Uwagi";
+            this.cbUwagi.Location = new System.Drawing.Point(13, 22);
+            this.cbUwagi.Name = "cbUwagi";
+            this.cbUwagi.Size = new System.Drawing.Size(205, 21);
+            this.cbUwagi.TabIndex = 44;
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.comboBoxNatezenie);
             this.groupBox7.Controls.Add(this.label21);
-            this.groupBox7.Location = new System.Drawing.Point(523, 37);
+            this.groupBox7.Location = new System.Drawing.Point(478, 37);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(143, 69);
+            this.groupBox7.Size = new System.Drawing.Size(137, 60);
             this.groupBox7.TabIndex = 39;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "V";
@@ -1439,7 +1429,7 @@
             "10",
             "11",
             "12"});
-            this.comboBoxNatezenie.Location = new System.Drawing.Point(78, 26);
+            this.comboBoxNatezenie.Location = new System.Drawing.Point(76, 23);
             this.comboBoxNatezenie.Name = "comboBoxNatezenie";
             this.comboBoxNatezenie.Size = new System.Drawing.Size(48, 21);
             this.comboBoxNatezenie.TabIndex = 44;
@@ -1448,7 +1438,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(9, 29);
+            this.label21.Location = new System.Drawing.Point(7, 26);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(64, 13);
             this.label21.TabIndex = 43;
@@ -1459,7 +1449,7 @@
             this.groupBox3.Controls.Add(this.comboBoxMata);
             this.groupBox3.Location = new System.Drawing.Point(14, 37);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(150, 69);
+            this.groupBox3.Size = new System.Drawing.Size(150, 60);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "I";
@@ -1472,7 +1462,7 @@
             "MATA DUŻA A1",
             "MATA MAŁA A2",
             "APLIKATOR ELIPSA AE"});
-            this.comboBoxMata.Location = new System.Drawing.Point(11, 26);
+            this.comboBoxMata.Location = new System.Drawing.Point(12, 23);
             this.comboBoxMata.Name = "comboBoxMata";
             this.comboBoxMata.Size = new System.Drawing.Size(129, 21);
             this.comboBoxMata.TabIndex = 0;
@@ -1489,16 +1479,16 @@
             // 
             this.groupBox6.Controls.Add(this.numericUDKrotnosc);
             this.groupBox6.Controls.Add(this.label20);
-            this.groupBox6.Location = new System.Drawing.Point(372, 37);
+            this.groupBox6.Location = new System.Drawing.Point(339, 37);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(143, 69);
+            this.groupBox6.Size = new System.Drawing.Size(134, 60);
             this.groupBox6.TabIndex = 39;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "IV";
             // 
             // numericUDKrotnosc
             // 
-            this.numericUDKrotnosc.Location = new System.Drawing.Point(74, 26);
+            this.numericUDKrotnosc.Location = new System.Drawing.Point(68, 23);
             this.numericUDKrotnosc.Maximum = new decimal(new int[] {
             4,
             0,
@@ -1512,7 +1502,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(12, 29);
+            this.label20.Location = new System.Drawing.Point(6, 26);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(57, 13);
             this.label20.TabIndex = 42;
@@ -1521,9 +1511,9 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.comboBoxPx);
-            this.groupBox4.Location = new System.Drawing.Point(172, 37);
+            this.groupBox4.Location = new System.Drawing.Point(169, 37);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(92, 69);
+            this.groupBox4.Size = new System.Drawing.Size(80, 60);
             this.groupBox4.TabIndex = 39;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "II";
@@ -1536,9 +1526,9 @@
             "P1",
             "P2",
             "P3"});
-            this.comboBoxPx.Location = new System.Drawing.Point(15, 26);
+            this.comboBoxPx.Location = new System.Drawing.Point(10, 23);
             this.comboBoxPx.Name = "comboBoxPx";
-            this.comboBoxPx.Size = new System.Drawing.Size(64, 21);
+            this.comboBoxPx.Size = new System.Drawing.Size(60, 21);
             this.comboBoxPx.TabIndex = 1;
             // 
             // groupBoxPoraDnia
@@ -1547,9 +1537,9 @@
             this.groupBoxPoraDnia.Controls.Add(this.radioBtnRano);
             this.groupBoxPoraDnia.Controls.Add(this.radioBtnPopoludniu);
             this.groupBoxPoraDnia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxPoraDnia.Location = new System.Drawing.Point(675, 37);
+            this.groupBoxPoraDnia.Location = new System.Drawing.Point(620, 37);
             this.groupBoxPoraDnia.Name = "groupBoxPoraDnia";
-            this.groupBoxPoraDnia.Size = new System.Drawing.Size(116, 145);
+            this.groupBoxPoraDnia.Size = new System.Drawing.Size(252, 60);
             this.groupBoxPoraDnia.TabIndex = 34;
             this.groupBoxPoraDnia.TabStop = false;
             this.groupBoxPoraDnia.Text = "Pora dnia";
@@ -1558,7 +1548,7 @@
             // 
             this.radioBtnWieczor.AutoSize = true;
             this.radioBtnWieczor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnWieczor.Location = new System.Drawing.Point(8, 96);
+            this.radioBtnWieczor.Location = new System.Drawing.Point(168, 23);
             this.radioBtnWieczor.Name = "radioBtnWieczor";
             this.radioBtnWieczor.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
             this.radioBtnWieczor.Size = new System.Drawing.Size(78, 23);
@@ -1572,7 +1562,7 @@
             // 
             this.radioBtnPopoludniu.AutoSize = true;
             this.radioBtnPopoludniu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnPopoludniu.Location = new System.Drawing.Point(8, 61);
+            this.radioBtnPopoludniu.Location = new System.Drawing.Point(70, 23);
             this.radioBtnPopoludniu.Name = "radioBtnPopoludniu";
             this.radioBtnPopoludniu.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
             this.radioBtnPopoludniu.Size = new System.Drawing.Size(101, 23);
@@ -1586,7 +1576,7 @@
             // 
             this.radioBtnRano.AutoSize = true;
             this.radioBtnRano.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnRano.Location = new System.Drawing.Point(8, 26);
+            this.radioBtnRano.Location = new System.Drawing.Point(8, 23);
             this.radioBtnRano.Name = "radioBtnRano";
             this.radioBtnRano.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
             this.radioBtnRano.Size = new System.Drawing.Size(62, 23);
@@ -1599,9 +1589,9 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.comboBoxMx);
-            this.groupBox5.Location = new System.Drawing.Point(272, 37);
+            this.groupBox5.Location = new System.Drawing.Point(254, 37);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(92, 69);
+            this.groupBox5.Size = new System.Drawing.Size(80, 60);
             this.groupBox5.TabIndex = 39;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "III";
@@ -1614,9 +1604,9 @@
             "M1",
             "M2",
             "M3"});
-            this.comboBoxMx.Location = new System.Drawing.Point(14, 26);
+            this.comboBoxMx.Location = new System.Drawing.Point(10, 23);
             this.comboBoxMx.Name = "comboBoxMx";
-            this.comboBoxMx.Size = new System.Drawing.Size(64, 21);
+            this.comboBoxMx.Size = new System.Drawing.Size(60, 21);
             this.comboBoxMx.TabIndex = 2;
             // 
             // panel22
@@ -3076,6 +3066,17 @@
             this.button1.Text = "Dodaj";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // groupBox29
+            // 
+            this.groupBox29.Controls.Add(this.cbUwagi);
+            this.groupBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox29.Location = new System.Drawing.Point(14, 184);
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.Size = new System.Drawing.Size(231, 60);
+            this.groupBox29.TabIndex = 52;
+            this.groupBox29.TabStop = false;
+            this.groupBox29.Text = "Uwagi";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3231,6 +3232,7 @@
             this.groupBox26.ResumeLayout(false);
             this.groupBox27.ResumeLayout(false);
             this.groupBox28.ResumeLayout(false);
+            this.groupBox29.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3363,8 +3365,7 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.NumericUpDown numericUDKrotnosc;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.ComboBox cbUwagi;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button btnDodajViofo;
         private System.Windows.Forms.ComboBox comboBoxMata;
@@ -3490,6 +3491,7 @@
         private System.Windows.Forms.RadioButton radioBtnPodostry;
         private System.Windows.Forms.RadioButton radioBtnPrzewlekly;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox29;
     }
 }
 
