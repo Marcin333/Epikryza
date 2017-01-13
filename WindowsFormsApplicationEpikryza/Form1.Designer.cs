@@ -265,11 +265,6 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.btnDodajAtaki = new System.Windows.Forms.Button();
@@ -281,6 +276,11 @@
             this.txtZabiegiChirurgiczne = new System.Windows.Forms.TextBox();
             this.dgvZabiegiChirurgiczne = new System.Windows.Forms.DataGridView();
             this.zabiegiChirurgiczneCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox28.SuspendLayout();
@@ -366,11 +366,11 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtaki)).BeginInit();
             this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZabiegiChirurgiczne)).BeginInit();
+            this.groupBox30.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -421,6 +421,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel15.Controls.Add(this.groupBox30);
             this.panel15.Controls.Add(this.groupBox21);
             this.panel15.Controls.Add(this.groupBox28);
             this.panel15.Controls.Add(this.groupBox20);
@@ -432,7 +433,7 @@
             this.panel15.Controls.Add(this.groupBox10);
             this.panel15.Location = new System.Drawing.Point(22, 1854);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(890, 1250);
+            this.panel15.Size = new System.Drawing.Size(890, 1123);
             this.panel15.TabIndex = 68;
             // 
             // groupBox28
@@ -446,7 +447,7 @@
             this.groupBox28.Controls.Add(this.groupBoxAnginy);
             this.groupBox28.Controls.Add(this.groupBox2);
             this.groupBox28.Controls.Add(this.groupBoxWizyta);
-            this.groupBox28.Location = new System.Drawing.Point(15, 33);
+            this.groupBox28.Location = new System.Drawing.Point(12, 33);
             this.groupBox28.Name = "groupBox28";
             this.groupBox28.Size = new System.Drawing.Size(468, 272);
             this.groupBox28.TabIndex = 110;
@@ -719,7 +720,7 @@
             this.panel16.Controls.Add(this.label28);
             this.panel16.Location = new System.Drawing.Point(0, 1);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(494, 26);
+            this.panel16.Size = new System.Drawing.Size(890, 26);
             this.panel16.TabIndex = 29;
             // 
             // label28
@@ -741,7 +742,7 @@
             this.groupBox11.Controls.Add(this.textBoxLeki);
             this.groupBox11.Controls.Add(this.dataGridViewSuplementy);
             this.groupBox11.Controls.Add(this.dataGridViewLeki);
-            this.groupBox11.Location = new System.Drawing.Point(13, 1013);
+            this.groupBox11.Location = new System.Drawing.Point(12, 839);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(469, 221);
             this.groupBox11.TabIndex = 107;
@@ -824,7 +825,7 @@
             this.groupBox9.Controls.Add(this.checkBoxSporadycznie);
             this.groupBox9.Controls.Add(this.btnDodajBol);
             this.groupBox9.Controls.Add(this.dataGridViewBole);
-            this.groupBox9.Location = new System.Drawing.Point(14, 515);
+            this.groupBox9.Location = new System.Drawing.Point(12, 311);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(470, 260);
             this.groupBox9.TabIndex = 99;
@@ -936,9 +937,9 @@
             this.groupBox8.Controls.Add(this.DodajSzpital);
             this.groupBox8.Controls.Add(this.textBoxSzpital);
             this.groupBox8.Controls.Add(this.dataGridViewSzpital);
-            this.groupBox8.Location = new System.Drawing.Point(14, 312);
+            this.groupBox8.Location = new System.Drawing.Point(488, 35);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(470, 197);
+            this.groupBox8.Size = new System.Drawing.Size(394, 270);
             this.groupBox8.TabIndex = 98;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Szpital";
@@ -946,7 +947,7 @@
             // DodajSzpital
             // 
             this.DodajSzpital.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.DodajSzpital.Location = new System.Drawing.Point(364, 20);
+            this.DodajSzpital.Location = new System.Drawing.Point(12, 50);
             this.DodajSzpital.Name = "DodajSzpital";
             this.DodajSzpital.Size = new System.Drawing.Size(95, 20);
             this.DodajSzpital.TabIndex = 100;
@@ -958,7 +959,7 @@
             // 
             this.textBoxSzpital.Location = new System.Drawing.Point(12, 20);
             this.textBoxSzpital.Name = "textBoxSzpital";
-            this.textBoxSzpital.Size = new System.Drawing.Size(323, 20);
+            this.textBoxSzpital.Size = new System.Drawing.Size(372, 20);
             this.textBoxSzpital.TabIndex = 98;
             // 
             // dataGridViewSzpital
@@ -966,9 +967,9 @@
             this.dataGridViewSzpital.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSzpital.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.szpital});
-            this.dataGridViewSzpital.Location = new System.Drawing.Point(11, 51);
+            this.dataGridViewSzpital.Location = new System.Drawing.Point(11, 86);
             this.dataGridViewSzpital.Name = "dataGridViewSzpital";
-            this.dataGridViewSzpital.Size = new System.Drawing.Size(450, 136);
+            this.dataGridViewSzpital.Size = new System.Drawing.Size(373, 172);
             this.dataGridViewSzpital.TabIndex = 97;
             // 
             // szpital
@@ -982,7 +983,7 @@
             this.dataGridViewDolegliwosci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDolegliwosci.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.inneDolegliwosci});
-            this.dataGridViewDolegliwosci.Location = new System.Drawing.Point(23, 836);
+            this.dataGridViewDolegliwosci.Location = new System.Drawing.Point(22, 652);
             this.dataGridViewDolegliwosci.Name = "dataGridViewDolegliwosci";
             this.dataGridViewDolegliwosci.Size = new System.Drawing.Size(449, 160);
             this.dataGridViewDolegliwosci.TabIndex = 93;
@@ -997,9 +998,9 @@
             // 
             this.groupBox10.Controls.Add(this.btnDodajDoleglo);
             this.groupBox10.Controls.Add(this.textBoxDolegliwosci);
-            this.groupBox10.Location = new System.Drawing.Point(13, 787);
+            this.groupBox10.Location = new System.Drawing.Point(12, 577);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(467, 219);
+            this.groupBox10.Size = new System.Drawing.Size(467, 247);
             this.groupBox10.TabIndex = 105;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Top trendy";
@@ -1317,9 +1318,9 @@
             this.panel17.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel17.Controls.Add(this.pictureBox1);
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(522, 3110);
+            this.panel17.Location = new System.Drawing.Point(22, 2983);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(391, 767);
+            this.panel17.Size = new System.Drawing.Size(891, 717);
             this.panel17.TabIndex = 70;
             // 
             // pictureBox1
@@ -2929,60 +2930,10 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel25.Controls.Add(this.textBox15);
-            this.panel25.Controls.Add(this.label43);
-            this.panel25.Controls.Add(this.label42);
-            this.panel25.Controls.Add(this.dateTimePicker1);
-            this.panel25.Location = new System.Drawing.Point(22, 3110);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(494, 139);
-            this.panel25.TabIndex = 76;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(70, 46);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(411, 83);
-            this.textBox15.TabIndex = 62;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label43.Location = new System.Drawing.Point(21, 46);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(42, 13);
-            this.label43.TabIndex = 61;
-            this.label43.Text = "Uwagi";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label42.Location = new System.Drawing.Point(17, 19);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(143, 13);
-            this.label42.TabIndex = 60;
-            this.label42.Text = "Termin wizyty kontrolnej";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(170, 15);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 20);
-            this.dateTimePicker1.TabIndex = 59;
-            // 
             // btnZapiszWszystko
             // 
             this.btnZapiszWszystko.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZapiszWszystko.Location = new System.Drawing.Point(623, 3132);
+            this.btnZapiszWszystko.Location = new System.Drawing.Point(212, 166);
             this.btnZapiszWszystko.Name = "btnZapiszWszystko";
             this.btnZapiszWszystko.Size = new System.Drawing.Size(161, 44);
             this.btnZapiszWszystko.TabIndex = 77;
@@ -2995,9 +2946,9 @@
             this.groupBox21.Controls.Add(this.btnDodajAtaki);
             this.groupBox21.Controls.Add(this.txtAtaki);
             this.groupBox21.Controls.Add(this.dgvAtaki);
-            this.groupBox21.Location = new System.Drawing.Point(500, 1014);
+            this.groupBox21.Location = new System.Drawing.Point(488, 577);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(370, 219);
+            this.groupBox21.Size = new System.Drawing.Size(394, 247);
             this.groupBox21.TabIndex = 100;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Ataki";
@@ -3005,9 +2956,9 @@
             // btnDodajAtaki
             // 
             this.btnDodajAtaki.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnDodajAtaki.Location = new System.Drawing.Point(297, 20);
+            this.btnDodajAtaki.Location = new System.Drawing.Point(286, 20);
             this.btnDodajAtaki.Name = "btnDodajAtaki";
-            this.btnDodajAtaki.Size = new System.Drawing.Size(59, 20);
+            this.btnDodajAtaki.Size = new System.Drawing.Size(95, 20);
             this.btnDodajAtaki.TabIndex = 100;
             this.btnDodajAtaki.Text = "Dodaj";
             this.btnDodajAtaki.UseVisualStyleBackColor = false;
@@ -3017,7 +2968,7 @@
             // 
             this.txtAtaki.Location = new System.Drawing.Point(12, 20);
             this.txtAtaki.Name = "txtAtaki";
-            this.txtAtaki.Size = new System.Drawing.Size(187, 20);
+            this.txtAtaki.Size = new System.Drawing.Size(237, 20);
             this.txtAtaki.TabIndex = 98;
             // 
             // dgvAtaki
@@ -3025,9 +2976,9 @@
             this.dgvAtaki.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAtaki.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.atakiCol});
-            this.dgvAtaki.Location = new System.Drawing.Point(11, 51);
+            this.dgvAtaki.Location = new System.Drawing.Point(11, 76);
             this.dgvAtaki.Name = "dgvAtaki";
-            this.dgvAtaki.Size = new System.Drawing.Size(344, 160);
+            this.dgvAtaki.Size = new System.Drawing.Size(372, 160);
             this.dgvAtaki.TabIndex = 97;
             // 
             // atakiCol
@@ -3041,9 +2992,9 @@
             this.groupBox20.Controls.Add(this.btnDodajZabiegChirurgiczny);
             this.groupBox20.Controls.Add(this.txtZabiegiChirurgiczne);
             this.groupBox20.Controls.Add(this.dgvZabiegiChirurgiczne);
-            this.groupBox20.Location = new System.Drawing.Point(512, 791);
+            this.groupBox20.Location = new System.Drawing.Point(488, 311);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(370, 219);
+            this.groupBox20.Size = new System.Drawing.Size(394, 260);
             this.groupBox20.TabIndex = 99;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Zabiegi chirurgiczne";
@@ -3051,7 +3002,7 @@
             // btnDodajZabiegChirurgiczny
             // 
             this.btnDodajZabiegChirurgiczny.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnDodajZabiegChirurgiczny.Location = new System.Drawing.Point(295, 20);
+            this.btnDodajZabiegChirurgiczny.Location = new System.Drawing.Point(11, 47);
             this.btnDodajZabiegChirurgiczny.Name = "btnDodajZabiegChirurgiczny";
             this.btnDodajZabiegChirurgiczny.Size = new System.Drawing.Size(61, 20);
             this.btnDodajZabiegChirurgiczny.TabIndex = 100;
@@ -3061,9 +3012,9 @@
             // 
             // txtZabiegiChirurgiczne
             // 
-            this.txtZabiegiChirurgiczne.Location = new System.Drawing.Point(12, 20);
+            this.txtZabiegiChirurgiczne.Location = new System.Drawing.Point(12, 19);
             this.txtZabiegiChirurgiczne.Name = "txtZabiegiChirurgiczne";
-            this.txtZabiegiChirurgiczne.Size = new System.Drawing.Size(187, 20);
+            this.txtZabiegiChirurgiczne.Size = new System.Drawing.Size(372, 20);
             this.txtZabiegiChirurgiczne.TabIndex = 98;
             // 
             // dgvZabiegiChirurgiczne
@@ -3071,9 +3022,9 @@
             this.dgvZabiegiChirurgiczne.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvZabiegiChirurgiczne.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.zabiegiChirurgiczneCol});
-            this.dgvZabiegiChirurgiczne.Location = new System.Drawing.Point(11, 51);
+            this.dgvZabiegiChirurgiczne.Location = new System.Drawing.Point(12, 76);
             this.dgvZabiegiChirurgiczne.Name = "dgvZabiegiChirurgiczne";
-            this.dgvZabiegiChirurgiczne.Size = new System.Drawing.Size(344, 160);
+            this.dgvZabiegiChirurgiczne.Size = new System.Drawing.Size(372, 173);
             this.dgvZabiegiChirurgiczne.TabIndex = 97;
             // 
             // zabiegiChirurgiczneCol
@@ -3082,14 +3033,64 @@
             this.zabiegiChirurgiczneCol.Name = "zabiegiChirurgiczneCol";
             this.zabiegiChirurgiczneCol.Width = 300;
             // 
+            // groupBox30
+            // 
+            this.groupBox30.Controls.Add(this.btnZapiszWszystko);
+            this.groupBox30.Controls.Add(this.textBox15);
+            this.groupBox30.Controls.Add(this.label43);
+            this.groupBox30.Controls.Add(this.label42);
+            this.groupBox30.Controls.Add(this.dateTimePicker1);
+            this.groupBox30.Location = new System.Drawing.Point(493, 839);
+            this.groupBox30.Name = "groupBox30";
+            this.groupBox30.Size = new System.Drawing.Size(381, 221);
+            this.groupBox30.TabIndex = 111;
+            this.groupBox30.TabStop = false;
+            this.groupBox30.Text = "groupBox30";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(63, 59);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(308, 83);
+            this.textBox15.TabIndex = 66;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label43.Location = new System.Drawing.Point(14, 59);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(42, 13);
+            this.label43.TabIndex = 65;
+            this.label43.Text = "Uwagi";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label42.Location = new System.Drawing.Point(10, 32);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(143, 13);
+            this.label42.TabIndex = 64;
+            this.label42.Text = "Termin wizyty kontrolnej";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(163, 28);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(129, 20);
+            this.dateTimePicker1.TabIndex = 63;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(982, 430);
-            this.Controls.Add(this.panel25);
-            this.Controls.Add(this.btnZapiszWszystko);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
@@ -3228,14 +3229,14 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtaki)).EndInit();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZabiegiChirurgiczne)).EndInit();
+            this.groupBox30.ResumeLayout(false);
+            this.groupBox30.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3395,11 +3396,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.DataGridView dataGridViewSzpital;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridViewTextBoxColumn inneDolegliwosci;
         private System.Windows.Forms.ComboBox comboBoxNatezenie;
         private System.Windows.Forms.Button btnZapiszWszystko;
@@ -3494,6 +3490,11 @@
         private System.Windows.Forms.RadioButton radioBtnPrzewlekly;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.GroupBox groupBox30;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
