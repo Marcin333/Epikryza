@@ -271,7 +271,6 @@
             this.label42 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.btnDodajAtaki = new System.Windows.Forms.Button();
             this.txtAtaki = new System.Windows.Forms.TextBox();
@@ -368,7 +367,6 @@
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtaki)).BeginInit();
             this.groupBox20.SuspendLayout();
@@ -423,7 +421,9 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel15.Controls.Add(this.groupBox21);
             this.panel15.Controls.Add(this.groupBox28);
+            this.panel15.Controls.Add(this.groupBox20);
             this.panel15.Controls.Add(this.panel16);
             this.panel15.Controls.Add(this.groupBox11);
             this.panel15.Controls.Add(this.groupBox9);
@@ -432,7 +432,7 @@
             this.panel15.Controls.Add(this.groupBox10);
             this.panel15.Location = new System.Drawing.Point(22, 1854);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(494, 1250);
+            this.panel15.Size = new System.Drawing.Size(890, 1250);
             this.panel15.TabIndex = 68;
             // 
             // groupBox28
@@ -1287,7 +1287,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.Control;
-            this.panel10.Location = new System.Drawing.Point(22, 3721);
+            this.panel10.Location = new System.Drawing.Point(22, 3891);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(871, 56);
             this.panel10.TabIndex = 69;
@@ -1317,7 +1317,7 @@
             this.panel17.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel17.Controls.Add(this.pictureBox1);
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(522, 1855);
+            this.panel17.Location = new System.Drawing.Point(522, 3110);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(391, 767);
             this.panel17.TabIndex = 70;
@@ -2990,22 +2990,12 @@
             this.btnZapiszWszystko.UseVisualStyleBackColor = true;
             this.btnZapiszWszystko.Click += new System.EventHandler(this.btnZapiszWszystko_Click);
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel5.Controls.Add(this.groupBox21);
-            this.panel5.Controls.Add(this.groupBox20);
-            this.panel5.Location = new System.Drawing.Point(522, 2628);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(391, 476);
-            this.panel5.TabIndex = 78;
-            // 
             // groupBox21
             // 
             this.groupBox21.Controls.Add(this.btnDodajAtaki);
             this.groupBox21.Controls.Add(this.txtAtaki);
             this.groupBox21.Controls.Add(this.dgvAtaki);
-            this.groupBox21.Location = new System.Drawing.Point(7, 242);
+            this.groupBox21.Location = new System.Drawing.Point(500, 1014);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Size = new System.Drawing.Size(370, 219);
             this.groupBox21.TabIndex = 100;
@@ -3051,7 +3041,7 @@
             this.groupBox20.Controls.Add(this.btnDodajZabiegChirurgiczny);
             this.groupBox20.Controls.Add(this.txtZabiegiChirurgiczne);
             this.groupBox20.Controls.Add(this.dgvZabiegiChirurgiczne);
-            this.groupBox20.Location = new System.Drawing.Point(9, 13);
+            this.groupBox20.Location = new System.Drawing.Point(512, 791);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Size = new System.Drawing.Size(370, 219);
             this.groupBox20.TabIndex = 99;
@@ -3098,9 +3088,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(982, 430);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.btnZapiszWszystko);
+            this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel15);
@@ -3108,7 +3098,6 @@
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel21);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.imgProfamilia);
@@ -3241,7 +3230,6 @@
             this.panel7.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtaki)).EndInit();
@@ -3473,7 +3461,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iloscHome;
         private System.Windows.Forms.TextBox txtGrupaKrwi;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.Button btnDodajAtaki;
         private System.Windows.Forms.TextBox txtAtaki;
