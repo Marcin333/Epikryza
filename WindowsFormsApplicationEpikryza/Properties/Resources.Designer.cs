@@ -73,6 +73,16 @@ namespace WindowsFormsApplicationEpikryza.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap penis {
+            get {
+                object obj = ResourceManager.GetObject("penis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profamilia {
             get {
                 object obj = ResourceManager.GetObject("profamilia", resourceCulture);

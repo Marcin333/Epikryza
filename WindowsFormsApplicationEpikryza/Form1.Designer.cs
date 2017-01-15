@@ -134,7 +134,15 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
+            this.penis = new System.Windows.Forms.Panel();
+            this.groupBox32 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnWoman = new System.Windows.Forms.Button();
+            this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnMen = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.labelk = new System.Windows.Forms.Label();
@@ -281,14 +289,7 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.groupBox31 = new System.Windows.Forms.GroupBox();
-            this.groupBox32 = new System.Windows.Forms.GroupBox();
-            this.btnMen = new System.Windows.Forms.Button();
-            this.btnWoman = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.imgBoxPenis = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox30.SuspendLayout();
@@ -325,7 +326,9 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel20.SuspendLayout();
-            this.panel17.SuspendLayout();
+            this.penis.SuspendLayout();
+            this.groupBox32.SuspendLayout();
+            this.groupBox31.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).BeginInit();
@@ -379,8 +382,7 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.groupBox31.SuspendLayout();
-            this.groupBox32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1478,17 +1480,93 @@
             this.label37.TabIndex = 0;
             this.label37.Text = "Zalecenia żywieniowe";
             // 
-            // panel17
+            // penis
             // 
-            this.panel17.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel17.Controls.Add(this.groupBox32);
-            this.panel17.Controls.Add(this.groupBox31);
-            this.panel17.Controls.Add(this.pictureBox1);
-            this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(22, 2983);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(891, 717);
-            this.panel17.TabIndex = 70;
+            this.penis.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.penis.Controls.Add(this.imgBoxPenis);
+            this.penis.Controls.Add(this.groupBox32);
+            this.penis.Controls.Add(this.groupBox31);
+            this.penis.Controls.Add(this.pictureBox1);
+            this.penis.Controls.Add(this.panel18);
+            this.penis.Location = new System.Drawing.Point(22, 2983);
+            this.penis.Name = "penis";
+            this.penis.Size = new System.Drawing.Size(891, 717);
+            this.penis.TabIndex = 70;
+            // 
+            // groupBox32
+            // 
+            this.groupBox32.Controls.Add(this.button4);
+            this.groupBox32.Controls.Add(this.button3);
+            this.groupBox32.Controls.Add(this.btnWoman);
+            this.groupBox32.Location = new System.Drawing.Point(706, 51);
+            this.groupBox32.Name = "groupBox32";
+            this.groupBox32.Size = new System.Drawing.Size(173, 313);
+            this.groupBox32.TabIndex = 32;
+            this.groupBox32.TabStop = false;
+            this.groupBox32.Text = "Kobieta";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(115, 21);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(45, 45);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(63, 21);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 45);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // btnWoman
+            // 
+            this.btnWoman.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.woman;
+            this.btnWoman.Location = new System.Drawing.Point(11, 21);
+            this.btnWoman.Name = "btnWoman";
+            this.btnWoman.Size = new System.Drawing.Size(45, 45);
+            this.btnWoman.TabIndex = 1;
+            this.btnWoman.UseVisualStyleBackColor = true;
+            // 
+            // groupBox31
+            // 
+            this.groupBox31.Controls.Add(this.button2);
+            this.groupBox31.Controls.Add(this.btnMen);
+            this.groupBox31.Controls.Add(this.button7);
+            this.groupBox31.Location = new System.Drawing.Point(12, 51);
+            this.groupBox31.Name = "groupBox31";
+            this.groupBox31.Size = new System.Drawing.Size(173, 313);
+            this.groupBox31.TabIndex = 31;
+            this.groupBox31.TabStop = false;
+            this.groupBox31.Text = "Mężczyzna";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(117, 21);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 45);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnMen
+            // 
+            this.btnMen.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.man;
+            this.btnMen.Location = new System.Drawing.Point(11, 21);
+            this.btnMen.Name = "btnMen";
+            this.btnMen.Size = new System.Drawing.Size(45, 45);
+            this.btnMen.TabIndex = 0;
+            this.btnMen.UseVisualStyleBackColor = true;
+            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(64, 21);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(45, 45);
+            this.button7.TabIndex = 4;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -3099,79 +3177,16 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // groupBox31
+            // imgBoxPenis
             // 
-            this.groupBox31.Controls.Add(this.button2);
-            this.groupBox31.Controls.Add(this.btnMen);
-            this.groupBox31.Controls.Add(this.button7);
-            this.groupBox31.Location = new System.Drawing.Point(12, 51);
-            this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Size = new System.Drawing.Size(173, 313);
-            this.groupBox31.TabIndex = 31;
-            this.groupBox31.TabStop = false;
-            this.groupBox31.Text = "Mężczyzna";
-            // 
-            // groupBox32
-            // 
-            this.groupBox32.Controls.Add(this.button4);
-            this.groupBox32.Controls.Add(this.button3);
-            this.groupBox32.Controls.Add(this.btnWoman);
-            this.groupBox32.Location = new System.Drawing.Point(706, 51);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Size = new System.Drawing.Size(173, 313);
-            this.groupBox32.TabIndex = 32;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "Kobieta";
-            // 
-            // btnMen
-            // 
-            this.btnMen.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.man;
-            this.btnMen.Location = new System.Drawing.Point(11, 21);
-            this.btnMen.Name = "btnMen";
-            this.btnMen.Size = new System.Drawing.Size(45, 45);
-            this.btnMen.TabIndex = 0;
-            this.btnMen.UseVisualStyleBackColor = true;
-            // 
-            // btnWoman
-            // 
-            this.btnWoman.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.woman;
-            this.btnWoman.Location = new System.Drawing.Point(11, 21);
-            this.btnWoman.Name = "btnWoman";
-            this.btnWoman.Size = new System.Drawing.Size(45, 45);
-            this.btnWoman.TabIndex = 1;
-            this.btnWoman.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(63, 21);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 45);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(115, 21);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 45);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(117, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 45);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(64, 21);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(45, 45);
-            this.button7.TabIndex = 4;
-            this.button7.UseVisualStyleBackColor = true;
+            this.imgBoxPenis.BackColor = System.Drawing.Color.White;
+            this.imgBoxPenis.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.penis;
+            this.imgBoxPenis.Location = new System.Drawing.Point(430, 321);
+            this.imgBoxPenis.Name = "imgBoxPenis";
+            this.imgBoxPenis.Size = new System.Drawing.Size(35, 74);
+            this.imgBoxPenis.TabIndex = 33;
+            this.imgBoxPenis.TabStop = false;
+            this.imgBoxPenis.Visible = false;
             // 
             // Form1
             // 
@@ -3179,7 +3194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(982, 430);
-            this.Controls.Add(this.panel17);
+            this.Controls.Add(this.penis);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel15);
@@ -3252,7 +3267,9 @@
             this.panel14.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
-            this.panel17.ResumeLayout(false);
+            this.penis.ResumeLayout(false);
+            this.groupBox32.ResumeLayout(false);
+            this.groupBox31.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
@@ -3325,8 +3342,7 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.groupBox31.ResumeLayout(false);
-            this.groupBox32.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3370,7 +3386,7 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel penis;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label labelk;
@@ -3593,6 +3609,7 @@
         private System.Windows.Forms.Button btnMen;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox imgBoxPenis;
     }
 }
 

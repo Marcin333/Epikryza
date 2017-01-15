@@ -718,6 +718,11 @@ namespace WindowsFormsApplicationEpikryza
                 txtAtaki.Text = String.Empty;
             }
         }
+
+        private void btnMen_Click(object sender, EventArgs e)
+        {
+            imgBoxPenis.Visible = true;
+        }
     }
 }
 
