@@ -134,7 +134,7 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
-            this.penis = new System.Windows.Forms.Panel();
+            this.panelModel = new System.Windows.Forms.Panel();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -143,7 +143,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnMen = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelModelImg = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.labelk = new System.Windows.Forms.Label();
             this.textBoxCountZywieniowe = new System.Windows.Forms.TextBox();
@@ -326,10 +326,10 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel20.SuspendLayout();
-            this.penis.SuspendLayout();
+            this.panelModel.SuspendLayout();
             this.groupBox32.SuspendLayout();
             this.groupBox31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).BeginInit();
             this.panel21.SuspendLayout();
@@ -1480,18 +1480,18 @@
             this.label37.TabIndex = 0;
             this.label37.Text = "Zalecenia żywieniowe";
             // 
-            // penis
+            // panelModel
             // 
-            this.penis.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.penis.Controls.Add(this.imgBoxPenis);
-            this.penis.Controls.Add(this.groupBox32);
-            this.penis.Controls.Add(this.groupBox31);
-            this.penis.Controls.Add(this.pictureBox1);
-            this.penis.Controls.Add(this.panel18);
-            this.penis.Location = new System.Drawing.Point(22, 2983);
-            this.penis.Name = "penis";
-            this.penis.Size = new System.Drawing.Size(891, 717);
-            this.penis.TabIndex = 70;
+            this.panelModel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelModel.Controls.Add(this.groupBox32);
+            this.panelModel.Controls.Add(this.groupBox31);
+            this.panelModel.Controls.Add(this.panelModelImg);
+            this.panelModel.Controls.Add(this.panel18);
+            this.panelModel.Controls.Add(this.imgBoxPenis);
+            this.panelModel.Location = new System.Drawing.Point(22, 2983);
+            this.panelModel.Name = "panelModel";
+            this.panelModel.Size = new System.Drawing.Size(891, 717);
+            this.panelModel.TabIndex = 70;
             // 
             // groupBox32
             // 
@@ -1568,16 +1568,16 @@
             this.button7.TabIndex = 4;
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // panelModelImg
             // 
-            this.pictureBox1.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(197, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(497, 576);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
+            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
+            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
+            this.panelModelImg.Name = "panelModelImg";
+            this.panelModelImg.Size = new System.Drawing.Size(497, 576);
+            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.panelModelImg.TabIndex = 30;
+            this.panelModelImg.TabStop = false;
             // 
             // panel18
             // 
@@ -3186,7 +3186,6 @@
             this.imgBoxPenis.Size = new System.Drawing.Size(35, 74);
             this.imgBoxPenis.TabIndex = 33;
             this.imgBoxPenis.TabStop = false;
-            this.imgBoxPenis.Visible = false;
             // 
             // Form1
             // 
@@ -3194,7 +3193,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(982, 430);
-            this.Controls.Add(this.penis);
+            this.Controls.Add(this.panelModel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel15);
@@ -3267,10 +3266,10 @@
             this.panel14.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
-            this.penis.ResumeLayout(false);
+            this.panelModel.ResumeLayout(false);
             this.groupBox32.ResumeLayout(false);
             this.groupBox31.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).EndInit();
@@ -3386,8 +3385,8 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Panel penis;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelModel;
+        private System.Windows.Forms.PictureBox panelModelImg;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label labelk;
         private System.Windows.Forms.TextBox textBoxCountZywieniowe;

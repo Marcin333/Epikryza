@@ -22,6 +22,8 @@ namespace WindowsFormsApplicationEpikryza
             // TODO: This line of code loads data into the 'forHealthDBDataSet.tblDanePacjenta' table. You can move, or remove it, as needed.
             this.tblDanePacjentaTableAdapter.Fill(this.forHealthDBDataSet.tblDanePacjenta);
 
+            panelModel.Controls.SetChildIndex(panelModelImg, 1);
+
         }
 
         private void btnSzukaj_Click(object sender, EventArgs e)
@@ -721,7 +723,18 @@ namespace WindowsFormsApplicationEpikryza
 
         private void btnMen_Click(object sender, EventArgs e)
         {
+            // pictureBox1.ImageLocation = "path/to/img";
+            // pictureBox1.Load();
             imgBoxPenis.Visible = true;
+            int zindexPanel = panelModel.Controls.GetChildIndex(imgBoxPenis);
+            int zindexModel = panelModel.Controls.GetChildIndex(panelModelImg);
+            imgBoxPenis.BringToFront();
+            Console.WriteLine("zindexPanel: {0}", zindexPanel);
+            Console.WriteLine("zindexModel {0}", zindexModel);
+            
+            //Bitmap penis = new Bitmap("C:\\Users\\Marcin\\Documents\\Github\\Epikryza\\WindowsFormsApplicationEpikryza\\Resources\\penis.png");
+            //penis.MakeTransparent();
+            //imgBoxPenis.Image = penis;
         }
     }
 }
