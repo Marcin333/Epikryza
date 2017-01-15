@@ -1480,10 +1480,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(197, 51);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(370, 451);
+            this.pictureBox1.Size = new System.Drawing.Size(497, 576);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
