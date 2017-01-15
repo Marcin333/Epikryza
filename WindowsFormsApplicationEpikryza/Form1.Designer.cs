@@ -284,9 +284,11 @@
             this.groupBox31 = new System.Windows.Forms.GroupBox();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.btnMen = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnWoman = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox30.SuspendLayout();
@@ -3099,8 +3101,10 @@
             // 
             // groupBox31
             // 
+            this.groupBox31.Controls.Add(this.button2);
             this.groupBox31.Controls.Add(this.btnMen);
-            this.groupBox31.Location = new System.Drawing.Point(15, 51);
+            this.groupBox31.Controls.Add(this.button7);
+            this.groupBox31.Location = new System.Drawing.Point(12, 51);
             this.groupBox31.Name = "groupBox31";
             this.groupBox31.Size = new System.Drawing.Size(173, 313);
             this.groupBox31.TabIndex = 31;
@@ -3111,8 +3115,8 @@
             // 
             this.groupBox32.Controls.Add(this.button4);
             this.groupBox32.Controls.Add(this.button3);
-            this.groupBox32.Controls.Add(this.button2);
-            this.groupBox32.Location = new System.Drawing.Point(709, 51);
+            this.groupBox32.Controls.Add(this.btnWoman);
+            this.groupBox32.Location = new System.Drawing.Point(706, 51);
             this.groupBox32.Name = "groupBox32";
             this.groupBox32.Size = new System.Drawing.Size(173, 313);
             this.groupBox32.TabIndex = 32;
@@ -3122,19 +3126,20 @@
             // btnMen
             // 
             this.btnMen.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.man;
-            this.btnMen.Location = new System.Drawing.Point(12, 21);
+            this.btnMen.Location = new System.Drawing.Point(11, 21);
             this.btnMen.Name = "btnMen";
             this.btnMen.Size = new System.Drawing.Size(45, 45);
             this.btnMen.TabIndex = 0;
             this.btnMen.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnWoman
             // 
-            this.button2.Location = new System.Drawing.Point(11, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 45);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnWoman.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.woman;
+            this.btnWoman.Location = new System.Drawing.Point(11, 21);
+            this.btnWoman.Name = "btnWoman";
+            this.btnWoman.Size = new System.Drawing.Size(45, 45);
+            this.btnWoman.TabIndex = 1;
+            this.btnWoman.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -3151,6 +3156,22 @@
             this.button4.Size = new System.Drawing.Size(45, 45);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(117, 21);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 45);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(64, 21);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(45, 45);
+            this.button7.TabIndex = 4;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -3567,9 +3588,11 @@
         private System.Windows.Forms.GroupBox groupBox32;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnWoman;
         private System.Windows.Forms.GroupBox groupBox31;
         private System.Windows.Forms.Button btnMen;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button7;
     }
 }
 
