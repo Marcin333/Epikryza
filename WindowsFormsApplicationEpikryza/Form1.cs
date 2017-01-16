@@ -737,6 +737,11 @@ namespace WindowsFormsApplicationEpikryza
             //penis.MakeTransparent();
             //imgBoxPenis.Image = penis;
         }
+
+        private void btnHeart_Click(object sender, EventArgs e)
+        {
+            imgHeart.BringToFront();
+        }
     }
 }
 

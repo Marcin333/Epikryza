@@ -294,7 +294,7 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgHeart = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox30.SuspendLayout();
@@ -388,7 +388,7 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1489,12 +1489,12 @@
             // panelModel
             // 
             this.panelModel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelModel.Controls.Add(this.pictureBox1);
             this.panelModel.Controls.Add(this.groupBox32);
             this.panelModel.Controls.Add(this.groupBox31);
             this.panelModel.Controls.Add(this.panel18);
             this.panelModel.Controls.Add(this.imgBoxPenis);
             this.panelModel.Controls.Add(this.panelModelImg);
+            this.panelModel.Controls.Add(this.imgHeart);
             this.panelModel.Location = new System.Drawing.Point(22, 2983);
             this.panelModel.Name = "panelModel";
             this.panelModel.Size = new System.Drawing.Size(891, 717);
@@ -1606,6 +1606,7 @@
             this.btnHeart.Size = new System.Drawing.Size(45, 45);
             this.btnHeart.TabIndex = 4;
             this.btnHeart.UseVisualStyleBackColor = false;
+            this.btnHeart.Click += new System.EventHandler(this.btnHeart_Click);
             // 
             // panel18
             // 
@@ -3227,13 +3228,14 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // pictureBox1
+            // imgHeart
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(437, 175);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 60);
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
+            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
+            this.imgHeart.Location = new System.Drawing.Point(424, 167);
+            this.imgHeart.Name = "imgHeart";
+            this.imgHeart.Size = new System.Drawing.Size(52, 65);
+            this.imgHeart.TabIndex = 34;
+            this.imgHeart.TabStop = false;
             // 
             // Form1
             // 
@@ -3390,7 +3392,7 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3661,7 +3663,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgHeart;
     }
 }
 
