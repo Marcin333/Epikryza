@@ -726,10 +726,11 @@ namespace WindowsFormsApplicationEpikryza
             // pictureBox1.ImageLocation = "path/to/img";
             // pictureBox1.Load();
             imgBoxPenis.Visible = true;
-            int zindexPanel = panelModel.Controls.GetChildIndex(imgBoxPenis);
+            int zindexPenisImg = panelModel.Controls.GetChildIndex(imgBoxPenis);
             int zindexModel = panelModel.Controls.GetChildIndex(panelModelImg);
-            imgBoxPenis.BringToFront();
-            Console.WriteLine("zindexPanel: {0}", zindexPanel);
+            //imgBoxPenis.BringToFront();
+            panelModel.Controls.SetChildIndex(imgBoxPenis, 0);
+            Console.WriteLine("zindexPanel: {0}", zindexPenisImg);
             Console.WriteLine("zindexModel {0}", zindexModel);
             
             //Bitmap penis = new Bitmap("C:\\Users\\Marcin\\Documents\\Github\\Epikryza\\WindowsFormsApplicationEpikryza\\Resources\\penis.png");
