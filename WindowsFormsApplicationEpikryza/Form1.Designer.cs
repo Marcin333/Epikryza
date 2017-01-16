@@ -1492,9 +1492,9 @@
             this.panelModel.Controls.Add(this.groupBox32);
             this.panelModel.Controls.Add(this.groupBox31);
             this.panelModel.Controls.Add(this.panel18);
-            this.panelModel.Controls.Add(this.imgBoxPenis);
             this.panelModel.Controls.Add(this.panelModelImg);
             this.panelModel.Controls.Add(this.imgHeart);
+            this.panelModel.Controls.Add(this.imgBoxPenis);
             this.panelModel.Location = new System.Drawing.Point(22, 2983);
             this.panelModel.Name = "panelModel";
             this.panelModel.Size = new System.Drawing.Size(891, 717);
@@ -1600,7 +1600,7 @@
             // btnHeart
             // 
             this.btnHeart.BackColor = System.Drawing.Color.Transparent;
-            this.btnHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.heart_icon_part;
+            this.btnHeart.Image = ((System.Drawing.Image)(resources.GetObject("btnHeart.Image")));
             this.btnHeart.Location = new System.Drawing.Point(64, 21);
             this.btnHeart.Name = "btnHeart";
             this.btnHeart.Size = new System.Drawing.Size(45, 45);
@@ -1631,10 +1631,10 @@
             // imgBoxPenis
             // 
             this.imgBoxPenis.BackColor = System.Drawing.Color.White;
-            this.imgBoxPenis.Image = ((System.Drawing.Image)(resources.GetObject("imgBoxPenis.Image")));
-            this.imgBoxPenis.Location = new System.Drawing.Point(430, 321);
+            this.imgBoxPenis.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.penis2;
+            this.imgBoxPenis.Location = new System.Drawing.Point(433, 317);
             this.imgBoxPenis.Name = "imgBoxPenis";
-            this.imgBoxPenis.Size = new System.Drawing.Size(35, 74);
+            this.imgBoxPenis.Size = new System.Drawing.Size(44, 67);
             this.imgBoxPenis.TabIndex = 33;
             this.imgBoxPenis.TabStop = false;
             // 
