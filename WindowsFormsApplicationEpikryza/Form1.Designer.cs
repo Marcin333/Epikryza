@@ -151,6 +151,7 @@
             this.labelk = new System.Windows.Forms.Label();
             this.imgBoxPenis = new System.Windows.Forms.PictureBox();
             this.panelModelImg = new System.Windows.Forms.PictureBox();
+            this.imgHeart = new System.Windows.Forms.PictureBox();
             this.textBoxCountZywieniowe = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.comboBoxZywienie = new System.Windows.Forms.ComboBox();
@@ -294,7 +295,6 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.imgHeart = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox30.SuspendLayout();
@@ -337,6 +337,7 @@
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).BeginInit();
             this.panel21.SuspendLayout();
             this.groupBox29.SuspendLayout();
@@ -388,7 +389,6 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1649,6 +1649,15 @@
             this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.panelModelImg.TabIndex = 30;
             this.panelModelImg.TabStop = false;
+            // 
+            // imgHeart
+            // 
+            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
+            this.imgHeart.Location = new System.Drawing.Point(424, 167);
+            this.imgHeart.Name = "imgHeart";
+            this.imgHeart.Size = new System.Drawing.Size(52, 65);
+            this.imgHeart.TabIndex = 34;
+            this.imgHeart.TabStop = false;
             // 
             // textBoxCountZywieniowe
             // 
@@ -3228,21 +3237,12 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // imgHeart
-            // 
-            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
-            this.imgHeart.Location = new System.Drawing.Point(424, 167);
-            this.imgHeart.Name = "imgHeart";
-            this.imgHeart.Size = new System.Drawing.Size(52, 65);
-            this.imgHeart.TabIndex = 34;
-            this.imgHeart.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(982, 430);
+            this.ClientSize = new System.Drawing.Size(999, 430);
             this.Controls.Add(this.panelModel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
@@ -3323,6 +3323,7 @@
             this.panel18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
@@ -3392,7 +3393,6 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
             this.ResumeLayout(false);
 
         }

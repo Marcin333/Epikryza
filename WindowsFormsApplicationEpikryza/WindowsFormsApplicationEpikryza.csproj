@@ -101,6 +101,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\heart-icon-part.png" />
+    <None Include="Resources\hart-icon-part.png" />
     <None Include="Resources\human-hart-part.jpg" />
     <None Include="Resources\penis.png" />
     <None Include="Resources\man.png" />
