@@ -1634,7 +1634,7 @@
             this.imgBoxPenis.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.penis2;
             this.imgBoxPenis.Location = new System.Drawing.Point(433, 317);
             this.imgBoxPenis.Name = "imgBoxPenis";
-            this.imgBoxPenis.Size = new System.Drawing.Size(44, 67);
+            this.imgBoxPenis.Size = new System.Drawing.Size(43, 67);
             this.imgBoxPenis.TabIndex = 33;
             this.imgBoxPenis.TabStop = false;
             // 
