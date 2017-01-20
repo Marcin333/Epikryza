@@ -36,6 +36,11 @@
             this.IIIfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.IVfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.groupBox33 = new System.Windows.Forms.GroupBox();
+            this.comboBoxNiezyty = new System.Windows.Forms.ComboBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.dataGridViewNiezyt = new System.Windows.Forms.DataGridView();
+            this.niezyt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -52,7 +57,6 @@
             this.groupBox27 = new System.Windows.Forms.GroupBox();
             this.comboBoxWypadki = new System.Windows.Forms.ComboBox();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
-            this.comboBoxNiezyty = new System.Windows.Forms.ComboBox();
             this.groupBoxRodzaje = new System.Windows.Forms.GroupBox();
             this.radioBtnOstry = new System.Windows.Forms.RadioButton();
             this.radioBtnPodostry = new System.Windows.Forms.RadioButton();
@@ -282,7 +286,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.comboBAlergen = new System.Windows.Forms.ComboBox();
             this.dataGridViewAlergen = new System.Windows.Forms.DataGridView();
-            this.alergen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bDodajAlergen = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
@@ -295,12 +298,16 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.groupBox33 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridViewNiezyt = new System.Windows.Forms.DataGridView();
-            this.niezyt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.epikryzaDbDataSet = new WindowsFormsApplicationEpikryza.EpikryzaDbDataSet();
+            this.alergenyDiagnozaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.alergenyDiagnozaTableAdapter = new WindowsFormsApplicationEpikryza.EpikryzaDbDataSetTableAdapters.AlergenyDiagnozaTableAdapter();
+            this.alergen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataBadaniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alergenPacjentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
+            this.groupBox33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).BeginInit();
             this.groupBox30.SuspendLayout();
             this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtaki)).BeginInit();
@@ -392,8 +399,8 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.groupBox33.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epikryzaDbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alergenyDiagnozaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -459,6 +466,59 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(890, 1198);
             this.panel15.TabIndex = 68;
+            // 
+            // groupBox33
+            // 
+            this.groupBox33.Controls.Add(this.comboBoxNiezyty);
+            this.groupBox33.Controls.Add(this.button7);
+            this.groupBox33.Controls.Add(this.dataGridViewNiezyt);
+            this.groupBox33.Location = new System.Drawing.Point(488, 311);
+            this.groupBox33.Name = "groupBox33";
+            this.groupBox33.Size = new System.Drawing.Size(394, 260);
+            this.groupBox33.TabIndex = 101;
+            this.groupBox33.TabStop = false;
+            this.groupBox33.Text = "Nieżyty";
+            // 
+            // comboBoxNiezyty
+            // 
+            this.comboBoxNiezyty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxNiezyty.FormattingEnabled = true;
+            this.comboBoxNiezyty.Items.AddRange(new object[] {
+            "Oddechowy",
+            "Pokarmowy",
+            "Moczowy",
+            "Rozrodczy",
+            "Skórny"});
+            this.comboBoxNiezyty.Location = new System.Drawing.Point(15, 21);
+            this.comboBoxNiezyty.Name = "comboBoxNiezyty";
+            this.comboBoxNiezyty.Size = new System.Drawing.Size(139, 21);
+            this.comboBoxNiezyty.TabIndex = 86;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button7.Location = new System.Drawing.Point(307, 20);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(61, 20);
+            this.button7.TabIndex = 100;
+            this.button7.Text = "Dodaj";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // dataGridViewNiezyt
+            // 
+            this.dataGridViewNiezyt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNiezyt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.niezyt});
+            this.dataGridViewNiezyt.Location = new System.Drawing.Point(12, 76);
+            this.dataGridViewNiezyt.Name = "dataGridViewNiezyt";
+            this.dataGridViewNiezyt.Size = new System.Drawing.Size(372, 175);
+            this.dataGridViewNiezyt.TabIndex = 97;
+            // 
+            // niezyt
+            // 
+            this.niezyt.HeaderText = "Nieżyt";
+            this.niezyt.Name = "niezyt";
+            this.niezyt.Width = 325;
             // 
             // groupBox30
             // 
@@ -629,21 +689,6 @@
             this.groupBox26.TabIndex = 108;
             this.groupBox26.TabStop = false;
             this.groupBox26.Text = "Nieżyty";
-            // 
-            // comboBoxNiezyty
-            // 
-            this.comboBoxNiezyty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxNiezyty.FormattingEnabled = true;
-            this.comboBoxNiezyty.Items.AddRange(new object[] {
-            "Oddechowy",
-            "Pokarmowy",
-            "Moczowy",
-            "Rozrodczy",
-            "Skórny"});
-            this.comboBoxNiezyty.Location = new System.Drawing.Point(15, 21);
-            this.comboBoxNiezyty.Name = "comboBoxNiezyty";
-            this.comboBoxNiezyty.Size = new System.Drawing.Size(139, 21);
-            this.comboBoxNiezyty.TabIndex = 86;
             // 
             // groupBoxRodzaje
             // 
@@ -3101,21 +3146,19 @@
             // 
             // dataGridViewAlergen
             // 
+            this.dataGridViewAlergen.AutoGenerateColumns = false;
             this.dataGridViewAlergen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAlergen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.alergen});
+            this.alergen,
+            this.dataBadaniaDataGridViewTextBoxColumn,
+            this.alergenPacjentaDataGridViewTextBoxColumn});
+            this.dataGridViewAlergen.DataSource = this.alergenyDiagnozaBindingSource;
             this.dataGridViewAlergen.Location = new System.Drawing.Point(14, 69);
             this.dataGridViewAlergen.Name = "dataGridViewAlergen";
             this.dataGridViewAlergen.Size = new System.Drawing.Size(290, 202);
             this.dataGridViewAlergen.TabIndex = 31;
             this.dataGridViewAlergen.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.rowsAddedAlergeny);
             this.dataGridViewAlergen.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowAlergen);
-            // 
-            // alergen
-            // 
-            this.alergen.HeaderText = "Alergeny";
-            this.alergen.Name = "alergen";
-            this.alergen.Width = 246;
             // 
             // bDodajAlergen
             // 
@@ -3242,50 +3285,44 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // groupBox33
+            // epikryzaDbDataSet
             // 
-            this.groupBox33.Controls.Add(this.comboBoxNiezyty);
-            this.groupBox33.Controls.Add(this.button7);
-            this.groupBox33.Controls.Add(this.dataGridViewNiezyt);
-            this.groupBox33.Location = new System.Drawing.Point(488, 311);
-            this.groupBox33.Name = "groupBox33";
-            this.groupBox33.Size = new System.Drawing.Size(394, 260);
-            this.groupBox33.TabIndex = 101;
-            this.groupBox33.TabStop = false;
-            this.groupBox33.Text = "Nieżyty";
+            this.epikryzaDbDataSet.DataSetName = "EpikryzaDbDataSet";
+            this.epikryzaDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button7
+            // alergenyDiagnozaBindingSource
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(307, 20);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(61, 20);
-            this.button7.TabIndex = 100;
-            this.button7.Text = "Dodaj";
-            this.button7.UseVisualStyleBackColor = false;
+            this.alergenyDiagnozaBindingSource.DataMember = "AlergenyDiagnoza";
+            this.alergenyDiagnozaBindingSource.DataSource = this.epikryzaDbDataSet;
             // 
-            // dataGridViewNiezyt
+            // alergenyDiagnozaTableAdapter
             // 
-            this.dataGridViewNiezyt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewNiezyt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.niezyt});
-            this.dataGridViewNiezyt.Location = new System.Drawing.Point(12, 76);
-            this.dataGridViewNiezyt.Name = "dataGridViewNiezyt";
-            this.dataGridViewNiezyt.Size = new System.Drawing.Size(372, 175);
-            this.dataGridViewNiezyt.TabIndex = 97;
+            this.alergenyDiagnozaTableAdapter.ClearBeforeFill = true;
             // 
-            // niezyt
+            // alergen
             // 
-            this.niezyt.HeaderText = "Nieżyt";
-            this.niezyt.Name = "niezyt";
-            this.niezyt.Width = 325;
+            this.alergen.HeaderText = "Alergeny";
+            this.alergen.Name = "alergen";
+            this.alergen.Width = 246;
+            // 
+            // dataBadaniaDataGridViewTextBoxColumn
+            // 
+            this.dataBadaniaDataGridViewTextBoxColumn.DataPropertyName = "DataBadania";
+            this.dataBadaniaDataGridViewTextBoxColumn.HeaderText = "DataBadania";
+            this.dataBadaniaDataGridViewTextBoxColumn.Name = "dataBadaniaDataGridViewTextBoxColumn";
+            // 
+            // alergenPacjentaDataGridViewTextBoxColumn
+            // 
+            this.alergenPacjentaDataGridViewTextBoxColumn.DataPropertyName = "AlergenPacjenta";
+            this.alergenPacjentaDataGridViewTextBoxColumn.HeaderText = "AlergenPacjenta";
+            this.alergenPacjentaDataGridViewTextBoxColumn.Name = "alergenPacjentaDataGridViewTextBoxColumn";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(999, 505);
+            this.ClientSize = new System.Drawing.Size(1016, 505);
             this.Controls.Add(this.panelModel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
@@ -3307,6 +3344,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.panel15.ResumeLayout(false);
+            this.groupBox33.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).EndInit();
             this.groupBox30.ResumeLayout(false);
             this.groupBox30.PerformLayout();
             this.groupBox21.ResumeLayout(false);
@@ -3435,8 +3474,8 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.groupBox33.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epikryzaDbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alergenyDiagnozaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3650,7 +3689,6 @@
         private System.Windows.Forms.ComboBox comboBoxBole;
         private System.Windows.Forms.DataGridViewTextBoxColumn Patomorfologia;
         private System.Windows.Forms.DataGridViewTextBoxColumn opisAlergi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn alergen;
         private System.Windows.Forms.DataGridViewTextBoxColumn szpital;
         private System.Windows.Forms.DataGridViewTextBoxColumn suplementyWywiad;
         private System.Windows.Forms.DataGridViewTextBoxColumn kompleksHome;
@@ -3712,6 +3750,12 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataGridView dataGridViewNiezyt;
         private System.Windows.Forms.DataGridViewTextBoxColumn niezyt;
+        private EpikryzaDbDataSet epikryzaDbDataSet;
+        private System.Windows.Forms.BindingSource alergenyDiagnozaBindingSource;
+        private EpikryzaDbDataSetTableAdapters.AlergenyDiagnozaTableAdapter alergenyDiagnozaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn alergen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataBadaniaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn alergenPacjentaDataGridViewTextBoxColumn;
     }
 }
 

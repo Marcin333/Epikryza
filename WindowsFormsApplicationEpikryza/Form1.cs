@@ -19,9 +19,11 @@ namespace WindowsFormsApplicationEpikryza
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'epikryzaDbDataSet.AlergenyDiagnoza' table. You can move, or remove it, as needed.
+            this.alergenyDiagnozaTableAdapter.Fill(this.epikryzaDbDataSet.AlergenyDiagnoza);
             // TODO: This line of code loads data into the 'forHealthDBDataSet.tblDanePacjenta' table. You can move, or remove it, as needed.
             this.tblDanePacjentaTableAdapter.Fill(this.forHealthDBDataSet.tblDanePacjenta);
-
+            
             panelModel.Controls.SetChildIndex(panelModelImg, 1);
 
         }
@@ -84,6 +86,7 @@ namespace WindowsFormsApplicationEpikryza
             comboBAlergen.Text = String.Empty;
             int counter;
             int alergenyTotal = 0;
+            //var alergenyPacjenta = from a in this.E
 
             for (counter = 0; counter < (dataGridViewAlergen.Rows.Count);
                counter++)
