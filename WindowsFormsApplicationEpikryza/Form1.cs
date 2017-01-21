@@ -81,28 +81,61 @@ namespace WindowsFormsApplicationEpikryza
 
         private void bDodajAlergen_Click(object sender, EventArgs e)
         {
-            Object selectedItem = comboBAlergen.SelectedItem;
-            this.dataGridViewAlergen.Rows.Add(selectedItem);
-            comboBAlergen.Text = String.Empty;
-            int counter;
-            int alergenyTotal = 0;
-            //var alergenyPacjenta = from a in this.E
-
-            for (counter = 0; counter < (dataGridViewAlergen.Rows.Count);
-               counter++)
+            try
             {
-                if (dataGridViewAlergen.Rows[counter].Cells["alergen"].Value
-                    != null)
+                if (!(String.IsNullOrEmpty(comboBAlergen.Text)))
                 {
-                    if (dataGridViewAlergen.Rows[counter].
-                        Cells["alergen"].Value.ToString().Length != 0)
+                    Object selectedItem = comboBAlergen.SelectedItem;
+                    this.dataGridViewAlergen.Rows.Add(selectedItem);
+                    comboBAlergen.Text = String.Empty;
+                    DateTime date = DateTime.Today;
+                    try
                     {
-                        alergenyTotal += 1;
-                        this.textBoxCountAlergeny.Text = alergenyTotal.ToString();
-                        //Console.WriteLine(alergenyTotal);
+                        this.alergenyDiagnozaTableAdapter.Insert(3, date, selectedItem.ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    /*
+                    var alergenyPacjenta = from a in this.epikryzaDbDataSet.AlergenyDiagnoza
+                                           where a.DataBadania == DateTime.Today
+                                           select new
+                                           {
+                                               a.AlergenPacjenta
+                                           };
+                    dataGridViewAlergen.DataSource = alergenyPacjenta.ToList();
+
+                    foreach(var alergen in alergenyPacjenta)
+                    {
+                        Console.WriteLine("Alergeny pacjenta {0}", alergen.AlergenPacjenta);
+                    }
+                    */
+
+                    int counter;
+                    int alergenyTotal = 0;
+                    for (counter = 0; counter < (dataGridViewAlergen.Rows.Count);
+                       counter++)
+                    {
+                        if (dataGridViewAlergen.Rows[counter].Cells["alergen"].Value
+                            != null)
+                        {
+                            if (dataGridViewAlergen.Rows[counter].
+                                Cells["alergen"].Value.ToString().Length != 0)
+                            {
+                                alergenyTotal += 1;
+                                this.textBoxCountAlergeny.Text = alergenyTotal.ToString();
+                                //Console.WriteLine(alergenyTotal);
+                            }
+                        }
                     }
                 }
+            } catch
+            {
+                MessageBox.Show("Błąd");
             }
+            
         }
 
         private void btnDodajViofo_Click(object sender, EventArgs e)

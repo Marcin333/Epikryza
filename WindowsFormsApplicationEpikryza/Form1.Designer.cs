@@ -286,6 +286,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.comboBAlergen = new System.Windows.Forms.ComboBox();
             this.dataGridViewAlergen = new System.Windows.Forms.DataGridView();
+            this.alergen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alergenyDiagnozaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.epikryzaDbDataSet = new WindowsFormsApplicationEpikryza.EpikryzaDbDataSet();
             this.bDodajAlergen = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
@@ -298,12 +301,7 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.epikryzaDbDataSet = new WindowsFormsApplicationEpikryza.EpikryzaDbDataSet();
-            this.alergenyDiagnozaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.alergenyDiagnozaTableAdapter = new WindowsFormsApplicationEpikryza.EpikryzaDbDataSetTableAdapters.AlergenyDiagnozaTableAdapter();
-            this.alergen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataBadaniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alergenPacjentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox33.SuspendLayout();
@@ -393,14 +391,14 @@
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlergen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alergenyDiagnozaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epikryzaDbDataSet)).BeginInit();
             this.panel6.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.epikryzaDbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.alergenyDiagnozaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -3146,19 +3144,31 @@
             // 
             // dataGridViewAlergen
             // 
-            this.dataGridViewAlergen.AutoGenerateColumns = false;
             this.dataGridViewAlergen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAlergen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.alergen,
-            this.dataBadaniaDataGridViewTextBoxColumn,
-            this.alergenPacjentaDataGridViewTextBoxColumn});
-            this.dataGridViewAlergen.DataSource = this.alergenyDiagnozaBindingSource;
+            this.alergen});
             this.dataGridViewAlergen.Location = new System.Drawing.Point(14, 69);
             this.dataGridViewAlergen.Name = "dataGridViewAlergen";
             this.dataGridViewAlergen.Size = new System.Drawing.Size(290, 202);
             this.dataGridViewAlergen.TabIndex = 31;
             this.dataGridViewAlergen.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.rowsAddedAlergeny);
             this.dataGridViewAlergen.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.userDeletedRowAlergen);
+            // 
+            // alergen
+            // 
+            this.alergen.HeaderText = "Alergeny";
+            this.alergen.Name = "alergen";
+            this.alergen.Width = 246;
+            // 
+            // alergenyDiagnozaBindingSource
+            // 
+            this.alergenyDiagnozaBindingSource.DataMember = "AlergenyDiagnoza";
+            this.alergenyDiagnozaBindingSource.DataSource = this.epikryzaDbDataSet;
+            // 
+            // epikryzaDbDataSet
+            // 
+            this.epikryzaDbDataSet.DataSetName = "EpikryzaDbDataSet";
+            this.epikryzaDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bDodajAlergen
             // 
@@ -3285,37 +3295,9 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // epikryzaDbDataSet
-            // 
-            this.epikryzaDbDataSet.DataSetName = "EpikryzaDbDataSet";
-            this.epikryzaDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // alergenyDiagnozaBindingSource
-            // 
-            this.alergenyDiagnozaBindingSource.DataMember = "AlergenyDiagnoza";
-            this.alergenyDiagnozaBindingSource.DataSource = this.epikryzaDbDataSet;
-            // 
             // alergenyDiagnozaTableAdapter
             // 
             this.alergenyDiagnozaTableAdapter.ClearBeforeFill = true;
-            // 
-            // alergen
-            // 
-            this.alergen.HeaderText = "Alergeny";
-            this.alergen.Name = "alergen";
-            this.alergen.Width = 246;
-            // 
-            // dataBadaniaDataGridViewTextBoxColumn
-            // 
-            this.dataBadaniaDataGridViewTextBoxColumn.DataPropertyName = "DataBadania";
-            this.dataBadaniaDataGridViewTextBoxColumn.HeaderText = "DataBadania";
-            this.dataBadaniaDataGridViewTextBoxColumn.Name = "dataBadaniaDataGridViewTextBoxColumn";
-            // 
-            // alergenPacjentaDataGridViewTextBoxColumn
-            // 
-            this.alergenPacjentaDataGridViewTextBoxColumn.DataPropertyName = "AlergenPacjenta";
-            this.alergenPacjentaDataGridViewTextBoxColumn.HeaderText = "AlergenPacjenta";
-            this.alergenPacjentaDataGridViewTextBoxColumn.Name = "alergenPacjentaDataGridViewTextBoxColumn";
             // 
             // Form1
             // 
@@ -3467,6 +3449,8 @@
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlergen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alergenyDiagnozaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epikryzaDbDataSet)).EndInit();
             this.panel6.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
@@ -3474,8 +3458,6 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.epikryzaDbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.alergenyDiagnozaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3754,8 +3736,6 @@
         private System.Windows.Forms.BindingSource alergenyDiagnozaBindingSource;
         private EpikryzaDbDataSetTableAdapters.AlergenyDiagnozaTableAdapter alergenyDiagnozaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn alergen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataBadaniaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn alergenPacjentaDataGridViewTextBoxColumn;
     }
 }
 
