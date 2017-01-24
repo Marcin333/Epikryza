@@ -55,7 +55,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox27 = new System.Windows.Forms.GroupBox();
             this.comboBoxWypadki = new System.Windows.Forms.ComboBox();
-            this.groupBox26 = new System.Windows.Forms.GroupBox();
             this.groupBoxRodzaje = new System.Windows.Forms.GroupBox();
             this.radioBtnOstry = new System.Windows.Forms.RadioButton();
             this.radioBtnPodostry = new System.Windows.Forms.RadioButton();
@@ -308,6 +307,7 @@
             this.przewleklyCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.podostryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ostryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button12 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox33.SuspendLayout();
@@ -475,7 +475,7 @@
             this.groupBox33.Controls.Add(this.button7);
             this.groupBox33.Controls.Add(this.dataGridViewNiezyt);
             this.groupBox33.Controls.Add(this.groupBoxRodzaje);
-            this.groupBox33.Location = new System.Drawing.Point(12, 580);
+            this.groupBox33.Location = new System.Drawing.Point(12, 555);
             this.groupBox33.Name = "groupBox33";
             this.groupBox33.Size = new System.Drawing.Size(468, 318);
             this.groupBox33.TabIndex = 101;
@@ -634,7 +634,6 @@
             // 
             this.groupBox28.Controls.Add(this.button1);
             this.groupBox28.Controls.Add(this.groupBox27);
-            this.groupBox28.Controls.Add(this.groupBox26);
             this.groupBox28.Controls.Add(this.groupBoxNieprzytomny);
             this.groupBox28.Controls.Add(this.groupBoxOmdlenia);
             this.groupBox28.Controls.Add(this.groupBoxAnginy);
@@ -642,25 +641,26 @@
             this.groupBox28.Controls.Add(this.groupBoxWizyta);
             this.groupBox28.Location = new System.Drawing.Point(12, 33);
             this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Size = new System.Drawing.Size(468, 272);
+            this.groupBox28.Size = new System.Drawing.Size(468, 247);
             this.groupBox28.TabIndex = 110;
             this.groupBox28.TabStop = false;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(377, 225);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(358, 190);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 21);
+            this.button1.Size = new System.Drawing.Size(99, 23);
             this.button1.TabIndex = 110;
-            this.button1.Text = "Dodaj";
+            this.button1.Text = "Zapisz";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // groupBox27
             // 
             this.groupBox27.Controls.Add(this.comboBoxWypadki);
             this.groupBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox27.Location = new System.Drawing.Point(11, 205);
+            this.groupBox27.Location = new System.Drawing.Point(9, 180);
             this.groupBox27.Name = "groupBox27";
             this.groupBox27.Size = new System.Drawing.Size(160, 55);
             this.groupBox27.TabIndex = 109;
@@ -679,16 +679,6 @@
             this.comboBoxWypadki.Name = "comboBoxWypadki";
             this.comboBoxWypadki.Size = new System.Drawing.Size(139, 21);
             this.comboBoxWypadki.TabIndex = 86;
-            // 
-            // groupBox26
-            // 
-            this.groupBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox26.Location = new System.Drawing.Point(11, 144);
-            this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Size = new System.Drawing.Size(160, 55);
-            this.groupBox26.TabIndex = 108;
-            this.groupBox26.TabStop = false;
-            this.groupBox26.Text = "Nieżyty";
             // 
             // groupBoxRodzaje
             // 
@@ -743,7 +733,7 @@
             this.groupBoxNieprzytomny.Controls.Add(this.radioBtnNieprzytNie);
             this.groupBoxNieprzytomny.Controls.Add(this.radioBtnNieprzytTak);
             this.groupBoxNieprzytomny.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxNieprzytomny.Location = new System.Drawing.Point(356, 66);
+            this.groupBoxNieprzytomny.Location = new System.Drawing.Point(356, 86);
             this.groupBoxNieprzytomny.Name = "groupBoxNieprzytomny";
             this.groupBoxNieprzytomny.Size = new System.Drawing.Size(101, 69);
             this.groupBoxNieprzytomny.TabIndex = 81;
@@ -777,7 +767,7 @@
             this.groupBoxOmdlenia.Controls.Add(this.radioBtnOmdleniaNie);
             this.groupBoxOmdlenia.Controls.Add(this.radioBtnOmdleniaTak);
             this.groupBoxOmdlenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxOmdlenia.Location = new System.Drawing.Point(250, 66);
+            this.groupBoxOmdlenia.Location = new System.Drawing.Point(250, 86);
             this.groupBoxOmdlenia.Name = "groupBoxOmdlenia";
             this.groupBoxOmdlenia.Size = new System.Drawing.Size(101, 69);
             this.groupBoxOmdlenia.TabIndex = 82;
@@ -810,7 +800,7 @@
             // 
             this.groupBoxAnginy.Controls.Add(this.comboBoxAnginy);
             this.groupBoxAnginy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxAnginy.Location = new System.Drawing.Point(130, 66);
+            this.groupBoxAnginy.Location = new System.Drawing.Point(130, 86);
             this.groupBoxAnginy.Name = "groupBoxAnginy";
             this.groupBoxAnginy.Size = new System.Drawing.Size(115, 69);
             this.groupBoxAnginy.TabIndex = 83;
@@ -835,7 +825,7 @@
             // 
             this.groupBox2.Controls.Add(this.comboBoxGrypy);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(11, 66);
+            this.groupBox2.Location = new System.Drawing.Point(11, 86);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(115, 69);
             this.groupBox2.TabIndex = 80;
@@ -860,7 +850,7 @@
             // 
             this.groupBoxWizyta.Controls.Add(this.radioBtnKontrolna);
             this.groupBoxWizyta.Controls.Add(this.radioBtnPodstawowa);
-            this.groupBoxWizyta.Location = new System.Drawing.Point(11, 14);
+            this.groupBoxWizyta.Location = new System.Drawing.Point(11, 16);
             this.groupBoxWizyta.Name = "groupBoxWizyta";
             this.groupBoxWizyta.Size = new System.Drawing.Size(206, 43);
             this.groupBoxWizyta.TabIndex = 40;
@@ -896,9 +886,9 @@
             this.groupBox20.Controls.Add(this.btnDodajZabiegChirurgiczny);
             this.groupBox20.Controls.Add(this.txtZabiegiChirurgiczne);
             this.groupBox20.Controls.Add(this.dgvZabiegiChirurgiczne);
-            this.groupBox20.Location = new System.Drawing.Point(488, 577);
+            this.groupBox20.Location = new System.Drawing.Point(486, 288);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(394, 247);
+            this.groupBox20.Size = new System.Drawing.Size(394, 260);
             this.groupBox20.TabIndex = 99;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Zabiegi chirurgiczne";
@@ -929,7 +919,7 @@
             this.zabiegiChirurgiczneCol});
             this.dgvZabiegiChirurgiczne.Location = new System.Drawing.Point(12, 74);
             this.dgvZabiegiChirurgiczne.Name = "dgvZabiegiChirurgiczne";
-            this.dgvZabiegiChirurgiczne.Size = new System.Drawing.Size(372, 160);
+            this.dgvZabiegiChirurgiczne.Size = new System.Drawing.Size(372, 175);
             this.dgvZabiegiChirurgiczne.TabIndex = 97;
             // 
             // zabiegiChirurgiczneCol
@@ -1049,7 +1039,7 @@
             this.groupBox9.Controls.Add(this.checkBoxSporadycznie);
             this.groupBox9.Controls.Add(this.btnDodajBol);
             this.groupBox9.Controls.Add(this.dataGridViewBole);
-            this.groupBox9.Location = new System.Drawing.Point(12, 311);
+            this.groupBox9.Location = new System.Drawing.Point(12, 288);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(468, 260);
             this.groupBox9.TabIndex = 99;
@@ -1107,9 +1097,10 @@
             // btnDodajBol
             // 
             this.btnDodajBol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDodajBol.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodajBol.Location = new System.Drawing.Point(362, 19);
             this.btnDodajBol.Name = "btnDodajBol";
-            this.btnDodajBol.Size = new System.Drawing.Size(95, 21);
+            this.btnDodajBol.Size = new System.Drawing.Size(99, 23);
             this.btnDodajBol.TabIndex = 103;
             this.btnDodajBol.Text = "Dodaj";
             this.btnDodajBol.UseVisualStyleBackColor = false;
@@ -1174,6 +1165,7 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.button12);
             this.groupBox10.Controls.Add(this.btnDodajDoleglo);
             this.groupBox10.Controls.Add(this.textBoxDolegliwosci);
             this.groupBox10.Location = new System.Drawing.Point(486, 33);
@@ -1186,9 +1178,10 @@
             // btnDodajDoleglo
             // 
             this.btnDodajDoleglo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnDodajDoleglo.Location = new System.Drawing.Point(288, 20);
+            this.btnDodajDoleglo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodajDoleglo.Location = new System.Drawing.Point(177, 46);
             this.btnDodajDoleglo.Name = "btnDodajDoleglo";
-            this.btnDodajDoleglo.Size = new System.Drawing.Size(95, 20);
+            this.btnDodajDoleglo.Size = new System.Drawing.Size(99, 23);
             this.btnDodajDoleglo.TabIndex = 104;
             this.btnDodajDoleglo.Text = "Dodaj";
             this.btnDodajDoleglo.UseVisualStyleBackColor = false;
@@ -1198,7 +1191,7 @@
             // 
             this.textBoxDolegliwosci.Location = new System.Drawing.Point(11, 20);
             this.textBoxDolegliwosci.Name = "textBoxDolegliwosci";
-            this.textBoxDolegliwosci.Size = new System.Drawing.Size(237, 20);
+            this.textBoxDolegliwosci.Size = new System.Drawing.Size(378, 20);
             this.textBoxDolegliwosci.TabIndex = 100;
             // 
             // label27
@@ -3412,6 +3405,17 @@
             this.ostryCol.Name = "ostryCol";
             this.ostryCol.Width = 70;
             // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(290, 46);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(99, 23);
+            this.button12.TabIndex = 111;
+            this.button12.Text = "Zapisz";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3807,7 +3811,6 @@
         private System.Windows.Forms.GroupBox groupBox22;
         private System.Windows.Forms.GroupBox groupBox28;
         private System.Windows.Forms.GroupBox groupBox27;
-        private System.Windows.Forms.GroupBox groupBox26;
         private System.Windows.Forms.ComboBox comboBoxNiezyty;
         private System.Windows.Forms.GroupBox groupBoxRodzaje;
         private System.Windows.Forms.RadioButton radioBtnOstry;
@@ -3852,6 +3855,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn przewleklyCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn podostryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn ostryCol;
+        private System.Windows.Forms.Button button12;
     }
 }
 
