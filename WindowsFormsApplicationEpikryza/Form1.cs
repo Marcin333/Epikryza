@@ -258,7 +258,7 @@ namespace WindowsFormsApplicationEpikryza
                     Console.WriteLine("wypadki {0}", wypadki);
                 }
 
-                foreach (DataGridViewRow row in dataGridViewSzpital.Rows)
+                /*foreach (DataGridViewRow row in dataGridViewSzpital.Rows)
                 {
                     if (row.Cells["szpital"].Value != null)
                     {
@@ -268,7 +268,7 @@ namespace WindowsFormsApplicationEpikryza
                         }
                     }
                 }
-
+                */
                 foreach (DataGridViewRow row in dataGridViewBole.Rows)
                 {
                     if (row.Cells["bole"].Value != null)
@@ -424,12 +424,12 @@ namespace WindowsFormsApplicationEpikryza
 
         private void DodajSzpital_Click(object sender, EventArgs e)
         {   
-            if (!(String.IsNullOrEmpty(textBoxSzpital.Text)))
+            /*if (!(String.IsNullOrEmpty(textBoxSzpital.Text)))
             {
                 this.dataGridViewSzpital.Rows.Add(textBoxSzpital.Text);
                 textBoxSzpital.Text = String.Empty;
                 
-            }
+            }*/
             
         }
 
