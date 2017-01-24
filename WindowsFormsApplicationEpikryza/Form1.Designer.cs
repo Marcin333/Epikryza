@@ -160,7 +160,6 @@
             this.label38 = new System.Windows.Forms.Label();
             this.comboBoxZywienie = new System.Windows.Forms.ComboBox();
             this.dataGridViewZywienie = new System.Windows.Forms.DataGridView();
-            this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajZywienie = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.groupBox29 = new System.Windows.Forms.GroupBox();
@@ -304,6 +303,11 @@
             this.btnZapiszHome = new System.Windows.Forms.Button();
             this.btnZapiszPato = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.btnZapiszZywienie = new System.Windows.Forms.Button();
+            this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox34 = new System.Windows.Forms.GroupBox();
+            this.groupBox35 = new System.Windows.Forms.GroupBox();
+            this.btnZapiszVioforoterapie = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox33.SuspendLayout();
@@ -399,6 +403,8 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.groupBox34.SuspendLayout();
+            this.groupBox35.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1712,7 +1718,7 @@
             // 
             // textBoxCountZywieniowe
             // 
-            this.textBoxCountZywieniowe.Location = new System.Drawing.Point(476, 87);
+            this.textBoxCountZywieniowe.Location = new System.Drawing.Point(775, 87);
             this.textBoxCountZywieniowe.Name = "textBoxCountZywieniowe";
             this.textBoxCountZywieniowe.ReadOnly = true;
             this.textBoxCountZywieniowe.Size = new System.Drawing.Size(99, 20);
@@ -1725,7 +1731,7 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label38.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label38.Location = new System.Drawing.Point(473, 70);
+            this.label38.Location = new System.Drawing.Point(780, 70);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(94, 13);
             this.label38.TabIndex = 39;
@@ -1741,7 +1747,7 @@
             "zalecenie 2"});
             this.comboBoxZywienie.Location = new System.Drawing.Point(14, 36);
             this.comboBoxZywienie.Name = "comboBoxZywienie";
-            this.comboBoxZywienie.Size = new System.Drawing.Size(295, 21);
+            this.comboBoxZywienie.Size = new System.Drawing.Size(448, 21);
             this.comboBoxZywienie.TabIndex = 32;
             // 
             // dataGridViewZywienie
@@ -1752,20 +1758,15 @@
             this.zywienie});
             this.dataGridViewZywienie.Location = new System.Drawing.Point(14, 70);
             this.dataGridViewZywienie.Name = "dataGridViewZywienie";
-            this.dataGridViewZywienie.Size = new System.Drawing.Size(427, 160);
+            this.dataGridViewZywienie.Size = new System.Drawing.Size(747, 160);
             this.dataGridViewZywienie.TabIndex = 31;
-            // 
-            // zywienie
-            // 
-            this.zywienie.HeaderText = "Zalecenia żywieniowe";
-            this.zywienie.Name = "zywienie";
-            this.zywienie.Width = 390;
             // 
             // btnDodajZywienie
             // 
             this.btnDodajZywienie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDodajZywienie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodajZywienie.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDodajZywienie.Location = new System.Drawing.Point(348, 36);
+            this.btnDodajZywienie.Location = new System.Drawing.Point(775, 36);
             this.btnDodajZywienie.Name = "btnDodajZywienie";
             this.btnDodajZywienie.Size = new System.Drawing.Size(99, 23);
             this.btnDodajZywienie.TabIndex = 29;
@@ -1776,9 +1777,10 @@
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel21.Controls.Add(this.groupBox35);
+            this.panel21.Controls.Add(this.groupBox34);
             this.panel21.Controls.Add(this.groupBox29);
             this.panel21.Controls.Add(this.groupBox1);
-            this.panel21.Controls.Add(this.btnDodajViofo);
             this.panel21.Controls.Add(this.groupBox7);
             this.panel21.Controls.Add(this.groupBox3);
             this.panel21.Controls.Add(this.label22);
@@ -1824,7 +1826,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(14, 107);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(603, 69);
+            this.groupBox1.Size = new System.Drawing.Size(601, 69);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wyniki";
@@ -1884,9 +1886,9 @@
             // 
             this.btnDodajViofo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDodajViofo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodajViofo.Location = new System.Drawing.Point(705, 127);
+            this.btnDodajViofo.Location = new System.Drawing.Point(77, 25);
             this.btnDodajViofo.Name = "btnDodajViofo";
-            this.btnDodajViofo.Size = new System.Drawing.Size(75, 35);
+            this.btnDodajViofo.Size = new System.Drawing.Size(99, 23);
             this.btnDodajViofo.TabIndex = 40;
             this.btnDodajViofo.Text = "Dodaj";
             this.btnDodajViofo.UseVisualStyleBackColor = false;
@@ -2106,12 +2108,13 @@
             this.panel22.Controls.Add(this.label39);
             this.panel22.Location = new System.Drawing.Point(0, 0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(889, 26);
+            this.panel22.Size = new System.Drawing.Size(890, 26);
             this.panel22.TabIndex = 30;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel19.Controls.Add(this.btnZapiszZywienie);
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Controls.Add(this.textBoxCountZywieniowe);
             this.panel19.Controls.Add(this.label38);
@@ -2136,6 +2139,7 @@
             // 
             // textAge
             // 
+            this.textAge.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textAge.Location = new System.Drawing.Point(535, 107);
             this.textAge.Name = "textAge";
             this.textAge.ReadOnly = true;
@@ -2229,6 +2233,7 @@
             // 
             // textTel
             // 
+            this.textTel.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textTel.Location = new System.Drawing.Point(703, 74);
             this.textTel.Name = "textTel";
             this.textTel.ReadOnly = true;
@@ -2260,6 +2265,7 @@
             // 
             // textMiasto
             // 
+            this.textMiasto.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textMiasto.Location = new System.Drawing.Point(703, 141);
             this.textMiasto.Name = "textMiasto";
             this.textMiasto.ReadOnly = true;
@@ -2269,6 +2275,7 @@
             // 
             // textEmail
             // 
+            this.textEmail.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textEmail.Location = new System.Drawing.Point(703, 107);
             this.textEmail.Name = "textEmail";
             this.textEmail.ReadOnly = true;
@@ -2309,6 +2316,7 @@
             // 
             // textPlec
             // 
+            this.textPlec.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textPlec.Location = new System.Drawing.Point(399, 141);
             this.textPlec.Name = "textPlec";
             this.textPlec.ReadOnly = true;
@@ -2405,6 +2413,7 @@
             // 
             // textWiek
             // 
+            this.textWiek.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textWiek.Location = new System.Drawing.Point(399, 107);
             this.textWiek.Name = "textWiek";
             this.textWiek.ReadOnly = true;
@@ -2446,6 +2455,7 @@
             // 
             // textDataRejestracji
             // 
+            this.textDataRejestracji.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textDataRejestracji.Location = new System.Drawing.Point(103, 71);
             this.textDataRejestracji.Name = "textDataRejestracji";
             this.textDataRejestracji.ReadOnly = true;
@@ -2466,6 +2476,7 @@
             // 
             // textNazwisko
             // 
+            this.textNazwisko.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textNazwisko.Location = new System.Drawing.Point(103, 138);
             this.textNazwisko.Name = "textNazwisko";
             this.textNazwisko.ReadOnly = true;
@@ -2486,6 +2497,7 @@
             // 
             // textImie
             // 
+            this.textImie.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textImie.Location = new System.Drawing.Point(103, 104);
             this.textImie.Name = "textImie";
             this.textImie.ReadOnly = true;
@@ -2510,7 +2522,7 @@
             this.panelSuplementy.Controls.Add(this.panel2);
             this.panelSuplementy.Location = new System.Drawing.Point(23, 882);
             this.panelSuplementy.Name = "panelSuplementy";
-            this.panelSuplementy.Size = new System.Drawing.Size(889, 323);
+            this.panelSuplementy.Size = new System.Drawing.Size(888, 323);
             this.panelSuplementy.TabIndex = 61;
             // 
             // groupBox25
@@ -2783,6 +2795,7 @@
             // 
             // txtGrupaKrwi
             // 
+            this.txtGrupaKrwi.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtGrupaKrwi.Location = new System.Drawing.Point(103, 171);
             this.txtGrupaKrwi.Name = "txtGrupaKrwi";
             this.txtGrupaKrwi.ReadOnly = true;
@@ -2803,6 +2816,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox6.Location = new System.Drawing.Point(810, 171);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
@@ -2822,6 +2836,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox5.Location = new System.Drawing.Point(506, 171);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -2841,6 +2856,7 @@
             // 
             // textBoxPesel
             // 
+            this.textBoxPesel.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxPesel.Location = new System.Drawing.Point(399, 71);
             this.textBoxPesel.Name = "textBoxPesel";
             this.textBoxPesel.ReadOnly = true;
@@ -3352,6 +3368,52 @@
             this.button15.Text = "Zapisz";
             this.button15.UseVisualStyleBackColor = false;
             // 
+            // btnZapiszZywienie
+            // 
+            this.btnZapiszZywienie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnZapiszZywienie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZapiszZywienie.Location = new System.Drawing.Point(775, 127);
+            this.btnZapiszZywienie.Name = "btnZapiszZywienie";
+            this.btnZapiszZywienie.Size = new System.Drawing.Size(99, 23);
+            this.btnZapiszZywienie.TabIndex = 46;
+            this.btnZapiszZywienie.Text = "Zapisz";
+            this.btnZapiszZywienie.UseVisualStyleBackColor = false;
+            // 
+            // zywienie
+            // 
+            this.zywienie.HeaderText = "Zalecenia żywieniowe";
+            this.zywienie.Name = "zywienie";
+            this.zywienie.Width = 702;
+            // 
+            // groupBox34
+            // 
+            this.groupBox34.Controls.Add(this.btnDodajViofo);
+            this.groupBox34.Location = new System.Drawing.Point(620, 107);
+            this.groupBox34.Name = "groupBox34";
+            this.groupBox34.Size = new System.Drawing.Size(252, 69);
+            this.groupBox34.TabIndex = 53;
+            this.groupBox34.TabStop = false;
+            // 
+            // groupBox35
+            // 
+            this.groupBox35.Controls.Add(this.btnZapiszVioforoterapie);
+            this.groupBox35.Location = new System.Drawing.Point(620, 184);
+            this.groupBox35.Name = "groupBox35";
+            this.groupBox35.Size = new System.Drawing.Size(252, 69);
+            this.groupBox35.TabIndex = 54;
+            this.groupBox35.TabStop = false;
+            // 
+            // btnZapiszVioforoterapie
+            // 
+            this.btnZapiszVioforoterapie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnZapiszVioforoterapie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZapiszVioforoterapie.Location = new System.Drawing.Point(77, 25);
+            this.btnZapiszVioforoterapie.Name = "btnZapiszVioforoterapie";
+            this.btnZapiszVioforoterapie.Size = new System.Drawing.Size(99, 23);
+            this.btnZapiszVioforoterapie.TabIndex = 40;
+            this.btnZapiszVioforoterapie.Text = "Zapisz";
+            this.btnZapiszVioforoterapie.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3509,6 +3571,8 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.groupBox34.ResumeLayout(false);
+            this.groupBox35.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3706,7 +3770,6 @@
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zywienie;
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.NumericUpDown numericUdOpakowania;
         private System.Windows.Forms.GroupBox groupBox18;
@@ -3789,6 +3852,11 @@
         private System.Windows.Forms.Button btnZapiszOpisAlergii;
         private System.Windows.Forms.Button btnZapiszPato;
         private System.Windows.Forms.Button btnZapiszAlergeny;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zywienie;
+        private System.Windows.Forms.GroupBox groupBox35;
+        private System.Windows.Forms.Button btnZapiszVioforoterapie;
+        private System.Windows.Forms.GroupBox groupBox34;
+        private System.Windows.Forms.Button btnZapiszZywienie;
     }
 }
 
