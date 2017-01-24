@@ -308,6 +308,7 @@
             this.groupBox34 = new System.Windows.Forms.GroupBox();
             this.groupBox35 = new System.Windows.Forms.GroupBox();
             this.btnZapiszVioforoterapie = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox33.SuspendLayout();
@@ -3203,6 +3204,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel6.Controls.Add(this.button11);
             this.panel6.Controls.Add(this.groupBox15);
             this.panel6.Controls.Add(this.groupBox14);
             this.panel6.Controls.Add(this.groupBox13);
@@ -3217,9 +3219,9 @@
             // 
             this.groupBox15.Controls.Add(this.comboBoxFaza4);
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox15.Location = new System.Drawing.Point(620, 34);
+            this.groupBox15.Location = new System.Drawing.Point(575, 34);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(184, 58);
+            this.groupBox15.Size = new System.Drawing.Size(178, 58);
             this.groupBox15.TabIndex = 38;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "IV faza";
@@ -3228,7 +3230,7 @@
             // 
             this.comboBoxFaza4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFaza4.FormattingEnabled = true;
-            this.comboBoxFaza4.Location = new System.Drawing.Point(15, 23);
+            this.comboBoxFaza4.Location = new System.Drawing.Point(11, 23);
             this.comboBoxFaza4.Name = "comboBoxFaza4";
             this.comboBoxFaza4.Size = new System.Drawing.Size(156, 21);
             this.comboBoxFaza4.TabIndex = 34;
@@ -3237,9 +3239,9 @@
             // 
             this.groupBox14.Controls.Add(this.comboBoxFaza3);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(418, 34);
+            this.groupBox14.Location = new System.Drawing.Point(388, 34);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(184, 58);
+            this.groupBox14.Size = new System.Drawing.Size(178, 58);
             this.groupBox14.TabIndex = 37;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "III faza";
@@ -3248,7 +3250,7 @@
             // 
             this.comboBoxFaza3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFaza3.FormattingEnabled = true;
-            this.comboBoxFaza3.Location = new System.Drawing.Point(13, 23);
+            this.comboBoxFaza3.Location = new System.Drawing.Point(11, 23);
             this.comboBoxFaza3.Name = "comboBoxFaza3";
             this.comboBoxFaza3.Size = new System.Drawing.Size(156, 21);
             this.comboBoxFaza3.TabIndex = 33;
@@ -3257,9 +3259,9 @@
             // 
             this.groupBox13.Controls.Add(this.comboBoxFaza2);
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(216, 34);
+            this.groupBox13.Location = new System.Drawing.Point(201, 34);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(184, 58);
+            this.groupBox13.Size = new System.Drawing.Size(178, 58);
             this.groupBox13.TabIndex = 36;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "II faza";
@@ -3268,7 +3270,7 @@
             // 
             this.comboBoxFaza2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFaza2.FormattingEnabled = true;
-            this.comboBoxFaza2.Location = new System.Drawing.Point(14, 23);
+            this.comboBoxFaza2.Location = new System.Drawing.Point(11, 23);
             this.comboBoxFaza2.Name = "comboBoxFaza2";
             this.comboBoxFaza2.Size = new System.Drawing.Size(156, 21);
             this.comboBoxFaza2.TabIndex = 32;
@@ -3279,7 +3281,7 @@
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox12.Location = new System.Drawing.Point(14, 34);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(184, 58);
+            this.groupBox12.Size = new System.Drawing.Size(178, 58);
             this.groupBox12.TabIndex = 35;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "I faza";
@@ -3288,7 +3290,7 @@
             // 
             this.comboBoxFaza1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFaza1.FormattingEnabled = true;
-            this.comboBoxFaza1.Location = new System.Drawing.Point(13, 23);
+            this.comboBoxFaza1.Location = new System.Drawing.Point(11, 23);
             this.comboBoxFaza1.Name = "comboBoxFaza1";
             this.comboBoxFaza1.Size = new System.Drawing.Size(156, 21);
             this.comboBoxFaza1.TabIndex = 31;
@@ -3299,7 +3301,7 @@
             this.panel7.Controls.Add(this.label19);
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(889, 26);
+            this.panel7.Size = new System.Drawing.Size(890, 26);
             this.panel7.TabIndex = 30;
             // 
             // label19
@@ -3413,6 +3415,17 @@
             this.btnZapiszVioforoterapie.TabIndex = 40;
             this.btnZapiszVioforoterapie.Text = "Zapisz";
             this.btnZapiszVioforoterapie.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(774, 53);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(99, 23);
+            this.button11.TabIndex = 41;
+            this.button11.Text = "Zapisz";
+            this.button11.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -3857,6 +3870,7 @@
         private System.Windows.Forms.Button btnZapiszVioforoterapie;
         private System.Windows.Forms.GroupBox groupBox34;
         private System.Windows.Forms.Button btnZapiszZywienie;
+        private System.Windows.Forms.Button button11;
     }
 }
 
