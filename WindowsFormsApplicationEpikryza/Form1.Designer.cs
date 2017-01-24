@@ -112,7 +112,7 @@
             this.btnDodajDoleglo = new System.Windows.Forms.Button();
             this.textBoxDolegliwosci = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panelHome = new System.Windows.Forms.Panel();
             this.numericUDhome = new System.Windows.Forms.NumericUpDown();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
@@ -299,6 +299,11 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
+            this.btnZapiszAlergeny = new System.Windows.Forms.Button();
+            this.btnZapiszOpisAlergii = new System.Windows.Forms.Button();
+            this.btnZapiszHome = new System.Windows.Forms.Button();
+            this.btnZapiszPato = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox33.SuspendLayout();
@@ -326,7 +331,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSzpital)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDolegliwosci)).BeginInit();
             this.groupBox10.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.panelHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDhome)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKHome)).BeginInit();
@@ -1251,20 +1256,21 @@
             this.label27.TabIndex = 0;
             this.label27.Text = "VIOFOROTERAPIA";
             // 
-            // panel8
+            // panelHome
             // 
-            this.panel8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel8.Controls.Add(this.numericUDhome);
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.textBoxKHomeCount);
-            this.panel8.Controls.Add(this.label24);
-            this.panel8.Controls.Add(this.dataGridViewKHome);
-            this.panel8.Controls.Add(this.btnDodajHomo);
-            this.panel8.Controls.Add(this.comboBoxHomeop);
-            this.panel8.Location = new System.Drawing.Point(469, 304);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(441, 283);
-            this.panel8.TabIndex = 65;
+            this.panelHome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelHome.Controls.Add(this.btnZapiszHome);
+            this.panelHome.Controls.Add(this.numericUDhome);
+            this.panelHome.Controls.Add(this.panel9);
+            this.panelHome.Controls.Add(this.textBoxKHomeCount);
+            this.panelHome.Controls.Add(this.label24);
+            this.panelHome.Controls.Add(this.dataGridViewKHome);
+            this.panelHome.Controls.Add(this.btnDodajHomo);
+            this.panelHome.Controls.Add(this.comboBoxHomeop);
+            this.panelHome.Location = new System.Drawing.Point(469, 304);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(441, 283);
+            this.panelHome.TabIndex = 65;
             // 
             // numericUDhome
             // 
@@ -1284,7 +1290,7 @@
             this.panel9.Controls.Add(this.label23);
             this.panel9.Location = new System.Drawing.Point(0, 1);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(439, 26);
+            this.panel9.Size = new System.Drawing.Size(441, 26);
             this.panel9.TabIndex = 29;
             // 
             // label23
@@ -1300,10 +1306,10 @@
             // 
             // textBoxKHomeCount
             // 
-            this.textBoxKHomeCount.Location = new System.Drawing.Point(326, 93);
+            this.textBoxKHomeCount.Location = new System.Drawing.Point(322, 93);
             this.textBoxKHomeCount.Name = "textBoxKHomeCount";
             this.textBoxKHomeCount.ReadOnly = true;
-            this.textBoxKHomeCount.Size = new System.Drawing.Size(91, 20);
+            this.textBoxKHomeCount.Size = new System.Drawing.Size(99, 20);
             this.textBoxKHomeCount.TabIndex = 38;
             this.textBoxKHomeCount.Text = "0";
             // 
@@ -1320,6 +1326,7 @@
             // 
             // dataGridViewKHome
             // 
+            this.dataGridViewKHome.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewKHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKHome.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kompleksHome,
@@ -1348,9 +1355,9 @@
             this.btnDodajHomo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDodajHomo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodajHomo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDodajHomo.Location = new System.Drawing.Point(326, 39);
+            this.btnDodajHomo.Location = new System.Drawing.Point(322, 39);
             this.btnDodajHomo.Name = "btnDodajHomo";
-            this.btnDodajHomo.Size = new System.Drawing.Size(91, 20);
+            this.btnDodajHomo.Size = new System.Drawing.Size(99, 23);
             this.btnDodajHomo.TabIndex = 35;
             this.btnDodajHomo.Text = "Dodaj";
             this.btnDodajHomo.UseVisualStyleBackColor = false;
@@ -1739,6 +1746,7 @@
             // 
             // dataGridViewZywienie
             // 
+            this.dataGridViewZywienie.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewZywienie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewZywienie.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.zywienie});
@@ -2310,6 +2318,7 @@
             // 
             // dataGridViewSupl
             // 
+            this.dataGridViewSupl.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewSupl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSupl.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producent,
@@ -2487,6 +2496,7 @@
             // panelSuplementy
             // 
             this.panelSuplementy.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelSuplementy.Controls.Add(this.button15);
             this.panelSuplementy.Controls.Add(this.groupBox25);
             this.panelSuplementy.Controls.Add(this.groupBox24);
             this.panelSuplementy.Controls.Add(this.groupBox19);
@@ -2703,9 +2713,9 @@
             this.btnDodajSupl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDodajSupl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodajSupl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDodajSupl.Location = new System.Drawing.Point(788, 95);
+            this.btnDodajSupl.Location = new System.Drawing.Point(773, 94);
             this.btnDodajSupl.Name = "btnDodajSupl";
-            this.btnDodajSupl.Size = new System.Drawing.Size(83, 25);
+            this.btnDodajSupl.Size = new System.Drawing.Size(99, 23);
             this.btnDodajSupl.TabIndex = 21;
             this.btnDodajSupl.Text = "Dodaj";
             this.btnDodajSupl.UseVisualStyleBackColor = false;
@@ -2844,7 +2854,7 @@
             this.panel3.Controls.Add(this.label15);
             this.panel3.Location = new System.Drawing.Point(0, 1);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(439, 26);
+            this.panel3.Size = new System.Drawing.Size(441, 26);
             this.panel3.TabIndex = 29;
             // 
             // label15
@@ -2860,16 +2870,17 @@
             // 
             // textCountRowPato
             // 
-            this.textCountRowPato.Location = new System.Drawing.Point(326, 95);
+            this.textCountRowPato.Location = new System.Drawing.Point(322, 95);
             this.textCountRowPato.Name = "textCountRowPato";
             this.textCountRowPato.ReadOnly = true;
-            this.textCountRowPato.Size = new System.Drawing.Size(91, 20);
+            this.textCountRowPato.Size = new System.Drawing.Size(99, 20);
             this.textCountRowPato.TabIndex = 38;
             this.textCountRowPato.Text = "0";
             // 
             // panelAlergeny
             // 
             this.panelAlergeny.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelAlergeny.Controls.Add(this.btnZapiszOpisAlergii);
             this.panelAlergeny.Controls.Add(this.panel4);
             this.panelAlergeny.Controls.Add(this.textCountRowOpisAlergii);
             this.panelAlergeny.Controls.Add(this.labelAlergeny);
@@ -2887,7 +2898,7 @@
             this.panel4.Controls.Add(this.label16);
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(440, 26);
+            this.panel4.Size = new System.Drawing.Size(441, 26);
             this.panel4.TabIndex = 30;
             // 
             // label16
@@ -2947,6 +2958,7 @@
             // 
             // dataGridViewOpisAlergii
             // 
+            this.dataGridViewOpisAlergii.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewOpisAlergii.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewOpisAlergii.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.opisAlergi});
@@ -2981,9 +2993,9 @@
             this.btnDodajPato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDodajPato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDodajPato.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDodajPato.Location = new System.Drawing.Point(326, 39);
+            this.btnDodajPato.Location = new System.Drawing.Point(322, 39);
             this.btnDodajPato.Name = "btnDodajPato";
-            this.btnDodajPato.Size = new System.Drawing.Size(91, 20);
+            this.btnDodajPato.Size = new System.Drawing.Size(99, 23);
             this.btnDodajPato.TabIndex = 35;
             this.btnDodajPato.Text = "Dodaj";
             this.btnDodajPato.UseVisualStyleBackColor = false;
@@ -3017,6 +3029,7 @@
             // 
             // dataGridViewPato
             // 
+            this.dataGridViewPato.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewPato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPato.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Patomorfologia});
@@ -3037,6 +3050,7 @@
             // panelPato
             // 
             this.panelPato.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelPato.Controls.Add(this.btnZapiszPato);
             this.panelPato.Controls.Add(this.panel3);
             this.panelPato.Controls.Add(this.textCountRowPato);
             this.panelPato.Controls.Add(this.label13);
@@ -3065,6 +3079,7 @@
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel23.Controls.Add(this.btnZapiszAlergeny);
             this.panel23.Controls.Add(this.panel24);
             this.panel23.Controls.Add(this.textBoxCountAlergeny);
             this.panel23.Controls.Add(this.label18);
@@ -3082,7 +3097,7 @@
             this.panel24.Controls.Add(this.label17);
             this.panel24.Location = new System.Drawing.Point(0, 0);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(439, 26);
+            this.panel24.Size = new System.Drawing.Size(441, 26);
             this.panel24.TabIndex = 30;
             // 
             // label17
@@ -3140,6 +3155,7 @@
             // 
             // dataGridViewAlergen
             // 
+            this.dataGridViewAlergen.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewAlergen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAlergen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.alergen});
@@ -3281,6 +3297,61 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
+            // btnZapiszAlergeny
+            // 
+            this.btnZapiszAlergeny.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnZapiszAlergeny.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZapiszAlergeny.Location = new System.Drawing.Point(322, 124);
+            this.btnZapiszAlergeny.Name = "btnZapiszAlergeny";
+            this.btnZapiszAlergeny.Size = new System.Drawing.Size(99, 23);
+            this.btnZapiszAlergeny.TabIndex = 41;
+            this.btnZapiszAlergeny.Text = "Zapisz";
+            this.btnZapiszAlergeny.UseVisualStyleBackColor = false;
+            // 
+            // btnZapiszOpisAlergii
+            // 
+            this.btnZapiszOpisAlergii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnZapiszOpisAlergii.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZapiszOpisAlergii.Location = new System.Drawing.Point(322, 124);
+            this.btnZapiszOpisAlergii.Name = "btnZapiszOpisAlergii";
+            this.btnZapiszOpisAlergii.Size = new System.Drawing.Size(99, 23);
+            this.btnZapiszOpisAlergii.TabIndex = 42;
+            this.btnZapiszOpisAlergii.Text = "Zapisz";
+            this.btnZapiszOpisAlergii.UseVisualStyleBackColor = false;
+            // 
+            // btnZapiszHome
+            // 
+            this.btnZapiszHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnZapiszHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZapiszHome.Location = new System.Drawing.Point(322, 131);
+            this.btnZapiszHome.Name = "btnZapiszHome";
+            this.btnZapiszHome.Size = new System.Drawing.Size(99, 23);
+            this.btnZapiszHome.TabIndex = 42;
+            this.btnZapiszHome.Text = "Zapisz";
+            this.btnZapiszHome.UseVisualStyleBackColor = false;
+            // 
+            // btnZapiszPato
+            // 
+            this.btnZapiszPato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnZapiszPato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZapiszPato.Location = new System.Drawing.Point(322, 131);
+            this.btnZapiszPato.Name = "btnZapiszPato";
+            this.btnZapiszPato.Size = new System.Drawing.Size(99, 23);
+            this.btnZapiszPato.TabIndex = 42;
+            this.btnZapiszPato.Text = "Zapisz";
+            this.btnZapiszPato.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(663, 94);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(99, 23);
+            this.button15.TabIndex = 45;
+            this.button15.Text = "Zapisz";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3291,7 +3362,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel10);
@@ -3345,8 +3416,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDolegliwosci)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.panelHome.ResumeLayout(false);
+            this.panelHome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDhome)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -3456,7 +3527,7 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.NumericUpDown numericUDhome;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label23;
@@ -3713,6 +3784,11 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataGridView dataGridViewNiezyt;
         private System.Windows.Forms.DataGridViewTextBoxColumn niezyt;
+        private System.Windows.Forms.Button btnZapiszHome;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnZapiszOpisAlergii;
+        private System.Windows.Forms.Button btnZapiszPato;
+        private System.Windows.Forms.Button btnZapiszAlergeny;
     }
 }
 
