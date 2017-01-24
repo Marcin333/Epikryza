@@ -36,6 +36,11 @@
             this.IIIfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.IVfaza = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.groupBox33 = new System.Windows.Forms.GroupBox();
+            this.comboBoxNiezyty = new System.Windows.Forms.ComboBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.dataGridViewNiezyt = new System.Windows.Forms.DataGridView();
+            this.niezyt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
             this.btnZapiszWszystko = new System.Windows.Forms.Button();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -52,7 +57,6 @@
             this.groupBox27 = new System.Windows.Forms.GroupBox();
             this.comboBoxWypadki = new System.Windows.Forms.ComboBox();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
-            this.comboBoxNiezyty = new System.Windows.Forms.ComboBox();
             this.groupBoxRodzaje = new System.Windows.Forms.GroupBox();
             this.radioBtnOstry = new System.Windows.Forms.RadioButton();
             this.radioBtnPodostry = new System.Windows.Forms.RadioButton();
@@ -295,12 +299,10 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.groupBox33 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridViewNiezyt = new System.Windows.Forms.DataGridView();
-            this.niezyt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
+            this.groupBox33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).BeginInit();
             this.groupBox30.SuspendLayout();
             this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtaki)).BeginInit();
@@ -392,8 +394,6 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.groupBox33.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -459,6 +459,59 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(890, 1198);
             this.panel15.TabIndex = 68;
+            // 
+            // groupBox33
+            // 
+            this.groupBox33.Controls.Add(this.comboBoxNiezyty);
+            this.groupBox33.Controls.Add(this.button7);
+            this.groupBox33.Controls.Add(this.dataGridViewNiezyt);
+            this.groupBox33.Location = new System.Drawing.Point(488, 311);
+            this.groupBox33.Name = "groupBox33";
+            this.groupBox33.Size = new System.Drawing.Size(394, 260);
+            this.groupBox33.TabIndex = 101;
+            this.groupBox33.TabStop = false;
+            this.groupBox33.Text = "Nieżyty";
+            // 
+            // comboBoxNiezyty
+            // 
+            this.comboBoxNiezyty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxNiezyty.FormattingEnabled = true;
+            this.comboBoxNiezyty.Items.AddRange(new object[] {
+            "Oddechowy",
+            "Pokarmowy",
+            "Moczowy",
+            "Rozrodczy",
+            "Skórny"});
+            this.comboBoxNiezyty.Location = new System.Drawing.Point(15, 21);
+            this.comboBoxNiezyty.Name = "comboBoxNiezyty";
+            this.comboBoxNiezyty.Size = new System.Drawing.Size(139, 21);
+            this.comboBoxNiezyty.TabIndex = 86;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button7.Location = new System.Drawing.Point(307, 20);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(61, 20);
+            this.button7.TabIndex = 100;
+            this.button7.Text = "Dodaj";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // dataGridViewNiezyt
+            // 
+            this.dataGridViewNiezyt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNiezyt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.niezyt});
+            this.dataGridViewNiezyt.Location = new System.Drawing.Point(12, 76);
+            this.dataGridViewNiezyt.Name = "dataGridViewNiezyt";
+            this.dataGridViewNiezyt.Size = new System.Drawing.Size(372, 175);
+            this.dataGridViewNiezyt.TabIndex = 97;
+            // 
+            // niezyt
+            // 
+            this.niezyt.HeaderText = "Nieżyt";
+            this.niezyt.Name = "niezyt";
+            this.niezyt.Width = 325;
             // 
             // groupBox30
             // 
@@ -629,21 +682,6 @@
             this.groupBox26.TabIndex = 108;
             this.groupBox26.TabStop = false;
             this.groupBox26.Text = "Nieżyty";
-            // 
-            // comboBoxNiezyty
-            // 
-            this.comboBoxNiezyty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxNiezyty.FormattingEnabled = true;
-            this.comboBoxNiezyty.Items.AddRange(new object[] {
-            "Oddechowy",
-            "Pokarmowy",
-            "Moczowy",
-            "Rozrodczy",
-            "Skórny"});
-            this.comboBoxNiezyty.Location = new System.Drawing.Point(15, 21);
-            this.comboBoxNiezyty.Name = "comboBoxNiezyty";
-            this.comboBoxNiezyty.Size = new System.Drawing.Size(139, 21);
-            this.comboBoxNiezyty.TabIndex = 86;
             // 
             // groupBoxRodzaje
             // 
@@ -878,6 +916,7 @@
             // 
             // dgvZabiegiChirurgiczne
             // 
+            this.dgvZabiegiChirurgiczne.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dgvZabiegiChirurgiczne.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvZabiegiChirurgiczne.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.zabiegiChirurgiczneCol});
@@ -3242,44 +3281,6 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // groupBox33
-            // 
-            this.groupBox33.Controls.Add(this.comboBoxNiezyty);
-            this.groupBox33.Controls.Add(this.button7);
-            this.groupBox33.Controls.Add(this.dataGridViewNiezyt);
-            this.groupBox33.Location = new System.Drawing.Point(488, 311);
-            this.groupBox33.Name = "groupBox33";
-            this.groupBox33.Size = new System.Drawing.Size(394, 260);
-            this.groupBox33.TabIndex = 101;
-            this.groupBox33.TabStop = false;
-            this.groupBox33.Text = "Nieżyty";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(307, 20);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(61, 20);
-            this.button7.TabIndex = 100;
-            this.button7.Text = "Dodaj";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // dataGridViewNiezyt
-            // 
-            this.dataGridViewNiezyt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewNiezyt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.niezyt});
-            this.dataGridViewNiezyt.Location = new System.Drawing.Point(12, 76);
-            this.dataGridViewNiezyt.Name = "dataGridViewNiezyt";
-            this.dataGridViewNiezyt.Size = new System.Drawing.Size(372, 175);
-            this.dataGridViewNiezyt.TabIndex = 97;
-            // 
-            // niezyt
-            // 
-            this.niezyt.HeaderText = "Nieżyt";
-            this.niezyt.Name = "niezyt";
-            this.niezyt.Width = 325;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3307,6 +3308,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.panel15.ResumeLayout(false);
+            this.groupBox33.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).EndInit();
             this.groupBox30.ResumeLayout(false);
             this.groupBox30.PerformLayout();
             this.groupBox21.ResumeLayout(false);
@@ -3435,8 +3438,6 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.groupBox33.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNiezyt)).EndInit();
             this.ResumeLayout(false);
 
         }
