@@ -100,6 +100,9 @@
     <Content Include="ForHealthDB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\family_s.png" />
+    <None Include="Resources\classic_s.png" />
+    <None Include="Resources\family+_s.png" />
     <None Include="Resources\penis2.png" />
     <None Include="Resources\penis.png" />
     <None Include="Resources\heart-icon-part.png" />

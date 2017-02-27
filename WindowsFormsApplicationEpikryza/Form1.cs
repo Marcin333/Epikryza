@@ -774,5 +774,15 @@ namespace WindowsFormsApplicationEpikryza
             
             
         }
+
+    private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Get selected index, and then make sure it is valid. More https://www.dotnetperls.com/checkedlistbox
+            int selected = checkedListBox1.SelectedIndex;
+            if (selected != -1)
+            {
+                this.Text = checkedListBox1.Items[selected].ToString();
+            }
+        }
   
  */
