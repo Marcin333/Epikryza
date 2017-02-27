@@ -158,7 +158,6 @@
             this.btnHeart = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.labelk = new System.Windows.Forms.Label();
-            this.panelModelImg = new System.Windows.Forms.PictureBox();
             this.imgHeart = new System.Windows.Forms.PictureBox();
             this.imgBoxPenis = new System.Windows.Forms.PictureBox();
             this.textBoxCountZywieniowe = new System.Windows.Forms.TextBox();
@@ -168,8 +167,8 @@
             this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajZywienie = new System.Windows.Forms.Button();
             this.panelViofor = new System.Windows.Forms.Panel();
-            this.btnZapiszVioforoterapie = new System.Windows.Forms.Button();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
+            this.btnZapiszVioforoterapie = new System.Windows.Forms.Button();
             this.btnDodajViofo = new System.Windows.Forms.Button();
             this.groupBox29 = new System.Windows.Forms.GroupBox();
             this.cbUwagi = new System.Windows.Forms.ComboBox();
@@ -312,6 +311,43 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.groupBox35 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox36 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.groupBox37 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.groupBox38 = new System.Windows.Forms.GroupBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.groupBox39 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label45 = new System.Windows.Forms.Label();
+            this.groupBox40 = new System.Windows.Forms.GroupBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.groupBox41 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.groupBox42 = new System.Windows.Forms.GroupBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.panelModelImg = new System.Windows.Forms.PictureBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -352,7 +388,6 @@
             this.groupBox32.SuspendLayout();
             this.groupBox31.SuspendLayout();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).BeginInit();
@@ -407,6 +442,21 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox26.SuspendLayout();
+            this.groupBox35.SuspendLayout();
+            this.groupBox36.SuspendLayout();
+            this.groupBox37.SuspendLayout();
+            this.groupBox38.SuspendLayout();
+            this.groupBox39.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.groupBox40.SuspendLayout();
+            this.groupBox41.SuspendLayout();
+            this.groupBox42.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1462,9 +1512,9 @@
             this.label39.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label39.Location = new System.Drawing.Point(4, 6);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(114, 13);
+            this.label39.Size = new System.Drawing.Size(169, 13);
             this.label39.TabIndex = 0;
-            this.label39.Text = "VIOFORETARAPIA";
+            this.label39.Text = "VIOFORETARAPIA CLASSIC";
             // 
             // panel11
             // 
@@ -1756,18 +1806,6 @@
             this.labelk.TabIndex = 0;
             this.labelk.Text = "Model";
             // 
-            // panelModelImg
-            // 
-            this.panelModelImg.BackColor = System.Drawing.Color.White;
-            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
-            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
-            this.panelModelImg.Name = "panelModelImg";
-            this.panelModelImg.Size = new System.Drawing.Size(497, 576);
-            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.panelModelImg.TabIndex = 30;
-            this.panelModelImg.TabStop = false;
-            // 
             // imgHeart
             // 
             this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
@@ -1780,8 +1818,8 @@
             // imgBoxPenis
             // 
             this.imgBoxPenis.BackColor = System.Drawing.Color.White;
-            this.imgBoxPenis.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.penis2;
-            this.imgBoxPenis.Location = new System.Drawing.Point(433, 317);
+            this.imgBoxPenis.Image = ((System.Drawing.Image)(resources.GetObject("imgBoxPenis.Image")));
+            this.imgBoxPenis.Location = new System.Drawing.Point(418, 211);
             this.imgBoxPenis.Name = "imgBoxPenis";
             this.imgBoxPenis.Size = new System.Drawing.Size(43, 67);
             this.imgBoxPenis.TabIndex = 33;
@@ -1854,6 +1892,8 @@
             // panelViofor
             // 
             this.panelViofor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelViofor.Controls.Add(this.numericUDKrotnosc);
+            this.panelViofor.Controls.Add(this.pictureBox1);
             this.panelViofor.Controls.Add(this.groupBox34);
             this.panelViofor.Controls.Add(this.groupBox29);
             this.panelViofor.Controls.Add(this.groupBox1);
@@ -1870,6 +1910,16 @@
             this.panelViofor.Size = new System.Drawing.Size(890, 279);
             this.panelViofor.TabIndex = 72;
             // 
+            // groupBox34
+            // 
+            this.groupBox34.Controls.Add(this.btnZapiszVioforoterapie);
+            this.groupBox34.Controls.Add(this.btnDodajViofo);
+            this.groupBox34.Location = new System.Drawing.Point(254, 184);
+            this.groupBox34.Name = "groupBox34";
+            this.groupBox34.Size = new System.Drawing.Size(360, 69);
+            this.groupBox34.TabIndex = 53;
+            this.groupBox34.TabStop = false;
+            // 
             // btnZapiszVioforoterapie
             // 
             this.btnZapiszVioforoterapie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1880,16 +1930,6 @@
             this.btnZapiszVioforoterapie.TabIndex = 40;
             this.btnZapiszVioforoterapie.Text = "Zapisz";
             this.btnZapiszVioforoterapie.UseVisualStyleBackColor = false;
-            // 
-            // groupBox34
-            // 
-            this.groupBox34.Controls.Add(this.btnZapiszVioforoterapie);
-            this.groupBox34.Controls.Add(this.btnDodajViofo);
-            this.groupBox34.Location = new System.Drawing.Point(254, 184);
-            this.groupBox34.Name = "groupBox34";
-            this.groupBox34.Size = new System.Drawing.Size(360, 69);
-            this.groupBox34.TabIndex = 53;
-            this.groupBox34.TabStop = false;
             // 
             // btnDodajViofo
             // 
@@ -2043,7 +2083,7 @@
             this.groupBox3.Size = new System.Drawing.Size(150, 60);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "I";
+            this.groupBox3.Text = "I-A";
             // 
             // comboBoxMata
             // 
@@ -2051,7 +2091,7 @@
             this.comboBoxMata.FormattingEnabled = true;
             this.comboBoxMata.Items.AddRange(new object[] {
             "MATA DUŻA A1",
-            "MATA MAŁA A2",
+            "MATA MAŁA A2 ",
             "APLIKATOR ELIPSA AE"});
             this.comboBoxMata.Location = new System.Drawing.Point(12, 23);
             this.comboBoxMata.Name = "comboBoxMata";
@@ -2068,7 +2108,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.numericUDKrotnosc);
+            this.groupBox6.Controls.Add(this.comboBox8);
             this.groupBox6.Controls.Add(this.label20);
             this.groupBox6.Location = new System.Drawing.Point(339, 37);
             this.groupBox6.Name = "groupBox6";
@@ -2079,7 +2119,7 @@
             // 
             // numericUDKrotnosc
             // 
-            this.numericUDKrotnosc.Location = new System.Drawing.Point(68, 23);
+            this.numericUDKrotnosc.Location = new System.Drawing.Point(664, 241);
             this.numericUDKrotnosc.Maximum = new decimal(new int[] {
             4,
             0,
@@ -2107,14 +2147,14 @@
             this.groupBox4.Size = new System.Drawing.Size(80, 60);
             this.groupBox4.TabIndex = 39;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "II";
+            this.groupBox4.Text = "II-P";
             // 
             // comboBoxPx
             // 
             this.comboBoxPx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPx.FormattingEnabled = true;
             this.comboBoxPx.Items.AddRange(new object[] {
-            "P1",
+            "P1 ",
             "P2",
             "P3"});
             this.comboBoxPx.Location = new System.Drawing.Point(10, 23);
@@ -2185,7 +2225,7 @@
             this.groupBox5.Size = new System.Drawing.Size(80, 60);
             this.groupBox5.TabIndex = 39;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "III";
+            this.groupBox5.Text = "III-M";
             // 
             // comboBoxMx
             // 
@@ -3478,12 +3518,424 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.classic_s;
+            this.pictureBox1.Location = new System.Drawing.Point(666, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 99);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.pictureBox2);
+            this.panel5.Controls.Add(this.groupBox26);
+            this.panel5.Controls.Add(this.groupBox35);
+            this.panel5.Controls.Add(this.groupBox36);
+            this.panel5.Controls.Add(this.groupBox37);
+            this.panel5.Controls.Add(this.groupBox38);
+            this.panel5.Controls.Add(this.label44);
+            this.panel5.Controls.Add(this.groupBox39);
+            this.panel5.Controls.Add(this.groupBox40);
+            this.panel5.Controls.Add(this.groupBox41);
+            this.panel5.Controls.Add(this.groupBox42);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Location = new System.Drawing.Point(19, 3873);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(890, 279);
+            this.panel5.TabIndex = 73;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.family_s;
+            this.pictureBox2.Location = new System.Drawing.Point(666, 136);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(169, 99);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 54;
+            this.pictureBox2.TabStop = false;
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.button1);
+            this.groupBox26.Controls.Add(this.button12);
+            this.groupBox26.Location = new System.Drawing.Point(254, 184);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Size = new System.Drawing.Size(360, 69);
+            this.groupBox26.TabIndex = 53;
+            this.groupBox26.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(196, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 23);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Zapisz";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(77, 25);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(99, 23);
+            this.button12.TabIndex = 40;
+            this.button12.Text = "Dodaj";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // groupBox35
+            // 
+            this.groupBox35.Controls.Add(this.comboBox1);
+            this.groupBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox35.Location = new System.Drawing.Point(14, 184);
+            this.groupBox35.Name = "groupBox35";
+            this.groupBox35.Size = new System.Drawing.Size(231, 60);
+            this.groupBox35.TabIndex = 52;
+            this.groupBox35.TabStop = false;
+            this.groupBox35.Text = "Uwagi";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Wiadro zimnej wody z rana"});
+            this.comboBox1.Location = new System.Drawing.Point(13, 22);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(205, 21);
+            this.comboBox1.TabIndex = 44;
+            // 
+            // groupBox36
+            // 
+            this.groupBox36.Controls.Add(this.textBox1);
+            this.groupBox36.Controls.Add(this.textBox2);
+            this.groupBox36.Controls.Add(this.textBox4);
+            this.groupBox36.Controls.Add(this.label32);
+            this.groupBox36.Controls.Add(this.label33);
+            this.groupBox36.Controls.Add(this.label34);
+            this.groupBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox36.Location = new System.Drawing.Point(14, 107);
+            this.groupBox36.Name = "groupBox36";
+            this.groupBox36.Size = new System.Drawing.Size(601, 69);
+            this.groupBox36.TabIndex = 51;
+            this.groupBox36.TabStop = false;
+            this.groupBox36.Text = "Wyniki";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(224, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(144, 20);
+            this.textBox1.TabIndex = 50;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(11, 37);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(144, 20);
+            this.textBox2.TabIndex = 49;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(437, 37);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(144, 20);
+            this.textBox4.TabIndex = 48;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(435, 21);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(53, 13);
+            this.label32.TabIndex = 47;
+            this.label32.Text = "Wieczór";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(222, 21);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(76, 13);
+            this.label33.TabIndex = 46;
+            this.label33.Text = "Po południu";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(8, 21);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(37, 13);
+            this.label34.TabIndex = 45;
+            this.label34.Text = "Rano";
+            // 
+            // groupBox37
+            // 
+            this.groupBox37.Controls.Add(this.comboBox2);
+            this.groupBox37.Controls.Add(this.label41);
+            this.groupBox37.Location = new System.Drawing.Point(478, 37);
+            this.groupBox37.Name = "groupBox37";
+            this.groupBox37.Size = new System.Drawing.Size(137, 60);
+            this.groupBox37.TabIndex = 39;
+            this.groupBox37.TabStop = false;
+            this.groupBox37.Text = "V";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "I Stopień",
+            "II Stopień",
+            "III Stopień"});
+            this.comboBox2.Location = new System.Drawing.Point(76, 23);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(48, 21);
+            this.comboBox2.TabIndex = 44;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(7, 26);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(64, 13);
+            this.label41.TabIndex = 43;
+            this.label41.Text = "Natężenie";
+            // 
+            // groupBox38
+            // 
+            this.groupBox38.Controls.Add(this.comboBox4);
+            this.groupBox38.Location = new System.Drawing.Point(14, 37);
+            this.groupBox38.Name = "groupBox38";
+            this.groupBox38.Size = new System.Drawing.Size(150, 60);
+            this.groupBox38.TabIndex = 38;
+            this.groupBox38.TabStop = false;
+            this.groupBox38.Text = "I-A";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "MATA DUŻA A1 - F",
+            "MATA MAŁA A2 - F",
+            "APLIKATOR ELIPSA AE - F"});
+            this.comboBox4.Location = new System.Drawing.Point(12, 23);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(129, 21);
+            this.comboBox4.TabIndex = 0;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(14, 291);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(0, 13);
+            this.label44.TabIndex = 42;
+            // 
+            // groupBox39
+            // 
+            this.groupBox39.Controls.Add(this.comboBox7);
+            this.groupBox39.Controls.Add(this.label45);
+            this.groupBox39.Location = new System.Drawing.Point(339, 37);
+            this.groupBox39.Name = "groupBox39";
+            this.groupBox39.Size = new System.Drawing.Size(134, 60);
+            this.groupBox39.TabIndex = 39;
+            this.groupBox39.TabStop = false;
+            this.groupBox39.Text = "IV";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(667, 247);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(56, 20);
+            this.numericUpDown1.TabIndex = 40;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(6, 26);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(57, 13);
+            this.label45.TabIndex = 42;
+            this.label45.Text = "Krotność";
+            // 
+            // groupBox40
+            // 
+            this.groupBox40.Controls.Add(this.comboBox5);
+            this.groupBox40.Location = new System.Drawing.Point(169, 37);
+            this.groupBox40.Name = "groupBox40";
+            this.groupBox40.Size = new System.Drawing.Size(80, 60);
+            this.groupBox40.TabIndex = 39;
+            this.groupBox40.TabStop = false;
+            this.groupBox40.Text = "II-T/W";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "Terapy",
+            "Wellnes"});
+            this.comboBox5.Location = new System.Drawing.Point(10, 23);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(60, 21);
+            this.comboBox5.TabIndex = 1;
+            // 
+            // groupBox41
+            // 
+            this.groupBox41.Controls.Add(this.radioButton1);
+            this.groupBox41.Controls.Add(this.radioButton2);
+            this.groupBox41.Controls.Add(this.radioButton3);
+            this.groupBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox41.Location = new System.Drawing.Point(620, 37);
+            this.groupBox41.Name = "groupBox41";
+            this.groupBox41.Size = new System.Drawing.Size(252, 60);
+            this.groupBox41.TabIndex = 34;
+            this.groupBox41.TabStop = false;
+            this.groupBox41.Text = "Pora dnia";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(168, 23);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.radioButton1.Size = new System.Drawing.Size(78, 23);
+            this.radioButton1.TabIndex = 33;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Wieczór";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(8, 23);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.radioButton2.Size = new System.Drawing.Size(62, 23);
+            this.radioButton2.TabIndex = 31;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Rano";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(70, 23);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.radioButton3.Size = new System.Drawing.Size(101, 23);
+            this.radioButton3.TabIndex = 32;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Po południu";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox42
+            // 
+            this.groupBox42.Controls.Add(this.comboBox6);
+            this.groupBox42.Location = new System.Drawing.Point(254, 37);
+            this.groupBox42.Name = "groupBox42";
+            this.groupBox42.Size = new System.Drawing.Size(80, 60);
+            this.groupBox42.TabIndex = 39;
+            this.groupBox42.TabStop = false;
+            this.groupBox42.Text = "III-Z/C/D";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "Zdrowy",
+            "Chory",
+            "Dziecko"});
+            this.comboBox6.Location = new System.Drawing.Point(10, 23);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(60, 21);
+            this.comboBox6.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel6.Controls.Add(this.label46);
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(890, 26);
+            this.panel6.TabIndex = 30;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label46.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label46.Location = new System.Drawing.Point(4, 6);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(162, 13);
+            this.label46.TabIndex = 0;
+            this.label46.Text = "VIOFORETARAPIA FAMILY";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "Pojedynczo",
+            "Podwujnie"});
+            this.comboBox7.Location = new System.Drawing.Point(71, 22);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(54, 21);
+            this.comboBox7.TabIndex = 43;
+            // 
+            // panelModelImg
+            // 
+            this.panelModelImg.BackColor = System.Drawing.Color.White;
+            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
+            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
+            this.panelModelImg.Name = "panelModelImg";
+            this.panelModelImg.Size = new System.Drawing.Size(334, 260);
+            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.panelModelImg.TabIndex = 30;
+            this.panelModelImg.TabStop = false;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "1 raz",
+            "2 razy",
+            "3 razy"});
+            this.comboBox8.Location = new System.Drawing.Point(67, 21);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(56, 21);
+            this.comboBox8.TabIndex = 43;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(999, 505);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelModel);
             this.Controls.Add(this.panelOrdynacja);
             this.Controls.Add(this.panel23);
@@ -3562,7 +4014,6 @@
             this.groupBox31.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).EndInit();
@@ -3635,6 +4086,27 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox26.ResumeLayout(false);
+            this.groupBox35.ResumeLayout(false);
+            this.groupBox36.ResumeLayout(false);
+            this.groupBox36.PerformLayout();
+            this.groupBox37.ResumeLayout(false);
+            this.groupBox37.PerformLayout();
+            this.groupBox38.ResumeLayout(false);
+            this.groupBox39.ResumeLayout(false);
+            this.groupBox39.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.groupBox40.ResumeLayout(false);
+            this.groupBox41.ResumeLayout(false);
+            this.groupBox41.PerformLayout();
+            this.groupBox42.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3679,7 +4151,6 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Panel panelModel;
-        private System.Windows.Forms.PictureBox panelModelImg;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label labelk;
         private System.Windows.Forms.TextBox textBoxCountZywieniowe;
@@ -3923,6 +4394,43 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn suplementyWywiad;
         private System.Windows.Forms.Button btnZapiszLeki;
         private System.Windows.Forms.DataGridViewTextBoxColumn lekiWywiad;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.GroupBox groupBox35;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.GroupBox groupBox36;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.GroupBox groupBox37;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.GroupBox groupBox38;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.GroupBox groupBox39;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.GroupBox groupBox40;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.GroupBox groupBox41;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.GroupBox groupBox42;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.PictureBox panelModelImg;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox8;
     }
 }
 
