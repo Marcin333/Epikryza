@@ -111,7 +111,7 @@ namespace WindowsFormsApplicationEpikryza
                 Object selectedItemPx = comboBoxPx.SelectedItem;
                 Object selectedItemMx = comboBoxMx.SelectedItem;
                 string natezenie = comboBoxNatezenie.Text;
-                string krotnosc = numericUDKrotnosc.Value.ToString();
+                string krotnosc = cbKrotnosc.Text;  //numericUDKrotnosc.Value.ToString();
                 string data = String.Format("{0}x {1}{2}{3}({4}) ", krotnosc, mata, selectedItemPx, 
                             selectedItemMx, natezenie);
                 //myComboBox.Text.Clear();

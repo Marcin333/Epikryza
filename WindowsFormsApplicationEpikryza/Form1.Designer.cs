@@ -347,7 +347,7 @@
             this.label46 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.panelModelImg = new System.Windows.Forms.PictureBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cbKrotnosc = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -2108,7 +2108,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.comboBox8);
+            this.groupBox6.Controls.Add(this.cbKrotnosc);
             this.groupBox6.Controls.Add(this.label20);
             this.groupBox6.Location = new System.Drawing.Point(339, 37);
             this.groupBox6.Name = "groupBox6";
@@ -3917,17 +3917,17 @@
             this.panelModelImg.TabIndex = 30;
             this.panelModelImg.TabStop = false;
             // 
-            // comboBox8
+            // cbKrotnosc
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.cbKrotnosc.FormattingEnabled = true;
+            this.cbKrotnosc.Items.AddRange(new object[] {
             "1 raz",
             "2 razy",
             "3 razy"});
-            this.comboBox8.Location = new System.Drawing.Point(67, 21);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(56, 21);
-            this.comboBox8.TabIndex = 43;
+            this.cbKrotnosc.Location = new System.Drawing.Point(67, 21);
+            this.cbKrotnosc.Name = "cbKrotnosc";
+            this.cbKrotnosc.Size = new System.Drawing.Size(56, 21);
+            this.cbKrotnosc.TabIndex = 43;
             // 
             // Form1
             // 
@@ -4430,7 +4430,7 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.PictureBox panelModelImg;
         private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cbKrotnosc;
     }
 }
 
