@@ -158,6 +158,7 @@
             this.btnHeart = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.labelk = new System.Windows.Forms.Label();
+            this.panelModelImg = new System.Windows.Forms.PictureBox();
             this.imgHeart = new System.Windows.Forms.PictureBox();
             this.imgBoxPenis = new System.Windows.Forms.PictureBox();
             this.textBoxCountZywieniowe = new System.Windows.Forms.TextBox();
@@ -167,6 +168,8 @@
             this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajZywienie = new System.Windows.Forms.Button();
             this.panelViofor = new System.Windows.Forms.Panel();
+            this.numericUDKrotnosc = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
             this.btnZapiszVioforoterapie = new System.Windows.Forms.Button();
             this.btnDodajViofo = new System.Windows.Forms.Button();
@@ -186,7 +189,7 @@
             this.comboBoxMata = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.numericUDKrotnosc = new System.Windows.Forms.NumericUpDown();
+            this.cbKrotnosc = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.comboBoxPx = new System.Windows.Forms.ComboBox();
@@ -311,8 +314,8 @@
             this.comboBoxFaza1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -333,7 +336,7 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label44 = new System.Windows.Forms.Label();
             this.groupBox39 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label45 = new System.Windows.Forms.Label();
             this.groupBox40 = new System.Windows.Forms.GroupBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -345,9 +348,6 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label46 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.panelModelImg = new System.Windows.Forms.PictureBox();
-            this.cbKrotnosc = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -388,17 +388,19 @@
             this.groupBox32.SuspendLayout();
             this.groupBox31.SuspendLayout();
             this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).BeginInit();
             this.panelViofor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox34.SuspendLayout();
             this.groupBox29.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBoxPoraDnia.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -442,8 +444,8 @@
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox26.SuspendLayout();
             this.groupBox35.SuspendLayout();
@@ -451,12 +453,10 @@
             this.groupBox37.SuspendLayout();
             this.groupBox38.SuspendLayout();
             this.groupBox39.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox40.SuspendLayout();
             this.groupBox41.SuspendLayout();
             this.groupBox42.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -1806,6 +1806,18 @@
             this.labelk.TabIndex = 0;
             this.labelk.Text = "Model";
             // 
+            // panelModelImg
+            // 
+            this.panelModelImg.BackColor = System.Drawing.Color.White;
+            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
+            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
+            this.panelModelImg.Name = "panelModelImg";
+            this.panelModelImg.Size = new System.Drawing.Size(334, 260);
+            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.panelModelImg.TabIndex = 30;
+            this.panelModelImg.TabStop = false;
+            // 
             // imgHeart
             // 
             this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
@@ -1909,6 +1921,28 @@
             this.panelViofor.Name = "panelViofor";
             this.panelViofor.Size = new System.Drawing.Size(890, 279);
             this.panelViofor.TabIndex = 72;
+            // 
+            // numericUDKrotnosc
+            // 
+            this.numericUDKrotnosc.Location = new System.Drawing.Point(664, 241);
+            this.numericUDKrotnosc.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUDKrotnosc.Name = "numericUDKrotnosc";
+            this.numericUDKrotnosc.Size = new System.Drawing.Size(56, 20);
+            this.numericUDKrotnosc.TabIndex = 40;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.classic_s;
+            this.pictureBox1.Location = new System.Drawing.Point(666, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 99);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox34
             // 
@@ -2117,17 +2151,17 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "IV";
             // 
-            // numericUDKrotnosc
+            // cbKrotnosc
             // 
-            this.numericUDKrotnosc.Location = new System.Drawing.Point(664, 241);
-            this.numericUDKrotnosc.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUDKrotnosc.Name = "numericUDKrotnosc";
-            this.numericUDKrotnosc.Size = new System.Drawing.Size(56, 20);
-            this.numericUDKrotnosc.TabIndex = 40;
+            this.cbKrotnosc.FormattingEnabled = true;
+            this.cbKrotnosc.Items.AddRange(new object[] {
+            "1 raz",
+            "2 razy",
+            "3 razy"});
+            this.cbKrotnosc.Location = new System.Drawing.Point(67, 21);
+            this.cbKrotnosc.Name = "cbKrotnosc";
+            this.cbKrotnosc.Size = new System.Drawing.Size(56, 21);
+            this.cbKrotnosc.TabIndex = 43;
             // 
             // label20
             // 
@@ -3518,16 +3552,6 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Ordynacja";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.classic_s;
-            this.pictureBox1.Location = new System.Drawing.Point(666, 136);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 99);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 54;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -3548,6 +3572,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(890, 279);
             this.panel5.TabIndex = 73;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(667, 247);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(56, 20);
+            this.numericUpDown1.TabIndex = 40;
             // 
             // pictureBox2
             // 
@@ -3755,17 +3791,16 @@
             this.groupBox39.TabStop = false;
             this.groupBox39.Text = "IV";
             // 
-            // numericUpDown1
+            // comboBox7
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(667, 247);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(56, 20);
-            this.numericUpDown1.TabIndex = 40;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "Pojedynczo",
+            "Podwujnie"});
+            this.comboBox7.Location = new System.Drawing.Point(71, 22);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(54, 21);
+            this.comboBox7.TabIndex = 43;
             // 
             // label45
             // 
@@ -3894,41 +3929,6 @@
             this.label46.TabIndex = 0;
             this.label46.Text = "VIOFORETARAPIA FAMILY";
             // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "Pojedynczo",
-            "Podwujnie"});
-            this.comboBox7.Location = new System.Drawing.Point(71, 22);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(54, 21);
-            this.comboBox7.TabIndex = 43;
-            // 
-            // panelModelImg
-            // 
-            this.panelModelImg.BackColor = System.Drawing.Color.White;
-            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
-            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
-            this.panelModelImg.Name = "panelModelImg";
-            this.panelModelImg.Size = new System.Drawing.Size(334, 260);
-            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.panelModelImg.TabIndex = 30;
-            this.panelModelImg.TabStop = false;
-            // 
-            // cbKrotnosc
-            // 
-            this.cbKrotnosc.FormattingEnabled = true;
-            this.cbKrotnosc.Items.AddRange(new object[] {
-            "1 raz",
-            "2 razy",
-            "3 razy"});
-            this.cbKrotnosc.Location = new System.Drawing.Point(67, 21);
-            this.cbKrotnosc.Name = "cbKrotnosc";
-            this.cbKrotnosc.Size = new System.Drawing.Size(56, 21);
-            this.cbKrotnosc.TabIndex = 43;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4014,11 +4014,14 @@
             this.groupBox31.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).EndInit();
             this.panelViofor.ResumeLayout(false);
             this.panelViofor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox34.ResumeLayout(false);
             this.groupBox29.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -4028,7 +4031,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBoxPoraDnia.ResumeLayout(false);
             this.groupBoxPoraDnia.PerformLayout();
@@ -4086,9 +4088,9 @@
             this.groupBox12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox26.ResumeLayout(false);
             this.groupBox35.ResumeLayout(false);
@@ -4099,14 +4101,12 @@
             this.groupBox38.ResumeLayout(false);
             this.groupBox39.ResumeLayout(false);
             this.groupBox39.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox40.ResumeLayout(false);
             this.groupBox41.ResumeLayout(false);
             this.groupBox41.PerformLayout();
             this.groupBox42.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
             this.ResumeLayout(false);
 
         }
