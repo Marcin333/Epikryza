@@ -329,23 +329,78 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label46 = new System.Windows.Forms.Label();
-            this.imgBoxPenis = new System.Windows.Forms.PictureBox();
-            this.imgHeart = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.labelk = new System.Windows.Forms.Label();
-            this.groupBox31 = new System.Windows.Forms.GroupBox();
-            this.btnHeart = new System.Windows.Forms.Button();
-            this.btnMen = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.groupBox32 = new System.Windows.Forms.GroupBox();
-            this.btnWoman = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panelModel = new System.Windows.Forms.Panel();
+            this.radioButton46 = new System.Windows.Forms.RadioButton();
+            this.radioButton47 = new System.Windows.Forms.RadioButton();
+            this.radioButton48 = new System.Windows.Forms.RadioButton();
+            this.radioButton49 = new System.Windows.Forms.RadioButton();
+            this.radioButton50 = new System.Windows.Forms.RadioButton();
+            this.radioButton51 = new System.Windows.Forms.RadioButton();
+            this.radioButton52 = new System.Windows.Forms.RadioButton();
+            this.radioButton53 = new System.Windows.Forms.RadioButton();
+            this.radioButton38 = new System.Windows.Forms.RadioButton();
+            this.radioButton39 = new System.Windows.Forms.RadioButton();
+            this.radioButton40 = new System.Windows.Forms.RadioButton();
+            this.radioButton41 = new System.Windows.Forms.RadioButton();
+            this.radioButton42 = new System.Windows.Forms.RadioButton();
+            this.radioButton43 = new System.Windows.Forms.RadioButton();
+            this.radioButton44 = new System.Windows.Forms.RadioButton();
+            this.radioButton45 = new System.Windows.Forms.RadioButton();
+            this.radioButton30 = new System.Windows.Forms.RadioButton();
+            this.radioButton31 = new System.Windows.Forms.RadioButton();
+            this.radioButton32 = new System.Windows.Forms.RadioButton();
+            this.radioButton33 = new System.Windows.Forms.RadioButton();
+            this.radioButton34 = new System.Windows.Forms.RadioButton();
+            this.radioButton35 = new System.Windows.Forms.RadioButton();
+            this.radioButton36 = new System.Windows.Forms.RadioButton();
+            this.radioButton37 = new System.Windows.Forms.RadioButton();
+            this.radioButton22 = new System.Windows.Forms.RadioButton();
+            this.radioButton23 = new System.Windows.Forms.RadioButton();
+            this.radioButton24 = new System.Windows.Forms.RadioButton();
+            this.radioButton25 = new System.Windows.Forms.RadioButton();
+            this.radioButton26 = new System.Windows.Forms.RadioButton();
+            this.radioButton27 = new System.Windows.Forms.RadioButton();
+            this.radioButton28 = new System.Windows.Forms.RadioButton();
+            this.radioButton29 = new System.Windows.Forms.RadioButton();
+            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.radioButton15 = new System.Windows.Forms.RadioButton();
+            this.radioButton16 = new System.Windows.Forms.RadioButton();
+            this.radioButton17 = new System.Windows.Forms.RadioButton();
+            this.radioButton18 = new System.Windows.Forms.RadioButton();
+            this.radioButton19 = new System.Windows.Forms.RadioButton();
+            this.radioButton20 = new System.Windows.Forms.RadioButton();
+            this.radioButton21 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.irbOkoLewe = new System.Windows.Forms.RadioButton();
+            this.irbOkoPrawe = new System.Windows.Forms.RadioButton();
+            this.irbZatoki = new System.Windows.Forms.RadioButton();
+            this.irbMozg = new System.Windows.Forms.RadioButton();
+            this.irbGlowa = new System.Windows.Forms.RadioButton();
+            this.irbWatroba = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.panelModelImg = new System.Windows.Forms.PictureBox();
+            this.imgHeart = new System.Windows.Forms.PictureBox();
+            this.imgBoxPenis = new System.Windows.Forms.PictureBox();
+            this.gboxStan = new System.Windows.Forms.GroupBox();
+            this.rBtnOstry = new System.Windows.Forms.RadioButton();
+            this.rBtnPodostry = new System.Windows.Forms.RadioButton();
+            this.rBtnPrzewlekly = new System.Windows.Forms.RadioButton();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtOpisDolegliwosci = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnZapisz = new System.Windows.Forms.Button();
+            this.dgvChoroby = new System.Windows.Forms.DataGridView();
+            this.anamneza = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -446,13 +501,13 @@
             this.groupBox41.SuspendLayout();
             this.groupBox42.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
             this.panel18.SuspendLayout();
-            this.groupBox31.SuspendLayout();
-            this.groupBox32.SuspendLayout();
             this.panelModel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
+            this.gboxStan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChoroby)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -3726,25 +3781,6 @@
             this.label46.TabIndex = 0;
             this.label46.Text = "VIOFORETARAPIA FAMILY";
             // 
-            // imgBoxPenis
-            // 
-            this.imgBoxPenis.BackColor = System.Drawing.Color.White;
-            this.imgBoxPenis.Image = ((System.Drawing.Image)(resources.GetObject("imgBoxPenis.Image")));
-            this.imgBoxPenis.Location = new System.Drawing.Point(418, 211);
-            this.imgBoxPenis.Name = "imgBoxPenis";
-            this.imgBoxPenis.Size = new System.Drawing.Size(43, 67);
-            this.imgBoxPenis.TabIndex = 33;
-            this.imgBoxPenis.TabStop = false;
-            // 
-            // imgHeart
-            // 
-            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
-            this.imgHeart.Location = new System.Drawing.Point(424, 167);
-            this.imgHeart.Name = "imgHeart";
-            this.imgHeart.Size = new System.Drawing.Size(52, 65);
-            this.imgHeart.TabIndex = 34;
-            this.imgHeart.TabStop = false;
-            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -3765,139 +3801,1005 @@
             this.labelk.TabIndex = 0;
             this.labelk.Text = "Model";
             // 
-            // groupBox31
-            // 
-            this.groupBox31.Controls.Add(this.button10);
-            this.groupBox31.Controls.Add(this.button9);
-            this.groupBox31.Controls.Add(this.button8);
-            this.groupBox31.Controls.Add(this.button2);
-            this.groupBox31.Controls.Add(this.btnMen);
-            this.groupBox31.Controls.Add(this.btnHeart);
-            this.groupBox31.Location = new System.Drawing.Point(12, 51);
-            this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Size = new System.Drawing.Size(173, 313);
-            this.groupBox31.TabIndex = 31;
-            this.groupBox31.TabStop = false;
-            this.groupBox31.Text = "Mężczyzna";
-            // 
-            // btnHeart
-            // 
-            this.btnHeart.BackColor = System.Drawing.Color.Transparent;
-            this.btnHeart.Image = ((System.Drawing.Image)(resources.GetObject("btnHeart.Image")));
-            this.btnHeart.Location = new System.Drawing.Point(64, 21);
-            this.btnHeart.Name = "btnHeart";
-            this.btnHeart.Size = new System.Drawing.Size(45, 45);
-            this.btnHeart.TabIndex = 4;
-            this.btnHeart.UseVisualStyleBackColor = false;
-            this.btnHeart.Click += new System.EventHandler(this.btnHeart_Click);
-            // 
-            // btnMen
-            // 
-            this.btnMen.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.man;
-            this.btnMen.Location = new System.Drawing.Point(11, 21);
-            this.btnMen.Name = "btnMen";
-            this.btnMen.Size = new System.Drawing.Size(45, 45);
-            this.btnMen.TabIndex = 0;
-            this.btnMen.UseVisualStyleBackColor = true;
-            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(117, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 45);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Red;
-            this.button8.Location = new System.Drawing.Point(10, 74);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 45);
-            this.button8.TabIndex = 6;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Yellow;
-            this.button9.Location = new System.Drawing.Point(63, 74);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(45, 45);
-            this.button9.TabIndex = 7;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Orange;
-            this.button10.Location = new System.Drawing.Point(116, 74);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 45);
-            this.button10.TabIndex = 8;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // groupBox32
-            // 
-            this.groupBox32.Controls.Add(this.button4);
-            this.groupBox32.Controls.Add(this.button3);
-            this.groupBox32.Controls.Add(this.btnWoman);
-            this.groupBox32.Location = new System.Drawing.Point(706, 51);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Size = new System.Drawing.Size(173, 313);
-            this.groupBox32.TabIndex = 32;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "Kobieta";
-            // 
-            // btnWoman
-            // 
-            this.btnWoman.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.woman;
-            this.btnWoman.Location = new System.Drawing.Point(11, 21);
-            this.btnWoman.Name = "btnWoman";
-            this.btnWoman.Size = new System.Drawing.Size(45, 45);
-            this.btnWoman.TabIndex = 1;
-            this.btnWoman.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(63, 21);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 45);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(115, 21);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 45);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // panelModel
             // 
             this.panelModel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelModel.Controls.Add(this.groupBox32);
-            this.panelModel.Controls.Add(this.groupBox31);
+            this.panelModel.Controls.Add(this.gboxStan);
+            this.panelModel.Controls.Add(this.label47);
+            this.panelModel.Controls.Add(this.txtOpisDolegliwosci);
+            this.panelModel.Controls.Add(this.btnUpdate);
+            this.panelModel.Controls.Add(this.btnZapisz);
+            this.panelModel.Controls.Add(this.dgvChoroby);
+            this.panelModel.Controls.Add(this.radioButton46);
+            this.panelModel.Controls.Add(this.radioButton47);
+            this.panelModel.Controls.Add(this.radioButton48);
+            this.panelModel.Controls.Add(this.radioButton49);
+            this.panelModel.Controls.Add(this.radioButton50);
+            this.panelModel.Controls.Add(this.radioButton51);
+            this.panelModel.Controls.Add(this.radioButton52);
+            this.panelModel.Controls.Add(this.radioButton53);
+            this.panelModel.Controls.Add(this.radioButton38);
+            this.panelModel.Controls.Add(this.radioButton39);
+            this.panelModel.Controls.Add(this.radioButton40);
+            this.panelModel.Controls.Add(this.radioButton41);
+            this.panelModel.Controls.Add(this.radioButton42);
+            this.panelModel.Controls.Add(this.radioButton43);
+            this.panelModel.Controls.Add(this.radioButton44);
+            this.panelModel.Controls.Add(this.radioButton45);
+            this.panelModel.Controls.Add(this.radioButton30);
+            this.panelModel.Controls.Add(this.radioButton31);
+            this.panelModel.Controls.Add(this.radioButton32);
+            this.panelModel.Controls.Add(this.radioButton33);
+            this.panelModel.Controls.Add(this.radioButton34);
+            this.panelModel.Controls.Add(this.radioButton35);
+            this.panelModel.Controls.Add(this.radioButton36);
+            this.panelModel.Controls.Add(this.radioButton37);
+            this.panelModel.Controls.Add(this.radioButton22);
+            this.panelModel.Controls.Add(this.radioButton23);
+            this.panelModel.Controls.Add(this.radioButton24);
+            this.panelModel.Controls.Add(this.radioButton25);
+            this.panelModel.Controls.Add(this.radioButton26);
+            this.panelModel.Controls.Add(this.radioButton27);
+            this.panelModel.Controls.Add(this.radioButton28);
+            this.panelModel.Controls.Add(this.radioButton29);
+            this.panelModel.Controls.Add(this.radioButton14);
+            this.panelModel.Controls.Add(this.radioButton15);
+            this.panelModel.Controls.Add(this.radioButton16);
+            this.panelModel.Controls.Add(this.radioButton17);
+            this.panelModel.Controls.Add(this.radioButton18);
+            this.panelModel.Controls.Add(this.radioButton19);
+            this.panelModel.Controls.Add(this.radioButton20);
+            this.panelModel.Controls.Add(this.radioButton21);
+            this.panelModel.Controls.Add(this.radioButton4);
+            this.panelModel.Controls.Add(this.radioButton6);
+            this.panelModel.Controls.Add(this.radioButton7);
+            this.panelModel.Controls.Add(this.radioButton9);
+            this.panelModel.Controls.Add(this.radioButton10);
+            this.panelModel.Controls.Add(this.radioButton11);
+            this.panelModel.Controls.Add(this.radioButton12);
+            this.panelModel.Controls.Add(this.radioButton13);
+            this.panelModel.Controls.Add(this.radioButton5);
+            this.panelModel.Controls.Add(this.irbOkoLewe);
+            this.panelModel.Controls.Add(this.irbOkoPrawe);
+            this.panelModel.Controls.Add(this.irbZatoki);
+            this.panelModel.Controls.Add(this.irbMozg);
+            this.panelModel.Controls.Add(this.irbGlowa);
+            this.panelModel.Controls.Add(this.irbWatroba);
+            this.panelModel.Controls.Add(this.radioButton8);
             this.panelModel.Controls.Add(this.panel18);
             this.panelModel.Controls.Add(this.panelModelImg);
             this.panelModel.Controls.Add(this.imgHeart);
             this.panelModel.Controls.Add(this.imgBoxPenis);
             this.panelModel.Location = new System.Drawing.Point(21, 3432);
             this.panelModel.Name = "panelModel";
-            this.panelModel.Size = new System.Drawing.Size(891, 717);
+            this.panelModel.Size = new System.Drawing.Size(891, 747);
             this.panelModel.TabIndex = 70;
+            // 
+            // radioButton46
+            // 
+            this.radioButton46.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton46.AutoSize = true;
+            this.radioButton46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton46.Location = new System.Drawing.Point(395, 363);
+            this.radioButton46.Name = "radioButton46";
+            this.radioButton46.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton46.Size = new System.Drawing.Size(55, 55);
+            this.radioButton46.TabIndex = 140;
+            this.radioButton46.TabStop = true;
+            this.radioButton46.UseVisualStyleBackColor = true;
+            // 
+            // radioButton47
+            // 
+            this.radioButton47.AccessibleName = "Sutek prawy";
+            this.radioButton47.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton47.AutoSize = true;
+            this.radioButton47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton47.Location = new System.Drawing.Point(289, 363);
+            this.radioButton47.Name = "radioButton47";
+            this.radioButton47.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton47.Size = new System.Drawing.Size(55, 55);
+            this.radioButton47.TabIndex = 134;
+            this.radioButton47.TabStop = true;
+            this.radioButton47.UseVisualStyleBackColor = true;
+            // 
+            // radioButton48
+            // 
+            this.radioButton48.AccessibleName = "Sutek lewy";
+            this.radioButton48.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton48.AutoSize = true;
+            this.radioButton48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton48.Location = new System.Drawing.Point(236, 363);
+            this.radioButton48.Name = "radioButton48";
+            this.radioButton48.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton48.Size = new System.Drawing.Size(55, 55);
+            this.radioButton48.TabIndex = 135;
+            this.radioButton48.TabStop = true;
+            this.radioButton48.UseVisualStyleBackColor = true;
+            // 
+            // radioButton49
+            // 
+            this.radioButton49.AccessibleName = "Macica";
+            this.radioButton49.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton49.AutoSize = true;
+            this.radioButton49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton49.Location = new System.Drawing.Point(183, 363);
+            this.radioButton49.Name = "radioButton49";
+            this.radioButton49.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton49.Size = new System.Drawing.Size(55, 55);
+            this.radioButton49.TabIndex = 136;
+            this.radioButton49.TabStop = true;
+            this.radioButton49.UseVisualStyleBackColor = true;
+            // 
+            // radioButton50
+            // 
+            this.radioButton50.AccessibleName = "Układ rozrodczy";
+            this.radioButton50.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton50.AutoSize = true;
+            this.radioButton50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton50.Location = new System.Drawing.Point(130, 363);
+            this.radioButton50.Name = "radioButton50";
+            this.radioButton50.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton50.Size = new System.Drawing.Size(55, 55);
+            this.radioButton50.TabIndex = 137;
+            this.radioButton50.TabStop = true;
+            this.radioButton50.UseVisualStyleBackColor = true;
+            // 
+            // radioButton51
+            // 
+            this.radioButton51.AccessibleName = "Sex kobieta";
+            this.radioButton51.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton51.AutoSize = true;
+            this.radioButton51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton51.Location = new System.Drawing.Point(77, 363);
+            this.radioButton51.Name = "radioButton51";
+            this.radioButton51.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton51.Size = new System.Drawing.Size(55, 55);
+            this.radioButton51.TabIndex = 138;
+            this.radioButton51.TabStop = true;
+            this.radioButton51.UseVisualStyleBackColor = true;
+            // 
+            // radioButton52
+            // 
+            this.radioButton52.AccessibleDescription = "";
+            this.radioButton52.AccessibleName = "Naczynia";
+            this.radioButton52.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton52.AutoSize = true;
+            this.radioButton52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton52.Location = new System.Drawing.Point(24, 363);
+            this.radioButton52.Name = "radioButton52";
+            this.radioButton52.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton52.Size = new System.Drawing.Size(55, 55);
+            this.radioButton52.TabIndex = 133;
+            this.radioButton52.TabStop = true;
+            this.radioButton52.UseVisualStyleBackColor = true;
+            // 
+            // radioButton53
+            // 
+            this.radioButton53.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton53.AutoSize = true;
+            this.radioButton53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton53.Location = new System.Drawing.Point(342, 363);
+            this.radioButton53.Name = "radioButton53";
+            this.radioButton53.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton53.Size = new System.Drawing.Size(55, 55);
+            this.radioButton53.TabIndex = 139;
+            this.radioButton53.TabStop = true;
+            this.radioButton53.UseVisualStyleBackColor = true;
+            // 
+            // radioButton38
+            // 
+            this.radioButton38.AccessibleName = "Serce";
+            this.radioButton38.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton38.AutoSize = true;
+            this.radioButton38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton38.Location = new System.Drawing.Point(395, 310);
+            this.radioButton38.Name = "radioButton38";
+            this.radioButton38.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton38.Size = new System.Drawing.Size(55, 55);
+            this.radioButton38.TabIndex = 132;
+            this.radioButton38.TabStop = true;
+            this.radioButton38.UseVisualStyleBackColor = true;
+            // 
+            // radioButton39
+            // 
+            this.radioButton39.AccessibleName = "Korzonki prawe";
+            this.radioButton39.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton39.AutoSize = true;
+            this.radioButton39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton39.Location = new System.Drawing.Point(289, 310);
+            this.radioButton39.Name = "radioButton39";
+            this.radioButton39.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton39.Size = new System.Drawing.Size(55, 55);
+            this.radioButton39.TabIndex = 126;
+            this.radioButton39.TabStop = true;
+            this.radioButton39.UseVisualStyleBackColor = true;
+            // 
+            // radioButton40
+            // 
+            this.radioButton40.AccessibleName = "Korzonki lewe";
+            this.radioButton40.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton40.AutoSize = true;
+            this.radioButton40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton40.Location = new System.Drawing.Point(236, 310);
+            this.radioButton40.Name = "radioButton40";
+            this.radioButton40.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton40.Size = new System.Drawing.Size(55, 55);
+            this.radioButton40.TabIndex = 127;
+            this.radioButton40.TabStop = true;
+            this.radioButton40.UseVisualStyleBackColor = true;
+            // 
+            // radioButton41
+            // 
+            this.radioButton41.AccessibleName = "Stopa prawa";
+            this.radioButton41.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton41.AutoSize = true;
+            this.radioButton41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton41.Location = new System.Drawing.Point(183, 310);
+            this.radioButton41.Name = "radioButton41";
+            this.radioButton41.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton41.Size = new System.Drawing.Size(55, 55);
+            this.radioButton41.TabIndex = 128;
+            this.radioButton41.TabStop = true;
+            this.radioButton41.UseVisualStyleBackColor = true;
+            // 
+            // radioButton42
+            // 
+            this.radioButton42.AccessibleName = "Stopa lewa";
+            this.radioButton42.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton42.AutoSize = true;
+            this.radioButton42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton42.Location = new System.Drawing.Point(130, 310);
+            this.radioButton42.Name = "radioButton42";
+            this.radioButton42.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton42.Size = new System.Drawing.Size(55, 55);
+            this.radioButton42.TabIndex = 129;
+            this.radioButton42.TabStop = true;
+            this.radioButton42.UseVisualStyleBackColor = true;
+            // 
+            // radioButton43
+            // 
+            this.radioButton43.AccessibleName = "Kolano prawe";
+            this.radioButton43.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton43.AutoSize = true;
+            this.radioButton43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton43.Location = new System.Drawing.Point(77, 310);
+            this.radioButton43.Name = "radioButton43";
+            this.radioButton43.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton43.Size = new System.Drawing.Size(55, 55);
+            this.radioButton43.TabIndex = 130;
+            this.radioButton43.TabStop = true;
+            this.radioButton43.UseVisualStyleBackColor = true;
+            // 
+            // radioButton44
+            // 
+            this.radioButton44.AccessibleDescription = "";
+            this.radioButton44.AccessibleName = "Kolano lewe";
+            this.radioButton44.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton44.AutoSize = true;
+            this.radioButton44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton44.Location = new System.Drawing.Point(24, 310);
+            this.radioButton44.Name = "radioButton44";
+            this.radioButton44.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton44.Size = new System.Drawing.Size(55, 55);
+            this.radioButton44.TabIndex = 125;
+            this.radioButton44.TabStop = true;
+            this.radioButton44.UseVisualStyleBackColor = true;
+            // 
+            // radioButton45
+            // 
+            this.radioButton45.AccessibleName = "Oskrzela";
+            this.radioButton45.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton45.AutoSize = true;
+            this.radioButton45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton45.Location = new System.Drawing.Point(342, 310);
+            this.radioButton45.Name = "radioButton45";
+            this.radioButton45.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton45.Size = new System.Drawing.Size(55, 55);
+            this.radioButton45.TabIndex = 131;
+            this.radioButton45.TabStop = true;
+            this.radioButton45.UseVisualStyleBackColor = true;
+            // 
+            // radioButton30
+            // 
+            this.radioButton30.AccessibleName = "Biodro prawe";
+            this.radioButton30.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton30.AutoSize = true;
+            this.radioButton30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton30.Location = new System.Drawing.Point(395, 257);
+            this.radioButton30.Name = "radioButton30";
+            this.radioButton30.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton30.Size = new System.Drawing.Size(55, 55);
+            this.radioButton30.TabIndex = 124;
+            this.radioButton30.TabStop = true;
+            this.radioButton30.UseVisualStyleBackColor = true;
+            // 
+            // radioButton31
+            // 
+            this.radioButton31.AccessibleName = "Dłoń prawa";
+            this.radioButton31.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton31.AutoSize = true;
+            this.radioButton31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton31.Location = new System.Drawing.Point(289, 257);
+            this.radioButton31.Name = "radioButton31";
+            this.radioButton31.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton31.Size = new System.Drawing.Size(55, 55);
+            this.radioButton31.TabIndex = 118;
+            this.radioButton31.TabStop = true;
+            this.radioButton31.UseVisualStyleBackColor = true;
+            // 
+            // radioButton32
+            // 
+            this.radioButton32.AccessibleName = "Dłoń lewa";
+            this.radioButton32.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton32.AutoSize = true;
+            this.radioButton32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton32.Location = new System.Drawing.Point(236, 257);
+            this.radioButton32.Name = "radioButton32";
+            this.radioButton32.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton32.Size = new System.Drawing.Size(55, 55);
+            this.radioButton32.TabIndex = 119;
+            this.radioButton32.TabStop = true;
+            this.radioButton32.UseVisualStyleBackColor = true;
+            // 
+            // radioButton33
+            // 
+            this.radioButton33.AccessibleName = "Łokieć prawy";
+            this.radioButton33.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton33.AutoSize = true;
+            this.radioButton33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton33.Location = new System.Drawing.Point(183, 257);
+            this.radioButton33.Name = "radioButton33";
+            this.radioButton33.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton33.Size = new System.Drawing.Size(55, 55);
+            this.radioButton33.TabIndex = 120;
+            this.radioButton33.TabStop = true;
+            this.radioButton33.UseVisualStyleBackColor = true;
+            // 
+            // radioButton34
+            // 
+            this.radioButton34.AccessibleName = "Łokieć lewy";
+            this.radioButton34.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton34.AutoSize = true;
+            this.radioButton34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton34.Location = new System.Drawing.Point(130, 257);
+            this.radioButton34.Name = "radioButton34";
+            this.radioButton34.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton34.Size = new System.Drawing.Size(55, 55);
+            this.radioButton34.TabIndex = 121;
+            this.radioButton34.TabStop = true;
+            this.radioButton34.UseVisualStyleBackColor = true;
+            // 
+            // radioButton35
+            // 
+            this.radioButton35.AccessibleName = "Bark prawy";
+            this.radioButton35.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton35.AutoSize = true;
+            this.radioButton35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton35.Location = new System.Drawing.Point(77, 257);
+            this.radioButton35.Name = "radioButton35";
+            this.radioButton35.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton35.Size = new System.Drawing.Size(55, 55);
+            this.radioButton35.TabIndex = 122;
+            this.radioButton35.TabStop = true;
+            this.radioButton35.UseVisualStyleBackColor = true;
+            // 
+            // radioButton36
+            // 
+            this.radioButton36.AccessibleDescription = "";
+            this.radioButton36.AccessibleName = "Bark lewy";
+            this.radioButton36.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton36.AutoSize = true;
+            this.radioButton36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton36.Location = new System.Drawing.Point(24, 257);
+            this.radioButton36.Name = "radioButton36";
+            this.radioButton36.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton36.Size = new System.Drawing.Size(55, 55);
+            this.radioButton36.TabIndex = 117;
+            this.radioButton36.TabStop = true;
+            this.radioButton36.UseVisualStyleBackColor = true;
+            // 
+            // radioButton37
+            // 
+            this.radioButton37.AccessibleName = "Biodro lewe";
+            this.radioButton37.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton37.AutoSize = true;
+            this.radioButton37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton37.Location = new System.Drawing.Point(342, 257);
+            this.radioButton37.Name = "radioButton37";
+            this.radioButton37.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton37.Size = new System.Drawing.Size(55, 55);
+            this.radioButton37.TabIndex = 123;
+            this.radioButton37.TabStop = true;
+            this.radioButton37.UseVisualStyleBackColor = true;
+            // 
+            // radioButton22
+            // 
+            this.radioButton22.AccessibleName = "Kręgosłup krzyż";
+            this.radioButton22.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton22.AutoSize = true;
+            this.radioButton22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton22.Location = new System.Drawing.Point(395, 205);
+            this.radioButton22.Name = "radioButton22";
+            this.radioButton22.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton22.Size = new System.Drawing.Size(55, 55);
+            this.radioButton22.TabIndex = 116;
+            this.radioButton22.TabStop = true;
+            this.radioButton22.UseVisualStyleBackColor = true;
+            // 
+            // radioButton23
+            // 
+            this.radioButton23.AccessibleName = "Kręgosłup";
+            this.radioButton23.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton23.AutoSize = true;
+            this.radioButton23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton23.Location = new System.Drawing.Point(289, 205);
+            this.radioButton23.Name = "radioButton23";
+            this.radioButton23.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton23.Size = new System.Drawing.Size(55, 55);
+            this.radioButton23.TabIndex = 110;
+            this.radioButton23.TabStop = true;
+            this.radioButton23.UseVisualStyleBackColor = true;
+            // 
+            // radioButton24
+            // 
+            this.radioButton24.AccessibleName = "Szkielet";
+            this.radioButton24.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton24.AutoSize = true;
+            this.radioButton24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton24.Location = new System.Drawing.Point(236, 205);
+            this.radioButton24.Name = "radioButton24";
+            this.radioButton24.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton24.Size = new System.Drawing.Size(55, 55);
+            this.radioButton24.TabIndex = 111;
+            this.radioButton24.TabStop = true;
+            this.radioButton24.UseVisualStyleBackColor = true;
+            // 
+            // radioButton25
+            // 
+            this.radioButton25.AccessibleName = "Podudzie żyły prawe";
+            this.radioButton25.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton25.AutoSize = true;
+            this.radioButton25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton25.Location = new System.Drawing.Point(183, 205);
+            this.radioButton25.Name = "radioButton25";
+            this.radioButton25.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton25.Size = new System.Drawing.Size(55, 55);
+            this.radioButton25.TabIndex = 112;
+            this.radioButton25.TabStop = true;
+            this.radioButton25.UseVisualStyleBackColor = true;
+            // 
+            // radioButton26
+            // 
+            this.radioButton26.AccessibleName = "Podudzie żyły lewe";
+            this.radioButton26.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton26.AutoSize = true;
+            this.radioButton26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton26.Location = new System.Drawing.Point(130, 205);
+            this.radioButton26.Name = "radioButton26";
+            this.radioButton26.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton26.Size = new System.Drawing.Size(55, 55);
+            this.radioButton26.TabIndex = 113;
+            this.radioButton26.TabStop = true;
+            this.radioButton26.UseVisualStyleBackColor = true;
+            // 
+            // radioButton27
+            // 
+            this.radioButton27.AccessibleName = "Węzły tył";
+            this.radioButton27.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton27.AutoSize = true;
+            this.radioButton27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton27.Location = new System.Drawing.Point(77, 205);
+            this.radioButton27.Name = "radioButton27";
+            this.radioButton27.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton27.Size = new System.Drawing.Size(55, 55);
+            this.radioButton27.TabIndex = 114;
+            this.radioButton27.TabStop = true;
+            this.radioButton27.UseVisualStyleBackColor = true;
+            // 
+            // radioButton28
+            // 
+            this.radioButton28.AccessibleDescription = "";
+            this.radioButton28.AccessibleName = "Węzły dół";
+            this.radioButton28.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton28.AutoSize = true;
+            this.radioButton28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton28.Location = new System.Drawing.Point(24, 205);
+            this.radioButton28.Name = "radioButton28";
+            this.radioButton28.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton28.Size = new System.Drawing.Size(55, 55);
+            this.radioButton28.TabIndex = 109;
+            this.radioButton28.TabStop = true;
+            this.radioButton28.UseVisualStyleBackColor = true;
+            // 
+            // radioButton29
+            // 
+            this.radioButton29.AccessibleName = "Kręgosłup szyja";
+            this.radioButton29.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton29.AutoSize = true;
+            this.radioButton29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton29.Location = new System.Drawing.Point(342, 205);
+            this.radioButton29.Name = "radioButton29";
+            this.radioButton29.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton29.Size = new System.Drawing.Size(55, 55);
+            this.radioButton29.TabIndex = 115;
+            this.radioButton29.TabStop = true;
+            this.radioButton29.UseVisualStyleBackColor = true;
+            // 
+            // radioButton14
+            // 
+            this.radioButton14.AccessibleName = "Węzły góra";
+            this.radioButton14.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton14.AutoSize = true;
+            this.radioButton14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton14.Location = new System.Drawing.Point(395, 153);
+            this.radioButton14.Name = "radioButton14";
+            this.radioButton14.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton14.Size = new System.Drawing.Size(55, 55);
+            this.radioButton14.TabIndex = 108;
+            this.radioButton14.TabStop = true;
+            this.radioButton14.UseVisualStyleBackColor = true;
+            // 
+            // radioButton15
+            // 
+            this.radioButton15.AccessibleName = "Nadnercza";
+            this.radioButton15.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton15.AutoSize = true;
+            this.radioButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton15.Location = new System.Drawing.Point(289, 153);
+            this.radioButton15.Name = "radioButton15";
+            this.radioButton15.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton15.Size = new System.Drawing.Size(55, 55);
+            this.radioButton15.TabIndex = 102;
+            this.radioButton15.TabStop = true;
+            this.radioButton15.UseVisualStyleBackColor = true;
+            // 
+            // radioButton16
+            // 
+            this.radioButton16.AccessibleName = "Tarczyca";
+            this.radioButton16.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton16.AutoSize = true;
+            this.radioButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton16.Location = new System.Drawing.Point(236, 153);
+            this.radioButton16.Name = "radioButton16";
+            this.radioButton16.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton16.Size = new System.Drawing.Size(55, 55);
+            this.radioButton16.TabIndex = 103;
+            this.radioButton16.TabStop = true;
+            this.radioButton16.UseVisualStyleBackColor = true;
+            // 
+            // radioButton17
+            // 
+            this.radioButton17.AccessibleName = "Pęcherz";
+            this.radioButton17.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton17.AutoSize = true;
+            this.radioButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton17.Location = new System.Drawing.Point(183, 153);
+            this.radioButton17.Name = "radioButton17";
+            this.radioButton17.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton17.Size = new System.Drawing.Size(55, 55);
+            this.radioButton17.TabIndex = 104;
+            this.radioButton17.TabStop = true;
+            this.radioButton17.UseVisualStyleBackColor = true;
+            // 
+            // radioButton18
+            // 
+            this.radioButton18.AccessibleName = "Nerka prawa";
+            this.radioButton18.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton18.AutoSize = true;
+            this.radioButton18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton18.Location = new System.Drawing.Point(130, 153);
+            this.radioButton18.Name = "radioButton18";
+            this.radioButton18.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton18.Size = new System.Drawing.Size(55, 55);
+            this.radioButton18.TabIndex = 105;
+            this.radioButton18.TabStop = true;
+            this.radioButton18.UseVisualStyleBackColor = true;
+            // 
+            // radioButton19
+            // 
+            this.radioButton19.AccessibleName = "Nerka lewa";
+            this.radioButton19.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton19.AutoSize = true;
+            this.radioButton19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton19.Location = new System.Drawing.Point(77, 153);
+            this.radioButton19.Name = "radioButton19";
+            this.radioButton19.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton19.Size = new System.Drawing.Size(55, 55);
+            this.radioButton19.TabIndex = 106;
+            this.radioButton19.TabStop = true;
+            this.radioButton19.UseVisualStyleBackColor = true;
+            // 
+            // radioButton20
+            // 
+            this.radioButton20.AccessibleDescription = "";
+            this.radioButton20.AccessibleName = "Pęcherzyk żółciowy";
+            this.radioButton20.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton20.AutoSize = true;
+            this.radioButton20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton20.Location = new System.Drawing.Point(24, 153);
+            this.radioButton20.Name = "radioButton20";
+            this.radioButton20.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton20.Size = new System.Drawing.Size(55, 55);
+            this.radioButton20.TabIndex = 101;
+            this.radioButton20.TabStop = true;
+            this.radioButton20.UseVisualStyleBackColor = true;
+            // 
+            // radioButton21
+            // 
+            this.radioButton21.AccessibleName = "Śledziona";
+            this.radioButton21.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton21.AutoSize = true;
+            this.radioButton21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton21.Location = new System.Drawing.Point(342, 153);
+            this.radioButton21.Name = "radioButton21";
+            this.radioButton21.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton21.Size = new System.Drawing.Size(55, 55);
+            this.radioButton21.TabIndex = 107;
+            this.radioButton21.TabStop = true;
+            this.radioButton21.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AccessibleName = "Wątroba";
+            this.radioButton4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton4.Location = new System.Drawing.Point(395, 100);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton4.Size = new System.Drawing.Size(55, 55);
+            this.radioButton4.TabIndex = 100;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AccessibleName = "Jelita";
+            this.radioButton6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton6.Location = new System.Drawing.Point(289, 100);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton6.Size = new System.Drawing.Size(55, 55);
+            this.radioButton6.TabIndex = 94;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AccessibleName = "Trzustka";
+            this.radioButton7.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton7.Location = new System.Drawing.Point(236, 100);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton7.Size = new System.Drawing.Size(55, 55);
+            this.radioButton7.TabIndex = 95;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AccessibleName = "Żołądek";
+            this.radioButton9.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton9.Location = new System.Drawing.Point(183, 100);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton9.Size = new System.Drawing.Size(55, 55);
+            this.radioButton9.TabIndex = 96;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AccessibleName = "Przełyk";
+            this.radioButton10.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton10.Location = new System.Drawing.Point(130, 100);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton10.Size = new System.Drawing.Size(55, 55);
+            this.radioButton10.TabIndex = 97;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AccessibleName = "Gardło";
+            this.radioButton11.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton11.Location = new System.Drawing.Point(77, 100);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton11.Size = new System.Drawing.Size(55, 55);
+            this.radioButton11.TabIndex = 98;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AccessibleDescription = "";
+            this.radioButton12.AccessibleName = "Płuca";
+            this.radioButton12.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton12.Location = new System.Drawing.Point(24, 100);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton12.Size = new System.Drawing.Size(55, 55);
+            this.radioButton12.TabIndex = 93;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.UseVisualStyleBackColor = true;
+            // 
+            // radioButton13
+            // 
+            this.radioButton13.AccessibleName = "Odbytnica";
+            this.radioButton13.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton13.AutoSize = true;
+            this.radioButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton13.Location = new System.Drawing.Point(342, 100);
+            this.radioButton13.Name = "radioButton13";
+            this.radioButton13.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton13.Size = new System.Drawing.Size(55, 55);
+            this.radioButton13.TabIndex = 99;
+            this.radioButton13.TabStop = true;
+            this.radioButton13.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AccessibleName = "Ucho prawe";
+            this.radioButton5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton5.Location = new System.Drawing.Point(395, 47);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton5.Size = new System.Drawing.Size(55, 55);
+            this.radioButton5.TabIndex = 92;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // irbOkoLewe
+            // 
+            this.irbOkoLewe.AccessibleName = "Oko prawe";
+            this.irbOkoLewe.Appearance = System.Windows.Forms.Appearance.Button;
+            this.irbOkoLewe.AutoSize = true;
+            this.irbOkoLewe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.irbOkoLewe.Location = new System.Drawing.Point(289, 47);
+            this.irbOkoLewe.Name = "irbOkoLewe";
+            this.irbOkoLewe.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.irbOkoLewe.Size = new System.Drawing.Size(55, 55);
+            this.irbOkoLewe.TabIndex = 86;
+            this.irbOkoLewe.TabStop = true;
+            this.irbOkoLewe.UseVisualStyleBackColor = true;
+            // 
+            // irbOkoPrawe
+            // 
+            this.irbOkoPrawe.AccessibleName = "Oko lewe";
+            this.irbOkoPrawe.Appearance = System.Windows.Forms.Appearance.Button;
+            this.irbOkoPrawe.AutoSize = true;
+            this.irbOkoPrawe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.irbOkoPrawe.Location = new System.Drawing.Point(236, 47);
+            this.irbOkoPrawe.Name = "irbOkoPrawe";
+            this.irbOkoPrawe.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.irbOkoPrawe.Size = new System.Drawing.Size(55, 55);
+            this.irbOkoPrawe.TabIndex = 87;
+            this.irbOkoPrawe.TabStop = true;
+            this.irbOkoPrawe.UseVisualStyleBackColor = true;
+            // 
+            // irbZatoki
+            // 
+            this.irbZatoki.AccessibleName = "Oczy";
+            this.irbZatoki.Appearance = System.Windows.Forms.Appearance.Button;
+            this.irbZatoki.AutoSize = true;
+            this.irbZatoki.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.irbZatoki.Location = new System.Drawing.Point(183, 47);
+            this.irbZatoki.Name = "irbZatoki";
+            this.irbZatoki.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.irbZatoki.Size = new System.Drawing.Size(55, 55);
+            this.irbZatoki.TabIndex = 88;
+            this.irbZatoki.TabStop = true;
+            this.irbZatoki.UseVisualStyleBackColor = true;
+            // 
+            // irbMozg
+            // 
+            this.irbMozg.AccessibleName = "Zatoki";
+            this.irbMozg.Appearance = System.Windows.Forms.Appearance.Button;
+            this.irbMozg.AutoSize = true;
+            this.irbMozg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.irbMozg.Location = new System.Drawing.Point(130, 47);
+            this.irbMozg.Name = "irbMozg";
+            this.irbMozg.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.irbMozg.Size = new System.Drawing.Size(55, 55);
+            this.irbMozg.TabIndex = 89;
+            this.irbMozg.TabStop = true;
+            this.irbMozg.UseVisualStyleBackColor = true;
+            // 
+            // irbGlowa
+            // 
+            this.irbGlowa.AccessibleName = "Mózg";
+            this.irbGlowa.Appearance = System.Windows.Forms.Appearance.Button;
+            this.irbGlowa.AutoSize = true;
+            this.irbGlowa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("irbGlowa.BackgroundImage")));
+            this.irbGlowa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.irbGlowa.Location = new System.Drawing.Point(77, 47);
+            this.irbGlowa.Name = "irbGlowa";
+            this.irbGlowa.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.irbGlowa.Size = new System.Drawing.Size(55, 55);
+            this.irbGlowa.TabIndex = 90;
+            this.irbGlowa.TabStop = true;
+            this.irbGlowa.UseVisualStyleBackColor = true;
+            // 
+            // irbWatroba
+            // 
+            this.irbWatroba.AccessibleDescription = "";
+            this.irbWatroba.AccessibleName = "Głowa";
+            this.irbWatroba.Appearance = System.Windows.Forms.Appearance.Button;
+            this.irbWatroba.AutoSize = true;
+            this.irbWatroba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.irbWatroba.Location = new System.Drawing.Point(24, 47);
+            this.irbWatroba.Name = "irbWatroba";
+            this.irbWatroba.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.irbWatroba.Size = new System.Drawing.Size(55, 55);
+            this.irbWatroba.TabIndex = 85;
+            this.irbWatroba.TabStop = true;
+            this.irbWatroba.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AccessibleName = "Ucho lewe";
+            this.radioButton8.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButton8.Location = new System.Drawing.Point(342, 47);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
+            this.radioButton8.Size = new System.Drawing.Size(55, 55);
+            this.radioButton8.TabIndex = 91;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // panelModelImg
             // 
             this.panelModelImg.BackColor = System.Drawing.Color.White;
             this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
             this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
+            this.panelModelImg.Location = new System.Drawing.Point(549, 68);
             this.panelModelImg.Name = "panelModelImg";
             this.panelModelImg.Size = new System.Drawing.Size(334, 260);
             this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.panelModelImg.TabIndex = 30;
             this.panelModelImg.TabStop = false;
+            // 
+            // imgHeart
+            // 
+            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
+            this.imgHeart.Location = new System.Drawing.Point(590, 172);
+            this.imgHeart.Name = "imgHeart";
+            this.imgHeart.Size = new System.Drawing.Size(52, 65);
+            this.imgHeart.TabIndex = 34;
+            this.imgHeart.TabStop = false;
+            // 
+            // imgBoxPenis
+            // 
+            this.imgBoxPenis.BackColor = System.Drawing.Color.White;
+            this.imgBoxPenis.Image = ((System.Drawing.Image)(resources.GetObject("imgBoxPenis.Image")));
+            this.imgBoxPenis.Location = new System.Drawing.Point(644, 194);
+            this.imgBoxPenis.Name = "imgBoxPenis";
+            this.imgBoxPenis.Size = new System.Drawing.Size(43, 67);
+            this.imgBoxPenis.TabIndex = 33;
+            this.imgBoxPenis.TabStop = false;
+            // 
+            // gboxStan
+            // 
+            this.gboxStan.Controls.Add(this.rBtnOstry);
+            this.gboxStan.Controls.Add(this.rBtnPodostry);
+            this.gboxStan.Controls.Add(this.rBtnPrzewlekly);
+            this.gboxStan.Location = new System.Drawing.Point(24, 432);
+            this.gboxStan.Name = "gboxStan";
+            this.gboxStan.Size = new System.Drawing.Size(104, 99);
+            this.gboxStan.TabIndex = 146;
+            this.gboxStan.TabStop = false;
+            this.gboxStan.Text = "Stan";
+            // 
+            // rBtnOstry
+            // 
+            this.rBtnOstry.AutoSize = true;
+            this.rBtnOstry.BackColor = System.Drawing.Color.Coral;
+            this.rBtnOstry.Location = new System.Drawing.Point(13, 67);
+            this.rBtnOstry.Name = "rBtnOstry";
+            this.rBtnOstry.Padding = new System.Windows.Forms.Padding(2);
+            this.rBtnOstry.Size = new System.Drawing.Size(53, 21);
+            this.rBtnOstry.TabIndex = 25;
+            this.rBtnOstry.TabStop = true;
+            this.rBtnOstry.Text = "Ostry";
+            this.rBtnOstry.UseVisualStyleBackColor = false;
+            // 
+            // rBtnPodostry
+            // 
+            this.rBtnPodostry.AutoSize = true;
+            this.rBtnPodostry.BackColor = System.Drawing.Color.Gold;
+            this.rBtnPodostry.Location = new System.Drawing.Point(13, 44);
+            this.rBtnPodostry.Name = "rBtnPodostry";
+            this.rBtnPodostry.Padding = new System.Windows.Forms.Padding(2);
+            this.rBtnPodostry.Size = new System.Drawing.Size(70, 21);
+            this.rBtnPodostry.TabIndex = 25;
+            this.rBtnPodostry.TabStop = true;
+            this.rBtnPodostry.Text = "Podostry";
+            this.rBtnPodostry.UseVisualStyleBackColor = false;
+            // 
+            // rBtnPrzewlekly
+            // 
+            this.rBtnPrzewlekly.AutoSize = true;
+            this.rBtnPrzewlekly.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rBtnPrzewlekly.Location = new System.Drawing.Point(13, 21);
+            this.rBtnPrzewlekly.Name = "rBtnPrzewlekly";
+            this.rBtnPrzewlekly.Padding = new System.Windows.Forms.Padding(2);
+            this.rBtnPrzewlekly.Size = new System.Drawing.Size(81, 21);
+            this.rBtnPrzewlekly.TabIndex = 24;
+            this.rBtnPrzewlekly.TabStop = true;
+            this.rBtnPrzewlekly.Text = "Przewlekły";
+            this.rBtnPrzewlekly.UseVisualStyleBackColor = false;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(156, 434);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(105, 13);
+            this.label47.TabIndex = 145;
+            this.label47.Text = "Opis dolegliwości";
+            // 
+            // txtOpisDolegliwosci
+            // 
+            this.txtOpisDolegliwosci.Location = new System.Drawing.Point(154, 450);
+            this.txtOpisDolegliwosci.Multiline = true;
+            this.txtOpisDolegliwosci.Name = "txtOpisDolegliwosci";
+            this.txtOpisDolegliwosci.Size = new System.Drawing.Size(318, 81);
+            this.txtOpisDolegliwosci.TabIndex = 144;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(336, 537);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(65, 25);
+            this.btnUpdate.TabIndex = 143;
+            this.btnUpdate.Text = "Uaktuani";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnZapisz
+            // 
+            this.btnZapisz.Location = new System.Drawing.Point(407, 538);
+            this.btnZapisz.Name = "btnZapisz";
+            this.btnZapisz.Size = new System.Drawing.Size(65, 26);
+            this.btnZapisz.TabIndex = 142;
+            this.btnZapisz.Text = "Zapisz";
+            this.btnZapisz.UseVisualStyleBackColor = true;
+            // 
+            // dgvChoroby
+            // 
+            this.dgvChoroby.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
+            this.dgvChoroby.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChoroby.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.anamneza});
+            this.dgvChoroby.Location = new System.Drawing.Point(24, 578);
+            this.dgvChoroby.Name = "dgvChoroby";
+            this.dgvChoroby.Size = new System.Drawing.Size(843, 152);
+            this.dgvChoroby.TabIndex = 141;
+            // 
+            // anamneza
+            // 
+            this.anamneza.DataPropertyName = "Opis";
+            this.anamneza.HeaderText = "Anamneza";
+            this.anamneza.Name = "anamneza";
+            this.anamneza.Width = 500;
             // 
             // Form1
             // 
@@ -4067,14 +4969,16 @@
             this.groupBox42.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            this.groupBox31.ResumeLayout(false);
-            this.groupBox32.ResumeLayout(false);
             this.panelModel.ResumeLayout(false);
+            this.panelModel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
+            this.gboxStan.ResumeLayout(false);
+            this.gboxStan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChoroby)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4380,23 +5284,78 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.ComboBox cbKrotnosc;
-        private System.Windows.Forms.PictureBox imgBoxPenis;
-        private System.Windows.Forms.PictureBox imgHeart;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label labelk;
-        private System.Windows.Forms.GroupBox groupBox31;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnMen;
-        private System.Windows.Forms.Button btnHeart;
-        private System.Windows.Forms.GroupBox groupBox32;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btnWoman;
         private System.Windows.Forms.Panel panelModel;
+        private System.Windows.Forms.RadioButton radioButton46;
+        private System.Windows.Forms.RadioButton radioButton47;
+        private System.Windows.Forms.RadioButton radioButton48;
+        private System.Windows.Forms.RadioButton radioButton49;
+        private System.Windows.Forms.RadioButton radioButton50;
+        private System.Windows.Forms.RadioButton radioButton51;
+        private System.Windows.Forms.RadioButton radioButton52;
+        private System.Windows.Forms.RadioButton radioButton53;
+        private System.Windows.Forms.RadioButton radioButton38;
+        private System.Windows.Forms.RadioButton radioButton39;
+        private System.Windows.Forms.RadioButton radioButton40;
+        private System.Windows.Forms.RadioButton radioButton41;
+        private System.Windows.Forms.RadioButton radioButton42;
+        private System.Windows.Forms.RadioButton radioButton43;
+        private System.Windows.Forms.RadioButton radioButton44;
+        private System.Windows.Forms.RadioButton radioButton45;
+        private System.Windows.Forms.RadioButton radioButton30;
+        private System.Windows.Forms.RadioButton radioButton31;
+        private System.Windows.Forms.RadioButton radioButton32;
+        private System.Windows.Forms.RadioButton radioButton33;
+        private System.Windows.Forms.RadioButton radioButton34;
+        private System.Windows.Forms.RadioButton radioButton35;
+        private System.Windows.Forms.RadioButton radioButton36;
+        private System.Windows.Forms.RadioButton radioButton37;
+        private System.Windows.Forms.RadioButton radioButton22;
+        private System.Windows.Forms.RadioButton radioButton23;
+        private System.Windows.Forms.RadioButton radioButton24;
+        private System.Windows.Forms.RadioButton radioButton25;
+        private System.Windows.Forms.RadioButton radioButton26;
+        private System.Windows.Forms.RadioButton radioButton27;
+        private System.Windows.Forms.RadioButton radioButton28;
+        private System.Windows.Forms.RadioButton radioButton29;
+        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton radioButton15;
+        private System.Windows.Forms.RadioButton radioButton16;
+        private System.Windows.Forms.RadioButton radioButton17;
+        private System.Windows.Forms.RadioButton radioButton18;
+        private System.Windows.Forms.RadioButton radioButton19;
+        private System.Windows.Forms.RadioButton radioButton20;
+        private System.Windows.Forms.RadioButton radioButton21;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton irbOkoLewe;
+        private System.Windows.Forms.RadioButton irbOkoPrawe;
+        private System.Windows.Forms.RadioButton irbZatoki;
+        private System.Windows.Forms.RadioButton irbMozg;
+        private System.Windows.Forms.RadioButton irbGlowa;
+        private System.Windows.Forms.RadioButton irbWatroba;
+        private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.PictureBox panelModelImg;
+        private System.Windows.Forms.PictureBox imgHeart;
+        private System.Windows.Forms.PictureBox imgBoxPenis;
+        private System.Windows.Forms.GroupBox gboxStan;
+        private System.Windows.Forms.RadioButton rBtnOstry;
+        private System.Windows.Forms.RadioButton rBtnPodostry;
+        private System.Windows.Forms.RadioButton rBtnPrzewlekly;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.TextBox txtOpisDolegliwosci;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnZapisz;
+        private System.Windows.Forms.DataGridView dgvChoroby;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anamneza;
     }
 }
 

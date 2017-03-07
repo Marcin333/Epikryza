@@ -725,7 +725,7 @@ namespace WindowsFormsApplicationEpikryza
         {
             // pictureBox1.ImageLocation = "path/to/img";
             // pictureBox1.Load();
-            imgBoxPenis.BringToFront();
+            //imgBoxPenis.BringToFront();
             //int zindexPenisImg = panelModel.Controls.GetChildIndex(imgBoxPenis);
             //int zindexModel = panelModel.Controls.GetChildIndex(panelModelImg);
             //imgBoxPenis.BringToFront();
@@ -740,7 +740,7 @@ namespace WindowsFormsApplicationEpikryza
 
         private void btnHeart_Click(object sender, EventArgs e)
         {
-            imgHeart.BringToFront();
+            //imgHeart.BringToFront();
         }
     }
 }
