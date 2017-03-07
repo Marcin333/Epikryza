@@ -144,23 +144,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
-            this.panelModel = new System.Windows.Forms.Panel();
-            this.groupBox32 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnWoman = new System.Windows.Forms.Button();
-            this.groupBox31 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnMen = new System.Windows.Forms.Button();
-            this.btnHeart = new System.Windows.Forms.Button();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.labelk = new System.Windows.Forms.Label();
-            this.panelModelImg = new System.Windows.Forms.PictureBox();
-            this.imgHeart = new System.Windows.Forms.PictureBox();
-            this.imgBoxPenis = new System.Windows.Forms.PictureBox();
             this.textBoxCountZywieniowe = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.comboBoxZywienie = new System.Windows.Forms.ComboBox();
@@ -168,7 +151,6 @@
             this.zywienie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajZywienie = new System.Windows.Forms.Button();
             this.panelViofor = new System.Windows.Forms.Panel();
-            this.numericUDKrotnosc = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox34 = new System.Windows.Forms.GroupBox();
             this.btnZapiszVioforoterapie = new System.Windows.Forms.Button();
@@ -315,7 +297,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -348,6 +329,23 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label46 = new System.Windows.Forms.Label();
+            this.imgBoxPenis = new System.Windows.Forms.PictureBox();
+            this.imgHeart = new System.Windows.Forms.PictureBox();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.labelk = new System.Windows.Forms.Label();
+            this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.btnHeart = new System.Windows.Forms.Button();
+            this.btnMen = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.groupBox32 = new System.Windows.Forms.GroupBox();
+            this.btnWoman = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panelModel = new System.Windows.Forms.Panel();
+            this.panelModelImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -384,16 +382,8 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel20.SuspendLayout();
-            this.panelModel.SuspendLayout();
-            this.groupBox32.SuspendLayout();
-            this.groupBox31.SuspendLayout();
-            this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).BeginInit();
             this.panelViofor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox34.SuspendLayout();
             this.groupBox29.SuspendLayout();
@@ -445,7 +435,6 @@
             this.groupBox12.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox26.SuspendLayout();
             this.groupBox35.SuspendLayout();
@@ -457,6 +446,13 @@
             this.groupBox41.SuspendLayout();
             this.groupBox42.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
+            this.panel18.SuspendLayout();
+            this.groupBox31.SuspendLayout();
+            this.groupBox32.SuspendLayout();
+            this.panelModel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -518,7 +514,7 @@
             this.panel15.Controls.Add(this.groupBox9);
             this.panel15.Controls.Add(this.dataGridViewDolegliwosci);
             this.panel15.Controls.Add(this.groupBox10);
-            this.panel15.Location = new System.Drawing.Point(22, 1855);
+            this.panel15.Location = new System.Drawing.Point(22, 2138);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(890, 1289);
             this.panel15.TabIndex = 68;
@@ -1639,7 +1635,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.Control;
-            this.panel10.Location = new System.Drawing.Point(22, 3891);
+            this.panel10.Location = new System.Drawing.Point(18, 4185);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(871, 56);
             this.panel10.TabIndex = 69;
@@ -1663,179 +1659,6 @@
             this.label37.Size = new System.Drawing.Size(131, 13);
             this.label37.TabIndex = 0;
             this.label37.Text = "Zalecenia żywieniowe";
-            // 
-            // panelModel
-            // 
-            this.panelModel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelModel.Controls.Add(this.groupBox32);
-            this.panelModel.Controls.Add(this.groupBox31);
-            this.panelModel.Controls.Add(this.panel18);
-            this.panelModel.Controls.Add(this.panelModelImg);
-            this.panelModel.Controls.Add(this.imgHeart);
-            this.panelModel.Controls.Add(this.imgBoxPenis);
-            this.panelModel.Location = new System.Drawing.Point(22, 3150);
-            this.panelModel.Name = "panelModel";
-            this.panelModel.Size = new System.Drawing.Size(891, 717);
-            this.panelModel.TabIndex = 70;
-            // 
-            // groupBox32
-            // 
-            this.groupBox32.Controls.Add(this.button4);
-            this.groupBox32.Controls.Add(this.button3);
-            this.groupBox32.Controls.Add(this.btnWoman);
-            this.groupBox32.Location = new System.Drawing.Point(706, 51);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Size = new System.Drawing.Size(173, 313);
-            this.groupBox32.TabIndex = 32;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "Kobieta";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(115, 21);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 45);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(63, 21);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 45);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btnWoman
-            // 
-            this.btnWoman.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.woman;
-            this.btnWoman.Location = new System.Drawing.Point(11, 21);
-            this.btnWoman.Name = "btnWoman";
-            this.btnWoman.Size = new System.Drawing.Size(45, 45);
-            this.btnWoman.TabIndex = 1;
-            this.btnWoman.UseVisualStyleBackColor = true;
-            // 
-            // groupBox31
-            // 
-            this.groupBox31.Controls.Add(this.button10);
-            this.groupBox31.Controls.Add(this.button9);
-            this.groupBox31.Controls.Add(this.button8);
-            this.groupBox31.Controls.Add(this.button2);
-            this.groupBox31.Controls.Add(this.btnMen);
-            this.groupBox31.Controls.Add(this.btnHeart);
-            this.groupBox31.Location = new System.Drawing.Point(12, 51);
-            this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Size = new System.Drawing.Size(173, 313);
-            this.groupBox31.TabIndex = 31;
-            this.groupBox31.TabStop = false;
-            this.groupBox31.Text = "Mężczyzna";
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Orange;
-            this.button10.Location = new System.Drawing.Point(116, 74);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 45);
-            this.button10.TabIndex = 8;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Yellow;
-            this.button9.Location = new System.Drawing.Point(63, 74);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(45, 45);
-            this.button9.TabIndex = 7;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Red;
-            this.button8.Location = new System.Drawing.Point(10, 74);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 45);
-            this.button8.TabIndex = 6;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(117, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 45);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnMen
-            // 
-            this.btnMen.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.man;
-            this.btnMen.Location = new System.Drawing.Point(11, 21);
-            this.btnMen.Name = "btnMen";
-            this.btnMen.Size = new System.Drawing.Size(45, 45);
-            this.btnMen.TabIndex = 0;
-            this.btnMen.UseVisualStyleBackColor = true;
-            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
-            // 
-            // btnHeart
-            // 
-            this.btnHeart.BackColor = System.Drawing.Color.Transparent;
-            this.btnHeart.Image = ((System.Drawing.Image)(resources.GetObject("btnHeart.Image")));
-            this.btnHeart.Location = new System.Drawing.Point(64, 21);
-            this.btnHeart.Name = "btnHeart";
-            this.btnHeart.Size = new System.Drawing.Size(45, 45);
-            this.btnHeart.TabIndex = 4;
-            this.btnHeart.UseVisualStyleBackColor = false;
-            this.btnHeart.Click += new System.EventHandler(this.btnHeart_Click);
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel18.Controls.Add(this.labelk);
-            this.panel18.Location = new System.Drawing.Point(0, 1);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(891, 26);
-            this.panel18.TabIndex = 29;
-            // 
-            // labelk
-            // 
-            this.labelk.AutoSize = true;
-            this.labelk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.labelk.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelk.Location = new System.Drawing.Point(4, 5);
-            this.labelk.Name = "labelk";
-            this.labelk.Size = new System.Drawing.Size(41, 13);
-            this.labelk.TabIndex = 0;
-            this.labelk.Text = "Model";
-            // 
-            // panelModelImg
-            // 
-            this.panelModelImg.BackColor = System.Drawing.Color.White;
-            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
-            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
-            this.panelModelImg.Name = "panelModelImg";
-            this.panelModelImg.Size = new System.Drawing.Size(334, 260);
-            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.panelModelImg.TabIndex = 30;
-            this.panelModelImg.TabStop = false;
-            // 
-            // imgHeart
-            // 
-            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
-            this.imgHeart.Location = new System.Drawing.Point(424, 167);
-            this.imgHeart.Name = "imgHeart";
-            this.imgHeart.Size = new System.Drawing.Size(52, 65);
-            this.imgHeart.TabIndex = 34;
-            this.imgHeart.TabStop = false;
-            // 
-            // imgBoxPenis
-            // 
-            this.imgBoxPenis.BackColor = System.Drawing.Color.White;
-            this.imgBoxPenis.Image = ((System.Drawing.Image)(resources.GetObject("imgBoxPenis.Image")));
-            this.imgBoxPenis.Location = new System.Drawing.Point(418, 211);
-            this.imgBoxPenis.Name = "imgBoxPenis";
-            this.imgBoxPenis.Size = new System.Drawing.Size(43, 67);
-            this.imgBoxPenis.TabIndex = 33;
-            this.imgBoxPenis.TabStop = false;
             // 
             // textBoxCountZywieniowe
             // 
@@ -1904,7 +1727,6 @@
             // panelViofor
             // 
             this.panelViofor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelViofor.Controls.Add(this.numericUDKrotnosc);
             this.panelViofor.Controls.Add(this.pictureBox1);
             this.panelViofor.Controls.Add(this.groupBox34);
             this.panelViofor.Controls.Add(this.groupBox29);
@@ -1921,18 +1743,6 @@
             this.panelViofor.Name = "panelViofor";
             this.panelViofor.Size = new System.Drawing.Size(890, 279);
             this.panelViofor.TabIndex = 72;
-            // 
-            // numericUDKrotnosc
-            // 
-            this.numericUDKrotnosc.Location = new System.Drawing.Point(664, 241);
-            this.numericUDKrotnosc.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUDKrotnosc.Name = "numericUDKrotnosc";
-            this.numericUDKrotnosc.Size = new System.Drawing.Size(56, 20);
-            this.numericUDKrotnosc.TabIndex = 40;
             // 
             // pictureBox1
             // 
@@ -3436,7 +3246,7 @@
             this.panelOrdynacja.Controls.Add(this.groupBox13);
             this.panelOrdynacja.Controls.Add(this.groupBox12);
             this.panelOrdynacja.Controls.Add(this.panel7);
-            this.panelOrdynacja.Location = new System.Drawing.Point(22, 1747);
+            this.panelOrdynacja.Location = new System.Drawing.Point(22, 2030);
             this.panelOrdynacja.Name = "panelOrdynacja";
             this.panelOrdynacja.Size = new System.Drawing.Size(890, 101);
             this.panelOrdynacja.TabIndex = 75;
@@ -3555,7 +3365,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel5.Controls.Add(this.numericUpDown1);
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.groupBox26);
             this.panel5.Controls.Add(this.groupBox35);
@@ -3568,22 +3377,10 @@
             this.panel5.Controls.Add(this.groupBox41);
             this.panel5.Controls.Add(this.groupBox42);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(19, 3873);
+            this.panel5.Location = new System.Drawing.Point(22, 1745);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(890, 279);
             this.panel5.TabIndex = 73;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(667, 247);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(56, 20);
-            this.numericUpDown1.TabIndex = 40;
             // 
             // pictureBox2
             // 
@@ -3929,6 +3726,179 @@
             this.label46.TabIndex = 0;
             this.label46.Text = "VIOFORETARAPIA FAMILY";
             // 
+            // imgBoxPenis
+            // 
+            this.imgBoxPenis.BackColor = System.Drawing.Color.White;
+            this.imgBoxPenis.Image = ((System.Drawing.Image)(resources.GetObject("imgBoxPenis.Image")));
+            this.imgBoxPenis.Location = new System.Drawing.Point(418, 211);
+            this.imgBoxPenis.Name = "imgBoxPenis";
+            this.imgBoxPenis.Size = new System.Drawing.Size(43, 67);
+            this.imgBoxPenis.TabIndex = 33;
+            this.imgBoxPenis.TabStop = false;
+            // 
+            // imgHeart
+            // 
+            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
+            this.imgHeart.Location = new System.Drawing.Point(424, 167);
+            this.imgHeart.Name = "imgHeart";
+            this.imgHeart.Size = new System.Drawing.Size(52, 65);
+            this.imgHeart.TabIndex = 34;
+            this.imgHeart.TabStop = false;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel18.Controls.Add(this.labelk);
+            this.panel18.Location = new System.Drawing.Point(0, 1);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(891, 26);
+            this.panel18.TabIndex = 29;
+            // 
+            // labelk
+            // 
+            this.labelk.AutoSize = true;
+            this.labelk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelk.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelk.Location = new System.Drawing.Point(4, 5);
+            this.labelk.Name = "labelk";
+            this.labelk.Size = new System.Drawing.Size(41, 13);
+            this.labelk.TabIndex = 0;
+            this.labelk.Text = "Model";
+            // 
+            // groupBox31
+            // 
+            this.groupBox31.Controls.Add(this.button10);
+            this.groupBox31.Controls.Add(this.button9);
+            this.groupBox31.Controls.Add(this.button8);
+            this.groupBox31.Controls.Add(this.button2);
+            this.groupBox31.Controls.Add(this.btnMen);
+            this.groupBox31.Controls.Add(this.btnHeart);
+            this.groupBox31.Location = new System.Drawing.Point(12, 51);
+            this.groupBox31.Name = "groupBox31";
+            this.groupBox31.Size = new System.Drawing.Size(173, 313);
+            this.groupBox31.TabIndex = 31;
+            this.groupBox31.TabStop = false;
+            this.groupBox31.Text = "Mężczyzna";
+            // 
+            // btnHeart
+            // 
+            this.btnHeart.BackColor = System.Drawing.Color.Transparent;
+            this.btnHeart.Image = ((System.Drawing.Image)(resources.GetObject("btnHeart.Image")));
+            this.btnHeart.Location = new System.Drawing.Point(64, 21);
+            this.btnHeart.Name = "btnHeart";
+            this.btnHeart.Size = new System.Drawing.Size(45, 45);
+            this.btnHeart.TabIndex = 4;
+            this.btnHeart.UseVisualStyleBackColor = false;
+            this.btnHeart.Click += new System.EventHandler(this.btnHeart_Click);
+            // 
+            // btnMen
+            // 
+            this.btnMen.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.man;
+            this.btnMen.Location = new System.Drawing.Point(11, 21);
+            this.btnMen.Name = "btnMen";
+            this.btnMen.Size = new System.Drawing.Size(45, 45);
+            this.btnMen.TabIndex = 0;
+            this.btnMen.UseVisualStyleBackColor = true;
+            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(117, 21);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 45);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Red;
+            this.button8.Location = new System.Drawing.Point(10, 74);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(45, 45);
+            this.button8.TabIndex = 6;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Yellow;
+            this.button9.Location = new System.Drawing.Point(63, 74);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(45, 45);
+            this.button9.TabIndex = 7;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Orange;
+            this.button10.Location = new System.Drawing.Point(116, 74);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(45, 45);
+            this.button10.TabIndex = 8;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // groupBox32
+            // 
+            this.groupBox32.Controls.Add(this.button4);
+            this.groupBox32.Controls.Add(this.button3);
+            this.groupBox32.Controls.Add(this.btnWoman);
+            this.groupBox32.Location = new System.Drawing.Point(706, 51);
+            this.groupBox32.Name = "groupBox32";
+            this.groupBox32.Size = new System.Drawing.Size(173, 313);
+            this.groupBox32.TabIndex = 32;
+            this.groupBox32.TabStop = false;
+            this.groupBox32.Text = "Kobieta";
+            // 
+            // btnWoman
+            // 
+            this.btnWoman.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.woman;
+            this.btnWoman.Location = new System.Drawing.Point(11, 21);
+            this.btnWoman.Name = "btnWoman";
+            this.btnWoman.Size = new System.Drawing.Size(45, 45);
+            this.btnWoman.TabIndex = 1;
+            this.btnWoman.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(63, 21);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 45);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(115, 21);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(45, 45);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // panelModel
+            // 
+            this.panelModel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelModel.Controls.Add(this.groupBox32);
+            this.panelModel.Controls.Add(this.groupBox31);
+            this.panelModel.Controls.Add(this.panel18);
+            this.panelModel.Controls.Add(this.panelModelImg);
+            this.panelModel.Controls.Add(this.imgHeart);
+            this.panelModel.Controls.Add(this.imgBoxPenis);
+            this.panelModel.Location = new System.Drawing.Point(21, 3432);
+            this.panelModel.Name = "panelModel";
+            this.panelModel.Size = new System.Drawing.Size(891, 717);
+            this.panelModel.TabIndex = 70;
+            // 
+            // panelModelImg
+            // 
+            this.panelModelImg.BackColor = System.Drawing.Color.White;
+            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
+            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.panelModelImg.Location = new System.Drawing.Point(197, 51);
+            this.panelModelImg.Name = "panelModelImg";
+            this.panelModelImg.Size = new System.Drawing.Size(334, 260);
+            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.panelModelImg.TabIndex = 30;
+            this.panelModelImg.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4009,18 +3979,9 @@
             this.panel14.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
-            this.panelModel.ResumeLayout(false);
-            this.groupBox32.ResumeLayout(false);
-            this.groupBox31.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZywienie)).EndInit();
             this.panelViofor.ResumeLayout(false);
             this.panelViofor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUDKrotnosc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox34.ResumeLayout(false);
             this.groupBox29.ResumeLayout(false);
@@ -4090,7 +4051,6 @@
             this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox26.ResumeLayout(false);
             this.groupBox35.ResumeLayout(false);
@@ -4107,6 +4067,14 @@
             this.groupBox42.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            this.groupBox31.ResumeLayout(false);
+            this.groupBox32.ResumeLayout(false);
+            this.panelModel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4150,9 +4118,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Panel panelModel;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label labelk;
         private System.Windows.Forms.TextBox textBoxCountZywieniowe;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.ComboBox comboBoxZywienie;
@@ -4236,7 +4201,6 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.NumericUpDown numericUDKrotnosc;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox cbUwagi;
         private System.Windows.Forms.Label label22;
@@ -4349,19 +4313,6 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.GroupBox groupBox32;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btnWoman;
-        private System.Windows.Forms.GroupBox groupBox31;
-        private System.Windows.Forms.Button btnMen;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnHeart;
-        private System.Windows.Forms.PictureBox imgBoxPenis;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.PictureBox imgHeart;
         private System.Windows.Forms.GroupBox groupBox33;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataGridView dataGridViewNiezyt;
@@ -4396,7 +4347,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lekiWywiad;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox26;
         private System.Windows.Forms.Button button1;
@@ -4428,9 +4378,25 @@
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.PictureBox panelModelImg;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.ComboBox cbKrotnosc;
+        private System.Windows.Forms.PictureBox imgBoxPenis;
+        private System.Windows.Forms.PictureBox imgHeart;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Label labelk;
+        private System.Windows.Forms.GroupBox groupBox31;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMen;
+        private System.Windows.Forms.Button btnHeart;
+        private System.Windows.Forms.GroupBox groupBox32;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnWoman;
+        private System.Windows.Forms.Panel panelModel;
+        private System.Windows.Forms.PictureBox panelModelImg;
     }
 }
 
