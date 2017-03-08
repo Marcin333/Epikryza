@@ -398,6 +398,8 @@
             this.irbGlowa = new System.Windows.Forms.RadioButton();
             this.irbWatroba = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.gBoxOrgany = new System.Windows.Forms.GroupBox();
+            this.imgBoxModel = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel15.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -502,6 +504,8 @@
             this.panelModel.SuspendLayout();
             this.gboxStan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoroby)).BeginInit();
+            this.gBoxOrgany.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxModel)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -3798,70 +3802,16 @@
             // panelModel
             // 
             this.panelModel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelModel.Controls.Add(this.imgBoxModel);
+            this.panelModel.Controls.Add(this.gBoxOrgany);
             this.panelModel.Controls.Add(this.gboxStan);
             this.panelModel.Controls.Add(this.label47);
             this.panelModel.Controls.Add(this.txtOpisDolegliwosci);
             this.panelModel.Controls.Add(this.btnUpdate);
             this.panelModel.Controls.Add(this.btnZapisz);
             this.panelModel.Controls.Add(this.dgvChoroby);
-            this.panelModel.Controls.Add(this.radioButton46);
-            this.panelModel.Controls.Add(this.radioButton47);
-            this.panelModel.Controls.Add(this.radioButton48);
-            this.panelModel.Controls.Add(this.radioButton49);
-            this.panelModel.Controls.Add(this.radioButton50);
-            this.panelModel.Controls.Add(this.radioButton51);
-            this.panelModel.Controls.Add(this.radioButton52);
-            this.panelModel.Controls.Add(this.radioButton53);
-            this.panelModel.Controls.Add(this.radioButton38);
-            this.panelModel.Controls.Add(this.radioButton39);
-            this.panelModel.Controls.Add(this.radioButton40);
-            this.panelModel.Controls.Add(this.radioButton41);
-            this.panelModel.Controls.Add(this.radioButton42);
-            this.panelModel.Controls.Add(this.radioButton43);
-            this.panelModel.Controls.Add(this.radioButton44);
-            this.panelModel.Controls.Add(this.radioButton45);
-            this.panelModel.Controls.Add(this.radioButton30);
-            this.panelModel.Controls.Add(this.radioButton31);
-            this.panelModel.Controls.Add(this.radioButton32);
-            this.panelModel.Controls.Add(this.radioButton33);
-            this.panelModel.Controls.Add(this.radioButton34);
-            this.panelModel.Controls.Add(this.radioButton35);
-            this.panelModel.Controls.Add(this.radioButton36);
-            this.panelModel.Controls.Add(this.radioButton37);
-            this.panelModel.Controls.Add(this.radioButton22);
-            this.panelModel.Controls.Add(this.radioButton23);
-            this.panelModel.Controls.Add(this.radioButton24);
-            this.panelModel.Controls.Add(this.radioButton25);
-            this.panelModel.Controls.Add(this.radioButton26);
-            this.panelModel.Controls.Add(this.radioButton27);
-            this.panelModel.Controls.Add(this.radioButton28);
-            this.panelModel.Controls.Add(this.radioButton29);
-            this.panelModel.Controls.Add(this.radioButton14);
-            this.panelModel.Controls.Add(this.radioButton15);
-            this.panelModel.Controls.Add(this.radioButton16);
-            this.panelModel.Controls.Add(this.radioButton17);
-            this.panelModel.Controls.Add(this.radioButton18);
-            this.panelModel.Controls.Add(this.radioButton19);
-            this.panelModel.Controls.Add(this.radioButton20);
-            this.panelModel.Controls.Add(this.radioButton21);
-            this.panelModel.Controls.Add(this.radioButton4);
-            this.panelModel.Controls.Add(this.radioButton6);
-            this.panelModel.Controls.Add(this.radioButton7);
-            this.panelModel.Controls.Add(this.radioButton9);
-            this.panelModel.Controls.Add(this.radioButton10);
-            this.panelModel.Controls.Add(this.radioButton11);
-            this.panelModel.Controls.Add(this.radioButton12);
-            this.panelModel.Controls.Add(this.radioButton13);
-            this.panelModel.Controls.Add(this.radioButton5);
-            this.panelModel.Controls.Add(this.irbOkoLewe);
-            this.panelModel.Controls.Add(this.irbOkoPrawe);
-            this.panelModel.Controls.Add(this.irbZatoki);
-            this.panelModel.Controls.Add(this.irbMozg);
-            this.panelModel.Controls.Add(this.irbGlowa);
-            this.panelModel.Controls.Add(this.irbWatroba);
-            this.panelModel.Controls.Add(this.radioButton8);
             this.panelModel.Controls.Add(this.panel18);
-            this.panelModel.Location = new System.Drawing.Point(21, 3432);
+            this.panelModel.Location = new System.Drawing.Point(21, 3435);
             this.panelModel.Name = "panelModel";
             this.panelModel.Size = new System.Drawing.Size(891, 747);
             this.panelModel.TabIndex = 70;
@@ -3871,7 +3821,7 @@
             this.gboxStan.Controls.Add(this.rBtnOstry);
             this.gboxStan.Controls.Add(this.rBtnPodostry);
             this.gboxStan.Controls.Add(this.rBtnPrzewlekly);
-            this.gboxStan.Location = new System.Drawing.Point(24, 432);
+            this.gboxStan.Location = new System.Drawing.Point(17, 443);
             this.gboxStan.Name = "gboxStan";
             this.gboxStan.Size = new System.Drawing.Size(104, 99);
             this.gboxStan.TabIndex = 146;
@@ -3921,7 +3871,7 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(156, 434);
+            this.label47.Location = new System.Drawing.Point(149, 445);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(105, 13);
             this.label47.TabIndex = 145;
@@ -3929,7 +3879,7 @@
             // 
             // txtOpisDolegliwosci
             // 
-            this.txtOpisDolegliwosci.Location = new System.Drawing.Point(154, 450);
+            this.txtOpisDolegliwosci.Location = new System.Drawing.Point(147, 461);
             this.txtOpisDolegliwosci.Multiline = true;
             this.txtOpisDolegliwosci.Name = "txtOpisDolegliwosci";
             this.txtOpisDolegliwosci.Size = new System.Drawing.Size(318, 81);
@@ -3937,7 +3887,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(336, 537);
+            this.btnUpdate.Location = new System.Drawing.Point(329, 548);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(65, 25);
             this.btnUpdate.TabIndex = 143;
@@ -3946,7 +3896,7 @@
             // 
             // btnZapisz
             // 
-            this.btnZapisz.Location = new System.Drawing.Point(407, 538);
+            this.btnZapisz.Location = new System.Drawing.Point(400, 549);
             this.btnZapisz.Name = "btnZapisz";
             this.btnZapisz.Size = new System.Drawing.Size(65, 26);
             this.btnZapisz.TabIndex = 142;
@@ -3959,7 +3909,7 @@
             this.dgvChoroby.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChoroby.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.anamneza});
-            this.dgvChoroby.Location = new System.Drawing.Point(24, 578);
+            this.dgvChoroby.Location = new System.Drawing.Point(24, 581);
             this.dgvChoroby.Name = "dgvChoroby";
             this.dgvChoroby.Size = new System.Drawing.Size(843, 152);
             this.dgvChoroby.TabIndex = 141;
@@ -3976,7 +3926,7 @@
             this.radioButton46.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton46.AutoSize = true;
             this.radioButton46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton46.Location = new System.Drawing.Point(395, 363);
+            this.radioButton46.Location = new System.Drawing.Point(379, 335);
             this.radioButton46.Name = "radioButton46";
             this.radioButton46.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton46.Size = new System.Drawing.Size(55, 55);
@@ -3991,7 +3941,7 @@
             this.radioButton47.AutoSize = true;
             this.radioButton47.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_24c_sutek_prawy;
             this.radioButton47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton47.Location = new System.Drawing.Point(289, 363);
+            this.radioButton47.Location = new System.Drawing.Point(273, 335);
             this.radioButton47.Name = "radioButton47";
             this.radioButton47.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton47.Size = new System.Drawing.Size(55, 55);
@@ -4006,7 +3956,7 @@
             this.radioButton48.AutoSize = true;
             this.radioButton48.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_24b_sutek_lewy;
             this.radioButton48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton48.Location = new System.Drawing.Point(236, 363);
+            this.radioButton48.Location = new System.Drawing.Point(220, 335);
             this.radioButton48.Name = "radioButton48";
             this.radioButton48.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton48.Size = new System.Drawing.Size(55, 55);
@@ -4021,7 +3971,7 @@
             this.radioButton49.AutoSize = true;
             this.radioButton49.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_24a_macica;
             this.radioButton49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton49.Location = new System.Drawing.Point(183, 363);
+            this.radioButton49.Location = new System.Drawing.Point(167, 335);
             this.radioButton49.Name = "radioButton49";
             this.radioButton49.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton49.Size = new System.Drawing.Size(55, 55);
@@ -4036,7 +3986,7 @@
             this.radioButton50.AutoSize = true;
             this.radioButton50.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_23_przydatki;
             this.radioButton50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton50.Location = new System.Drawing.Point(130, 363);
+            this.radioButton50.Location = new System.Drawing.Point(114, 335);
             this.radioButton50.Name = "radioButton50";
             this.radioButton50.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton50.Size = new System.Drawing.Size(55, 55);
@@ -4051,7 +4001,7 @@
             this.radioButton51.AutoSize = true;
             this.radioButton51.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_22a_sex_kobieta;
             this.radioButton51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton51.Location = new System.Drawing.Point(77, 363);
+            this.radioButton51.Location = new System.Drawing.Point(61, 335);
             this.radioButton51.Name = "radioButton51";
             this.radioButton51.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton51.Size = new System.Drawing.Size(55, 55);
@@ -4067,7 +4017,7 @@
             this.radioButton52.AutoSize = true;
             this.radioButton52.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_9c_naczynia;
             this.radioButton52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton52.Location = new System.Drawing.Point(24, 363);
+            this.radioButton52.Location = new System.Drawing.Point(8, 335);
             this.radioButton52.Name = "radioButton52";
             this.radioButton52.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton52.Size = new System.Drawing.Size(55, 55);
@@ -4080,7 +4030,7 @@
             this.radioButton53.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton53.AutoSize = true;
             this.radioButton53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton53.Location = new System.Drawing.Point(342, 363);
+            this.radioButton53.Location = new System.Drawing.Point(326, 335);
             this.radioButton53.Name = "radioButton53";
             this.radioButton53.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton53.Size = new System.Drawing.Size(55, 55);
@@ -4095,7 +4045,7 @@
             this.radioButton38.AutoSize = true;
             this.radioButton38.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_9b_serce;
             this.radioButton38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton38.Location = new System.Drawing.Point(395, 310);
+            this.radioButton38.Location = new System.Drawing.Point(379, 282);
             this.radioButton38.Name = "radioButton38";
             this.radioButton38.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton38.Size = new System.Drawing.Size(55, 55);
@@ -4110,7 +4060,7 @@
             this.radioButton39.AutoSize = true;
             this.radioButton39.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_51_korzonki_prawe;
             this.radioButton39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton39.Location = new System.Drawing.Point(289, 310);
+            this.radioButton39.Location = new System.Drawing.Point(273, 282);
             this.radioButton39.Name = "radioButton39";
             this.radioButton39.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton39.Size = new System.Drawing.Size(55, 55);
@@ -4125,7 +4075,7 @@
             this.radioButton40.AutoSize = true;
             this.radioButton40.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_50_korzonki_lewe;
             this.radioButton40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton40.Location = new System.Drawing.Point(236, 310);
+            this.radioButton40.Location = new System.Drawing.Point(220, 282);
             this.radioButton40.Name = "radioButton40";
             this.radioButton40.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton40.Size = new System.Drawing.Size(55, 55);
@@ -4140,7 +4090,7 @@
             this.radioButton41.AutoSize = true;
             this.radioButton41.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_48_stopa_lewa;
             this.radioButton41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton41.Location = new System.Drawing.Point(183, 310);
+            this.radioButton41.Location = new System.Drawing.Point(167, 282);
             this.radioButton41.Name = "radioButton41";
             this.radioButton41.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton41.Size = new System.Drawing.Size(55, 55);
@@ -4155,7 +4105,7 @@
             this.radioButton42.AutoSize = true;
             this.radioButton42.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_49_stopa_prawa;
             this.radioButton42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton42.Location = new System.Drawing.Point(130, 310);
+            this.radioButton42.Location = new System.Drawing.Point(114, 282);
             this.radioButton42.Name = "radioButton42";
             this.radioButton42.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton42.Size = new System.Drawing.Size(55, 55);
@@ -4170,7 +4120,7 @@
             this.radioButton43.AutoSize = true;
             this.radioButton43.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_47_kolano_prawe;
             this.radioButton43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton43.Location = new System.Drawing.Point(77, 310);
+            this.radioButton43.Location = new System.Drawing.Point(61, 282);
             this.radioButton43.Name = "radioButton43";
             this.radioButton43.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton43.Size = new System.Drawing.Size(55, 55);
@@ -4186,7 +4136,7 @@
             this.radioButton44.AutoSize = true;
             this.radioButton44.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_46_kolano_lewe;
             this.radioButton44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton44.Location = new System.Drawing.Point(24, 310);
+            this.radioButton44.Location = new System.Drawing.Point(8, 282);
             this.radioButton44.Name = "radioButton44";
             this.radioButton44.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton44.Size = new System.Drawing.Size(55, 55);
@@ -4201,7 +4151,7 @@
             this.radioButton45.AutoSize = true;
             this.radioButton45.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_9a_oskzela;
             this.radioButton45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton45.Location = new System.Drawing.Point(342, 310);
+            this.radioButton45.Location = new System.Drawing.Point(326, 282);
             this.radioButton45.Name = "radioButton45";
             this.radioButton45.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton45.Size = new System.Drawing.Size(55, 55);
@@ -4216,7 +4166,7 @@
             this.radioButton30.AutoSize = true;
             this.radioButton30.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_44_biodro_prawe;
             this.radioButton30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton30.Location = new System.Drawing.Point(395, 257);
+            this.radioButton30.Location = new System.Drawing.Point(379, 229);
             this.radioButton30.Name = "radioButton30";
             this.radioButton30.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton30.Size = new System.Drawing.Size(55, 55);
@@ -4231,7 +4181,7 @@
             this.radioButton31.AutoSize = true;
             this.radioButton31.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_43_dłoń_prawa;
             this.radioButton31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton31.Location = new System.Drawing.Point(289, 257);
+            this.radioButton31.Location = new System.Drawing.Point(273, 229);
             this.radioButton31.Name = "radioButton31";
             this.radioButton31.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton31.Size = new System.Drawing.Size(55, 55);
@@ -4246,7 +4196,7 @@
             this.radioButton32.AutoSize = true;
             this.radioButton32.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_42_dłoń_lewa;
             this.radioButton32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton32.Location = new System.Drawing.Point(236, 257);
+            this.radioButton32.Location = new System.Drawing.Point(220, 229);
             this.radioButton32.Name = "radioButton32";
             this.radioButton32.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton32.Size = new System.Drawing.Size(55, 55);
@@ -4261,7 +4211,7 @@
             this.radioButton33.AutoSize = true;
             this.radioButton33.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_41_łłokieć_prawy;
             this.radioButton33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton33.Location = new System.Drawing.Point(183, 257);
+            this.radioButton33.Location = new System.Drawing.Point(167, 229);
             this.radioButton33.Name = "radioButton33";
             this.radioButton33.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton33.Size = new System.Drawing.Size(55, 55);
@@ -4276,7 +4226,7 @@
             this.radioButton34.AutoSize = true;
             this.radioButton34.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_40_łokieć_lewy;
             this.radioButton34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton34.Location = new System.Drawing.Point(130, 257);
+            this.radioButton34.Location = new System.Drawing.Point(114, 229);
             this.radioButton34.Name = "radioButton34";
             this.radioButton34.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton34.Size = new System.Drawing.Size(55, 55);
@@ -4291,7 +4241,7 @@
             this.radioButton35.AutoSize = true;
             this.radioButton35.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_39_bark_prawy;
             this.radioButton35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton35.Location = new System.Drawing.Point(77, 257);
+            this.radioButton35.Location = new System.Drawing.Point(61, 229);
             this.radioButton35.Name = "radioButton35";
             this.radioButton35.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton35.Size = new System.Drawing.Size(55, 55);
@@ -4307,7 +4257,7 @@
             this.radioButton36.AutoSize = true;
             this.radioButton36.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_38_bark_lewy;
             this.radioButton36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton36.Location = new System.Drawing.Point(24, 257);
+            this.radioButton36.Location = new System.Drawing.Point(8, 229);
             this.radioButton36.Name = "radioButton36";
             this.radioButton36.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton36.Size = new System.Drawing.Size(55, 55);
@@ -4322,7 +4272,7 @@
             this.radioButton37.AutoSize = true;
             this.radioButton37.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_45_biodro_lewe;
             this.radioButton37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton37.Location = new System.Drawing.Point(342, 257);
+            this.radioButton37.Location = new System.Drawing.Point(326, 229);
             this.radioButton37.Name = "radioButton37";
             this.radioButton37.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton37.Size = new System.Drawing.Size(55, 55);
@@ -4337,7 +4287,7 @@
             this.radioButton22.AutoSize = true;
             this.radioButton22.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_37_kręgosłup_krzyż;
             this.radioButton22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton22.Location = new System.Drawing.Point(395, 205);
+            this.radioButton22.Location = new System.Drawing.Point(379, 177);
             this.radioButton22.Name = "radioButton22";
             this.radioButton22.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton22.Size = new System.Drawing.Size(55, 55);
@@ -4352,7 +4302,7 @@
             this.radioButton23.AutoSize = true;
             this.radioButton23.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_35_kręgosłup;
             this.radioButton23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton23.Location = new System.Drawing.Point(289, 205);
+            this.radioButton23.Location = new System.Drawing.Point(273, 177);
             this.radioButton23.Name = "radioButton23";
             this.radioButton23.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton23.Size = new System.Drawing.Size(55, 55);
@@ -4367,7 +4317,7 @@
             this.radioButton24.AutoSize = true;
             this.radioButton24.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_34_szkielet;
             this.radioButton24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton24.Location = new System.Drawing.Point(236, 205);
+            this.radioButton24.Location = new System.Drawing.Point(220, 177);
             this.radioButton24.Name = "radioButton24";
             this.radioButton24.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton24.Size = new System.Drawing.Size(55, 55);
@@ -4382,7 +4332,7 @@
             this.radioButton25.AutoSize = true;
             this.radioButton25.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_33_podudzie_żyły_prawe;
             this.radioButton25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton25.Location = new System.Drawing.Point(183, 205);
+            this.radioButton25.Location = new System.Drawing.Point(167, 177);
             this.radioButton25.Name = "radioButton25";
             this.radioButton25.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton25.Size = new System.Drawing.Size(55, 55);
@@ -4397,7 +4347,7 @@
             this.radioButton26.AutoSize = true;
             this.radioButton26.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_32_podudzie_żyły_lewe;
             this.radioButton26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton26.Location = new System.Drawing.Point(130, 205);
+            this.radioButton26.Location = new System.Drawing.Point(114, 177);
             this.radioButton26.Name = "radioButton26";
             this.radioButton26.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton26.Size = new System.Drawing.Size(55, 55);
@@ -4412,7 +4362,7 @@
             this.radioButton27.AutoSize = true;
             this.radioButton27.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_30_węzły_tył;
             this.radioButton27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton27.Location = new System.Drawing.Point(77, 205);
+            this.radioButton27.Location = new System.Drawing.Point(61, 177);
             this.radioButton27.Name = "radioButton27";
             this.radioButton27.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton27.Size = new System.Drawing.Size(55, 55);
@@ -4428,7 +4378,7 @@
             this.radioButton28.AutoSize = true;
             this.radioButton28.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_29_węzły_dół;
             this.radioButton28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton28.Location = new System.Drawing.Point(24, 205);
+            this.radioButton28.Location = new System.Drawing.Point(8, 177);
             this.radioButton28.Name = "radioButton28";
             this.radioButton28.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton28.Size = new System.Drawing.Size(55, 55);
@@ -4443,7 +4393,7 @@
             this.radioButton29.AutoSize = true;
             this.radioButton29.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_36_kręgosłup_szyja;
             this.radioButton29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton29.Location = new System.Drawing.Point(342, 205);
+            this.radioButton29.Location = new System.Drawing.Point(326, 177);
             this.radioButton29.Name = "radioButton29";
             this.radioButton29.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton29.Size = new System.Drawing.Size(55, 55);
@@ -4458,7 +4408,7 @@
             this.radioButton14.AutoSize = true;
             this.radioButton14.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_28_węzły_góra;
             this.radioButton14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton14.Location = new System.Drawing.Point(395, 153);
+            this.radioButton14.Location = new System.Drawing.Point(379, 125);
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton14.Size = new System.Drawing.Size(55, 55);
@@ -4473,7 +4423,7 @@
             this.radioButton15.AutoSize = true;
             this.radioButton15.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_26_nadnercza;
             this.radioButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton15.Location = new System.Drawing.Point(289, 153);
+            this.radioButton15.Location = new System.Drawing.Point(273, 125);
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton15.Size = new System.Drawing.Size(55, 55);
@@ -4488,7 +4438,7 @@
             this.radioButton16.AutoSize = true;
             this.radioButton16.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_25_tarczyca;
             this.radioButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton16.Location = new System.Drawing.Point(236, 153);
+            this.radioButton16.Location = new System.Drawing.Point(220, 125);
             this.radioButton16.Name = "radioButton16";
             this.radioButton16.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton16.Size = new System.Drawing.Size(55, 55);
@@ -4503,7 +4453,7 @@
             this.radioButton17.AutoSize = true;
             this.radioButton17.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_21a_pęcherz_kobieta;
             this.radioButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton17.Location = new System.Drawing.Point(183, 153);
+            this.radioButton17.Location = new System.Drawing.Point(167, 125);
             this.radioButton17.Name = "radioButton17";
             this.radioButton17.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton17.Size = new System.Drawing.Size(55, 55);
@@ -4518,7 +4468,7 @@
             this.radioButton18.AutoSize = true;
             this.radioButton18.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_20_nerka_prawa;
             this.radioButton18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton18.Location = new System.Drawing.Point(130, 153);
+            this.radioButton18.Location = new System.Drawing.Point(114, 125);
             this.radioButton18.Name = "radioButton18";
             this.radioButton18.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton18.Size = new System.Drawing.Size(55, 55);
@@ -4533,7 +4483,7 @@
             this.radioButton19.AutoSize = true;
             this.radioButton19.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_19_nerka_lewa;
             this.radioButton19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton19.Location = new System.Drawing.Point(77, 153);
+            this.radioButton19.Location = new System.Drawing.Point(61, 125);
             this.radioButton19.Name = "radioButton19";
             this.radioButton19.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton19.Size = new System.Drawing.Size(55, 55);
@@ -4549,7 +4499,7 @@
             this.radioButton20.AutoSize = true;
             this.radioButton20.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_18_pęcherzyk_żółciowy;
             this.radioButton20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton20.Location = new System.Drawing.Point(24, 153);
+            this.radioButton20.Location = new System.Drawing.Point(8, 125);
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton20.Size = new System.Drawing.Size(55, 55);
@@ -4564,7 +4514,7 @@
             this.radioButton21.AutoSize = true;
             this.radioButton21.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_27_śledziona;
             this.radioButton21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton21.Location = new System.Drawing.Point(342, 153);
+            this.radioButton21.Location = new System.Drawing.Point(326, 125);
             this.radioButton21.Name = "radioButton21";
             this.radioButton21.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton21.Size = new System.Drawing.Size(55, 55);
@@ -4579,7 +4529,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_17_wątroba;
             this.radioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton4.Location = new System.Drawing.Point(395, 100);
+            this.radioButton4.Location = new System.Drawing.Point(379, 72);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton4.Size = new System.Drawing.Size(55, 55);
@@ -4594,7 +4544,7 @@
             this.radioButton6.AutoSize = true;
             this.radioButton6.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_15_jelita;
             this.radioButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton6.Location = new System.Drawing.Point(289, 100);
+            this.radioButton6.Location = new System.Drawing.Point(273, 72);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton6.Size = new System.Drawing.Size(55, 55);
@@ -4609,7 +4559,7 @@
             this.radioButton7.AutoSize = true;
             this.radioButton7.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_14_trzustka;
             this.radioButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton7.Location = new System.Drawing.Point(236, 100);
+            this.radioButton7.Location = new System.Drawing.Point(220, 72);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton7.Size = new System.Drawing.Size(55, 55);
@@ -4624,7 +4574,7 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_12_żołądek;
             this.radioButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton9.Location = new System.Drawing.Point(183, 100);
+            this.radioButton9.Location = new System.Drawing.Point(167, 72);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton9.Size = new System.Drawing.Size(55, 55);
@@ -4639,7 +4589,7 @@
             this.radioButton10.AutoSize = true;
             this.radioButton10.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_12_przełyk;
             this.radioButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton10.Location = new System.Drawing.Point(130, 100);
+            this.radioButton10.Location = new System.Drawing.Point(114, 72);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton10.Size = new System.Drawing.Size(55, 55);
@@ -4654,7 +4604,7 @@
             this.radioButton11.AutoSize = true;
             this.radioButton11.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_11_gardło;
             this.radioButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton11.Location = new System.Drawing.Point(77, 100);
+            this.radioButton11.Location = new System.Drawing.Point(61, 72);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton11.Size = new System.Drawing.Size(55, 55);
@@ -4670,7 +4620,7 @@
             this.radioButton12.AutoSize = true;
             this.radioButton12.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_09_płuca;
             this.radioButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton12.Location = new System.Drawing.Point(24, 100);
+            this.radioButton12.Location = new System.Drawing.Point(8, 72);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton12.Size = new System.Drawing.Size(55, 55);
@@ -4685,7 +4635,7 @@
             this.radioButton13.AutoSize = true;
             this.radioButton13.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_16_odbytnica;
             this.radioButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton13.Location = new System.Drawing.Point(342, 100);
+            this.radioButton13.Location = new System.Drawing.Point(326, 72);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton13.Size = new System.Drawing.Size(55, 55);
@@ -4700,7 +4650,7 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_08_ucho_prawe;
             this.radioButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton5.Location = new System.Drawing.Point(395, 47);
+            this.radioButton5.Location = new System.Drawing.Point(379, 19);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton5.Size = new System.Drawing.Size(55, 55);
@@ -4715,7 +4665,7 @@
             this.irbOkoLewe.AutoSize = true;
             this.irbOkoLewe.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_06_oko_prawe;
             this.irbOkoLewe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.irbOkoLewe.Location = new System.Drawing.Point(289, 47);
+            this.irbOkoLewe.Location = new System.Drawing.Point(273, 19);
             this.irbOkoLewe.Name = "irbOkoLewe";
             this.irbOkoLewe.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.irbOkoLewe.Size = new System.Drawing.Size(55, 55);
@@ -4730,7 +4680,7 @@
             this.irbOkoPrawe.AutoSize = true;
             this.irbOkoPrawe.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_05_oko_lewe;
             this.irbOkoPrawe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.irbOkoPrawe.Location = new System.Drawing.Point(236, 47);
+            this.irbOkoPrawe.Location = new System.Drawing.Point(220, 19);
             this.irbOkoPrawe.Name = "irbOkoPrawe";
             this.irbOkoPrawe.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.irbOkoPrawe.Size = new System.Drawing.Size(55, 55);
@@ -4745,7 +4695,7 @@
             this.irbZatoki.AutoSize = true;
             this.irbZatoki.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_04_oczy;
             this.irbZatoki.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.irbZatoki.Location = new System.Drawing.Point(183, 47);
+            this.irbZatoki.Location = new System.Drawing.Point(167, 19);
             this.irbZatoki.Name = "irbZatoki";
             this.irbZatoki.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.irbZatoki.Size = new System.Drawing.Size(55, 55);
@@ -4760,7 +4710,7 @@
             this.irbMozg.AutoSize = true;
             this.irbMozg.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_03_zatoki;
             this.irbMozg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.irbMozg.Location = new System.Drawing.Point(130, 47);
+            this.irbMozg.Location = new System.Drawing.Point(114, 19);
             this.irbMozg.Name = "irbMozg";
             this.irbMozg.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.irbMozg.Size = new System.Drawing.Size(55, 55);
@@ -4775,7 +4725,7 @@
             this.irbGlowa.AutoSize = true;
             this.irbGlowa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("irbGlowa.BackgroundImage")));
             this.irbGlowa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.irbGlowa.Location = new System.Drawing.Point(77, 47);
+            this.irbGlowa.Location = new System.Drawing.Point(61, 19);
             this.irbGlowa.Name = "irbGlowa";
             this.irbGlowa.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.irbGlowa.Size = new System.Drawing.Size(55, 55);
@@ -4791,7 +4741,7 @@
             this.irbWatroba.AutoSize = true;
             this.irbWatroba.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_01_głowa;
             this.irbWatroba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.irbWatroba.Location = new System.Drawing.Point(24, 47);
+            this.irbWatroba.Location = new System.Drawing.Point(8, 19);
             this.irbWatroba.Name = "irbWatroba";
             this.irbWatroba.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.irbWatroba.Size = new System.Drawing.Size(55, 55);
@@ -4806,13 +4756,86 @@
             this.radioButton8.AutoSize = true;
             this.radioButton8.BackgroundImage = global::WindowsFormsApplicationEpikryza.Properties.Resources.K_07_ucho_lewe;
             this.radioButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.radioButton8.Location = new System.Drawing.Point(342, 47);
+            this.radioButton8.Location = new System.Drawing.Point(326, 19);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Padding = new System.Windows.Forms.Padding(49, 0, 0, 49);
             this.radioButton8.Size = new System.Drawing.Size(55, 55);
             this.radioButton8.TabIndex = 91;
             this.radioButton8.TabStop = true;
             this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // gBoxOrgany
+            // 
+            this.gBoxOrgany.Controls.Add(this.radioButton46);
+            this.gBoxOrgany.Controls.Add(this.radioButton47);
+            this.gBoxOrgany.Controls.Add(this.radioButton48);
+            this.gBoxOrgany.Controls.Add(this.radioButton49);
+            this.gBoxOrgany.Controls.Add(this.radioButton50);
+            this.gBoxOrgany.Controls.Add(this.radioButton51);
+            this.gBoxOrgany.Controls.Add(this.radioButton52);
+            this.gBoxOrgany.Controls.Add(this.radioButton53);
+            this.gBoxOrgany.Controls.Add(this.radioButton38);
+            this.gBoxOrgany.Controls.Add(this.radioButton39);
+            this.gBoxOrgany.Controls.Add(this.radioButton40);
+            this.gBoxOrgany.Controls.Add(this.radioButton41);
+            this.gBoxOrgany.Controls.Add(this.radioButton42);
+            this.gBoxOrgany.Controls.Add(this.radioButton43);
+            this.gBoxOrgany.Controls.Add(this.radioButton44);
+            this.gBoxOrgany.Controls.Add(this.radioButton45);
+            this.gBoxOrgany.Controls.Add(this.radioButton30);
+            this.gBoxOrgany.Controls.Add(this.radioButton31);
+            this.gBoxOrgany.Controls.Add(this.radioButton32);
+            this.gBoxOrgany.Controls.Add(this.radioButton33);
+            this.gBoxOrgany.Controls.Add(this.radioButton34);
+            this.gBoxOrgany.Controls.Add(this.radioButton35);
+            this.gBoxOrgany.Controls.Add(this.radioButton36);
+            this.gBoxOrgany.Controls.Add(this.radioButton37);
+            this.gBoxOrgany.Controls.Add(this.radioButton22);
+            this.gBoxOrgany.Controls.Add(this.radioButton23);
+            this.gBoxOrgany.Controls.Add(this.radioButton24);
+            this.gBoxOrgany.Controls.Add(this.radioButton25);
+            this.gBoxOrgany.Controls.Add(this.radioButton26);
+            this.gBoxOrgany.Controls.Add(this.radioButton27);
+            this.gBoxOrgany.Controls.Add(this.radioButton28);
+            this.gBoxOrgany.Controls.Add(this.radioButton29);
+            this.gBoxOrgany.Controls.Add(this.radioButton14);
+            this.gBoxOrgany.Controls.Add(this.radioButton15);
+            this.gBoxOrgany.Controls.Add(this.radioButton16);
+            this.gBoxOrgany.Controls.Add(this.radioButton17);
+            this.gBoxOrgany.Controls.Add(this.radioButton18);
+            this.gBoxOrgany.Controls.Add(this.radioButton19);
+            this.gBoxOrgany.Controls.Add(this.radioButton20);
+            this.gBoxOrgany.Controls.Add(this.radioButton21);
+            this.gBoxOrgany.Controls.Add(this.radioButton4);
+            this.gBoxOrgany.Controls.Add(this.radioButton6);
+            this.gBoxOrgany.Controls.Add(this.radioButton7);
+            this.gBoxOrgany.Controls.Add(this.radioButton9);
+            this.gBoxOrgany.Controls.Add(this.radioButton10);
+            this.gBoxOrgany.Controls.Add(this.radioButton11);
+            this.gBoxOrgany.Controls.Add(this.radioButton12);
+            this.gBoxOrgany.Controls.Add(this.radioButton13);
+            this.gBoxOrgany.Controls.Add(this.radioButton5);
+            this.gBoxOrgany.Controls.Add(this.irbOkoLewe);
+            this.gBoxOrgany.Controls.Add(this.irbOkoPrawe);
+            this.gBoxOrgany.Controls.Add(this.irbZatoki);
+            this.gBoxOrgany.Controls.Add(this.irbMozg);
+            this.gBoxOrgany.Controls.Add(this.irbGlowa);
+            this.gBoxOrgany.Controls.Add(this.irbWatroba);
+            this.gBoxOrgany.Controls.Add(this.radioButton8);
+            this.gBoxOrgany.Location = new System.Drawing.Point(17, 41);
+            this.gBoxOrgany.Name = "gBoxOrgany";
+            this.gBoxOrgany.Size = new System.Drawing.Size(445, 395);
+            this.gBoxOrgany.TabIndex = 147;
+            this.gBoxOrgany.TabStop = false;
+            this.gBoxOrgany.Text = "Organy";
+            // 
+            // imgBoxModel
+            // 
+            this.imgBoxModel.Location = new System.Drawing.Point(499, 56);
+            this.imgBoxModel.Name = "imgBoxModel";
+            this.imgBoxModel.Size = new System.Drawing.Size(272, 268);
+            this.imgBoxModel.TabIndex = 148;
+            this.imgBoxModel.TabStop = false;
             // 
             // Form1
             // 
@@ -4989,6 +5012,9 @@
             this.gboxStan.ResumeLayout(false);
             this.gboxStan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoroby)).EndInit();
+            this.gBoxOrgany.ResumeLayout(false);
+            this.gBoxOrgany.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxModel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5363,6 +5389,8 @@
         private System.Windows.Forms.Button btnZapisz;
         private System.Windows.Forms.DataGridView dgvChoroby;
         private System.Windows.Forms.DataGridViewTextBoxColumn anamneza;
+        private System.Windows.Forms.GroupBox gBoxOrgany;
+        private System.Windows.Forms.PictureBox imgBoxModel;
     }
 }
 
