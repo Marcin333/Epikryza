@@ -22,7 +22,7 @@ namespace WindowsFormsApplicationEpikryza
             // TODO: This line of code loads data into the 'forHealthDBDataSet.tblDanePacjenta' table. You can move, or remove it, as needed.
             this.tblDanePacjentaTableAdapter.Fill(this.forHealthDBDataSet.tblDanePacjenta);
 
-            panelModel.Controls.SetChildIndex(panelModelImg, 1);
+            //panelModel.Controls.SetChildIndex(panelModelImg, 1);
 
         }
 
