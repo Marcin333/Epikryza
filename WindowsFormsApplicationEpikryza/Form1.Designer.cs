@@ -388,9 +388,6 @@
             this.irbGlowa = new System.Windows.Forms.RadioButton();
             this.irbWatroba = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.panelModelImg = new System.Windows.Forms.PictureBox();
-            this.imgHeart = new System.Windows.Forms.PictureBox();
-            this.imgBoxPenis = new System.Windows.Forms.PictureBox();
             this.gboxStan = new System.Windows.Forms.GroupBox();
             this.rBtnOstry = new System.Windows.Forms.RadioButton();
             this.rBtnPodostry = new System.Windows.Forms.RadioButton();
@@ -503,9 +500,6 @@
             this.panel6.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panelModel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).BeginInit();
             this.gboxStan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoroby)).BeginInit();
             this.SuspendLayout();
@@ -3867,9 +3861,6 @@
             this.panelModel.Controls.Add(this.irbWatroba);
             this.panelModel.Controls.Add(this.radioButton8);
             this.panelModel.Controls.Add(this.panel18);
-            this.panelModel.Controls.Add(this.panelModelImg);
-            this.panelModel.Controls.Add(this.imgHeart);
-            this.panelModel.Controls.Add(this.imgBoxPenis);
             this.panelModel.Location = new System.Drawing.Point(21, 3432);
             this.panelModel.Name = "panelModel";
             this.panelModel.Size = new System.Drawing.Size(891, 747);
@@ -4665,37 +4656,6 @@
             this.radioButton8.TabStop = true;
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
-            // panelModelImg
-            // 
-            this.panelModelImg.BackColor = System.Drawing.Color.White;
-            this.panelModelImg.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.skeleton_img;
-            this.panelModelImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelModelImg.Location = new System.Drawing.Point(549, 68);
-            this.panelModelImg.Name = "panelModelImg";
-            this.panelModelImg.Size = new System.Drawing.Size(334, 260);
-            this.panelModelImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.panelModelImg.TabIndex = 30;
-            this.panelModelImg.TabStop = false;
-            // 
-            // imgHeart
-            // 
-            this.imgHeart.Image = global::WindowsFormsApplicationEpikryza.Properties.Resources.human_hart_part;
-            this.imgHeart.Location = new System.Drawing.Point(590, 172);
-            this.imgHeart.Name = "imgHeart";
-            this.imgHeart.Size = new System.Drawing.Size(52, 65);
-            this.imgHeart.TabIndex = 34;
-            this.imgHeart.TabStop = false;
-            // 
-            // imgBoxPenis
-            // 
-            this.imgBoxPenis.BackColor = System.Drawing.Color.White;
-            this.imgBoxPenis.Image = ((System.Drawing.Image)(resources.GetObject("imgBoxPenis.Image")));
-            this.imgBoxPenis.Location = new System.Drawing.Point(644, 194);
-            this.imgBoxPenis.Name = "imgBoxPenis";
-            this.imgBoxPenis.Size = new System.Drawing.Size(43, 67);
-            this.imgBoxPenis.TabIndex = 33;
-            this.imgBoxPenis.TabStop = false;
-            // 
             // gboxStan
             // 
             this.gboxStan.Controls.Add(this.rBtnOstry);
@@ -4973,9 +4933,6 @@
             this.panel18.PerformLayout();
             this.panelModel.ResumeLayout(false);
             this.panelModel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelModelImg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBoxPenis)).EndInit();
             this.gboxStan.ResumeLayout(false);
             this.gboxStan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoroby)).EndInit();
@@ -5343,9 +5300,6 @@
         private System.Windows.Forms.RadioButton irbGlowa;
         private System.Windows.Forms.RadioButton irbWatroba;
         private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.PictureBox panelModelImg;
-        private System.Windows.Forms.PictureBox imgHeart;
-        private System.Windows.Forms.PictureBox imgBoxPenis;
         private System.Windows.Forms.GroupBox gboxStan;
         private System.Windows.Forms.RadioButton rBtnOstry;
         private System.Windows.Forms.RadioButton rBtnPodostry;
