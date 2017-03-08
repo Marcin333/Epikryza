@@ -136,4 +136,178 @@
   <data name="woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="K_00_kobieta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_00_kobieta1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_01_głowa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_01_głowa.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_02_mózg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_02_mózg.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_03_zatoki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_03_zatoki.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_04_oczy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_04_oczy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_05_oko_lewe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_05_oko_lewe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_06_oko_prawe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_06_oko_prawe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_07_ucho_lewe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_07_ucho_lewe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_08_ucho_prawe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_08_ucho_prawe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_09_płuca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_09_płuca.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_11_gardło" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_11_gardło.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_12_przełyk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_12_przełyk.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_12_żołądek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_12_żołądek.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_14_trzustka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_14_trzustka.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_15_jelita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_15_jelita.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_16_odbytnica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_16_odbytnica.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_17_wątroba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_17_wątroba.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_18_pęcherzyk_żółciowy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_18_pęcherzyk_żółciowy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_19_nerka_lewa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_19_nerka_lewa.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_20_nerka_prawa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_20_nerka_prawa.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_21a_pęcherz_kobieta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_21a_pęcherz_kobieta.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_22a_sex_kobieta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_22a_sex_kobieta.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_23_przydatki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_23_przydatki.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_24a_macica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_24a_macica.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_24b_sutek_lewy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_24b_sutek_lewy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_24c_sutek_prawy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_24c_sutek_prawy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_25_tarczyca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_25_tarczyca.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_26_nadnercza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_26_nadnercza.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_27_śledziona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_27_śledziona.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_28_węzły_góra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_28_węzły_góra.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_29_węzły_dół" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_29_węzły_dół.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_30_węzły_tył" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_30_węzły_tył.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_32_podudzie_żyły_lewe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_32_podudzie_żyły_lewe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_33_podudzie_żyły_prawe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_33_podudzie_żyły_prawe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_34_szkielet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_34_szkielet.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_35_kręgosłup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_35_kręgosłup.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_36_kręgosłup_szyja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_36_kręgosłup_szyja.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_37_kręgosłup_krzyż" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_37_kręgosłup_krzyż.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_38_bark_lewy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_38_bark_lewy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_39_bark_prawy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_39_bark_prawy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_40_łokieć_lewy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_40_łokieć_lewy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_41_łłokieć_prawy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_41_łłokieć_prawy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_42_dłoń_lewa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_42_dłoń_lewa.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_43_dłoń_prawa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_43_dłoń_prawa.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_44_biodro_prawe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_44_biodro_prawe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_45_biodro_lewe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_45_biodro_lewe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_46_kolano_lewe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_46_kolano_lewe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_47_kolano_prawe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_47_kolano_prawe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_48_stopa_lewa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_48_stopa_lewa.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_49_stopa_prawa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_49_stopa_prawa.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_50_korzonki_lewe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_50_korzonki_lewe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_51_korzonki_prawe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_51_korzonki_prawe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_9a_oskzela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_9a_oskzela.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_9b_serce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_9b_serce.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_9c_naczynia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K_9c_naczynia.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="M_24_sex_męski" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M_24_sex_męski.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="M_25_jądro_lewe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M_25_jądro_lewe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="M_26_jądro_prawe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M_26_jądro_prawe.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
